@@ -1,0 +1,402 @@
+.pay-services-block {
+    color: #000000;
+
+
+}
+.main-text-center{
+    padding: 100px 0px 50px 0px;
+    text-align: center;
+    width: 99%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+
+}
+.pay-item {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+    border-radius: 10px;
+    max-width: 350px;
+    height: 404px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &:hover {
+        margin-top: -10px;
+    }
+
+    .privat-img {
+        margin-bottom: 37px;
+        margin-top: 45px;
+    }
+
+    .visa-img {
+        margin-top: 28px;
+        margin-bottom: 8px;
+    }
+
+    .ibox-img {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        margin: 0 auto;
+
+    }
+
+    h4 {
+        font-weight: normal;
+        font-size: 22px;
+
+
+    }
+
+    p {
+        width: 290px;
+        padding-top: 28px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 150%;
+        margin: 0 auto;
+
+    }
+
+    .last-pay-btn {
+        margin-top: 0px;
+    }
+
+    button {
+        margin-top: 25px;
+        background: #34A0D9;
+        border-radius: 10px;
+        width: 233px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+
+        transition: 0.4s ease;
+
+        &:hover {
+
+            filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+        }
+    }
+}
+
+.pay_text-help {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 50px 15px 100px 15px;
+
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        border-bottom: 1px solid #000000;
+    }
+}
+
+
+.pay-arrow-select {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+
+.custom-selects2 {
+    position: relative;
+    margin-top: 16px;
+    margin-left: 48px;
+}
+
+.custom-selects2 select {
+    display: none;
+}
+
+.select-selected {
+    width: 223px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+    text-align: left;
+    padding: 6px 14px 0px 10px;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    width: 0;
+    height: 0;
+
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: #000000;
+    padding: 6px 16px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.select-items {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(171, 171, 171, 0.4);
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 3px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 213px;
+
+
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background: #F5F3F1;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 1199px) {
+    .pay-item {
+
+        max-width: 32%;
+        height: 350px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        .last-pay-btn {
+            margin-top: -3px;
+        }
+
+        .privat-img {
+            margin-bottom: 37px;
+            margin-top: 45px;
+        }
+
+        .visa-img {
+            margin-top: 40px;
+            margin-bottom: 32px;
+
+            img {
+                width: 200px;
+            }
+
+        }
+
+        .ibox-img {
+
+            margin-top: 60px;
+            margin-bottom: 62px;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        p {
+            width: 90%;
+            padding-top: 10px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0 auto;
+
+        }
+    }
+
+    .custom-selects2 {
+
+        margin-top: 5px;
+        margin-left: 38px;
+    }
+
+    .select-selected {
+        width: 200px;
+
+    }
+
+    .pay-arrow-select {
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+
+    .select-items {
+
+        width: 195px;
+
+
+    }
+}
+
+@media (max-width: 991px) {
+    .custom-selects2 {
+margin-bottom: 10px;
+        margin-top: 15px;
+        margin-left: 16px;
+    }
+    .pay-services {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pay-item {
+        margin-top: 20px;
+        max-width: 44%;
+        height: 360px;
+        margin-left: 10px;
+        margin-right: 10px;
+      
+        &:hover {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pay-services {
+     
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: left;
+        padding: 20px 20px 40px 20px;
+        
+        margin-right: 20px;
+    }
+
+    .pay-item {
+        margin-top: 20px;
+        max-width: 300px;
+        height: 350px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+    }
+
+    .pay-services-block {
+        overflow: hidden;
+    }
+}
+@media (max-width: 550px){
+    .main-text-center{
+        padding: 40px 0px 0px 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+
+    }
+    .pay-item {
+        margin-top: 20px;
+        max-width: 240px;
+        height: 270px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        .privat-img {
+            margin-bottom: 10px;
+            margin-top: 20px;
+   
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        }
+    
+        .visa-img {
+            margin-top: 28px;
+            margin-bottom: 8px;
+            img{
+                width: 110px;
+            
+            }
+        }
+    
+        .ibox-img {
+            margin-top: 30px;
+            margin-bottom: 25px;
+             img{
+                width: 110px;
+            
+            }
+        }
+    
+        img {
+            margin: 0 auto;
+    
+    
+        }
+    
+        h4 {
+            font-size: 16px;
+        }
+    
+        p {
+            padding-top: 5px;
+            font-weight: 300;
+            font-size: 14px;
+    width: 190px;
+        }
+  
+        button {
+            font-size: 16px;
+    width: 171px;
+    height: 40px;
+          margin-top: 14px;
+        }
+    }
+    
+    .pay_text-help {
+   display: none;
+    }
+    .custom-selects2 {
+        margin-bottom: 0px;
+                margin-top: 15px;
+                margin-left: 16px;
+              
+            }
+            
+ 
+    .select-selected {
+        width: 180px;
+
+    }
+
+    .pay-arrow-select {
+     margin-left: 50px;
+    }
+
+    .select-items {
+
+        width: 175px;
+
+
+    }
+}

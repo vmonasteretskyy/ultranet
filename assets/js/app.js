@@ -15599,7 +15599,7 @@ function initMap() {
   }; // The map, centered at Uluru
 
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 18,
+    zoom: 19,
     center: uluru
   });
   var infowindow = new google.maps.InfoWindow({

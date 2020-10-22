@@ -11,12 +11,31 @@
   top: -150px;
 }
 
+#header {
+  width: 100%;
+  top: -10px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+  padding-bottom: 3px;
+}
+#header .header-menu {
+  margin-top: 24px;
+}
+#header .header-contact_number {
+  margin-top: 12px;
+}
+
 .header-block {
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #000000;
+}
+
+.header-block2 {
+  width: 87%;
+  margin: 0 auto;
 }
 
 .header-white {
@@ -100,6 +119,16 @@
 
 .burger {
   position: relative;
+}
+
+.burger2 {
+  padding: 20px 0px 13px 0px;
+}
+.burger2 .burger-menu_button {
+  top: 28px;
+}
+.burger2 .burger-menu_nav {
+  top: 94px;
 }
 
 #main-prev {
@@ -499,6 +528,14 @@
   header {
     width: 96%;
   }
+
+  .header-block2 {
+    width: 96%;
+  }
+
+  #header {
+    box-shadow: none;
+  }
 }
 @media (max-width: 1450px) {
   .contact_number {
@@ -592,6 +629,17 @@
   }
 }
 @media (max-width: 575px) {
+  .burger2 {
+    padding: 12px 0px 4px 0px;
+  }
+  .burger2 .burger-menu_button {
+    right: 10px;
+    top: 21px;
+  }
+  .burger2 .burger-menu_nav {
+    top: 57px;
+  }
+
   .svg-support {
     bottom: 15px;
   }
@@ -1354,6 +1402,54 @@ footer {
     padding-bottom: 40px;
   }
 }
+.home-atribute {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-top: 50px;
+}
+.home-atribute a {
+  text-decoration: underline;
+}
+.home-atribute span {
+  text-decoration: underline;
+}
+
+.tarif-txt {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  margin-top: 36px;
+  margin-bottom: 49px;
+}
+
+.tarif-internet {
+  display: flex;
+  justify-content: center;
+}
+.tarif-internet div {
+  width: 220px;
+  height: 60px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 15px;
+  filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
+}
+
+.tarif-item2 {
+  color: #ABABAB;
+}
+
+.tarif-item1 {
+  background: #34A0D9;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;

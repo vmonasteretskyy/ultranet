@@ -15592,18 +15592,20 @@ function closeAllSelect(elmnt) {
 document.addEventListener("click", closeAllSelect); //map
 
 function initMap() {
+  // 51.4916588,31.3032475
   var uluru = {
-    lat: -25.344,
-    lng: 131.036
+    lat: 51.4916588,
+    lng: 31.3032475
   }; // The map, centered at Uluru
 
   var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 20,
     center: uluru
   });
   var marker = new google.maps.Marker({
     position: uluru,
-    map: map
+    map: map,
+    title: "Hello World!"
   });
 }
 

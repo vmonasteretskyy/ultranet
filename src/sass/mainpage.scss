@@ -5,7 +5,18 @@ header {
     margin: 0 auto;
     top: -150px;
 }
-
+#header {
+    width: 100%;
+    top: -10px;
+    background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+padding-bottom: 3px;
+.header-menu {
+    margin-top: 24px;}
+    .header-contact_number{
+        margin-top: 12px;
+    }
+}
 .header-block {
     padding-top: 10px;
     display: flex;
@@ -14,7 +25,10 @@ header {
     // height: 110px;
     color: #000000;
 }
-
+.header-block2 {
+    width: 87%;
+    margin: 0 auto;
+}
 .header-white {
     color: #FFFFFF;
     .under-logo{
@@ -108,7 +122,17 @@ margin-left:25px;
 .burger{
     position: relative;
 }
-
+.burger2{
+    padding: 20px 0px 13px 0px;
+    .burger-menu_button {
+    
+        top: 28px;
+     
+    }
+    .burger-menu_nav{
+        top: 94px;
+    }
+}
 #main-prev {
     bottom: 0;
     position: absolute;
@@ -524,6 +548,13 @@ color: #ABABAB;
     header {
         width: 96%; 
     }
+    .header-block2  {
+        width: 96%; 
+         
+    }
+    #header{
+        box-shadow: none;
+    }
 }
 @media (max-width: 1450px){
     .contact_number {
@@ -634,6 +665,17 @@ color: #ABABAB;
 }
 
 @media (max-width: 575px) {
+    .burger2{
+        padding: 12px 0px 4px 0px;
+        .burger-menu_button {
+    right: 10px;
+            top: 21px;
+         
+        }
+        .burger-menu_nav{
+            top: 57px;
+        }
+    }
     .svg-support{
         bottom: 15px;
  

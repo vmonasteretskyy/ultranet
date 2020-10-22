@@ -308,12 +308,12 @@
   display: flex;
   flex-flow: column;
   height: 85vh;
-  width: 99%;
+  width: 40%;
   margin: 0 auto;
   background: #FFFFFF;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 20px;
   overflow-y: auto;
-  right: 0%;
+  right: 1%;
   visibility: hidden;
   overflow: hidden;
   transition: 0.4s ease;
@@ -536,8 +536,16 @@
   #header {
     box-shadow: none;
   }
+
+  .carousel-item .background-img {
+    height: 850px;
+  }
 }
 @media (max-width: 1450px) {
+  .carousel-item .background-img {
+    height: 800px;
+  }
+
   .contact_number {
     display: flex;
     flex-direction: column;
@@ -567,6 +575,11 @@
     padding-top: 0px;
   }
 }
+@media (max-width: 1290px) {
+  .social-network {
+    display: none;
+  }
+}
 @media (max-width: 1199px) {
   .svg-support {
     right: 15px;
@@ -587,6 +600,10 @@
   .main-count_slider {
     margin-left: 107px;
   }
+
+  .carousel-item .background-img {
+    height: 790px;
+  }
 }
 @media (max-width: 1063px) {
   .header-block {
@@ -603,6 +620,14 @@
     width: 0%;
     padding: 0px;
     background-color: white;
+  }
+
+  .carousel-caption {
+    top: 10%;
+  }
+
+  .carousel-item .background-img {
+    height: 650px;
   }
 }
 @media (max-width: 767px) {
@@ -629,6 +654,11 @@
   }
 }
 @media (max-width: 575px) {
+  .burger-menu_nav {
+    width: 98%;
+    right: 1%;
+  }
+
   .burger2 {
     padding: 12px 0px 4px 0px;
   }
@@ -906,6 +936,11 @@
 .same-as-selected {
   background: #F5F3F1;
   border-radius: 10px;
+}
+
+.gm-style .gm-style-iw {
+  color: #ea4335;
+  font-weight: 600;
 }
 
 @media (max-width: 1199px) {

@@ -105,18 +105,21 @@ document.addEventListener("click", closeAllSelect);
 //map
 function initMap() {
   // 51.4916588,31.3032475
-  const uluru = { lat: 51.4916588, lng: 31.3032475 };
+  const uluru = { lat: 51.4916388, lng: 31.3037690 };
   // The map, centered at Uluru
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 20,
     center: uluru,
   });
-  
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Интернет-провайдер "Ультранет"'
+  });
   const marker = new google.maps.Marker({
     position: uluru,
     map: map,
-    title:"Hello World!"
+
   });
+  infowindow.open(map, marker);
 }
 initMap() 
 

@@ -790,9 +790,11 @@ color: #ABABAB;
             width: 135px;
             height: 45px;
             font-size: 16px;
-          padding-top: 10px;
-         
-           line-height: 1em;
+        //   padding-top: 14px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+           line-height:0;
         }
     }
 

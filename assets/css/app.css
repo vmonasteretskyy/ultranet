@@ -740,8 +740,10 @@
     width: 135px;
     height: 45px;
     font-size: 16px;
-    padding-top: 10px;
-    line-height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
   }
 
   .main-count_slider {

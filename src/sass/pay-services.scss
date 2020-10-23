@@ -12,33 +12,36 @@
     line-height: 130%;
 
 }
+.pay-wrap:hover  .pay-item{
+    transform: translateY(-10px);
+      }
 .pay-item {
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
     border-radius: 10px;
     max-width: 350px;
+    min-width: 350px;
+
     height: 404px;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
     transition: 0.3s ease;
 
-    // &:hover {
-    //     margin-top: -10px;
-    // }
+
 
     .privat-img {
         margin-bottom: 37px;
-        margin-top: 45px;
+        padding-top: 45px;
     }
 
     .visa-img {
-        margin-top: 28px;
+        padding-top: 28px;
         margin-bottom: 8px;
     }
 
     .ibox-img {
-        margin-top: 60px;
+        padding-top: 60px;
         margin-bottom: 50px;
     }
 
@@ -114,7 +117,7 @@
 .custom-selects2 {
     position: relative;
     margin-top: 16px;
-    margin-left: 48px;
+    margin-left: 66px;
 }
 
 .custom-selects2 select {
@@ -194,8 +197,8 @@ font-weight: 600;
  
 @media (max-width: 1199px) {
     .pay-item {
-
-        max-width: 32%;
+    min-width: 290px;
+        max-width: 290px;
         height: 350px;
         margin-left: 5px;
         margin-right: 5px;
@@ -206,11 +209,11 @@ font-weight: 600;
 
         .privat-img {
             margin-bottom: 37px;
-            margin-top: 45px;
+            padding-top: 45px;
         }
 
         .visa-img {
-            margin-top: 40px;
+            padding-top: 40px;
             margin-bottom: 32px;
 
             img {
@@ -221,7 +224,7 @@ font-weight: 600;
 
         .ibox-img {
 
-            margin-top: 60px;
+            padding-top: 60px;
             margin-bottom: 62px;
 
             img {
@@ -243,7 +246,7 @@ font-weight: 600;
     .custom-selects2 {
 
         margin-top: 5px;
-        margin-left: 38px;
+        margin-left: 45px;
     }
 
     .select-selected {
@@ -267,21 +270,25 @@ font-weight: 600;
 
 @media (max-width: 991px) {
     .custom-selects2 {
-margin-bottom: 10px;
-        margin-top: 15px;
-        margin-left: 16px;
+margin-bottom: 0px;
+        margin-top: 12px;
+        margin-left: 40px;
     }
     .pay-services {
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+    
     }
 
-    .pay-item {
+    .pay-wrap {
         margin-top: 20px;
-        max-width: 44%;
+        max-width: 250px;
+        min-width: 250px;
+
         height: 360px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
       
         // &:hover {
         //     margin-top: 20px;
@@ -297,8 +304,8 @@ margin-bottom: 10px;
         align-items: flex-start;
         justify-content: left;
         padding: 20px 20px 40px 20px;
-        
-        margin-right: 20px;
+        margin-left: -70px;
+        margin-right: 10px;
     }
 
     .pay-item {
@@ -316,6 +323,20 @@ margin-bottom: 10px;
     }
 }
 @media (max-width: 550px){
+    .pay-services {
+ padding-top: 0px;
+        margin-left: -40px;
+ 
+    }
+    .pay-wrap{
+        margin-top: 0px;
+        max-width: 230px;
+        min-width: 230px;
+        height: 270px;   
+        margin-left: 3px;    
+        margin-right: 3px;
+
+    }
     .main-text-center{
         padding: 40px 0px 0px 0px;
         font-weight: 500;
@@ -325,14 +346,16 @@ margin-bottom: 10px;
     }
     .pay-item {
         margin-top: 20px;
-        max-width: 240px;
+        max-width: 230px;
+        min-width: 230px;
+
         height: 270px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
 
         .privat-img {
             margin-bottom: 10px;
-            margin-top: 20px;
+            padding-top: 20px;
    
         img{
             width: 50px;
@@ -341,7 +364,7 @@ margin-bottom: 10px;
         }
     
         .visa-img {
-            margin-top: 28px;
+            padding-top: 28px;
             margin-bottom: 8px;
             img{
                 width: 110px;
@@ -350,7 +373,7 @@ margin-bottom: 10px;
         }
     
         .ibox-img {
-            margin-top: 30px;
+            padding-top: 30px;
             margin-bottom: 25px;
              img{
                 width: 110px;
@@ -389,7 +412,7 @@ margin-bottom: 10px;
     .custom-selects2 {
         margin-bottom: 0px;
                 margin-top: 15px;
-                margin-left: 16px;
+                margin-left: 25px;
               
             }
             

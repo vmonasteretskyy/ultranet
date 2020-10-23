@@ -1192,6 +1192,9 @@
   margin-bottom: 30px;
   transition: 0.3s ease;
 }
+.news-item:hover {
+  box-shadow: 0px 5px 10px rgba(171, 171, 171, 0.4);
+}
 .news-item p {
   font-weight: 300;
   font-size: 16px;

@@ -1,5 +1,14 @@
 import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
+import IMask from 'imask';
+
+
+
+let element = document.getElementById('mask-phone');
+let maskOptions = {
+  mask: '+{38}(000)000-00-00'
+};
+let mask = IMask(element, maskOptions);
 
 
     function burgerMenu(selector) {
@@ -102,6 +111,104 @@ function closeAllSelect(elmnt) {
 document.addEventListener("click", closeAllSelect);
 
 
+
+
+//online-chat
+$(document).ready(function () {
+  $('.svg-support').click(function () {
+      $(".container-chat").fadeIn();
+  });
+  $('.close-chat').click(function () {
+    $(".container-chat").fadeOut();
+});
+
+
+
+});
+//popup  Заявка на підключення домашнього інтернету
+$.fn.toggleClick = function (funcArray) {
+  return this.click(function () {
+      var elem = $(this);
+      var index = elem.data('index') || 0;
+
+      funcArray[index]();
+      elem.data('index', (index + 1) % funcArray.length);
+  });
+};
+$('.connect-dropt').toggleClick([
+  function () {
+   $('.box-show-check').slideDown( "slow" );
+   $('.svg-dropt').css("transform","rotate(180deg)");
+
+   
+  },
+  function () {
+    $('.box-show-check').slideUp();
+   $('.svg-dropt').css("transform","rotate(0deg)");
+
+  }
+]);
+$('.action-txt').toggleClick([
+  function () {
+   $('.show-actions').slideDown( "slow" );
+   $('.show-actions').css("display","flex");
+
+   $('.svg-actions').css("transform","rotate(180deg)");
+  },
+  function () {
+    $('.show-actions').slideUp();
+   $('.svg-actions').css("transform","rotate(0deg)");
+
+  }
+]);
+$('.tv-text').toggleClick([
+  function () {
+    // $('.tv-text-hide').css("display","none");
+    
+   $('.tv-show').slideDown( "slow" );
+   $('.tv-show').css("display","block");
+
+   $('.svg-show').css("transform","rotate(180deg)");
+  },
+  function () {
+    // $('.tv-text-hide').css("display","block");
+
+    $('.tv-show').slideUp();
+   $('.svg-show').css("transform","rotate(0deg)");
+
+  }
+]);
+
+$('.check1').click(function () {
+  $(".dropt-1").css("display","inline");
+  $(".dropt-3").css("display","none");
+  $(".dropt-2").css("display","none");
+  $(".dropt-4").css("display","none");
+});
+$('.check2').click(function () {
+  $(".dropt-2").css("display","inline");
+  $(".dropt-1").css("display","none");
+  $(".dropt-3").css("display","none");
+  $(".dropt-4").css("display","none");
+});
+$('.check3').click(function () {
+  $(".dropt-3").css("display","inline");
+  $(".dropt-1").css("display","none");
+  $(".dropt-2").css("display","none");
+  $(".dropt-4").css("display","none");
+
+});
+$('.check4').click(function () {
+  $(".dropt-4").css("display","inline");
+  $(".dropt-1").css("display","none");
+  $(".dropt-2").css("display","none");
+  $(".dropt-3").css("display","none");
+});
+
+//
+$('.mask-phone').mask('+7 (999) 999-99-99');
+
+
 //map
 function initMap() {
   // 51.4916588,31.3032475
@@ -122,13 +229,3 @@ function initMap() {
   infowindow.open(map, marker);
 }
 initMap() 
-
-//online-chat
-$(document).ready(function () {
-  $('.svg-support').click(function () {
-      $(".container-chat").fadeIn();
-  });
-  $('.close-chat').click(function () {
-    $(".container-chat").fadeOut();
-});
-});

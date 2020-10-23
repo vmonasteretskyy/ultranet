@@ -739,6 +739,7 @@
     width: 135px;
     height: 40px;
     font-size: 16px;
+    padding-top: 6px;
   }
 
   .main-count_slider {
@@ -1559,6 +1560,10 @@ footer {
   justify-content: space-between;
 }
 
+.home-internet-wrap:hover .home-internet-item {
+  transform: translateY(-10px);
+}
+
 .home-internet-item {
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
@@ -1569,9 +1574,6 @@ footer {
   margin-left: 10px;
   margin-right: 10px;
   transition: 0.4s ease;
-}
-.home-internet-item:hover {
-  margin-top: -10px;
 }
 
 .home-internet-ecl {
@@ -1611,11 +1613,11 @@ footer {
   height: 60px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 45px;
   transition: 0.3s ease;
+  padding: 13px 0px 16px 0px;
 }
 .home-int-grn button:hover {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
@@ -1653,6 +1655,11 @@ footer {
   margin-bottom: 10px;
 }
 
+.modal-body1 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .modal-header1 {
   border: none;
 }
@@ -1675,19 +1682,25 @@ footer {
   border: none;
 }
 
+.adapt-speed {
+  margin-top: 25px;
+}
+
 .choose-speed {
+  padding-left: 35px;
   color: #000000;
 }
 .choose-speed p {
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 .choose-speed span {
   font-weight: normal;
   font-size: 12px;
   line-height: 150%;
+  margin-bottom: 2px;
 }
 
 .custom-selects-tarif {
@@ -1695,9 +1708,30 @@ footer {
   margin-left: 0px;
   margin-top: 0px;
 }
+.custom-selects-tarif .select-selected {
+  width: 320px;
+}
+.custom-selects-tarif .select-items {
+  width: 98%;
+  margin-left: 1px;
+}
+
+.svg-select-i {
+  position: absolute;
+  right: 10px;
+  margin-top: 8px;
+}
+
+.svg-select-2 {
+  position: absolute;
+  right: 10px;
+  margin-top: 8px;
+}
 
 .text-speed {
+  padding-left: 35px;
   margin-top: 10px;
+  padding-right: 30px;
 }
 .text-speed p {
   font-weight: 300;
@@ -1708,11 +1742,12 @@ footer {
 }
 
 .box-show-check {
+  margin-top: 3px;
   filter: drop-shadow(0px 4px 10px rgba(171, 171, 171, 0.4));
   background: #FFFFFF;
   border-radius: 10px;
   width: 320px;
-  height: 160px;
+  height: 164px;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
@@ -1722,22 +1757,339 @@ footer {
   padding: 5px 10px 0px 10px;
 }
 .box-show-check div:hover {
+  border-radius: 10px;
   background: #F5F3F1;
+}
+.box-show-check .checkbox input[type=checkbox] {
+  width: auto;
+  opacity: 1e-8;
+  position: absolute;
+  left: 0;
+}
+.box-show-check .checkbox label {
+  position: relative;
+  padding: 4px 0px 5px 0px;
+}
+.box-show-check .checkbox label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.28s ease;
+  border: 1px solid #ABABAB;
+  border-radius: 2px;
+}
+.box-show-check .checkbox label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 4.7px;
+  margin-top: 10px;
+  left: 3px;
+}
+.box-show-check .checkbox input[type=checkbox]:checked ~ label::before {
+  color: #7bbe72;
+}
+.box-show-check .checkbox input[type=checkbox]:checked ~ label::after {
+  transform: rotate(-45deg) scale(1);
+}
+.box-show-check .checkbox label {
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #464646;
+}
+.box-show-check .checkbox label span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.box-show-check .checkbox input[type=checkbox]:focus + label::before {
+  outline: 0;
+}
+.box-show-check input[type=checkbox]:checked + label:before {
+  background: #34A0D9;
+  border: #34A0D9;
 }
 
 .connect-dropt {
+  color: #000000;
   background: #FFFFFF;
-  border: 1px solid #000000;
+  border: 1px solid #ABABAB;
   border-radius: 10px;
   width: 320px;
   height: 40px;
   padding-left: 10px;
-  padding-top: 7px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.connect-dropt span {
+  display: none;
+}
+
+.connect-dropt span:first-of-type {
+  display: inline;
 }
 
 .svg-dropt {
+  margin-top: 3px;
+  transition: 0.3s ease;
   float: right;
-  margin-right: 20px;
+  margin-right: 8px;
+}
+
+.box-show-check {
+  display: none;
+}
+
+.show-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+.show-actions p {
+  margin-top: 9px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  margin-bottom: 2px;
+}
+
+.about-action {
+  margin-top: 32px;
+}
+.about-action a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  margin-left: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+  transition: 0.3s ease;
+}
+
+.actions-offers {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  background: #FBD060;
+  width: 100%;
+  padding: 15px 35px;
+  left: 0;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.svg-actions {
+  transition: 0.3s ease;
+}
+
+.action-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-actions {
+  display: none;
+}
+
+.tv-box {
+  background: #F5F3F1;
+  padding: 15px 35px;
+  color: #000000;
+}
+
+.tv-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.total-cost {
+  padding-left: 35px;
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+.total-cost span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  margin-left: 20px;
+}
+
+.box-mobile {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-tarif {
+  margin-left: 18px;
+  margin-top: 5px;
+}
+.about-tarif a {
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+
+.tv-item {
+  margin-top: 15px;
+}
+.tv-item p {
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.tv-item span {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.mobile-connect {
+  margin-top: 30px;
+}
+
+.tv-show {
+  display: none;
+}
+
+.form-connect {
+  padding-left: 35px;
+  margin-top: 30px;
+}
+.form-connect p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 0px;
+  color: #000000;
+}
+.form-connect label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  color: #000000;
+}
+.form-connect input {
+  width: 320px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #ABABAB;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+.form-connect input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+.form-connect input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+.form-connect input::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+
+#mask-phone::-moz-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #ABABAB 84%, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#mask-phone:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #ABABAB 84%, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#mask-phone::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #ABABAB 84%, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-modal {
+  padding-left: 35px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.footer-modal button {
+  width: 160px;
+  padding: 14px 0px 17px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #34A0D9;
+}
+.footer-modal .order {
+  background: #34A0D9;
+  color: #FFFFFF;
+}
+.footer-modal .authorization {
+  margin-left: 30px;
+  color: #34A0D9;
+  background: #FFFFFF;
+  border: 1px solid #34A0D9;
 }
 
 @media (max-width: 1199px) {
@@ -1778,7 +2130,7 @@ footer {
 
   .text-m-bit {
     text-align: center;
-    margin-left: 61px;
+    margin-left: 69px;
     margin-top: -130px;
     width: 100px;
   }
@@ -1804,9 +2156,14 @@ footer {
     width: 170px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 867px) {
+  .tarif-internet {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
   .home-internet {
-    width: 700px;
+    width: 760px;
     margin-top: 0px;
     padding-bottom: 20px;
     overflow: hidden;
@@ -1823,28 +2180,26 @@ footer {
     padding: 40px 0px 10px 0px;
     font-size: 18px;
   }
-
-  .tarif-internet {
-    align-items: center;
-    margin-bottom: 40px;
-  }
+}
+@media (max-width: 767px) {
   .tarif-internet div {
     width: 220px;
-    height: 60px;
+    height: 53px;
     font-weight: 500;
     font-size: 12px;
-    padding: 10px 13px;
   }
 }
 @media (max-width: 575px) {
   .home-internet-text {
     color: #000000;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .home-internet-text p {
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   .home-internet-text a {
     font-weight: 500;
@@ -1859,7 +2214,17 @@ footer {
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 459px) {
+  .tarif-internet div {
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 8px;
+  }
+  .tarif-internet .tarif-item3 {
+    padding-top: 16px;
   }
 }
 * {

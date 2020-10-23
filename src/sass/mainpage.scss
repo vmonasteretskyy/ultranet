@@ -627,8 +627,18 @@ color: #ABABAB;
         .privacy-office div:first-of-type{
             margin-left: 0px;
         }
+        .contact_number{
+            // margin-bottom: 20px;
+            ul{
+                margin-bottom: 0px;
+            }
+        }
 }
 @media (max-width: 1203px) {
+    .header-contact_number{
+       
+        margin-bottom: 0px;
+    }
  
         .contact_number {
                 flex-direction: column;

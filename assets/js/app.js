@@ -20373,11 +20373,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
 
 
- // let element = document.getElementById('mask-phone');
-// let maskOptions = {
-//   mask: '+{38}(000)000-00-00'
-// };
-// let mask = IMask(element, maskOptions);
+
+
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.form-connect')) {
+  var element = document.getElementById('mask-phone');
+  var maskOptions = {
+    mask: '+{38}(000)000-00-00'
+  };
+  var mask = Object(imask__WEBPACK_IMPORTED_MODULE_2__["default"])(element, maskOptions);
+}
 
 function burgerMenu(selector) {
   var menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()(selector);
@@ -20507,97 +20511,93 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   });
 });
 
-function initMap() {
-  // 51.4916588,31.3032475
-  var uluru = {
-    lat: 51.4916388,
-    lng: 31.3037690
-  }; // The map, centered at Uluru
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.contact')) {
+  //map
+  var initMap = function initMap() {
+    // 51.4916588,31.3032475
+    var uluru = {
+      lat: 51.4916388,
+      lng: 31.3037690
+    }; // The map, centered at Uluru
 
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 19,
-    center: uluru
-  });
-  var infowindow = new google.maps.InfoWindow({
-    content: 'Интернет-провайдер "Ультранет"'
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-  infowindow.open(map, marker);
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 19,
+      center: uluru
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: 'Интернет-провайдер "Ультранет"'
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+    infowindow.open(map, marker);
+  };
+
+  initMap();
 }
 
-initMap(); // //popup  Заявка на підключення домашнього інтернету
-// $.fn.toggleClick = function (funcArray) {
-//   return this.click(function () {
-//       var elem = $(this);
-//       var index = elem.data('index') || 0;
-//       funcArray[index]();
-//       elem.data('index', (index + 1) % funcArray.length);
-//   });
-// };
-// $('.connect-dropt').toggleClick([
-//   function () {
-//    $('.box-show-check').slideDown( "slow" );
-//    $('.svg-dropt').css("transform","rotate(180deg)");
-//   },
-//   function () {
-//     $('.box-show-check').slideUp();
-//    $('.svg-dropt').css("transform","rotate(0deg)");
-//   }
-// ]);
-// $('.action-txt').toggleClick([
-//   function () {
-//    $('.show-actions').slideDown( "slow" );
-//    $('.show-actions').css("display","flex");
-//    $('.svg-actions').css("transform","rotate(180deg)");
-//   },
-//   function () {
-//     $('.show-actions').slideUp();
-//    $('.svg-actions').css("transform","rotate(0deg)");
-//   }
-// ]);
-// $('.tv-text').toggleClick([
-//   function () {
-//     // $('.tv-text-hide').css("display","none");
-//    $('.tv-show').slideDown( "slow" );
-//    $('.tv-show').css("display","block");
-//    $('.svg-show').css("transform","rotate(180deg)");
-//   },
-//   function () {
-//     // $('.tv-text-hide').css("display","block");
-//     $('.tv-show').slideUp();
-//    $('.svg-show').css("transform","rotate(0deg)");
-//   }
-// ]);
-// $('.check1').click(function () {
-//   $(".dropt-1").css("display","inline");
-//   $(".dropt-3").css("display","none");
-//   $(".dropt-2").css("display","none");
-//   $(".dropt-4").css("display","none");
-// });
-// $('.check2').click(function () {
-//   $(".dropt-2").css("display","inline");
-//   $(".dropt-1").css("display","none");
-//   $(".dropt-3").css("display","none");
-//   $(".dropt-4").css("display","none");
-// });
-// $('.check3').click(function () {
-//   $(".dropt-3").css("display","inline");
-//   $(".dropt-1").css("display","none");
-//   $(".dropt-2").css("display","none");
-//   $(".dropt-4").css("display","none");
-// });
-// $('.check4').click(function () {
-//   $(".dropt-4").css("display","inline");
-//   $(".dropt-1").css("display","none");
-//   $(".dropt-2").css("display","none");
-//   $(".dropt-3").css("display","none");
-// });
-// //
-// $('.mask-phone').mask('+7 (999) 999-99-99');
-// //map
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
+  //popup  Заявка на підключення домашнього інтернету
+  jquery__WEBPACK_IMPORTED_MODULE_0___default.a.fn.toggleClick = function (funcArray) {
+    return this.click(function () {
+      var elem = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
+      var index = elem.data('index') || 0;
+      funcArray[index]();
+      elem.data('index', (index + 1) % funcArray.length);
+    });
+  };
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.connect-dropt').toggleClick([function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideDown("slow");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(180deg)");
+  }, function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)");
+  }]);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.action-txt').toggleClick([function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideDown("slow");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').css("display", "flex");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(180deg)");
+  }, function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)");
+  }]);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').toggleClick([function () {
+    // $('.tv-text-hide').css("display","none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideDown("slow");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').css("display", "block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(180deg)");
+  }, function () {
+    // $('.tv-text-hide').css("display","block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(0deg)");
+  }]);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check1').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "inline");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check2').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "inline");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check3').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "inline");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check4').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "inline");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
+  });
+} //map
 
 /***/ }),
 

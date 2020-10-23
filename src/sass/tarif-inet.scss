@@ -148,7 +148,7 @@
         color: #FFFFFF;
         margin-bottom: 45px;
         transition: 0.3s ease;
-        padding: 13px 0px 16px 0px;
+        padding: 14px 0px 16px 0px;
 
         &:hover {
 
@@ -642,6 +642,11 @@ line-height: 150%;
 text-align: center;
 border-radius: 10px;
 border: 1px solid #34A0D9;
+transition: 0.4s ease;
+&:hover {
+
+    filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
     }
     .order{
 background: #34A0D9;
@@ -653,6 +658,9 @@ color: #FFFFFF;
         background: #FFFFFF;
         border: 1px solid #34A0D9;
     }
+}
+.svg-show{
+    transition: 0.3s ease;
 }
 @media (max-width: 1199px) {
     .home-internet-item {
@@ -826,7 +834,50 @@ color: #FFFFFF;
         }
     }
 }
+@media (max-width: 532px) {
+    .choose-speed {
+        padding-left: 10px;
+    }
+    .text-speed {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .actions-offers{
+        padding-left: 10px;
+    }
+    .tv-box{
+        padding-left: 10px;
 
+    }
+    .total-cost{
+        padding-left: 10px;
+
+    }
+    .form-connect{
+        padding-left: 10px;
+
+    }
+    .footer-modal{
+        padding-left: 10px;
+
+    }
+     .modal-header1 h5{
+        text-align: left;
+        margin-left: 0px;
+        white-space: wrap;
+    }
+}
+@media (max-width: 476px) {
+.show-actions{
+flex-direction: column;
+}
+.about-action{
+    margin-top: 4px;
+    a{
+        margin-left: 0px;
+    }
+}
+}
 @media (max-width: 459px) {
 
     .tarif-internet {

@@ -20374,6 +20374,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+function initMap() {
+  // 51.4916588,31.3032475
+  var uluru = {
+    lat: 51.4916388,
+    lng: 31.3037690
+  }; // The map, centered at Uluru
+
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 19,
+    center: uluru
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Интернет-провайдер "Ультранет"'
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+  infowindow.open(map, marker);
+}
+
+initMap();
 var element = document.getElementById('mask-phone');
 var maskOptions = {
   mask: '+{38}(000)000-00-00'
@@ -20568,29 +20591,6 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check4').click(function () {
 }); //
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mask-phone').mask('+7 (999) 999-99-99'); //map
-
-function initMap() {
-  // 51.4916588,31.3032475
-  var uluru = {
-    lat: 51.4916388,
-    lng: 31.3037690
-  }; // The map, centered at Uluru
-
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 19,
-    center: uluru
-  });
-  var infowindow = new google.maps.InfoWindow({
-    content: 'Интернет-провайдер "Ультранет"'
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-  infowindow.open(map, marker);
-}
-
-initMap();
 
 /***/ }),
 

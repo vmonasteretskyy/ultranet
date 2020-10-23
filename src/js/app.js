@@ -2,7 +2,25 @@ import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
 import IMask from 'imask';
 
+function initMap() {
+  // 51.4916588,31.3032475
+  const uluru = { lat: 51.4916388, lng: 31.3037690 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 19,
+    center: uluru,
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content: 'Интернет-провайдер "Ультранет"'
+  });
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
 
+  });
+  infowindow.open(map, marker);
+}
+initMap() 
 
 let element = document.getElementById('mask-phone');
 let maskOptions = {
@@ -210,22 +228,3 @@ $('.mask-phone').mask('+7 (999) 999-99-99');
 
 
 //map
-function initMap() {
-  // 51.4916588,31.3032475
-  const uluru = { lat: 51.4916388, lng: 31.3037690 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 19,
-    center: uluru,
-  });
-  var infowindow = new google.maps.InfoWindow({
-    content: 'Интернет-провайдер "Ультранет"'
-  });
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-
-  });
-  infowindow.open(map, marker);
-}
-initMap() 

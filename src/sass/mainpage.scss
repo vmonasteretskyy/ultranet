@@ -3,14 +3,15 @@ header {
     position: relative;
     width: 87%;
     margin: 0 auto;
-    top: -150px;
+    top: -160px;
 }
 #header {
     width: 100%;
     top: -10px;
     background: #FFFFFF;
 box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
-padding-bottom: 3px;
+padding-bottom: 9px;
+padding-top: 7px;
 .header-menu {
     margin-top: 24px;}
     .header-contact_number{
@@ -122,13 +123,17 @@ margin-left:25px;
 }
 
 .burger{
+    display: none;
     position: relative;
+   z-index: 3;
+    padding: 7px 5px 7px 10px;
+    box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
 }
 .burger2{
-    padding: 20px 0px 13px 0px;
+    padding: 10px 0px 0px 0px;
     .burger-menu_button {
     
-        top: 28px;
+        top: 24px;
      
     }
     .burger-menu_nav{
@@ -255,7 +260,7 @@ margin-left:25px;
 
 .burger-menu_button {
     position: absolute;
-    top: 8px;
+    top: 14px;
     right: 20px;
     z-index: 30;
     width: 50px;
@@ -272,16 +277,16 @@ margin-left:25px;
     filter: brightness(0.7);
 }
 
-.burger-menu_button:hover {
-    background-color: rgba(236, 236, 236, 0.904);
-}
+// .burger-menu_button:hover {
+//     background-color: rgba(236, 236, 236, 0.904);
+// }
 
 .burger-menu_lines::before,
 .burger-menu_lines::after,
 .burger-menu_lines {
     position: absolute;
-    width: 24px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background: #000000;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -297,15 +302,17 @@ margin-left:25px;
 
 .burger-menu_lines::before {
     content: '';
-    top: -9px;
-    width: 24px;
+    top: -7px;
+    width: 20px;
+
   
 }
 
 .burger-menu_lines::after {
     content: '';
-    top: 9px;
-    width: 24px;
+    top: 7px;
+    width: 20px;
+
 }
 
 
@@ -316,14 +323,14 @@ margin-left:25px;
 .burger-menu_active .burger-menu_lines::before {
     top: 0;
     transform: rotate(45deg);
-    width: 24px;
+    width: 20px;
     margin-left: 0px;
 }
 
 .burger-menu_active .burger-menu_lines::after {
     top: 0;
     transform: rotate(-45deg);
-    width: 24px;
+    width: 20px;
 }
 
 .burger-menu_nav {
@@ -560,9 +567,9 @@ color: #ABABAB;
         width: 96%; 
          
     }
-    #header{
-        box-shadow: none;
-    }
+    // #header{
+    //     box-shadow: none;
+    // }
     .carousel-item .background-img {
         height: 850px;
     }
@@ -570,6 +577,16 @@ color: #ABABAB;
 @media (max-width: 1450px){
     .carousel-item .background-img {
         height: 800px;
+    }
+    #header{
+        padding-top: 10px;
+        .contact_number {
+           
+            margin-bottom: 18px;
+         }  
+         .header-menu{
+             margin-top: 0px;
+         }
     }
     .contact_number {
         font-size: 13px;
@@ -589,7 +606,7 @@ color: #ABABAB;
         margin-top: 10px;
     
         li {
-            height: 30px;
+            // height: 30px;
             margin-left: 10px;
             margin-right: 10px;
             font-weight: 500;
@@ -617,6 +634,12 @@ color: #ABABAB;
      }
     }
 @media (max-width: 1290px) {
+ 
+    .logotip a{
+        img{
+            width: 220px;
+        }
+    }
     .social-network{
         display: none;
            }
@@ -634,8 +657,28 @@ color: #ABABAB;
                 margin-bottom: 0px;
             }
         }
+        #header{
+            .contact_number{
+                margin-bottom: 25px;
+               
+            }
+             .header-menu{
+            margin-bottom: 0px;
+             }
+        }
 }
 @media (max-width: 1203px) {
+    #header{
+        padding-top: 0px;
+        padding-bottom: 0px;
+         .header-menu{
+        margin-bottom: 17px;
+         }
+            .contact_number {
+               
+                margin-bottom: 15px;
+             }  
+    }
     .header-contact_number{
        
         margin-bottom: 0px;
@@ -681,12 +724,17 @@ color: #ABABAB;
     }
 }
 @media (max-width: 1063px){
+       #header{
+        box-shadow: none;
+    }
+    .burger{
+        display: block;}
     .header-block{
         display: none;
     }
     .burger-menu {
         display: block;
-        box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+        // box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
         background-color: white;
     }
     header{
@@ -744,10 +792,10 @@ color: #ABABAB;
         right: 1%;
      }
     .burger2{
-        padding: 12px 0px 4px 0px;
+        padding: 10px 0px 0px 0px;
         .burger-menu_button {
-    right: 10px;
-            top: 21px;
+    right: 17px;
+            top: 16px;
          
         }
         .burger-menu_nav{
@@ -878,8 +926,12 @@ color: #ABABAB;
     width: 16px;
 
 }
+.burger{
+    padding: 0px 5px;
+}
 .burger-menu_button {
-     top: 5px;
+     top: 6px;
+     right: 17px;
   width: 31px;
     height: 31px;
 }

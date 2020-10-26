@@ -204,6 +204,7 @@ $('.action-txt').toggleClick([
   function () {
     $('.show-actions').slideUp();
    $('.svg-actions').css("transform","rotate(0deg)");
+   $('.show-move-friend').slideUp();
 
   }
 ]);
@@ -277,4 +278,85 @@ $('.check4').click(function () {
 
 
 }
-//map
+//mmodal
+ 
+$('.tarif-item1').click(function () {
+  $('.block-home-internet').fadeOut();
+  $('.tarif-item1').css("background","#34A0D9");
+  $('.tarif-item1').css("color","white");
+  $('.tarif-item2').css("color","#ABABAB");
+  $('.tarif-item2').css("background","white");
+  $('.privat-home').fadeOut();
+  $('.block-home-internet').fadeIn();
+  $('.txt-privat-home').fadeOut();
+  $('.txt-business-home').fadeOut();
+  $('.business').fadeOut();
+  $('.tarif-item3').css("background","white");
+  $('.tarif-item3').css("color","#ABABAB");
+  })
+
+$('.tarif-item2').click(function () {
+  $('.block-home-internet').fadeOut();
+  $('.tarif-item2').css("background","#34A0D9");
+  $('.tarif-item2').css("color","white");
+  $('.tarif-item1').css("color","#ABABAB");
+  $('.tarif-item1').css("background","white");
+  $('.privat-home').fadeIn();
+  $('.txt-privat-home').fadeIn();
+  $('.txt-business-home').css("display","none");
+  $('.business').fadeOut();
+  $('.tarif-item3').css("background","white");
+  $('.tarif-item3').css("color","#ABABAB");
+  
+  })
+  $('.tarif-item3').click(function () {
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background","white");
+    $('.tarif-item2').css("color","#ABABAB");
+    $('.tarif-item1').css("color","#ABABAB");
+    $('.tarif-item1').css("background","white");
+    $('.privat-home').fadeOut();
+    $('.txt-privat-home').css("display","none");
+    $('.txt-business-home').fadeIn();
+    $('.business').fadeIn();
+    $('.tarif-item3').css("background","#34A0D9");
+  $('.tarif-item3').css("color","white");
+    })
+//change-tarif
+$('.close-mod1').click(function () {
+$('#change_tarif').modal('hide');
+$('#change_privat-tarif').modal('hide');
+ 
+
+})
+//connect tarif
+$('.close-mod2').click(function () {
+  $('#connect_internet').modal('hide');
+  $('#connect_privat-home').modal('hide');
+  $('#business-fop').modal('hide');
+  $('#ch-business-fop').modal('hide');
+
+
+})
+
+  //connect tarif
+  // $('.private-change-close').click(function () {
+  //   $('#change_privat-tarif"').modal('hide');
+  // })
+  
+  // $('.connect-privat-close').click(function () {
+  //   $('#connect_privat-home"').modal('hide');
+  // })
+  //radio input
+  $('#radio-2').click(function () {
+  if ($("#radio-2").is(':checked')) {
+      $('.calculator-speed').fadeIn();
+
+ }
+})
+$('#radio-1').click(function () {
+  if ($("#radio-1").is(':checked')) {
+      $('.calculator-speed').fadeOut();
+
+ }
+})

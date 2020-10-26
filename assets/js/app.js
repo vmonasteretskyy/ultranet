@@ -20572,6 +20572,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   }, function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').toggleClick([function () {
     // $('.tv-text-hide').css("display","none");
@@ -20625,7 +20626,79 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp(); // $('.box-show-check').slideDown();
     }
   });
-} //map
+} //mmodal
+
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+}); //change-tarif
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod1').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('hide');
+}); //connect tarif
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('hide');
+}); //connect tarif
+// $('.private-change-close').click(function () {
+//   $('#change_privat-tarif"').modal('hide');
+// })
+// $('.connect-privat-close').click(function () {
+//   $('#connect_privat-home"').modal('hide');
+// })
+//radio input
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').fadeIn();
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-1").is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').fadeOut();
+  }
+});
 
 /***/ }),
 
@@ -20647,8 +20720,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Vasyl\Documents\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Vasyl\Documents\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\vvn09\Desktop\newultra\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\newultra\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

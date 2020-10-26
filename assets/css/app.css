@@ -1565,8 +1565,8 @@ footer {
   filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
 }
 .tarif-internet .tarif-item1 {
-  background: #34A0D9;
-  color: #FFFFFF;
+  background: #34a0d9;
+  color: #ffffff;
   border-radius: 30px 0px 0px 30px;
 }
 .tarif-internet .tarif-item2 {
@@ -1584,17 +1584,38 @@ footer {
   font-size: 18px;
   line-height: 150%;
   padding-top: 15px;
-  color: #ABABAB;
+  color: #ababab;
   background-color: white;
   transition: 0.4s ease;
 }
 .tarif-internet div:hover {
-  background: #34A0D9;
-  color: #FFFFFF;
+  background: #34a0d9;
+  color: #ffffff;
 }
 
 .tarif-internet div:last-of-type {
   border-radius: 0px 30px 30px 0px;
+}
+
+.privat-home .home-internet {
+  justify-content: center;
+}
+
+.business-law {
+  padding-top: 150px;
+}
+.business-law .home-internet {
+  justify-content: center;
+}
+
+.backgroung-law {
+  position: absolute;
+  left: 0;
+  margin-top: 100px;
+  z-index: -1;
+  background: #F5F3F1;
+  height: 825px;
+  width: 100%;
 }
 
 .home-internet {
@@ -1608,7 +1629,7 @@ footer {
 }
 
 .home-internet-item {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
   height: 100%;
@@ -1620,12 +1641,14 @@ footer {
 }
 
 .home-internet-item:hover .home-internet-ecl {
-  -webkit-animation: circle 5s linear infinite;
-          animation: circle 5s linear infinite;
+  transform: rotate(1turn);
 }
 
 .home-internet-ecl {
   margin-top: -145px;
+  transition: 3s ease;
+  -webkit-animation: circle 2.5s ease-in-out;
+          animation: circle 2.5s ease-in-out;
 }
 
 @-webkit-keyframes circle {
@@ -1666,14 +1689,14 @@ footer {
   color: #000000;
 }
 .home-int-grn button {
-  background: #34A0D9;
+  background: #34a0d9;
   border-radius: 10px;
   width: 160px;
   height: 60px;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 45px;
   transition: 0.3s ease;
   padding: 14px 0px 16px 0px;
@@ -1682,7 +1705,7 @@ footer {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 .home-int-grn button:active {
-  background: #0B3661;
+  background: #0b3661;
 }
 
 .home-internet-text {
@@ -1807,7 +1830,7 @@ footer {
 .box-show-check {
   margin-top: 3px;
   filter: drop-shadow(0px 4px 10px rgba(171, 171, 171, 0.4));
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   width: 320px;
   height: 164px;
@@ -1821,7 +1844,7 @@ footer {
 }
 .box-show-check div:hover {
   border-radius: 10px;
-  background: #F5F3F1;
+  background: #f5f3f1;
 }
 
 .checkbox input[type=checkbox] {
@@ -1845,7 +1868,7 @@ footer {
   width: 16px;
   height: 16px;
   transition: transform 0.28s ease;
-  border: 1px solid #ABABAB;
+  border: 1px solid #ababab;
   border-radius: 2px;
 }
 
@@ -1890,14 +1913,14 @@ footer {
 }
 
 input[type=checkbox]:checked + label:before {
-  background: #34A0D9;
-  border: #34A0D9;
+  background: #34a0d9;
+  border: #34a0d9;
 }
 
 .connect-dropt {
   color: #000000;
-  background: #FFFFFF;
-  border: 1px solid #ABABAB;
+  background: #ffffff;
+  border: 1px solid #ababab;
   border-radius: 10px;
   width: 320px;
   height: 40px;
@@ -1960,7 +1983,7 @@ input[type=checkbox]:checked + label:before {
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  background: #FBD060;
+  background: #fbd060;
   width: 100%;
   padding: 15px 35px;
   left: 0;
@@ -1983,7 +2006,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .tv-box {
-  background: #F5F3F1;
+  background: #f5f3f1;
   padding: 15px 35px;
   color: #000000;
   cursor: pointer;
@@ -2085,34 +2108,30 @@ input[type=checkbox]:checked + label:before {
 .form-connect input {
   width: 320px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #ABABAB;
+  background: #ffffff;
+  border: 1px solid #ababab;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 7px 10px;
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   color: #000000;
 }
 .form-connect input::-moz-placeholder {
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   display: flex;
   align-items: center;
 }
 .form-connect input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   display: flex;
   align-items: center;
 }
 .form-connect input::placeholder {
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   display: flex;
   align-items: center;
 }
@@ -2160,21 +2179,21 @@ input[type=checkbox]:checked + label:before {
   line-height: 150%;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid #34A0D9;
+  border: 1px solid #34a0d9;
   transition: 0.4s ease;
 }
 .footer-modal button:hover {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 .footer-modal .order {
-  background: #34A0D9;
-  color: #FFFFFF;
+  background: #34a0d9;
+  color: #ffffff;
 }
 .footer-modal .authorization {
   margin-left: 30px;
-  color: #34A0D9;
-  background: #FFFFFF;
-  border: 1px solid #34A0D9;
+  color: #34a0d9;
+  background: #ffffff;
+  border: 1px solid #34a0d9;
 }
 
 .svg-show {
@@ -2187,6 +2206,29 @@ input[type=checkbox]:checked + label:before {
 
 .show-move-friend {
   display: none;
+}
+
+.privat-home {
+  display: none;
+}
+.privat-home .home-internet-text {
+  text-align: center;
+}
+
+.txt-privat-home {
+  display: none;
+}
+
+.footer-other {
+  margin-top: 100px;
+}
+
+.txt-business-home {
+  display: none;
+}
+
+.business .tarif-txt {
+  font-size: 18px;
 }
 
 @media (max-width: 1199px) {
@@ -2207,6 +2249,27 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .footer-other {
+    margin-top: 40px;
+  }
+
+  .business-law {
+    padding-top: 120px;
+  }
+  .business-law .home-internet {
+    justify-content: center;
+  }
+
+  .backgroung-law {
+    position: absolute;
+    left: 0;
+    margin-top: 100px;
+    z-index: -1;
+    background: #F5F3F1;
+    height: 585px;
+    width: 100%;
+  }
+
   .home-internet {
     display: flex;
     margin-top: 51px;
@@ -2259,7 +2322,24 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 40px;
   }
 
+  .privat-home .home-internet {
+    width: 500px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .business .home-internet {
+    width: 500px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
   .home-internet {
+    padding-top: 20px;
     width: 760px;
     margin-top: 0px;
     padding-bottom: 20px;
@@ -2288,6 +2368,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .business-law {
+    padding-top: 150px;
+  }
+
   .tarif-txt {
     margin-top: -10px;
     margin-bottom: 20px;
@@ -2342,14 +2426,20 @@ input[type=checkbox]:checked + label:before {
 
   .actions-offers {
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .tv-box {
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   .total-cost {
     padding-left: 10px;
+    font-size: 16px;
+  }
+  .total-cost span {
+    font-size: 16px;
   }
 
   .form-connect {
@@ -2487,21 +2577,21 @@ input[type=checkbox]:checked + label:before {
   }
 
   #mask-phone::-moz-placeholder {
-    color: #ABABAB;
+    color: #ababab;
     background: #646464;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   #mask-phone:-ms-input-placeholder {
-    color: #ABABAB;
+    color: #ababab;
     background: #646464;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   #mask-phone::placeholder {
-    color: #ABABAB;
+    color: #ababab;
     background: #646464;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2554,10 +2644,6 @@ input[type=checkbox]:checked + label:before {
   border-radius: 20px;
 }
 
-.form-my_office label:last-of-type {
-  font-size: 16px;
-}
-
 .form-my_office {
   width: 225px;
   margin: 0 auto;
@@ -2604,6 +2690,10 @@ input[type=checkbox]:checked + label:before {
   margin-top: -9px;
   margin-bottom: 20px;
 }
+.form-my_office .checkbox label {
+  cursor: pointer;
+  font-size: 16px;
+}
 .form-my_office .enter-btn {
   display: flex;
   flex-direction: column;
@@ -2615,9 +2705,171 @@ input[type=checkbox]:checked + label:before {
   width: 225px;
   padding-top: 6px;
   padding-bottom: 9px;
-  background: #34A0D9;
   border-radius: 10px;
+  font-weight: 500;
+}
+.form-my_office .enter-btn .enter {
+  border: 1px solid #34a0d9;
+  background: #34a0d9;
   color: white;
+  transition: 0.3s ease;
+}
+.form-my_office .enter-btn .enter:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+.form-my_office .enter-btn .enter:active {
+  background: #0b3661;
+}
+.form-my_office .enter-btn .abonent {
+  border: 1px solid #34a0d9;
+  color: #34a0d9;
+  background-color: white;
+  transition: 0.3s ease;
+}
+.form-my_office .enter-btn .abonent:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+.form-my_office .enter-btn .abonent:active {
+  background: #0b3661;
+}
+
+.ch-tarif .tv-box {
+  padding-top: 0px;
+}
+.ch-tarif .tv-item {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.ch-tarif .tv-show {
+  display: inline;
+}
+
+.end_modal .modal-content {
+  max-width: 360px;
+}
+.end_modal .modal-dialog {
+  max-width: 360px;
+}
+.end_modal .modal-header1 h5 {
+  text-align: center;
+  width: 290px;
+  padding-top: 30px;
+  margin: 0 auto;
+  white-space: normal;
+}
+.end_modal .on-general {
+  background: #34a0d9;
+  border-radius: 10px;
+  width: 160px;
+  height: 60px;
+  padding: 14px 18px 18px 18px;
+  text-align: center;
+  margin: 5px 0px 15px 101px;
+  transition: 0.4s ease;
+}
+.end_modal .on-general:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+.end_modal .on-general:active {
+  background: #0b3661;
+}
+.end_modal .on-general a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.end_modal .modal-body1 {
+  text-align: center;
+}
+
+#connect_privat-home .modal-header1 h5 {
+  text-align: left;
+  width: 320px;
+  padding-left: 20px;
+  padding-top: 30px;
+  margin: 0;
+  white-space: normal;
+}
+
+#ch-business-fop .modal-content .modal-header1 h5 {
+  width: 421px;
+}
+
+#ch-business-fop .total-cost {
+  margin-top: 30px;
+}
+
+.change_privat-tarif .modal-header1 h5 {
+  text-align: left;
+  width: 360px;
+  padding-left: 20px;
+  padding-top: 30px;
+  margin: 0;
+  white-space: normal;
+}
+
+#business-fop .modal-header1 span {
+  display: block;
+}
+#business-fop .modal-header1 h5 {
+  width: 100%;
+}
+#business-fop .total-cost {
+  margin-top: 30px;
+}
+
+.form_radio {
+  margin-right: 30px;
+}
+
+.form_radio input[type=radio] {
+  display: none;
+}
+
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: #FFFFFF;
+  border: 1px solid #ABABAB;
+  border-radius: 100px;
+}
+
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+  border-radius: 100px;
+  border: 4.9px solid #34A0D9;
+}
+
+.speed-box {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Hover */
+.calculator-speed {
+  display: none;
 }
 
 @media (max-width: 575px) {
@@ -2627,6 +2879,122 @@ input[type=checkbox]:checked + label:before {
   #my_office .modal-dialog {
     max-width: 360px;
     margin: 0 auto;
+  }
+
+  .end_modal .modal-content {
+    max-width: 360px;
+  }
+  .end_modal .modal-dialog {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 532px) {
+  .change_privat-tarif .modal-header1 h5 {
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 0px;
+    font-size: 18px;
+    width: 270px;
+  }
+  .change_privat-tarif .modal-header {
+    padding-left: 10px;
+  }
+
+  #connect_privat-home .modal-header1 {
+    padding-left: 10px;
+  }
+  #connect_privat-home .modal-header1 h5 {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 476px) {
+  #ch-business-fop .modal-content .modal-header1 h5 {
+    width: 86%;
+  }
+
+  #business-fop .modal-header1 h5 {
+    width: 290px;
+  }
+
+  #connect_privat-home .modal-header1 .close {
+    margin-top: 0px;
+  }
+  #connect_privat-home .modal-header1 h5 {
+    margin-top: 15px;
+    width: 260px;
+    font-size: 18px;
+  }
+
+  .end_modal .on-general {
+    width: 95%;
+    height: 40px;
+    padding: 0px;
+    padding-top: 6px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .end_modal .modal-header1 h5 {
+    text-align: left;
+    padding-top: 30px;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .end_modal .modal-header1 h5 span {
+    display: block;
+  }
+  .end_modal .modal-dialog {
+    padding: 12px;
+  }
+
+  .end_modal .modal-header1 .close {
+    margin-top: 0px;
+  }
+
+  #my_office .modal-dialog {
+    padding: 12px;
+  }
+
+  #my_office .modal-header1 h5 {
+    padding-top: 27px;
+    width: 165px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #my_office .modal-header1 .close {
+    margin-top: 0px;
+  }
+
+  .form-my_office {
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-my_office input {
+    max-width: 270px;
+    width: 100%;
+  }
+  .form-my_office .enter-btn button {
+    margin-bottom: 10px;
+    max-width: 270px;
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  #ch-business-fop .total-cost {
+    margin-top: 15px;
+  }
+
+  #business-fop .modal-header1 span {
+    display: inline;
+  }
+  #business-fop .modal-header1 h5 {
+    width: 240px;
+    font-size: 18px;
   }
 }
 * {

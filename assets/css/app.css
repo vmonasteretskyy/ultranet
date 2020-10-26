@@ -8,7 +8,7 @@
   position: relative;
   width: 87%;
   margin: 0 auto;
-  top: -150px;
+  top: -160px;
 }
 
 #header {
@@ -16,7 +16,8 @@
   top: -10px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
-  padding-bottom: 3px;
+  padding-bottom: 9px;
+  padding-top: 7px;
 }
 #header .header-menu {
   margin-top: 24px;
@@ -115,14 +116,18 @@
 }
 
 .burger {
+  display: none;
   position: relative;
+  z-index: 3;
+  padding: 7px 5px 7px 10px;
+  box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
 }
 
 .burger2 {
-  padding: 20px 0px 13px 0px;
+  padding: 10px 0px 0px 0px;
 }
 .burger2 .burger-menu_button {
-  top: 28px;
+  top: 24px;
 }
 .burger2 .burger-menu_nav {
   top: 94px;
@@ -235,7 +240,7 @@
 
 .burger-menu_button {
   position: absolute;
-  top: 8px;
+  top: 14px;
   right: 20px;
   z-index: 30;
   width: 50px;
@@ -248,16 +253,12 @@
   filter: brightness(0.7);
 }
 
-.burger-menu_button:hover {
-  background-color: rgba(236, 236, 236, 0.904);
-}
-
 .burger-menu_lines::before,
 .burger-menu_lines::after,
 .burger-menu_lines {
   position: absolute;
-  width: 24px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background: #000000;
   transition: 0.4s;
 }
@@ -270,14 +271,14 @@
 
 .burger-menu_lines::before {
   content: "";
-  top: -9px;
-  width: 24px;
+  top: -7px;
+  width: 20px;
 }
 
 .burger-menu_lines::after {
   content: "";
-  top: 9px;
-  width: 24px;
+  top: 7px;
+  width: 20px;
 }
 
 .burger-menu_active .burger-menu_lines {
@@ -287,14 +288,14 @@
 .burger-menu_active .burger-menu_lines::before {
   top: 0;
   transform: rotate(45deg);
-  width: 24px;
+  width: 20px;
   margin-left: 0px;
 }
 
 .burger-menu_active .burger-menu_lines::after {
   top: 0;
   transform: rotate(-45deg);
-  width: 24px;
+  width: 20px;
 }
 
 .burger-menu_nav {
@@ -531,10 +532,6 @@
     width: 96%;
   }
 
-  #header {
-    box-shadow: none;
-  }
-
   .carousel-item .background-img {
     height: 850px;
   }
@@ -542,6 +539,16 @@
 @media (max-width: 1450px) {
   .carousel-item .background-img {
     height: 800px;
+  }
+
+  #header {
+    padding-top: 10px;
+  }
+  #header .contact_number {
+    margin-bottom: 18px;
+  }
+  #header .header-menu {
+    margin-top: 0px;
   }
 
   .contact_number {
@@ -564,7 +571,6 @@
     margin-top: 10px;
   }
   .header-menu li {
-    height: 30px;
     margin-left: 10px;
     margin-right: 10px;
     font-weight: 500;
@@ -588,6 +594,10 @@
   }
 }
 @media (max-width: 1290px) {
+  .logotip a img {
+    width: 220px;
+  }
+
   .social-network {
     display: none;
   }
@@ -604,8 +614,26 @@
   .contact_number ul {
     margin-bottom: 0px;
   }
+
+  #header .contact_number {
+    margin-bottom: 25px;
+  }
+  #header .header-menu {
+    margin-bottom: 0px;
+  }
 }
 @media (max-width: 1203px) {
+  #header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #header .header-menu {
+    margin-bottom: 17px;
+  }
+  #header .contact_number {
+    margin-bottom: 15px;
+  }
+
   .header-contact_number {
     margin-bottom: 0px;
   }
@@ -644,13 +672,20 @@
   }
 }
 @media (max-width: 1063px) {
+  #header {
+    box-shadow: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
   .header-block {
     display: none;
   }
 
   .burger-menu {
     display: block;
-    box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
     background-color: white;
   }
 
@@ -698,11 +733,11 @@
   }
 
   .burger2 {
-    padding: 12px 0px 4px 0px;
+    padding: 10px 0px 0px 0px;
   }
   .burger2 .burger-menu_button {
-    right: 10px;
-    top: 21px;
+    right: 17px;
+    top: 16px;
   }
   .burger2 .burger-menu_nav {
     top: 57px;
@@ -803,8 +838,13 @@
     width: 16px;
   }
 
+  .burger {
+    padding: 0px 5px;
+  }
+
   .burger-menu_button {
-    top: 5px;
+    top: 6px;
+    right: 17px;
     width: 31px;
     height: 31px;
   }
@@ -1522,16 +1562,17 @@ footer {
 .tarif-internet {
   display: flex;
   justify-content: center;
+  filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
 }
 .tarif-internet .tarif-item1 {
   background: #34A0D9;
   color: #FFFFFF;
   border-radius: 30px 0px 0px 30px;
-  filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
 }
 .tarif-internet .tarif-item2 {
+  position: relative;
+  z-index: 9;
   background-color: white;
-  box-shadow: 0px 5px 19px rgba(171, 171, 171, 0.3);
 }
 .tarif-internet div {
   margin-left: 2px;
@@ -1554,7 +1595,6 @@ footer {
 
 .tarif-internet div:last-of-type {
   border-radius: 0px 30px 30px 0px;
-  filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
 }
 
 .home-internet {
@@ -1579,10 +1619,26 @@ footer {
   transition: 0.4s ease;
 }
 
+.home-internet-item:hover .home-internet-ecl {
+  -webkit-animation: circle 5s linear infinite;
+          animation: circle 5s linear infinite;
+}
+
 .home-internet-ecl {
   margin-top: -145px;
 }
 
+@-webkit-keyframes circle {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes circle {
+  100% {
+    transform: rotate(1turn);
+  }
+}
 .text-m-bit {
   position: absolute;
   margin-top: -190px;
@@ -1638,13 +1694,17 @@ footer {
   font-size: 18px;
   line-height: 150%;
 }
-.home-internet-text a {
+.home-internet-text span {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #000000;
+  cursor: pointer;
+}
+.home-internet-text span:hover {
+  text-decoration: none;
 }
 .home-internet-text strong {
   font-weight: 500;
@@ -1763,17 +1823,20 @@ footer {
   border-radius: 10px;
   background: #F5F3F1;
 }
-.box-show-check .checkbox input[type=checkbox] {
+
+.checkbox input[type=checkbox] {
   width: auto;
   opacity: 1e-8;
   position: absolute;
   left: 0;
 }
-.box-show-check .checkbox label {
+
+.checkbox label {
   position: relative;
   padding: 4px 0px 5px 0px;
 }
-.box-show-check .checkbox label:before {
+
+.checkbox label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -1785,7 +1848,8 @@ footer {
   border: 1px solid #ABABAB;
   border-radius: 2px;
 }
-.box-show-check .checkbox label:after {
+
+.checkbox label:after {
   content: "";
   display: block;
   width: 10px;
@@ -1800,13 +1864,12 @@ footer {
   margin-top: 10px;
   left: 3px;
 }
-.box-show-check .checkbox input[type=checkbox]:checked ~ label::before {
-  color: #7bbe72;
-}
-.box-show-check .checkbox input[type=checkbox]:checked ~ label::after {
+
+.checkbox input[type=checkbox]:checked ~ label::after {
   transform: rotate(-45deg) scale(1);
 }
-.box-show-check .checkbox label {
+
+.checkbox label {
   display: block;
   padding-left: 23px;
   margin-bottom: 0;
@@ -1815,15 +1878,18 @@ footer {
   line-height: 150%;
   color: #464646;
 }
-.box-show-check .checkbox label span {
+
+.checkbox label span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.box-show-check .checkbox input[type=checkbox]:focus + label::before {
+
+.checkbox input[type=checkbox]:focus + label::before {
   outline: 0;
 }
-.box-show-check input[type=checkbox]:checked + label:before {
+
+input[type=checkbox]:checked + label:before {
   background: #34A0D9;
   border: #34A0D9;
 }
@@ -1851,9 +1917,12 @@ footer {
 
 .svg-dropt {
   margin-top: 3px;
+  position: relative;
   transition: 0.3s ease;
+  border-radius: 30%;
+  margin-right: 6px;
+  background-color: white;
   float: right;
-  margin-right: 8px;
 }
 
 .box-show-check {
@@ -1917,6 +1986,7 @@ footer {
   background: #F5F3F1;
   padding: 15px 35px;
   color: #000000;
+  cursor: pointer;
 }
 
 .tv-text {
@@ -1981,6 +2051,16 @@ footer {
   display: none;
 }
 
+.show-move-friend .form-connect {
+  padding-left: 0px;
+  margin-top: 6px;
+}
+.show-move-friend .form-connect p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+}
+
 .form-connect {
   padding-left: 35px;
   margin-top: 30px;
@@ -1999,6 +2079,7 @@ footer {
   display: flex;
   align-items: center;
   margin-top: 9px;
+  margin-bottom: 0px;
   color: #000000;
 }
 .form-connect input {
@@ -2038,33 +2119,30 @@ footer {
 
 #mask-phone::-moz-placeholder {
   font-weight: 300;
-  font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  background: linear-gradient(to left, #ABABAB 84%, #000000);
+  background: linear-gradient(to left, #646464 86%, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #mask-phone:-ms-input-placeholder {
   font-weight: 300;
-  font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  background: linear-gradient(to left, #ABABAB 84%, #000000);
+  background: linear-gradient(to left, #646464 86%, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #mask-phone::placeholder {
   font-weight: 300;
-  font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
-  background: linear-gradient(to left, #ABABAB 84%, #000000);
+  background: linear-gradient(to left, #646464 86%, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2101,6 +2179,14 @@ footer {
 
 .svg-show {
   transition: 0.3s ease;
+}
+
+.btn-back {
+  display: none;
+}
+
+.show-move-friend {
+  display: none;
 }
 
 @media (max-width: 1199px) {
@@ -2187,7 +2273,8 @@ footer {
   .text-m-bit {
     position: relative;
   }
-  .text-m-bit .home-int-grn p {
+
+  .home-int-grn p {
     padding: 40px 0px 10px 0px;
     font-size: 18px;
   }
@@ -2201,6 +2288,21 @@ footer {
   }
 }
 @media (max-width: 575px) {
+  .tarif-txt {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .home-atribute {
+    display: none;
+  }
+
+  .btn-back {
+    margin-top: 8px;
+    display: block;
+  }
+
   .home-internet-text {
     color: #000000;
     margin-top: 30px;
@@ -2261,12 +2363,29 @@ footer {
   .modal-header1 h5 {
     text-align: left;
     margin-left: 0px;
-    white-space: wrap;
+    white-space: normal;
+  }
+
+  .modal-header1 {
+    padding-bottom: 0px;
+    padding-top: 10px;
   }
 }
 @media (max-width: 476px) {
+  .modal-header1 h5 {
+    width: 240px;
+  }
+
   .show-actions {
     flex-direction: column;
+  }
+
+  .box-mobile {
+    flex-direction: column;
+  }
+
+  .about-tarif {
+    margin-left: 0px;
   }
 
   .about-action {
@@ -2274,6 +2393,19 @@ footer {
   }
   .about-action a {
     margin-left: 0px;
+  }
+
+  .mobile-connect {
+    margin-top: 15px;
+  }
+
+  .modal-header1 {
+    padding-left: 10px;
+    margin-top: -20px;
+  }
+  .modal-header1 .close {
+    margin-top: 10px;
+    right: 6px;
   }
 }
 @media (max-width: 459px) {
@@ -2284,6 +2416,217 @@ footer {
   }
   .tarif-internet .tarif-item3 {
     padding-top: 16px;
+  }
+
+  .custom-selects-tarif {
+    max-width: 270px;
+  }
+  .custom-selects-tarif .select-selected {
+    max-width: 270px;
+  }
+
+  .adapt-speed {
+    margin-top: 15px;
+  }
+
+  .connect-dropt {
+    max-width: 270px;
+    padding-right: 18px;
+    font-size: 14px;
+  }
+
+  .svg-dropt {
+    margin-top: 3px;
+    position: relative;
+    transition: 0.3s ease;
+    border-radius: 30%;
+    margin-right: -6px;
+    background-color: white;
+  }
+
+  .box-show-check {
+    max-width: 270px;
+    height: 150px;
+  }
+
+  .box-show-check .checkbox label {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .box-show-check div {
+    padding: 3px 7px 0px 8px;
+  }
+
+  .box-show-check .checkbox label:before {
+    margin-top: 8px;
+  }
+
+  .box-show-check .checkbox label:after {
+    margin-top: 8px;
+  }
+
+  .form-connect {
+    margin-top: 15px;
+  }
+  .form-connect input {
+    width: 270px;
+    font-size: 14px;
+  }
+  .form-connect input::-moz-placeholder {
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .form-connect input:-ms-input-placeholder {
+    line-height: 14px;
+    font-size: 14px;
+  }
+  .form-connect input::placeholder {
+    line-height: 14px;
+    font-size: 14px;
+  }
+
+  #mask-phone::-moz-placeholder {
+    color: #ABABAB;
+    background: #646464;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #mask-phone:-ms-input-placeholder {
+    color: #ABABAB;
+    background: #646464;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #mask-phone::placeholder {
+    color: #ABABAB;
+    background: #646464;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (max-width: 394px) {
+  .footer-modal {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .footer-modal button {
+    width: 94%;
+    height: 46px;
+    padding: 0;
+  }
+  .footer-modal .authorization {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+#my_office .modal-header1 h5 {
+  text-align: center;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+#my_office .modal-content {
+  max-width: 360px;
+}
+#my_office .modal-dialog {
+  max-width: 360px;
+}
+#my_office .modal-body1 {
+  padding-top: 8px;
+}
+
+.modal {
+  color: #000000;
+}
+.modal .close {
+  opacity: 1;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.form-my_office label:last-of-type {
+  font-size: 16px;
+}
+
+.form-my_office {
+  width: 225px;
+  margin: 0 auto;
+}
+.form-my_office label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000000;
+}
+.form-my_office #save-pass {
+  width: 16px;
+  height: 16px;
+}
+.form-my_office input {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #ffffff;
+  width: 225px;
+  height: 40px;
+  border: 1px solid #ababab;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+.form-my_office input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ababab;
+}
+.form-my_office input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ababab;
+}
+.form-my_office input::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ababab;
+}
+.form-my_office .checkbox {
+  margin-top: -9px;
+  margin-bottom: 20px;
+}
+.form-my_office .enter-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-my_office .enter-btn button {
+  margin-bottom: 20px;
+  width: 225px;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  background: #34A0D9;
+  border-radius: 10px;
+  color: white;
+}
+
+@media (max-width: 575px) {
+  #my_office .modal-content {
+    max-width: 360px;
+  }
+  #my_office .modal-dialog {
+    max-width: 360px;
+    margin: 0 auto;
   }
 }
 * {

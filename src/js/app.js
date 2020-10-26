@@ -163,19 +163,37 @@ $.fn.toggleClick = function (funcArray) {
       elem.data('index', (index + 1) % funcArray.length);
   });
 };
+
 $('.connect-dropt').toggleClick([
   function () {
-   $('.box-show-check').slideDown( "slow" );
+ 
    $('.svg-dropt').css("transform","rotate(180deg)");
-
-   
+      $('.box-show-check').slideDown( "slow" )
   },
   function () {
-    $('.box-show-check').slideUp();
-   $('.svg-dropt').css("transform","rotate(0deg)");
-
+    $('.box-show-check').slideUp( "slow" )
+    $('.svg-dropt').css("transform","rotate(0deg)");
+    
   }
+
 ]);
+// $('.connect-dropt').click(function () {
+//   if(  $('.box-show-check').slideUp()){
+//    $('.svg-dropt').css("transform","rotate(180deg)");
+ 
+//     $('.box-show-check').slideDown( "slow" )
+//   }
+// else{ if( $('.box-show-check').slideDown()){
+  
+//      $('.box-show-check').slideUp( "slow" )
+//    }
+//   }
+// });
+
+
+
+
+
 $('.action-txt').toggleClick([
   function () {
    $('.show-actions').slideDown( "slow" );
@@ -212,18 +230,30 @@ $('.check1').click(function () {
   $(".dropt-3").css("display","none");
   $(".dropt-2").css("display","none");
   $(".dropt-4").css("display","none");
+  // $('.box-show-check').slideUp();
+  $('.svg-dropt').css("transform","rotate(0deg)");
+
+  
 });
 $('.check2').click(function () {
   $(".dropt-2").css("display","inline");
   $(".dropt-1").css("display","none");
   $(".dropt-3").css("display","none");
   $(".dropt-4").css("display","none");
+  // $('.box-show-check').slideUp();
+  // $('.show-move-friend').slideUp();
+
+  $('.svg-dropt').css("transform","rotate(0deg)");
 });
 $('.check3').click(function () {
   $(".dropt-3").css("display","inline");
   $(".dropt-1").css("display","none");
   $(".dropt-2").css("display","none");
   $(".dropt-4").css("display","none");
+  // $('.box-show-check').slideUp();
+  // $('.show-move-friend').slideUp();
+
+  $('.svg-dropt').css("transform","rotate(0deg)");
 
 });
 $('.check4').click(function () {
@@ -231,6 +261,18 @@ $('.check4').click(function () {
   $(".dropt-1").css("display","none");
   $(".dropt-2").css("display","none");
   $(".dropt-3").css("display","none");
+  $('.box-show-check').slideUp();
+  $('.svg-dropt').css("transform","rotate(0deg)");
+  
+
+  if ($("#elem4").is(":checked")) {  
+    $('.show-move-friend').slideDown();
+  }
+  if ($('#elem4').not(':checked').length) {
+    $('.show-move-friend').slideUp();
+    // $('.box-show-check').slideDown();
+
+}
 });
 
 

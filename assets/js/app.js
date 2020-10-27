@@ -20673,6 +20673,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').click(function () 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod1').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('hide');
 }); //connect tarif
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
@@ -20680,6 +20681,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('hide');
 }); //connect tarif
 // $('.private-change-close').click(function () {
 //   $('#change_privat-tarif"').modal('hide');
@@ -20691,12 +20693,22 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
   }
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-1").is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-4').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-4").is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-3").is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
   }
 });
 
@@ -20720,8 +20732,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\newultra\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\newultra\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\Vasyl\Documents\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Vasyl\Documents\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

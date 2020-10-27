@@ -434,7 +434,7 @@ color: #000000;
     bottom: 15px;
     left: 30px;
     z-index: 4;
-    svg{
+    .svg{
         margin-bottom: 15px;
         padding-left: 2px;
         background: #34A0D9;
@@ -457,7 +457,7 @@ color: #000000;
     z-index: 4;
 
 }
-.svg-support svg{
+.svg-support .svg{
     transition: 0.4s ease;
 cursor: pointer;
     &:hover {
@@ -487,7 +487,7 @@ width: 360px;
 .header-chat{
     // padding-top: 20px;
     height: 67px;
-    padding: 0px 20px;
+    padding: 0px 7px 0px 20px;
     background: #34A0D9;
     box-shadow: 0px 5px 5px rgba(171, 171, 171, 0.3);
     border-radius: 20px 20px 0px 0px;  
@@ -534,7 +534,7 @@ color: #ABABAB;
     .enter-svg{
         position: absolute;
         margin-left: -50px;
-        margin-top: 20px;
+        margin-top: 10px;
         cursor: pointer;
     }
 }
@@ -867,11 +867,11 @@ color: #ABABAB;
 
     #main-prev {
 
-        margin-left: 70px;
+        margin-left: 85px;
 
         left: auto;
 
-        svg {
+        .svg {
             height: 40px;
         }
     }
@@ -882,7 +882,8 @@ color: #ABABAB;
     }
 
     #main-next {
-        svg {
+        .svg {
+            margin-left: 13px;
             height: 40px;
         }
     }

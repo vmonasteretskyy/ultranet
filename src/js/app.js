@@ -326,6 +326,7 @@ $('.tarif-item2').click(function () {
 $('.close-mod1').click(function () {
 $('#change_tarif').modal('hide');
 $('#change_privat-tarif').modal('hide');
+$('#ch-business-law').modal('hide');
  
 
 })
@@ -335,8 +336,8 @@ $('.close-mod2').click(function () {
   $('#connect_privat-home').modal('hide');
   $('#business-fop').modal('hide');
   $('#ch-business-fop').modal('hide');
-
-
+  $('#business-law').modal('hide');
+ 
 })
 
   //connect tarif
@@ -350,13 +351,27 @@ $('.close-mod2').click(function () {
   //radio input
   $('#radio-2').click(function () {
   if ($("#radio-2").is(':checked')) {
-      $('.calculator-speed').fadeIn();
+      $('.calculator-speed').slideDown();
 
  }
 })
 $('#radio-1').click(function () {
   if ($("#radio-1").is(':checked')) {
-      $('.calculator-speed').fadeOut();
+      $('.calculator-speed').slideUp();
+
+ }
+})
+
+
+ $('#radio-4').click(function () {
+  if ($("#radio-4").is(':checked')) {
+      $('.calculator-speed').slideDown();
+
+ }
+})
+$('#radio-3').click(function () {
+  if ($("#radio-3").is(':checked')) {
+      $('.calculator-speed').slideUp();
 
  }
 })

@@ -389,7 +389,7 @@
   left: 30px;
   z-index: 4;
 }
-.social-network svg {
+.social-network .svg {
   margin-bottom: 15px;
   padding-left: 2px;
   background: #34A0D9;
@@ -398,10 +398,10 @@
   width: 50px;
   transition: 0.3s ease;
 }
-.social-network svg:hover {
+.social-network .svg:hover {
   box-shadow: -4px -4px 10px rgba(52, 160, 217, 0.3), 4px 4px 10px rgba(52, 160, 217, 0.3);
 }
-.social-network svg:active {
+.social-network .svg:active {
   background-color: #0B3661;
 }
 
@@ -412,14 +412,14 @@
   z-index: 4;
 }
 
-.svg-support svg {
+.svg-support .svg {
   transition: 0.4s ease;
   cursor: pointer;
 }
-.svg-support svg:hover {
+.svg-support .svg:hover {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
-.svg-support svg:active .circle {
+.svg-support .svg:active .circle {
   fill: #0B3661;
 }
 
@@ -441,7 +441,7 @@
 
 .header-chat {
   height: 67px;
-  padding: 0px 20px;
+  padding: 0px 7px 0px 20px;
   background: #34A0D9;
   box-shadow: 0px 5px 5px rgba(171, 171, 171, 0.3);
   border-radius: 20px 20px 0px 0px;
@@ -502,7 +502,7 @@
 .enter-chat .enter-svg {
   position: absolute;
   margin-left: -50px;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -796,10 +796,10 @@
   }
 
   #main-prev {
-    margin-left: 70px;
+    margin-left: 85px;
     left: auto;
   }
-  #main-prev svg {
+  #main-prev .svg {
     height: 40px;
   }
 
@@ -807,7 +807,8 @@
     margin-left: 110px;
   }
 
-  #main-next svg {
+  #main-next .svg {
+    margin-left: 13px;
     height: 40px;
   }
 
@@ -876,7 +877,7 @@
 }
 
 .pay-item {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
   max-width: 350px;
@@ -899,7 +900,7 @@
   padding-top: 60px;
   margin-bottom: 50px;
 }
-.pay-item img {
+.pay-item .img {
   margin: 0 auto;
 }
 .pay-item h4 {
@@ -919,7 +920,7 @@
 }
 .pay-item button {
   margin-top: 25px;
-  background: #34A0D9;
+  background: #34a0d9;
   border-radius: 10px;
   width: 233px;
   height: 40px;
@@ -927,7 +928,7 @@
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.4s ease;
 }
 .pay-item button:hover {
@@ -949,8 +950,8 @@
 
 .pay-arrow-select {
   position: absolute;
-  margin-left: 90px;
-  margin-top: 15px;
+  margin-left: 84px;
+  margin-top: 8px;
 }
 
 .custom-selects2 {
@@ -967,7 +968,7 @@
   width: 223px;
   height: 40px;
   background-color: white;
-  border: 1px solid #ABABAB;
+  border: 1px solid #ababab;
   border-radius: 10px;
   text-align: left;
   padding: 6px 14px 0px 10px;
@@ -999,7 +1000,7 @@
 
 .select-items {
   position: absolute;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 10px rgba(171, 171, 171, 0.4);
   border-radius: 10px;
   text-align: left;
@@ -1017,7 +1018,7 @@
 
 .select-items div:hover,
 .same-as-selected {
-  background: #F5F3F1;
+  background: #f5f3f1;
   border-radius: 10px;
 }
 
@@ -1075,8 +1076,8 @@
 
   .pay-arrow-select {
     position: absolute;
-    margin-left: 70px;
-    margin-top: 15px;
+    margin-left: 63px;
+    margin-top: 8.4px;
   }
 
   .select-items {
@@ -1180,7 +1181,7 @@
   .pay-item .ibox-img img {
     width: 110px;
   }
-  .pay-item img {
+  .pay-item .img {
     margin: 0 auto;
   }
   .pay-item h4 {
@@ -1214,7 +1215,8 @@
   }
 
   .pay-arrow-select {
-    margin-left: 50px;
+    margin-left: 46px;
+    margin-top: 9px;
   }
 
   .select-items {
@@ -1349,10 +1351,10 @@ footer {
   font-size: 16px;
   line-height: 16px;
 }
-.footer-block svg {
+.footer-block .svg {
   transition: 0.3s ease;
 }
-.footer-block svg:hover {
+.footer-block .svg:hover {
   margin-top: -5px;
   opacity: 0.8;
 }
@@ -1538,12 +1540,13 @@ footer {
 .home-atribute {
   font-weight: 300;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 10px;
   color: #000000;
   margin-top: 50px;
 }
 .home-atribute a {
   text-decoration: underline;
+  transition: 0.3s ease;
 }
 .home-atribute span {
   text-decoration: underline;
@@ -1601,6 +1604,17 @@ footer {
   justify-content: center;
 }
 
+@media (min-width: 500px) {
+  #ch-business-law .modal-dialog {
+    max-width: 440px;
+    margin: 1.75rem auto;
+  }
+
+  #business-law .modal-dialog {
+    max-width: 440px;
+    margin: 1.75rem auto;
+  }
+}
 .business-law {
   padding-top: 150px;
 }
@@ -1613,7 +1627,7 @@ footer {
   left: 0;
   margin-top: 100px;
   z-index: -1;
-  background: #F5F3F1;
+  background: #f5f3f1;
   height: 825px;
   width: 100%;
 }
@@ -2227,6 +2241,9 @@ input[type=checkbox]:checked + label:before {
   display: none;
 }
 
+.business {
+  display: none;
+}
 .business .tarif-txt {
   font-size: 18px;
 }
@@ -2235,8 +2252,7 @@ input[type=checkbox]:checked + label:before {
   .home-internet-item {
     width: 290px;
   }
-  .home-internet-item svg {
-    margin-top: -20px;
+  .home-internet-item .svg {
     width: 100%;
   }
 
@@ -2265,7 +2281,7 @@ input[type=checkbox]:checked + label:before {
     left: 0;
     margin-top: 100px;
     z-index: -1;
-    background: #F5F3F1;
+    background: #f5f3f1;
     height: 585px;
     width: 100%;
   }
@@ -2277,14 +2293,18 @@ input[type=checkbox]:checked + label:before {
   }
 
   .home-internet-item {
-    height: 100%;
+    height: 383px;
     width: 240px;
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
   }
-  .home-internet-item svg {
-    margin-top: -50px;
+  .home-internet-item .home-internet-ecl {
+    margin-top: -100px;
+  }
+  .home-internet-item .svg {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
   }
 
@@ -2651,7 +2671,7 @@ input[type=checkbox]:checked + label:before {
 .form-my_office label {
   font-weight: normal;
   font-size: 12px;
-  line-height: 150%;
+  line-height: 26px;
   color: #000000;
 }
 .form-my_office #save-pass {
@@ -2671,19 +2691,16 @@ input[type=checkbox]:checked + label:before {
 .form-my_office input::-moz-placeholder {
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   color: #ababab;
 }
 .form-my_office input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   color: #ababab;
 }
 .form-my_office input::placeholder {
   font-weight: 300;
   font-size: 18px;
-  line-height: 150%;
   color: #ababab;
 }
 .form-my_office .checkbox {
@@ -2851,25 +2868,73 @@ input[type=checkbox]:checked + label:before {
   position: absolute;
   left: 0;
   bottom: 1px;
-  background: #FFFFFF;
-  border: 1px solid #ABABAB;
+  background: #ffffff;
+  border: 1px solid #ababab;
   border-radius: 100px;
 }
 
 /* Checked */
 .form_radio input[type=radio]:checked + label:before {
   border-radius: 100px;
-  border: 4.9px solid #34A0D9;
+  border: 4.9px solid #34a0d9;
 }
 
 .speed-box {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
 }
 
 /* Hover */
 .calculator-speed {
+  margin-top: 15px;
   display: none;
+}
+.calculator-speed span {
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+}
+
+.calcul-box input {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #ababab;
+  border-radius: 10px;
+}
+.calcul-box input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ABABAB;
+}
+.calcul-box input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ABABAB;
+}
+.calcul-box input::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  color: #ABABAB;
+}
+.calcul-box label {
+  margin-left: 10px;
+}
+
+.calcul-text {
+  padding-left: 35px;
+}
+
+.calcul-text p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: #464646;
 }
 
 @media (max-width: 575px) {
@@ -2890,6 +2955,11 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 532px) {
+  .calcul-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .change_privat-tarif .modal-header1 h5 {
     text-align: left;
     padding-top: 30px;
@@ -2911,6 +2981,14 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 476px) {
+  .calculator-speed {
+    margin-top: 3px;
+  }
+
+  .speed-box {
+    flex-direction: column;
+  }
+
   #ch-business-fop .modal-content .modal-header1 h5 {
     width: 86%;
   }

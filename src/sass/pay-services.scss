@@ -113,13 +113,14 @@
 }
 
 .select-selected {
+    font-size: 18px;
     width: 223px;
     height: 40px;
     background-color: white;
     border: 1px solid #ababab;
     border-radius: 10px;
     text-align: left;
-    padding: 6px 14px 0px 10px;
+    padding: 5px 14px 0px 10px;
 }
 
 .select-selected:after {
@@ -138,7 +139,7 @@
 .select-items div,
 .select-selected {
     color: #000000;
-    padding: 6px 16px;
+    padding: 5px 16px;
 
     cursor: pointer;
     user-select: none;
@@ -156,6 +157,7 @@
     right: 0;
     z-index: 99;
     width: 213px;
+    font-size: 18px;
 }
 
 .select-hide {
@@ -294,6 +296,11 @@
     }
 }
 @media (max-width: 550px) {
+   
+        .select-items div{
+            padding: 6px 10px; 
+            font-size: 16px;
+        }
     .pay-services {
         padding-top: 0px;
         margin-left: -40px;
@@ -380,7 +387,9 @@
     }
 
     .select-selected {
+        font-size: 16px;
         width: 180px;
+        padding: 6px 10px;
     }
 
     .pay-arrow-select {

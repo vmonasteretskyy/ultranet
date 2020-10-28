@@ -35,7 +35,7 @@
     label {
         font-weight: normal;
         font-size: 12px;
-        line-height: 26px;
+        line-height: 27px;
         color: #000000;
     }
     #save-pass {
@@ -295,6 +295,9 @@ font-size: 12px;
 line-height: 150%;
 color: #464646;
 }
+.br-fob{
+    display: none;
+}
 @media (max-width: 575px) {
     #my_office {
         .modal-content {
@@ -432,6 +435,9 @@ color: #464646;
 }
 
 @media (max-width: 420px) {
+    .br-fob{
+        display: block;
+    }
     #ch-business-fop {
         .total-cost {
             margin-top: 15px;

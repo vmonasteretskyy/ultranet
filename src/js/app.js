@@ -196,9 +196,9 @@ $('.connect-dropt').toggleClick([
 
 $('.action-txt').toggleClick([
   function () {
-   $('.show-actions').slideDown( "slow" );
+    $('.show-actions').css("height","auto");
+    $('.show-actions').slideDown();
    $('.show-actions').css("display","flex");
-
    $('.svg-actions').css("transform","rotate(180deg)");
   },
   function () {
@@ -232,7 +232,7 @@ $('.check1').click(function () {
   $(".dropt-2").css("display","none");
   $(".dropt-4").css("display","none");
   // $('.box-show-check').slideUp();
-  $('.svg-dropt').css("transform","rotate(0deg)");
+  // $('.svg-dropt').css("transform","rotate(0deg)");
 
   
 });
@@ -244,7 +244,7 @@ $('.check2').click(function () {
   // $('.box-show-check').slideUp();
   // $('.show-move-friend').slideUp();
 
-  $('.svg-dropt').css("transform","rotate(0deg)");
+  // $('.svg-dropt').css("transform","rotate(0deg)");
 });
 $('.check3').click(function () {
   $(".dropt-3").css("display","inline");
@@ -254,7 +254,7 @@ $('.check3').click(function () {
   // $('.box-show-check').slideUp();
   // $('.show-move-friend').slideUp();
 
-  $('.svg-dropt').css("transform","rotate(0deg)");
+  // $('.svg-dropt').css("transform","rotate(0deg)");
 
 });
 $('.check4').click(function () {
@@ -262,22 +262,54 @@ $('.check4').click(function () {
   $(".dropt-1").css("display","none");
   $(".dropt-2").css("display","none");
   $(".dropt-3").css("display","none");
-  $('.box-show-check').slideUp();
-  $('.svg-dropt').css("transform","rotate(0deg)");
+  // $('.box-show-check').slideUp();
+  // $('.svg-dropt').css("transform","rotate(0deg)");
   
 
-  if ($("#elem4").is(":checked")) {  
-    $('.show-move-friend').slideDown();
-  }
-  if ($('#elem4').not(':checked').length) {
-    $('.show-move-friend').slideUp();
-    // $('.box-show-check').slideDown();
-
-}
+//   if ($("#elem4").is(":checked")) {  
+//     $('.show-move-friend').slideDown();
+//   }
+//   if ($('#elem4').not(':checked').length) {
+//     $('.show-move-friend').slideUp();
+// }
+// if ($("#elem-a4").is(":checked")) {  
+//   $('.show-move-friend').slideDown();
+// }
+// if ($('#elem-a4').not(':checked')) {
+//   $('.show-move-friend').slideUp();
+// }
 });
 
 
 }
+
+
+$('.close').click(function () {
+  $('.show-move-friend').slideUp();
+  $('.tv-show').slideUp();
+  $('.svg-show').css("transform","rotate(0deg)");
+  $('.show-actions').slideUp();
+  $('.svg-actions').css("transform","rotate(0deg)");
+  $('.show-move-friend').slideUp();
+  $('.box-show-check').slideUp();
+  $('.svg-dropt').css("transform","rotate(0deg)");
+
+})
+
+if ($('*').is('.box-show-check')) {
+$('.elem4').toggleClick([
+  function () {
+    $('.show-move-friend').slideDown();
+ 
+  },
+  function () {
+    $('.show-move-friend').slideUp();
+  }
+]);
+}
+
+
+
 //mmodal
  
 $('.tarif-item1').click(function () {
@@ -337,7 +369,9 @@ $('.close-mod2').click(function () {
   $('#business-fop').modal('hide');
   $('#ch-business-fop').modal('hide');
   $('#business-law').modal('hide');
- 
+  $('#connect_tv').modal('hide');
+  $('#connect_tv196').modal('hide');
+  $('#connect_tv204').modal('hide');
 })
 
   //connect tarif

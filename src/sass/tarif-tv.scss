@@ -1,0 +1,206 @@
+.tarif_tv {
+    .text-m-bit {
+        margin-top: -201px;
+    }
+    .home-internet-ecl {
+        margin-bottom: 11px;
+    }
+    .home-int-grn {
+        ul{
+        margin-left: 120px;
+        color: #464646;
+        transition: 0.3s ease;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+            color: #000;
+        }
+        }
+        li{
+            margin-bottom: 5px;
+            text-align: left;
+            list-style-type: initial;
+            font-weight: normal;
+          font-size: 18px;
+         
+        }
+        span {
+            text-decoration: line-through;
+            font-size: 18px;
+            line-height: 150%;
+
+            color: #464646;
+        }
+        p {
+            padding: 10px 0px 20px 0px;
+        }
+    }
+    .home-internet-text {
+    a{
+        font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+text-decoration-line: underline;
+color: #000000;
+&:hover{
+    text-decoration: none;
+}
+    }
+}
+.total-cost{
+    margin-top: 30px;
+}
+}
+.count-channels{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-right: 35px;
+ margin-bottom: 30px;
+ a{
+    font-weight: 500;
+    font-size: 18px;
+     text-decoration: underline;
+ }
+ .total-cost{
+     margin-top: 0px;
+ }
+}
+.mobile_con{
+    .text-m-bit {
+        margin-top: -180px;
+      
+        p{
+        font-weight: normal;
+font-size: 24px;
+line-height: 130%;
+max-width: 144px;
+margin: 0 auto;
+color: #000000;
+    }
+}
+}
+@media (max-width: 1199px) {
+    .tarif_tv {
+        .home-int-grn {
+            ul{
+            margin-left: 85px;      
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .mobile_con .home-internet-item{
+         .text-m-bit
+       {
+            margin-top: -118px;
+            p{
+    font-size: 16px;
+        }
+    } 
+
+    }
+    .tarif_tv {
+        .home-int-grn {
+            
+            ul{
+            margin-left: 72px;  
+            margin-bottom: 0px;    
+            }
+            li{
+                margin-bottom: 0px;
+                font-size: 14px;
+             
+            }
+        }
+    }
+}
+@media (max-width: 867px) {
+    .mobile_con .home-internet-item{
+        .text-m-bit
+        {
+             margin-top: -138px;
+             margin-bottom: 70px;
+     } 
+   
+    }
+}
+@media (min-width: 500px) {
+    .tarif_tv  {
+        .modal-dialog {
+            max-width: 453px;
+            margin: 1.75rem auto;
+        }
+     
+    }
+}
+@media (max-width: 991px) {
+    .tarif_tv {
+        .text-m-bit {
+            margin-top: -136px;
+        }
+        .home-int-grn {
+            span {
+                font-size: 14px;
+                line-height: 15px;
+            }
+            p {
+                padding: 5px 0px 13px 0px;
+                margin-bottom: 0px;
+            }
+        }
+        .home-internet-item {
+            height: auto;
+        }
+    }
+}
+@media (max-width: 867px) {
+    .tarif_tv {
+        .text-m-bit {
+            margin-top: -156px;
+            margin-bottom: 40px;
+        }
+       }
+    .tarif_tv {
+        .home-internet-ecl {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .tarif_tv {
+        .total-cost{
+            margin-top: 17px;
+        }
+        .text-m-bit {
+          
+            margin-bottom: 46px;
+        }
+        .tarif-txt {
+            margin-top: 4px;
+        }
+    }
+    .count-channels{
+ 
+     .total-cost{
+         margin-top: 0px;
+     }
+    }
+}
+@media (max-width: 400px) {
+.count-channels{
+ flex-direction: column;
+ padding-right: 15px;
+ margin-bottom: 17px;
+ justify-content: flex-start;
+ align-items: flex-start;
+ padding-left: 10px;
+ .total-cost{
+    padding-left: 0px;
+    margin-bottom: 28px;
+}
+}
+#connect_tv204 .choose-speed{
+    margin-top: 20px;
+}
+}

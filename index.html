@@ -25,14 +25,14 @@
                     </a>
                     <nav class="burger-menu_nav">
                         <ul>
-                            <li><a href="">Інтернет</a></li>
+                            <li><a href="/tarif-inet.html">Інтернет</a></li>
                             <li><a href="">Телебачення</a></li>
                             <li><a href="">Мобільний зв’язок</a></li>
                             <li><a href="">Акції</a></li>
                             <li><a href="">Контакти</a></li>
                         </ul>
                         <hr>
-                        <div class="burger-privacy">Особистий кабінет</div>
+                        <div data-toggle="modal" data-target="#my_office" class="burger-privacy">Особистий кабінет</div>
                         <hr>
                         <div>Рус.</div>
                     </nav>
@@ -58,7 +58,7 @@
                                         </div>
                                         <div>
                                             <ul class="header-menu">
-                                                <li><a href="">Інтернет</a></li>
+                                                <li><a href="/tarif-inet.html">Інтернет</a></li>
                                                 <li><a href="">Телебачення</a></li>
                                                 <li><a href="">Мобільний зв’язок</a></li>
                                                 <li><a href="">Акції</a></li>
@@ -68,7 +68,7 @@
                                     </div>
                                     <div class="privacy-office">
                                         <div>Рус.</div>
-                                        <div>Особистий кабінет</div>
+                                        <div data-toggle="modal" data-target="#my_office">Особистий кабінет</div>
                                     </div>
                                 </div>
 
@@ -104,7 +104,7 @@
                                         </div>
                                         <div>
                                             <ul class="header-menu">
-                                                <li><a href="">Інтернет</a></li>
+                                                <li><a href="/tarif-inet.html">Інтернет</a></li>
                                                 <li><a href="">Телебачення</a></li>
                                                 <li><a href="">Мобільний зв’язок</a></li>
                                                 <li><a href="">Акції</a></li>
@@ -114,7 +114,7 @@
                                     </div>
                                     <div class="privacy-office">
                                         <div>Рус.</div>
-                                        <div>Особистий кабінет</div>
+                                        <div data-toggle="modal" data-target="#my_office">Особистий кабінет</div>
                                     </div>
                                 </div>
                             </header>
@@ -149,7 +149,7 @@
                                         </div>
                                         <div>
                                             <ul class="header-menu">
-                                                <li><a href="">Інтернет</a></li>
+                                                <li><a href="/tarif-inet.html">Інтернет</a></li>
                                                 <li><a href="">Телебачення</a></li>
                                                 <li><a href="">Мобільний зв’язок</a></li>
                                                 <li><a href="">Акції</a></li>
@@ -159,7 +159,7 @@
                                     </div>
                                     <div class="privacy-office">
                                         <div>Рус.</div>
-                                        <div>Особистий кабінет</div>
+                                        <div data-toggle="modal" data-target="#my_office">Особистий кабінет</div>
                                     </div>
                                 </div>
                             </header>
@@ -192,7 +192,7 @@
                                         </div>
                                         <div>
                                             <ul class="header-menu">
-                                                <li><a href="">Інтернет</a></li>
+                                                <li><a href="/tarif-inet.html">Інтернет</a></li>
                                                 <li><a href="">Телебачення</a></li>
                                                 <li><a href="">Мобільний зв’язок</a></li>
                                                 <li><a href="">Акції</a></li>
@@ -202,7 +202,7 @@
                                     </div>
                                     <div class="privacy-office">
                                         <div>Рус.</div>
-                                        <div>Особистий кабінет</div>
+                                        <div data-toggle="modal" data-target="#my_office">Особистий кабінет</div>
                                     </div>
                                 </div>
                             </header>
@@ -270,6 +270,40 @@
                 </div>
             </div>
         </section>
+             <!-- Modal Вхід до особистого кабінету-->
+             <div class="modal fade " id="my_office" tabindex="-1" aria-labelledby="my_office" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header modal-header1">
+                            <h5 class="modal-title">Вхід до особистого кабінету
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body modal-body1">
+                            <div class="form-my_office">
+                                <form action="">
+                                    <label for="">Логін:</label>
+                                    <input type="text" placeholder="login">
+                                    <label for="">Пароль:</label>
+                                    <input type="password" placeholder="******">
+                                    <div class="checkbox">
+                                        <input id="save-pass" type="checkbox">
+                                        <label for="save-pass">Запам’ятати пароль</label>
+                                    </div>
+                                    <div class="enter-btn">
+                                        <button class="enter">Увійти</button>
+                                        <button class="abonent">Стати абонентом</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         <section>
             <div class="pay-services-block container">
                 <h3 class="main-text-center">Оплата послуг</h3>

@@ -293,6 +293,9 @@ $('.close').click(function () {
   $('.show-move-friend').slideUp();
   $('.box-show-check').slideUp();
   $('.svg-dropt').css("transform","rotate(0deg)");
+  $('.calculator-speed').slideUp();
+  // $("#radio-3").attr('checked','checked');
+  // $("#radio-1").attr('checked','checked');
 
 })
 

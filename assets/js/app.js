@@ -20638,6 +20638,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideUp();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp(); // $("#radio-3").attr('checked','checked');
+  // $("#radio-1").attr('checked','checked');
 });
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.box-show-check')) {
@@ -20755,8 +20757,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Vasyl\Documents\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Vasyl\Documents\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\vvn09\Desktop\newultra\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\newultra\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

@@ -298,7 +298,38 @@ color: #464646;
 .br-fob{
     display: none;
 }
+.no-limit{
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 20px;
+
+}
+ .modal-body1 .count-minutes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 35px;
+    margin-bottom: 30px;
+    // .cost-tv{
+    //     margin-top: 30px;
+    // }
+    .total-cost{
+        margin-top: 0px;
+     
+        font-size: 18px;
+
+        
+    }
+    .no-limit{
+   white-space: nowrap;
+
+
+    }
+}
+ 
+ 
 @media (max-width: 575px) {
+  
     #my_office {
         .modal-content {
             max-width: 360px;
@@ -320,6 +351,16 @@ color: #464646;
 }
 
 @media (max-width: 532px) {
+    .con-mob .modal-body1{
+        .total-cost{
+       
+            font-size: 18px;
+            span{
+            font-size: 18px;
+
+            }
+        }
+    }
     .calcul-text{
         padding-left: 10px;
         padding-right: 10px;
@@ -457,5 +498,37 @@ color: #464646;
                 font-size: 18px;
             }
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .con-mob .modal-header1 h5{
+width: 260px;
+    }
+    .con-mob .modal-body1{
+        
+        .count-channels{
+            flex-direction: row;
+            padding-right: 10px;
+            margin-bottom: 20px;
+        }
+        .no-limit{
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        .total-cost{
+            margin-bottom: 0px;
+            font-size: 18px;
+            br{
+                display: none;
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+    .modal-body1 .count-minutes{
+        padding-right: 10px;
+        margin-bottom: 20px;
     }
 }

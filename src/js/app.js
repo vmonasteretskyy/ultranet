@@ -122,6 +122,7 @@ $(document).ready(function () {
   });
   $('.close-chat').click(function () {
     $(".container-chat").fadeOut();
+ 
 });
 
 
@@ -375,7 +376,18 @@ $('.close-mod2').click(function () {
   $('#connect_tv').modal('hide');
   $('#connect_tv196').modal('hide');
   $('#connect_tv204').modal('hide');
+  $('#connect_mob').modal('hide');
+ 
+
+  
 })
+$('.datail_btn').click(function () {
+ 
+  $('#connect_mob').modal('hide');
+  $('#details').modal('hide');
+
+
+  })
 
   //connect tarif
   // $('.private-change-close').click(function () {
@@ -411,4 +423,40 @@ $('#radio-3').click(function () {
       $('.calculator-speed').slideUp();
 
  }
+})
+
+$('#collapseOne').on('hidden.bs.collapse', function () {
+  $('.arr-accord1').css("background","red")
+ 
+})
+$('#collapseOne').on('shown.bs.collapse', function () {
+  $('.arr-accord1').css("background","blue")
+})
+//
+$('#collapseTwo').on('hidden.bs.collapse', function () {
+  $('.arr-accord2').css("background","red")
+ 
+})
+
+$('#collapseTwo').on('shown.bs.collapse', function () {
+  $('.arr-accord2').css("background","blue")
+ 
+
+})
+//
+$('#collapseThree').on('hidden.bs.collapse', function () {
+  $('.arr-accord3').css("background","red")
+ 
+})
+
+$('#collapseThree').on('shown.bs.collapse', function () {
+  $('.arr-accord3').css("background","blue")
+})
+//
+$('#collapseFour').on('hidden.bs.collapse', function () {
+  $('.arr-accord4').css("background","red")
+ 
+})
+$('#collapseFour').on('shown.bs.collapse', function () {
+  $('.arr-accord4').css("background","blue")
 })

@@ -20707,6 +20707,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_tv').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_tv196').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_tv204').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_mob').modal('hide');
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail_btn').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_mob').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#details').modal('hide');
 }); //connect tarif
 // $('.private-change-close').click(function () {
 //   $('#change_privat-tarif"').modal('hide');
@@ -20735,6 +20740,33 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-3").is(':checked')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
   }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseOne').on('hidden.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord1').css("background", "red");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseOne').on('shown.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord1').css("background", "blue");
+}); //
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseTwo').on('hidden.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord2').css("background", "red");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseTwo').on('shown.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord2').css("background", "blue");
+}); //
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseThree').on('hidden.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord3').css("background", "red");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseThree').on('shown.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord3').css("background", "blue");
+}); //
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseFour').on('hidden.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord4').css("background", "red");
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseFour').on('shown.bs.collapse', function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord4').css("background", "blue");
 });
 
 /***/ }),

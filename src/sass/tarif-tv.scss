@@ -54,7 +54,7 @@ color: #000000;
 .count-channels{
     display: flex;
  justify-content: space-between;
- align-items: center;
+ align-items: flex-end;
  padding-right: 35px;
  margin-bottom: 30px;
  a{
@@ -131,7 +131,12 @@ color: #000000;
             max-width: 453px;
             margin: 1.75rem auto;
         }
-     
+    }
+    #ordermobile_end{
+        .modal-dialog {
+            max-width: 360px;
+            margin: 1.75rem auto;
+        }
     }
 }
 @media (max-width: 991px) {
@@ -188,12 +193,13 @@ color: #000000;
     }
 }
 @media (max-width: 400px) {
+   
 .count-channels{
  flex-direction: column;
  padding-right: 15px;
  margin-bottom: 17px;
  justify-content: flex-start;
- align-items: flex-start;
+
  padding-left: 10px;
  .total-cost{
     padding-left: 0px;

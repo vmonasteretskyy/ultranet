@@ -65,11 +65,11 @@
         <a href="/">Головна</a> / <span>Телебачення </span>  
     </div>
     <div class="btn-back">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M15.9425 14.7422L16.8263 15.6261L13.0764 19.3759H29.375V20.626H13.0766L16.8263 24.3757L15.9425 25.2596L10.6837 20.0009L15.9425 14.7422Z"
-                fill="black" />
-        </svg>
+       <a href="/"> <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M15.9425 14.7422L16.8263 15.6261L13.0764 19.3759H29.375V20.626H13.0766L16.8263 24.3757L15.9425 25.2596L10.6837 20.0009L15.9425 14.7422Z"
+            fill="black" />
+    </svg></a>
     </div>
     <div class="tarif-txt">Тарифи на телебачення від «TRINITY-TV»</div>
     <div class="home-cont-internet">
@@ -89,7 +89,7 @@
                             <li>100 хв. по Україні</li>
                           </ul>  
                         <p>40 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_tv">Підключити</button>
+                        <button data-toggle="modal" data-target="#connect_mob">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                             <li>200 хв. по Україні</li>
                           </ul>  
                         <p>60 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_tv196">Підключити</button>
+                        <button data-toggle="modal" data-target="#connect_mob">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                             <li>300 хв. по Україні</li>
                           </ul>  
                         <p>90 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_tv204">Підключити</button>
+                        <button data-toggle="modal" data-target="#connect_mob">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -141,15 +141,91 @@
      <p>Договір-оферта про надання послуг телебачення ТОВ «ОТТ Україна» знаходиться <a href=""> тут</a></p>
     </div>
 
+
 <!-- Modal Заявка на підключення 
 телебачення від «TRINITY-TV» -->
-<div class="modal fade ch-tarif change_privat-tarif" id="connect_tv" tabindex="-1" aria-labelledby="exampleModalLabel"
+<div class="modal fade ch-tarif change_privat-tarif con-mob" id="connect_mob" tabindex="-1" aria-labelledby="exampleModalLabel"
 aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
         <div class="modal-header modal-header1">
-            <h5 class="modal-title" id="exampleModalLabel">Заявка на підключення 
-                <span>телебачення від «TRINITY-TV»</span>
+             <h5 class="modal-title" id="exampleModalLabel">Заявка на підключення тарифу мобільного
+               <span>  зв’язку lifecell «Діджитал офіс 40»</span>
+             </h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
+             </span>
+            </button>
+        </div>
+        <div class="modal-body modal-body1">
+            <div class="count-channels">
+                <div class="total-cost">Пакетні хвилини в мережі lifecell:</div>
+                <div class="no-limit" >Безліміт</div>
+            </div>
+            <div class="count-minutes">
+                <div class="total-cost">Пакетні хвилини на номери <br>інших операторів: </div>
+                <div class="no-limit" >100 хв</div>
+            </div>
+            <div class="count-minutes">
+                <div class="total-cost">Мобільний інтернет по Україні: </div>
+                <div class="no-limit" >4 ГБ</div>
+            </div>
+            <div class="choose-speed">
+                <p>Обраний тариф: </p>
+                <span>Тариф на телебачення:</span>
+                <div class="custom-selects2 custom-selects-tarif">
+                    <select>
+                        <option value="1">Діджитал офіс 40</option>
+                        <option value="4">Діджитал офіс 40</option>
+                        <option value="2">Діджитал офіс 60</option>
+                        <option value="3">Діджитал офіс 90</option>
+                    </select>
+                    <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
+                </div>
+            </div>
+            <div class="total-cost cost-tv">Вартість: <span>40 грн. / міс.</span> </div>
+            <div class="footer-modal">
+                <button class="order close-mod2" data-toggle="modal"
+                    data-target="#ordermobile_end">Замовити</button>
+                <button class="authorization datail_btn" data-toggle="modal"
+                data-target="#details">Детальніше</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+   <!-- Modal Вітаємо! Ви замовили 
+послугу мобільного зв’язку! -->
+   <div class="modal fade end_modal" id="ordermobile_end" tabindex="-1" aria-labelledby="my_office"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+           <div class="modal-header modal-header1">
+               <h5 class="modal-title">Вітаємо! Ви замовили  <span> послугу мобільного зв’язку!</span> </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
+                   </span>
+               </button>
+           </div>
+           <div class="modal-body modal-body1">
+               <div class="on-general">
+                   <a href="">На головну</a>
+               </div>
+           </div>
+
+       </div>
+   </div>
+</div>
+ 
+<!-- Modal Тариф lifecell «Діджитал офіс 40» -->
+<div class="modal fade " id="details" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header modal-header1">
+            <h5 class="modal-title" id="exampleModalLabel">Тариф lifecell «Діджитал офіс 40»
+                <!-- <span>  зв’язку lifecell «Діджитал офіс 40»</span> -->
             </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
@@ -157,30 +233,59 @@ aria-hidden="true">
             </button>
         </div>
         <div class="modal-body modal-body1">
-            <div class="count-channels">
-                <div class="total-cost">Кількість каналів: <span>157</span> </div>
-                <div ><a href="">Список каналів</a></div>
-            </div>
-            <div class="choose-speed">
-                <p>Обраний тариф: </p>
-                <span>Тариф на телебачення:</span>
-                <div class="custom-selects2 custom-selects-tarif">
-                    <select>
-                        <option value="1">157 каналів</option>
-                        <option value="2">157 каналів</option>
-                        <option value="3">196 каналів</option>
-                        <option value="4">204 каналів</option>
-                    </select>
-                    <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
-
-                </div>
-            </div>
-            <div class="total-cost">Вартість: <span>40 грн. / міс.</span> </div>
-         
+            <table>
+                <tr>
+                  <td>Пакетні хвилини в мережі lifecell: </td>
+                  <td>Безліміт</td>
+                </tr>
+                <tr>
+                  <td>Пакетні хвилини на номери інших операторів: </td>
+                  <td>100 хв.</td>
+              
+                </tr>
+                <tr>
+                  <td>Вартість дзвінків на номери інших операторів:</td>
+                  <td>0,40 грн.</td>
+           
+                </tr>
+                <tr>
+                  <td>Пакетні SMS по Україні:</td>
+                  <td>100</td>
+                
+                </tr>
+                <tr>
+                  <td>Вартість SMS по Україні:</td>
+                  <td>1 грн.</td>
+               
+                </tr>
+                <tr>
+                  <td>Мобільний інтернет по Україні:</td>
+                  <td>4 ГБ.</td>
+             
+                </tr>
+                <tr>
+                  <td>SMS за кордон:</td>
+                  <td>2,7 хв.</td>
+                </tr>
+                <tr>
+                    <td>Інтернет по Україні:</td>
+                    <td>10 грн/100 МБ.</td>
+                  </tr>
+                  <tr>
+                    <td>Стартовий платіж:</td>
+                    <td>40 грн.</td>
+                  </tr>
+                  <tr>
+                    <td>Вартість: </td>
+                    <td>40 грн. / міс.</td>
+                  </tr>
+              </table>
             <div class="footer-modal">
-                <button class="order close-mod2" data-toggle="modal"
-                    data-target="#order_tv">Замовити</button>
-
+                <button class="order datail_btn" data-toggle="modal"
+                    data-target="#ordermobile_end">Замовити</button>
+                    <p>Можливе підключення як на існуючий номер lifecell так і надання нового номера.</p>
+                    <p>Тарифи вказані на сайті мобільного оператора <a href="">lifecell</a></p>
+    
             </div>
         </div>
  
@@ -188,9 +293,7 @@ aria-hidden="true">
 </div>
 </div>
 
- 
- 
- 
+
     </section>
     <footer class="footer-other">
         <div class="container">

@@ -1,0 +1,116 @@
+ 
+
+#details {
+    overflow-y: scroll;
+    .modal-header1 h5 {
+        margin-left: 15px;
+    }
+    table tr td:last-of-type {
+        text-align: center;
+        width: 352px;
+        font-weight: 300;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        /* identical to box height, or 27px */
+
+        color: #000000;
+        text-align: left;
+        padding: 13px 35px;
+    }
+
+    tr:nth-child(even) {
+        background: #f5f3f1;
+    }
+    .footer-modal {
+        button {
+            margin-bottom: 40px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+            color: #000000;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            a {
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.acord-item{
+  .btn-link{
+      display: flex;
+      justify-content: space-between;
+  }
+}
+@media (min-width: 500px) {
+    #details .modal-dialog {
+        max-width: 835px;
+        margin: 1.75rem auto;
+    }
+}
+@media (max-width: 735px) {
+    #details {
+        table tr td:last-of-type {
+            text-align: center;
+            width: 200px;
+            font-weight: 300;
+        }
+    }
+}
+@media (max-width: 500px) {
+    #details {
+        .modal-header1 h5 {
+            margin-left: 2px;
+            width: 180px;
+        }
+        td
+         {
+            text-align: left;
+            padding: 4px 0px;
+        }
+        table tr td:last-of-type {
+            text-align: left;
+            width: auto;
+        }
+        table tr {
+            padding: 8px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 394px) {
+#details{
+    .footer-modal p:last-of-type{
+        position: absolute;
+        margin-top: 148px;
+    left: 0;
+width: 80%;
+    }
+    .footer-modal {
+        button {
+            margin-bottom: 20px;
+        }
+        p {
+        margin-left: 10px;
+        margin-right: 10px;
+            margin-top: 0px;
+            margin-bottom: 40px;
+       
+        }
+    }
+}
+}

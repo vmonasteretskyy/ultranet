@@ -426,37 +426,38 @@ $('#radio-3').click(function () {
 })
 
 $('#collapseOne').on('hidden.bs.collapse', function () {
-  $('.arr-accord1').css("background","red")
+  $('.arr-accord1').css("transform","rotate(0deg)")
  
 })
 $('#collapseOne').on('shown.bs.collapse', function () {
-  $('.arr-accord1').css("background","blue")
+  $('.arr-accord1').css("transform","rotate(180deg)")
+  
 })
 //
 $('#collapseTwo').on('hidden.bs.collapse', function () {
-  $('.arr-accord2').css("background","red")
+  $('.arr-accord2').css("transform","rotate(0deg)")
  
 })
 
 $('#collapseTwo').on('shown.bs.collapse', function () {
-  $('.arr-accord2').css("background","blue")
+  $('.arr-accord2').css("transform","rotate(180deg)")
  
 
 })
 //
 $('#collapseThree').on('hidden.bs.collapse', function () {
-  $('.arr-accord3').css("background","red")
+  $('.arr-accord3').css("transform","rotate(0deg)")
  
 })
 
 $('#collapseThree').on('shown.bs.collapse', function () {
-  $('.arr-accord3').css("background","blue")
+  $('.arr-accord3').css("transform","rotate(180deg)")
 })
 //
 $('#collapseFour').on('hidden.bs.collapse', function () {
-  $('.arr-accord4').css("background","red")
+  $('.arr-accord4').css("transform","rotate(0deg)")
  
 })
 $('#collapseFour').on('shown.bs.collapse', function () {
-  $('.arr-accord4').css("background","blue")
+  $('.arr-accord4').css("transform","rotate(180deg)")
 })

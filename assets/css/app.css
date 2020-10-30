@@ -13,11 +13,11 @@
 
 #header {
   width: 100%;
-  top: -10px;
+  top: 0px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   padding-bottom: 9px;
-  padding-top: 7px;
+  padding-top: 0px;
 }
 #header .header-menu {
   margin-top: 24px;
@@ -123,11 +123,8 @@
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
 }
 
-.burger2 {
-  padding: 10px 0px 0px 0px;
-}
 .burger2 .burger-menu_button {
-  top: 24px;
+  top: 14px;
 }
 .burger2 .burger-menu_nav {
   top: 94px;
@@ -733,11 +730,11 @@
   }
 
   .burger2 {
-    padding: 10px 0px 0px 0px;
+    padding: 3px 0px 0px 0px;
   }
   .burger2 .burger-menu_button {
     right: 17px;
-    top: 16px;
+    top: 8px;
   }
   .burger2 .burger-menu_nav {
     top: 57px;
@@ -1551,7 +1548,7 @@ footer {
   font-size: 14px;
   line-height: 10px;
   color: #000000;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .home-atribute a {
   text-decoration: underline;
@@ -2454,7 +2451,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .btn-back {
-    margin-top: 8px;
+    padding-top: 8px;
     display: block;
   }
 
@@ -3368,6 +3365,17 @@ input[type=checkbox]:checked + label:before {
     margin-top: 20px;
   }
 }
+.actions {
+  background: url(/src/img/action-bg.png) no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 164px;
+}
+
+.arr-accord1 {
+  transform: rotate(180deg);
+}
+
 #details {
   overflow-y: scroll;
 }
@@ -3413,9 +3421,54 @@ input[type=checkbox]:checked + label:before {
   text-decoration: underline;
 }
 
-.acord-item .btn-link {
+.acord-item {
+  background: #F5F3F1;
+  filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
+  padding: 20px 35px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.acord-item .btn_open {
+  width: 100%;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
+}
+.acord-item .btn_open h2 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+}
+.acord-item .btn_open img {
+  transition: 0.3s ease;
+}
+.acord-item .open_body {
+  margin-top: 20px;
+}
+.acord-item .open_body p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+.acord-item .open_body button {
+  background: #34A0D9;
+  border-radius: 10px;
+  width: 147px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 5px 0px 7px 0px;
+  transition: 0.4s ease;
+  margin-top: 10px;
+}
+.acord-item .open_body button:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+.acord-item .open_body button:active {
+  background: #0B3661;
 }
 
 @media (min-width: 500px) {

@@ -7,11 +7,12 @@ header {
 }
 #header {
     width: 100%;
-    top: -10px;
+    // top: -10px;
+    top: 0px;
     background: #FFFFFF;
 box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
 padding-bottom: 9px;
-padding-top: 7px;
+padding-top: 0px;
 .header-menu {
     margin-top: 24px;}
     .header-contact_number{
@@ -130,10 +131,10 @@ margin-left:25px;
     box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
 }
 .burger2{
-    padding: 10px 0px 0px 0px;
+    // padding: 10px 0px 0px 0px;
     .burger-menu_button {
     
-        top: 24px;
+        top: 14px;
      
     }
     .burger-menu_nav{
@@ -792,10 +793,10 @@ color: #ABABAB;
         right: 1%;
      }
     .burger2{
-        padding: 10px 0px 0px 0px;
+        padding: 3px 0px 0px 0px;
         .burger-menu_button {
     right: 17px;
-            top: 16px;
+            top: 8px;
          
         }
         .burger-menu_nav{

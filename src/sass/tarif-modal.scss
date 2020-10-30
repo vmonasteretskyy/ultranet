@@ -351,6 +351,9 @@ color: #464646;
 }
 
 @media (max-width: 532px) {
+    .modal-content {
+        border-radius: 10px;
+    }
     .con-mob .modal-body1{
         .total-cost{
        

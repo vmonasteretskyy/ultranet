@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="src/NeueHaasUnica/stylesheet.css" rel="stylesheet">
     <script async src="http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.4"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo7WEWMHZEjI7jdJTbPQ2f9T9gOqeDis0"></script>
 </head>
 <body>
     <header id="header">
@@ -61,7 +63,7 @@
 
     </header>
          <!-- Modal Вхід до особистого кабінету-->
-       <div class="modal fade " id="my_office" tabindex="-1" aria-labelledby="my_office" aria-hidden="true">
+         <div class="modal fade " id="my_office" tabindex="-1" aria-labelledby="my_office" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                   <div class="modal-header modal-header1">
@@ -94,7 +96,7 @@
               </div>
           </div>
       </div>
-    <main class="actions">
+    <main >
       <div class="social-network">
         <a href="">
             <img class="svg" src="src/img/facebook.svg" alt="">
@@ -133,86 +135,47 @@
 
       </div>
   </div>
- <section class="container">
-  <div class="home-atribute">
-    <a href="/">Головна</a> / <span>Акції </span>  
-</div>
-<div class="btn-back">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M15.9425 14.7422L16.8263 15.6261L13.0764 19.3759H29.375V20.626H13.0766L16.8263 24.3757L15.9425 25.2596L10.6837 20.0009L15.9425 14.7422Z"
-            fill="black" />
-    </svg>
-</div>
-<div class="tarif-txt">Акції</div>
-      <div id="accordion">
-        <div class="acord-item">
-          <div  id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn_open" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <h2>Підключення всього за 1 грн!</h2>
-                <img class="arr-accord1" src="src/img/action-ar.svg">
-              </button>
-            </h5>
-          </div>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="open_body" >
-                    <p>Внеси авансовий платіж 200 грн та підключись до високошвидкісного інтернету лише за 1 грн!</p>
-                    <button>Підключитись</button>
-                         </div>
-          </div>
+  <main class="contact-block">
+ <section class="contact">
+ 
+<div class="tarif-txt">Контакти</div>
+ 
+  
+    <div id="map"></div>
+    <div class="container">
+        <div class="contact-info">
+            <div class="info-item">
+                <h4>Адреса:</h4>
+                <p>м. Чернігів,<br>
+                    вул. Родимцева 2 </p>
+            </div>
+            <div class="info-item">
+                <h4>Режим роботи:</h4>
+                <p>Пн. - Пт. - 9:00 - 18:00; <br>
+                    Сб., Нд. - вихідні</p>
+            </div>
+            <div class="info-item">
+                <h4>Абонентський відділ:</h4>
+                <p>(0462) 612-607 <br>
+                    +38 (093) 390-14-68</p>
+            </div>
+            <div class="info-item">
+                <h4>Технічна підтримка:</h4>
+                <p>(0462) 971-164 <br>
+                    +38 (093) 390-15-46</p>
+            </div>
+            <div class="info-item">
+                <h4>Email:</h4>
+                <p><a href="">mailbox@ultranet.com.ua</a></p>
+            </div>
         </div>
-        <div class="acord-item">
-          <div   id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn_open collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h2>3 місяці безкоштовного інтернету на швидкості 100 Мбіт/с</h2>
-                <img class="arr-accord2" src="src/img/action-ar.svg">
+        <div class="rules-services">
+            <p>Також ви можете ознайомитись з <a href="">Правилами надання послуг</a> ТОВ «ТК «Ультранет».</p>
+        </div>
+    </div>
 
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="open_body">
-                <p>Підключись до мережі «Ультранет» в багатоквартирному будинку та отримуй 3 місяці безкоштовного інтернету на швидкості 100 Мбіт/с в незалежності від обраного вами тарифного палану.</p>
-                <button>Підключитись</button>
-            </div>
-          </div>
-        </div>
-        <div class="acord-item">
-          <div  id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn_open collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <h2>Компенсуємо 500 грн на особистий рахунок!</h2>
-                <img class="arr-accord3" src="src/img/action-ar.svg">
-
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="open_body">
-                <p>При придбанні нашого роутеру ви отримуєте кешбек в розмірі 500 грн. на ваш особистий рахунок (по 20 грн. щомісячно, протягом 25 місяців).</p>
-                <p>Компенсація нараховується тільки при знятті абонентської плати за поточним тарифом.</p>
-                 <button>Підключитись</button>            </div>
-          </div>
-        </div>
-        <div class="acord-item">
-            <div   id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn_open collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <h2>Акція «Приведи друга» </h2>
-                  <img class="arr-accord4" src="src/img/action-ar.svg">
-                 </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-              <div class="open_body">
-                <p>Приводь друга та отримай місяць безкоштовного інтернету згідно вашого тарифу. </p>
-                <button>Підключитись</button>         </div>
-            </div>
-          </div>
-      </div>
- </section>
+</section>
+ 
 </main>
 <footer>
   <div class="container">

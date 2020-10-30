@@ -218,7 +218,6 @@ font-size: 15px;
 }
 @media (max-width: 767px){
     .footer-block{
-    
         padding: 29px 25px 29px 0px;
     }
     #map{
@@ -237,18 +236,16 @@ font-size: 15px;
     }
     .contact-info{
         padding-bottom: 20px;
-flex-wrap: wrap;
+       flex-wrap: wrap;
  
         }
         .info-item{
             width: 180px;
            margin-left: 0px;
            margin-right: 20px;
-         
             h4{
          height: auto;
         font-size: 16px;
-         
             }
             p{
          

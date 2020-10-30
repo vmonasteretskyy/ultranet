@@ -375,7 +375,7 @@
 }
 
 .burg-logo {
-  padding: 13px 15px;
+  padding: 12px 15px;
 }
 
 .social-network {
@@ -729,9 +729,6 @@
     right: 1%;
   }
 
-  .burger2 {
-    padding: 3px 0px 0px 0px;
-  }
   .burger2 .burger-menu_button {
     right: 17px;
     top: 8px;

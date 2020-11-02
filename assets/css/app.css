@@ -1,4 +1,4 @@
-/*!
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);/*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -135,8 +135,8 @@
   position: absolute;
   top: auto;
   opacity: 1;
-  margin-left: 489px;
-  z-index: 3;
+  margin-left: 498px;
+  z-index: 2;
   width: auto;
 }
 
@@ -150,31 +150,33 @@
 }
 
 .carousel-control-next {
-  margin-left: 556px;
+  margin-left: 566px;
   right: auto;
 }
 
 .main-count_slider {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
   position: absolute;
   z-index: 2;
   background: #E8E8E8;
-  width: 98px;
+  width: 106px;
   height: 68px;
   margin-top: -68px;
   margin-left: 392px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 14px;
+  padding-top: 11px;
+  padding-left: 13px;
 }
 .main-count_slider span {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 26px;
+  margin-top: 3px;
   margin-left: 5px;
 }
 
@@ -205,7 +207,7 @@
   width: 189px;
   height: 60px;
   background: #34A0D9;
-  border-radius: 10px;
+  border-radius: 3px;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
@@ -303,12 +305,12 @@
   z-index: 99;
   display: flex;
   flex-flow: column;
-  height: 85vh;
+  height: 450px;
   width: 40%;
   margin: 0 auto;
   background: #FFFFFF;
-  border-radius: 20px;
-  overflow-y: auto;
+  border-radius: 10px;
+  overflow-y: scroll;
   right: 1%;
   visibility: hidden;
   overflow: hidden;
@@ -390,7 +392,7 @@
   margin-bottom: 15px;
   padding-left: 2px;
   background: #34A0D9;
-  border-radius: 15px;
+  border-radius: 10px;
   height: 50px;
   width: 50px;
   transition: 0.3s ease;
@@ -427,7 +429,7 @@
 .container-chat {
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
   width: 360px;
   display: none;
   position: fixed;
@@ -441,7 +443,7 @@
   padding: 0px 7px 0px 20px;
   background: #34A0D9;
   box-shadow: 0px 5px 5px rgba(171, 171, 171, 0.3);
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -473,6 +475,7 @@
 }
 
 .enter-chat input {
+  border-radius: 0pt 0pt 10px 10px;
   padding: 0px 58px 0px 20px;
   width: 100%;
   background: #F5F3F1;
@@ -517,7 +520,7 @@
   }
 
   .main-count_slider {
-    margin-left: 167px;
+    margin-left: 161px;
   }
 }
 @media (max-width: 1600px) {
@@ -661,7 +664,8 @@
   }
 
   .main-count_slider {
-    margin-left: 107px;
+    padding-left: 10px;
+    margin-left: 100px;
   }
 
   .carousel-item .background-img {
@@ -743,6 +747,7 @@
 
   .burg-logo {
     width: 142px;
+    padding: 12px 7px;
   }
 
   .carousel-item .background-img {
@@ -781,11 +786,12 @@
     height: 40px;
     margin-top: -40px;
     margin-left: 15px;
-    padding-top: 1px;
+    padding-left: 0px;
+    padding-top: 0px;
   }
   .main-count_slider span {
     font-size: 12px;
-    line-height: 35px;
+    line-height: 29px;
     margin-left: 3px;
   }
 
@@ -853,14 +859,22 @@
     width: 280px;
   }
 }
+@media (max-width: 418px) {
+  .one-grn {
+    display: block;
+  }
+}
 .pay-services-block {
   color: #000000;
+}
+
+.pay-services {
+  margin-left: -20px;
 }
 
 .main-text-center {
   padding: 100px 0px 50px 0px;
   text-align: center;
-  width: 99%;
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;
@@ -877,8 +891,6 @@
   max-width: 350px;
   min-width: 350px;
   height: 404px;
-  margin-left: 15px;
-  margin-right: 15px;
   text-align: center;
   transition: 0.3s ease;
 }
@@ -915,7 +927,7 @@
 .pay-item button {
   margin-top: 25px;
   background: #34a0d9;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 233px;
   height: 40px;
   font-weight: 500;
@@ -938,8 +950,12 @@
 .pay_text-help span {
   font-weight: 500;
   font-size: 18px;
-  line-height: 18px;
-  border-bottom: 1px solid #000000;
+  line-height: 17px;
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+.pay_text-help span:hover {
+  text-decoration: none;
 }
 
 .pay-arrow-select {
@@ -1286,7 +1302,7 @@
   text-align: right;
   width: 100%;
   margin-right: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .archive-news a {
   -webkit-text-decoration-line: underline;
@@ -1305,7 +1321,7 @@
   color: #000000;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: -240px;
   position: relative;
   z-index: 3;
@@ -1533,7 +1549,7 @@ footer {
   }
 
   .archive-news {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .news-block {
@@ -1695,7 +1711,7 @@ footer {
 }
 .text-m-bit {
   position: absolute;
-  margin-top: -190px;
+  margin-top: -186px;
   width: 360px;
   text-align: center;
   color: #000000;
@@ -1704,11 +1720,13 @@ footer {
   font-weight: normal;
   font-size: 72px;
   line-height: 74px;
+  font-family: "Montserrat", sans-serif;
 }
 .text-m-bit p {
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home-int-grn p {
@@ -1915,9 +1933,9 @@ footer {
   transition: transform ease 0.25s;
   will-change: transform;
   position: absolute;
-  top: 4.3px;
+  top: 4.5px;
   margin-top: 10px;
-  left: 2.7px;
+  left: 3px;
 }
 
 .checkbox input[type=checkbox]:checked ~ label::after {
@@ -2343,12 +2361,13 @@ input[type=checkbox]:checked + label:before {
   .text-m-bit {
     text-align: center;
     margin-left: 69px;
-    margin-top: -130px;
+    margin-top: -118px;
     width: 100px;
   }
   .text-m-bit h3 {
     font-size: 48px;
     line-height: 50px;
+    margin-bottom: 0px;
   }
   .text-m-bit p {
     font-weight: normal;
@@ -2433,6 +2452,11 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .privat-home .home-internet-text {
+    text-align: left;
+    font-size: 16px;
+  }
+
   .business-law {
     padding-top: 150px;
   }
@@ -2706,7 +2730,11 @@ input[type=checkbox]:checked + label:before {
 }
 
 .modal-content {
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.form-my_office .checkbox label {
+  line-height: 27px;
 }
 
 .form-my_office {
@@ -2716,8 +2744,9 @@ input[type=checkbox]:checked + label:before {
 .form-my_office label {
   font-weight: normal;
   font-size: 12px;
-  line-height: 27px;
+  line-height: 18px;
   color: #000000;
+  margin-bottom: 0px;
 }
 .form-my_office #save-pass {
   width: 16px;
@@ -2731,7 +2760,7 @@ input[type=checkbox]:checked + label:before {
   height: 40px;
   border: 1px solid #ababab;
   margin-bottom: 16px;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 .form-my_office input::-moz-placeholder {
   font-weight: 300;
@@ -2765,9 +2794,8 @@ input[type=checkbox]:checked + label:before {
 .form-my_office .enter-btn button {
   margin-bottom: 20px;
   width: 225px;
-  padding-top: 6px;
-  padding-bottom: 9px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 3px;
   font-weight: 500;
 }
 .form-my_office .enter-btn .enter {
@@ -3373,6 +3401,10 @@ input[type=checkbox]:checked + label:before {
   padding-bottom: 164px;
 }
 
+.modal .close {
+  z-index: 9;
+}
+
 .arr-accord1 {
   transform: rotate(180deg);
 }
@@ -3550,6 +3582,32 @@ input[type=checkbox]:checked + label:before {
   background: #f5f3f1;
 }
 
+.disappear-box {
+  display: none;
+}
+
+.news_box a {
+  cursor: pointer;
+}
+
+.show_more {
+  padding-bottom: 100px;
+  text-align: center;
+  margin-top: 20px;
+}
+.show_more p {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  cursor: pointer;
+}
+.show_more p:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 500px) {
   .grafic .modal-dialog {
     max-width: 1076px;
@@ -3679,6 +3737,11 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .show_more {
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+
   .news_box .news-item h3 {
     font-size: 16px;
   }
@@ -3686,6 +3749,9 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 0px;
   }
   .news_box .disappear-text {
+    display: none;
+  }
+  .news_box .disappear-block {
     display: none;
   }
   .news_box .grafic_box .news-item {
@@ -3770,6 +3836,166 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 40px;
   }
 }
+.rules {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+  border-radius: 10px;
+  padding-right: 2px;
+  overflow: hidden;
+}
+.rules ul {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.rules li {
+  padding-bottom: 30px;
+}
+.rules li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  transition: 0.4s ease;
+}
+.rules li a:hover {
+  box-shadow: 0px 1px black;
+}
+
+.rules-info {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-right: 5px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 580px;
+  color: #000000;
+}
+.rules-info div {
+  padding-bottom: 50px;
+}
+.rules-info h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+.rules-info h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+.rules-info h4 {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 0px;
+}
+.rules-info p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.rules-info div:last-of-type {
+  padding-bottom: 0px;
+}
+
+.main-rules {
+  padding-bottom: 100px;
+}
+
+.rules-menu {
+  border-right: 1px solid #E8E8E8;
+  padding-right: 0px;
+}
+
+@media (max-width: 1199px) {
+  .rules-info {
+    height: 646px;
+  }
+}
+@media (max-width: 991px) {
+  .rules {
+    height: 590px;
+  }
+  .rules ul {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .rules li {
+    padding-bottom: 20px;
+    width: 190px;
+  }
+  .rules li a {
+    font-size: 16px;
+  }
+
+  .rules-info {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 535px;
+  }
+  .rules-info div {
+    padding-bottom: 50px;
+  }
+  .rules-info h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .rules-info h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .rules-info h4 {
+    padding-top: 10px;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .rules-info p {
+    font-size: 16px;
+    padding-top: 10px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .rules-container {
+    overflow-x: scroll;
+  }
+
+  .rules {
+    height: 580px;
+    width: 517px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .rules ul {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .rules li {
+    padding-bottom: 20px;
+    width: 190px;
+    padding-right: 10px;
+  }
+  .rules li a {
+    font-size: 15px;
+  }
+
+  .rules-info {
+    height: 540px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -3781,6 +4007,10 @@ input[type=checkbox]:checked + label:before {
   vertical-align: baseline;
   list-style: none;
   box-sizing: border-box;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
 }
 
 button:focus {

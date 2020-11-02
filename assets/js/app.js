@@ -20373,7 +20373,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
 
 
-
+ // $("body").on("click", "a", function (event) {
+//   event.preventDefault();
+//   var id = $(this).attr('href'),
+//       top = $(id).offset().marginTop -130;
+//   $('body,html').animate({ scrollTop: top }, 1600);
+// });
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.form-connect')) {
   var element = document.getElementById('mask-phone');
@@ -20767,6 +20772,10 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseFour').on('hidden.bs.col
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseFour').on('shown.bs.collapse', function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord4').css("transform", "rotate(180deg)");
+}); //news
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-show-more').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.disappear-box').css("display", "flex");
 });
 
 /***/ }),

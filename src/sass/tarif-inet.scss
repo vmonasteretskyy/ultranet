@@ -176,7 +176,7 @@ margin-top: 9px;
 
 .text-m-bit {
     position: absolute;
-    margin-top: -190px;
+    margin-top: -186px;
     width: 360px;
     text-align: center;
     color: #000000;
@@ -185,12 +185,14 @@ margin-top: 9px;
         font-weight: normal;
         font-size: 72px;
         line-height: 74px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     p {
         font-weight: normal;
         font-size: 18px;
         line-height: 150%;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -423,9 +425,9 @@ margin-top: 9px;
     transition: transform ease 0.25s;
     will-change: transform;
     position: absolute;
-    top: 4.3px;
+    top: 4.5px;
     margin-top: 10px;
-    left: 2.7px;
+    left: 3px;
 }
 
 .checkbox input[type="checkbox"]:checked ~ label::after {
@@ -852,12 +854,13 @@ height: auto;
     .text-m-bit {
         text-align: center;
         margin-left: 69px;
-        margin-top: -130px;
+        margin-top: -118px;
         width: 100px;
 
         h3 {
             font-size: 48px;
             line-height: 50px;
+            margin-bottom: 0px;
         }
 
         p {
@@ -960,6 +963,12 @@ height: auto;
 }
 
 @media (max-width: 575px) {
+    .privat-home {
+        .home-internet-text {
+            text-align: left;
+            font-size: 16px;
+        }
+    }
     .business-law {
         padding-top: 150px;
     }

@@ -1,10 +1,13 @@
 .pay-services-block {
     color: #000000;
 }
+.pay-services {
+     margin-left: -20px;
+}
 .main-text-center {
     padding: 100px 0px 50px 0px;
     text-align: center;
-    width: 99%;
+    // width: 99%;
     font-weight: 500;
     font-size: 24px;
     line-height: 130%;
@@ -18,10 +21,9 @@
     border-radius: 10px;
     max-width: 350px;
     min-width: 350px;
-
     height: 404px;
-    margin-left: 15px;
-    margin-right: 15px;
+    // margin-left: 15px;
+    // margin-right: 15px;
     text-align: center;
     transition: 0.3s ease;
 
@@ -65,7 +67,7 @@
     button {
         margin-top: 25px;
         background: #34a0d9;
-        border-radius: 10px;
+        border-radius: 3px;
         width: 233px;
         height: 40px;
         font-weight: 500;
@@ -91,8 +93,13 @@
     span {
         font-weight: 500;
         font-size: 18px;
-        line-height: 18px;
-        border-bottom: 1px solid #000000;
+        line-height: 17px;
+        text-decoration: underline;
+        transition: 0.3s ease;
+        &:hover{
+        text-decoration: none;
+
+        }
     }
 }
 

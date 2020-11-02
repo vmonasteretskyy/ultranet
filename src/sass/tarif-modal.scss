@@ -24,19 +24,24 @@
 }
 
 .modal-content {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 // .form-my_office label:last-of-type{
 //     font-size: 16px;
 //   }
+.form-my_office .checkbox label{
+    line-height: 27px;
+
+}
 .form-my_office {
     width: 225px;
     margin: 0 auto;
     label {
         font-weight: normal;
         font-size: 12px;
-        line-height: 27px;
+        line-height: 18px;
         color: #000000;
+        margin-bottom: 0px;
     }
     #save-pass {
         width: 16px;
@@ -50,7 +55,7 @@
         height: 40px;
         border: 1px solid #ababab;
         margin-bottom: 16px;
-        border-radius: 10px;
+        border-radius: 3px;
         &::placeholder {
             font-weight: 300;
             font-size: 18px;
@@ -75,10 +80,10 @@
         button {
             margin-bottom: 20px;
             width: 225px;
-            // height: 40px;
-            padding-top: 6px;
-            padding-bottom: 9px;
-            border-radius: 10px;
+            height: 40px;
+            // padding-top: 6px;
+            // padding-bottom: 9px;
+            border-radius: 3px;
             font-weight: 500;
         }
 

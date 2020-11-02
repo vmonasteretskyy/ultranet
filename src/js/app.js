@@ -2,6 +2,13 @@ import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
 import IMask from 'imask';
 
+// $("body").on("click", "a", function (event) {
+//   event.preventDefault();
+//   var id = $(this).attr('href'),
+//       top = $(id).offset().marginTop -130;
+//   $('body,html').animate({ scrollTop: top }, 1600);
+
+// });
 
 if ($('*').is('.form-connect')) {
 let element = document.getElementById('mask-phone');
@@ -20,12 +27,14 @@ let mask = IMask(element, maskOptions);
         button.on('click', (e) => {
             e.preventDefault();
             toggleMenu();
+
         });
     
         links.on('click', () => toggleMenu());
         overlay.on('click', () => toggleMenu());
     
         function toggleMenu() {
+      
             menu.toggleClass('burger-menu_active');
     
         }
@@ -461,3 +470,7 @@ $('#collapseFour').on('hidden.bs.collapse', function () {
 $('#collapseFour').on('shown.bs.collapse', function () {
   $('.arr-accord4').css("transform","rotate(180deg)")
 })
+//news
+$('.txt-show-more').click(function () {
+  $('.disappear-box').css("display","flex");
+  })

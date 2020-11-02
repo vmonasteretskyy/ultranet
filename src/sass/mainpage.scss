@@ -146,8 +146,8 @@ margin-left:25px;
     position: absolute;
     top: auto;
     opacity: 1;
-    margin-left: 489px;
-    z-index: 3;
+    margin-left: 498px;
+    z-index: 2;
     width: auto;
 }
 
@@ -161,32 +161,33 @@ margin-left:25px;
 }
 
 .carousel-control-next {
-    margin-left: 556px;
+    margin-left: 566px;
     right: auto;
 }
 
 .main-count_slider {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 36px;
     line-height: 40px;
     color: #000000;
     position: absolute;
     z-index: 2;
     background: #E8E8E8;
-    width: 98px;
+    width: 106px;
     height: 68px;
     margin-top: -68px;
     margin-left: 392px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 14px;
-
+    padding-top: 11px;
+padding-left: 13px;
+ 
     span {
-        font-weight: 500;
+        font-weight: 300;
         font-size: 18px;
-        line-height: 28px;
-
+        line-height: 26px;
+margin-top: 3px;
         margin-left: 5px;
     }
 }
@@ -220,7 +221,7 @@ margin-left:25px;
         width: 189px;
         height: 60px;
         background: #34A0D9;
-        border-radius: 10px;
+        border-radius: 3px;
         font-weight: 500;
         font-size: 22px;
         // line-height: 150%;
@@ -342,12 +343,12 @@ margin-left:25px;
     z-index: 99;
     display: flex;
     flex-flow: column;
-    height: 85vh;
+    height: 450px;
     width: 40%;
     margin: 0 auto;
     background: #FFFFFF;
-    border-radius: 20px;
-    overflow-y: auto;
+    border-radius: 10px;
+    overflow-y: scroll;
     right: 1%;
  
   visibility: hidden;
@@ -439,7 +440,7 @@ color: #000000;
         margin-bottom: 15px;
         padding-left: 2px;
         background: #34A0D9;
-        border-radius: 15px;
+        border-radius: 10px;
         height: 50px;
         width: 50px;
         transition: 0.3s ease;
@@ -476,7 +477,7 @@ cursor: pointer;
 .container-chat{
 background: #FFFFFF;
 box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
-border-radius: 20px;
+border-radius: 10px;
 width: 360px;
  display: none;
  position: fixed;
@@ -491,7 +492,7 @@ width: 360px;
     padding: 0px 7px 0px 20px;
     background: #34A0D9;
     box-shadow: 0px 5px 5px rgba(171, 171, 171, 0.3);
-    border-radius: 20px 20px 0px 0px;  
+    border-radius: 10px 10px 0px 0px;  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -521,6 +522,8 @@ padding: 5px 10px;
 }
 .enter-chat{
     input{
+border-radius:0pt 0pt  10px 10px;
+
         padding: 0px 58px 0px 20px;
         width: 100%;
         background: #F5F3F1;
@@ -557,7 +560,7 @@ color: #ABABAB;
 
     .main-count_slider {
 
-        margin-left: 167px;
+        margin-left: 161px;
     }
 }
 @media (max-width: 1600px){
@@ -717,8 +720,8 @@ color: #ABABAB;
     }
 
     .main-count_slider {
-
-        margin-left: 107px;
+padding-left: 10px;
+        margin-left: 100px;
     }
     .carousel-item .background-img {
         height: 790px;
@@ -786,6 +789,7 @@ color: #ABABAB;
 }
 
 @media (max-width: 575px) {
+   
     .burger-menu_nav {
  
         width: 98%;
@@ -809,6 +813,8 @@ color: #ABABAB;
     }
     .burg-logo{
         width: 142px;
+   padding: 12px 7px;
+        
     }
     .carousel-item .background-img {
         height: 320px;
@@ -854,13 +860,13 @@ color: #ABABAB;
         height: 40px;
         margin-top: -40px;
         margin-left: 15px;
-
-        padding-top: 1px;
+padding-left: 0px;
+        padding-top: 0px;
 
         span {
 
             font-size: 12px;
-            line-height: 35px;
+            line-height: 29px;
 
             margin-left: 3px;
         }
@@ -947,4 +953,10 @@ color: #ABABAB;
  
     
     }
+}
+
+@media (max-width: 418px){
+.one-grn{
+    display: block;
+}
 }

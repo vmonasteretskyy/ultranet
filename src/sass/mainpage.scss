@@ -380,7 +380,7 @@ color: #000000;
         color: #000000;
     }
     .burger-privacy{
-        width: 147px;
+        width: 164px;
         border-bottom: 1px solid #000000;
 
     }
@@ -563,6 +563,20 @@ color: #ABABAB;
         margin-left: 161px;
     }
 }
+@media (max-width: 1694px){
+    .contact_number {
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+     span{
+         font-size: 14px;
+     }
+     }
+    .contact_number div:first-of-type {
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 1600px){
     header {
         width: 96%; 
@@ -637,8 +651,21 @@ color: #ABABAB;
      
      }
     }
+    @media (max-width: 1338px){
+        .contact_number {
+            font-size: 12px;
+         
+         span{
+             font-size: 12px;
+         }
+         }
+  
+    }
 @media (max-width: 1290px) {
- 
+ .main-page   .header-contact_number{
+   
+    margin-bottom: 0px;
+}
     .logotip a{
         img{
             width: 220px;
@@ -671,6 +698,15 @@ color: #ABABAB;
              }
         }
 }
+@media (max-width: 1227px){
+    .contact_number {
+        flex-direction: column;
+    
+}
+.contact_number div:first-of-type {
+    margin-right: 0px;
+}
+}
 @media (max-width: 1203px) {
     #header{
         padding-top: 0px;
@@ -688,13 +724,7 @@ color: #ABABAB;
         margin-bottom: 0px;
     }
  
-        .contact_number {
-                flex-direction: column;
-            
-        }
-        .contact_number div:first-of-type {
-            margin-right: 0px;
-        }
+      
 }
 @media (max-width: 1199px) {
    
@@ -727,7 +757,7 @@ padding-left: 10px;
         height: 790px;
     }
 }
-@media (max-width: 1063px){
+@media (max-width: 1077px){
        #header{
         box-shadow: none;
     }

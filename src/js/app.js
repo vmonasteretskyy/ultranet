@@ -474,3 +474,17 @@ $('#collapseFour').on('shown.bs.collapse', function () {
 $('.txt-show-more').click(function () {
   $('.disappear-box').css("display","flex");
   })
+  //tabs
+	$(".tab_item").not(":first").hide();
+$(".wrapper .tab").click(function() {
+	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+
+if ($('*').is('.main-privacy')) {
+  $('.change_taruf').click(function () {
+    $('.tab_elem1').fadeOut();
+    $('.appear_taruf').fadeIn();
+    })
+
+}

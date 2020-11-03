@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);/*!
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);/*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -339,7 +339,7 @@
   color: #000000;
 }
 .burger-menu_nav .burger-privacy {
-  width: 147px;
+  width: 164px;
   border-bottom: 1px solid #000000;
 }
 
@@ -523,6 +523,20 @@
     margin-left: 161px;
   }
 }
+@media (max-width: 1694px) {
+  .contact_number {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .contact_number span {
+    font-size: 14px;
+  }
+
+  .contact_number div:first-of-type {
+    margin-right: 10px;
+  }
+}
 @media (max-width: 1600px) {
   header {
     width: 96%;
@@ -593,7 +607,19 @@
     text-align: center;
   }
 }
+@media (max-width: 1338px) {
+  .contact_number {
+    font-size: 12px;
+  }
+  .contact_number span {
+    font-size: 12px;
+  }
+}
 @media (max-width: 1290px) {
+  .main-page .header-contact_number {
+    margin-bottom: 0px;
+  }
+
   .logotip a img {
     width: 220px;
   }
@@ -622,6 +648,15 @@
     margin-bottom: 0px;
   }
 }
+@media (max-width: 1227px) {
+  .contact_number {
+    flex-direction: column;
+  }
+
+  .contact_number div:first-of-type {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 1203px) {
   #header {
     padding-top: 0px;
@@ -636,14 +671,6 @@
 
   .header-contact_number {
     margin-bottom: 0px;
-  }
-
-  .contact_number {
-    flex-direction: column;
-  }
-
-  .contact_number div:first-of-type {
-    margin-right: 0px;
   }
 }
 @media (max-width: 1199px) {
@@ -672,7 +699,7 @@
     height: 790px;
   }
 }
-@media (max-width: 1063px) {
+@media (max-width: 1077px) {
   #header {
     box-shadow: none;
   }
@@ -890,7 +917,7 @@
   border-radius: 10px;
   max-width: 350px;
   min-width: 350px;
-  height: 404px;
+  height: 400px;
   text-align: center;
   transition: 0.3s ease;
 }
@@ -900,7 +927,7 @@
 }
 .pay-item .visa-img {
   padding-top: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .pay-item .ibox-img {
   padding-top: 60px;
@@ -917,15 +944,15 @@
   width: 290px;
   padding-top: 28px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   margin: 0 auto;
 }
 .pay-item .last-pay-btn {
-  margin-top: 0px;
+  margin-top: -2px;
 }
 .pay-item button {
-  margin-top: 25px;
+  margin-top: 28px;
   background: #34a0d9;
   border-radius: 3px;
   width: 233px;
@@ -1040,6 +1067,10 @@
 }
 
 @media (max-width: 1199px) {
+  .pay-item button {
+    margin-top: 14px;
+  }
+
   .pay-item {
     min-width: 290px;
     max-width: 290px;
@@ -1051,12 +1082,12 @@
     margin-top: -3px;
   }
   .pay-item .privat-img {
-    margin-bottom: 37px;
+    margin-bottom: 27px;
     padding-top: 45px;
   }
   .pay-item .visa-img {
     padding-top: 40px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
   .pay-item .visa-img img {
     width: 200px;
@@ -1206,15 +1237,14 @@
   }
   .pay-item p {
     padding-top: 5px;
-    font-weight: 300;
-    font-size: 14px;
+    font-size: 12px;
     width: 190px;
   }
   .pay-item button {
-    font-size: 16px;
+    font-size: 14px;
     width: 171px;
     height: 40px;
-    margin-top: 14px;
+    margin-top: 15px;
   }
 
   .pay_text-help {
@@ -1720,13 +1750,11 @@ footer {
   font-weight: normal;
   font-size: 72px;
   line-height: 74px;
-  font-family: "Montserrat", sans-serif;
 }
 .text-m-bit p {
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
-  font-family: "Montserrat", sans-serif;
 }
 
 .home-int-grn p {
@@ -1805,7 +1833,7 @@ footer {
   line-height: 150%;
   white-space: nowrap;
   margin-top: 30px;
-  margin-left: 28px;
+  margin-left: 13px;
 }
 .modal-header1 .close {
   position: absolute;
@@ -1882,7 +1910,7 @@ footer {
   background: #ffffff;
   border-radius: 10px;
   width: 320px;
-  height: 164px;
+  height: 172px;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
@@ -1947,8 +1975,8 @@ footer {
   padding-left: 23px;
   margin-bottom: 0;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height: 29px;
   color: #464646;
 }
 
@@ -1978,7 +2006,7 @@ input[type=checkbox]:checked + label:before {
   padding-top: 5px;
   padding-bottom: 10px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 }
 .connect-dropt span {
   display: none;
@@ -2107,6 +2135,14 @@ input[type=checkbox]:checked + label:before {
 
 .tv-item {
   margin-top: 15px;
+}
+.tv-item .custom-selects-tarif .select-selected {
+  padding-right: 20px;
+  overflow: hidden;
+}
+.tv-item .select-items {
+  padding-right: 20px;
+  font-size: 16px;
 }
 .tv-item p {
   font-weight: normal;
@@ -2551,6 +2587,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 476px) {
+  .tv-item .select-items div {
+    font-size: 14px;
+  }
+
   .modal-header1 h5 {
     width: 240px;
   }
@@ -2611,7 +2651,8 @@ input[type=checkbox]:checked + label:before {
   .connect-dropt {
     max-width: 270px;
     padding-right: 18px;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .svg-dropt {
@@ -2629,8 +2670,9 @@ input[type=checkbox]:checked + label:before {
   }
 
   .box-show-check .checkbox label {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 25px;
+    font-weight: 400;
   }
 
   .box-show-check div {
@@ -2734,7 +2776,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .form-my_office .checkbox label {
-  line-height: 27px;
+  line-height: 28px;
 }
 
 .form-my_office {
@@ -3008,6 +3050,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 12px;
   line-height: 150%;
   color: #464646;
+  margin-right: 35px;
 }
 
 .br-fob {
@@ -3069,12 +3112,16 @@ input[type=checkbox]:checked + label:before {
     padding-right: 10px;
   }
 
+  .change_privat-tarif .modal-header1 .close {
+    margin-top: 2px;
+  }
   .change_privat-tarif .modal-header1 h5 {
     text-align: left;
     padding-top: 30px;
     padding-left: 0px;
-    font-size: 18px;
+    font-size: 17px;
     width: 270px;
+    font-weight: 500;
   }
   .change_privat-tarif .modal-header {
     padding-left: 10px;
@@ -3151,7 +3198,7 @@ input[type=checkbox]:checked + label:before {
 
   #my_office .modal-header1 h5 {
     padding-top: 27px;
-    width: 165px;
+    width: 189px;
     text-align: center;
     margin: 0 auto;
   }
@@ -3310,6 +3357,10 @@ input[type=checkbox]:checked + label:before {
     font-size: 16px;
   }
 
+  .tarif_tv .home-internet .text-m-bit {
+    margin-top: -132px;
+  }
+
   .tarif_tv .home-int-grn ul {
     margin-left: 72px;
     margin-bottom: 0px;
@@ -3320,6 +3371,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 867px) {
+  .tarif_tv .home-internet .text-m-bit {
+    margin-top: -150px;
+  }
+
   .mobile_con .home-internet-item .text-m-bit {
     margin-top: -138px;
     margin-bottom: 70px;
@@ -3377,7 +3432,20 @@ input[type=checkbox]:checked + label:before {
     margin-top: 0px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
+  .tarif_tv .count-channels {
+    flex-direction: column;
+    padding-right: 15px;
+    margin-bottom: 17px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+  .tarif_tv .count-channels .total-cost {
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+
   .count-channels {
     flex-direction: column;
     padding-right: 15px;
@@ -3996,6 +4064,260 @@ input[type=checkbox]:checked + label:before {
     height: 540px;
   }
 }
+.privacy-block {
+  background: #ffffff;
+  box-shadow: 4px 10px 20px rgba(171, 171, 171, 0.3);
+  border-radius: 20px;
+}
+.privacy-block ul {
+  margin: 0;
+  padding-top: 50px;
+}
+.privacy-block li {
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 15px 10px 15px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #0b3661;
+  display: flex;
+  align-items: center;
+}
+.privacy-block li:hover a {
+  box-shadow: 0px 1px #0B3661;
+}
+.privacy-block li a {
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+.wrapper .active {
+  color: #fbd060;
+  background: #0b3661;
+}
+
+.wrapper tr td:first-of-type {
+  width: 350px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.wrapper tr td:nth-child(3) {
+  padding: 0px 30px 0px 0px;
+  text-align: right;
+}
+
+.wrapper tr td:nth-child(2) {
+  padding: 10px 0px;
+}
+
+.wrapper h4 {
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.wrapper td {
+  text-align: left;
+  padding: 10px 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #464646;
+}
+.wrapper td span,
+.wrapper td a:not([href]) {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0b3661;
+}
+.wrapper td span {
+  margin-right: 10px;
+}
+.wrapper td a:not([href]) {
+  cursor: pointer;
+  font-weight: 500;
+}
+.wrapper td a:not([href]):hover {
+  text-decoration: none;
+  color: #0b3661;
+}
+.wrapper tr:nth-child(even) {
+  background: #f5f3f1;
+}
+
+.main-privacy {
+  background: url(/src/img/privacy-office.png);
+  padding-bottom: 200px;
+}
+
+.info_box {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-right: 1px solid #e8e8e8;
+}
+
+.tab_content {
+  padding: 0px 0px 50px 0px;
+}
+
+.tab_item p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000000;
+  padding: 10px 30px 0px 30px;
+  margin-bottom: 0px;
+}
+
+.change_mail .modal-body {
+  padding: 8px 35px;
+}
+.change_mail .modal-header1 {
+  display: block;
+}
+.change_mail .modal-header1 h2 {
+  text-align: center;
+}
+.change_mail .modal-header1 .close {
+  top: 18px;
+  right: 18px;
+}
+
+.change_tel {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+}
+.change_tel .btn-delete {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+  cursor: pointer;
+}
+.change_tel .btn-delete:hover {
+  text-decoration: none;
+}
+.change_tel label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 0px;
+}
+.change_tel span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #464646;
+}
+.change_tel input {
+  width: 320px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #ABABAB;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 7px 10px;
+}
+.change_tel input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ABABAB;
+}
+.change_tel input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ABABAB;
+}
+.change_tel input::placeholder {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ABABAB;
+}
+
+.change_tel div:first-of-type {
+  width: 353px;
+}
+
+.change_mail .btn-delete {
+  margin-left: auto;
+}
+.change_mail .enter-btn {
+  margin-top: 40px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+}
+.change_mail .enter-btn button {
+  width: 147px;
+  height: 40px;
+  transition: 0.4s ease;
+}
+.change_mail .enter-btn button:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+.change_mail .enter-btn .enter {
+  background: #34A0D9;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  margin-right: 30px;
+  color: #FFFFFF;
+}
+.change_mail .enter-btn .abonent {
+  background: #FFFFFF;
+  border: 1px solid #34A0D9;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #34A0D9;
+}
+
+.tel_element {
+  display: flex;
+  flex-direction: column;
+}
+
+.appear_taruf {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .change_mail .modal-dialog {
+    max-width: 742px;
+    margin: 1.75rem auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -4003,14 +4325,14 @@ input[type=checkbox]:checked + label:before {
   outline: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-family: "Neue Haas Unica";
+  font-family: "Lato";
   vertical-align: baseline;
   list-style: none;
   box-sizing: border-box;
 }
 
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato";
 }
 
 button:focus {

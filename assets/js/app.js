@@ -20776,7 +20776,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseFour').on('shown.bs.coll
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-show-more').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.disappear-box').css("display", "flex");
-});
+}); //tabs
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tab_item").not(":first").hide();
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".wrapper .tab").click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".wrapper .tab").removeClass("active").eq(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).index()).addClass("active");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tab_item").hide().eq(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).index()).fadeIn();
+}).eq(0).addClass("active");
+
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change_taruf').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_taruf').fadeIn();
+  });
+}
 
 /***/ }),
 

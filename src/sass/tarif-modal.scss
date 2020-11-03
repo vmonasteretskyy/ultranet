@@ -30,7 +30,7 @@
 //     font-size: 16px;
 //   }
 .form-my_office .checkbox label{
-    line-height: 27px;
+    line-height: 28px;
 
 }
 .form-my_office {
@@ -299,6 +299,7 @@ color: #ABABAB;
 font-size: 12px;
 line-height: 150%;
 color: #464646;
+margin-right: 35px;
 }
 .br-fob{
     display: none;
@@ -373,13 +374,18 @@ color: #464646;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .change_privat-tarif {
+    .change_privat-tarif 
+    {
+        .modal-header1 .close{
+            margin-top: 2px;
+        }
         .modal-header1 h5 {
             text-align: left;
             padding-top: 30px;
             padding-left: 0px;
-            font-size: 18px;
+            font-size: 17px;
             width: 270px;
+            font-weight: 500;
         }
         .modal-header {
             padding-left: 10px;
@@ -459,7 +465,7 @@ color: #464646;
     }
     #my_office .modal-header1 h5 {
         padding-top: 27px;
-        width: 165px;
+        width: 189px;
         text-align: center;
         margin: 0 auto;
     }

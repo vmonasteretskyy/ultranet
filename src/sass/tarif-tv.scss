@@ -100,7 +100,11 @@ color: #000000;
     } 
 
     }
+    .tarif_tv .home-internet .text-m-bit {
+        margin-top: -132px;
+    }
     .tarif_tv {
+       
         .home-int-grn {
             
             ul{
@@ -116,6 +120,9 @@ color: #000000;
     }
 }
 @media (max-width: 867px) {
+    .tarif_tv .home-internet .text-m-bit {
+        margin-top: -150px;
+    }
     .mobile_con .home-internet-item{
         .text-m-bit
         {
@@ -192,8 +199,22 @@ color: #000000;
      }
     }
 }
-@media (max-width: 400px) {
-   
+@media (max-width: 420px) {
+    .tarif_tv{
+        .count-channels{ 
+            flex-direction: column;
+        padding-right: 15px;
+        margin-bottom: 17px;
+        justify-content: flex-start;
+       align-items: flex-start;
+        padding-left: 10px;
+        
+        .total-cost{
+            padding-left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+       }
 .count-channels{
  flex-direction: column;
  padding-right: 15px;

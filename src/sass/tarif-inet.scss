@@ -185,14 +185,14 @@ margin-top: 9px;
         font-weight: normal;
         font-size: 72px;
         line-height: 74px;
-        font-family: 'Montserrat', sans-serif;
+        // font-family: 'Montserrat', sans-serif;
     }
 
     p {
         font-weight: normal;
         font-size: 18px;
         line-height: 150%;
-        font-family: 'Montserrat', sans-serif;
+        // font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -283,7 +283,7 @@ margin-top: 9px;
         line-height: 150%;
         white-space: nowrap;
         margin-top: 30px;
-        margin-left: 28px;
+        margin-left: 13px;
     }
 
     .close {
@@ -368,7 +368,7 @@ margin-top: 9px;
     background: #ffffff;
     border-radius: 10px;
     width: 320px;
-    height: 164px;
+    height: 172px;
     font-weight: 300;
     font-size: 18px;
     line-height: 150%;
@@ -441,8 +441,8 @@ margin-top: 9px;
     padding-left: 23px;
     margin-bottom: 0;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 16px;
+    line-height: 29px;
 
     color: #464646;
 }
@@ -474,7 +474,7 @@ input[type="checkbox"]:checked + label:before {
     padding-top: 5px;
     padding-bottom: 10px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
 
     span {
         display: none;
@@ -607,7 +607,14 @@ height: auto;
 
 .tv-item {
     margin-top: 15px;
-
+    .custom-selects-tarif .select-selected{
+        padding-right: 20px;
+        overflow: hidden;
+    }
+    .select-items {
+        padding-right: 20px;
+        font-size: 16px;
+    }
     p {
         font-weight: normal;
         font-size: 18px;
@@ -856,13 +863,11 @@ height: auto;
         margin-left: 69px;
         margin-top: -118px;
         width: 100px;
-
         h3 {
             font-size: 48px;
             line-height: 50px;
             margin-bottom: 0px;
         }
-
         p {
             font-weight: normal;
             font-size: 16px;
@@ -1070,6 +1075,13 @@ height: auto;
 }
 
 @media (max-width: 476px) {
+    .tv-item {
+
+        .select-items div{
+       
+            font-size: 14px;
+        }
+    }
     .modal-header1 h5 {
         width: 240px;
     }
@@ -1138,7 +1150,9 @@ height: auto;
         max-width: 270px;
         padding-right: 18px;
         // overflow: hidden;
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 400;
+
     }
 
     .svg-dropt {
@@ -1157,8 +1171,9 @@ height: auto;
     }
 
     .box-show-check .checkbox label {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 25px;
+        font-weight: 400;
     }
 
     .box-show-check div {

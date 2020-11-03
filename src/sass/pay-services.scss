@@ -21,7 +21,7 @@
     border-radius: 10px;
     max-width: 350px;
     min-width: 350px;
-    height: 404px;
+    height: 400px;
     // margin-left: 15px;
     // margin-right: 15px;
     text-align: center;
@@ -34,7 +34,7 @@
 
     .visa-img {
         padding-top: 28px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .ibox-img {
@@ -55,17 +55,17 @@
         width: 290px;
         padding-top: 28px;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 150%;
         margin: 0 auto;
     }
 
     .last-pay-btn {
-        margin-top: 0px;
+        margin-top: -2px;
     }
 
     button {
-        margin-top: 25px;
+        margin-top: 28px;
         background: #34a0d9;
         border-radius: 3px;
         width: 233px;
@@ -75,7 +75,6 @@
         line-height: 150%;
         text-align: center;
         color: #ffffff;
-
         transition: 0.4s ease;
 
         &:hover {
@@ -188,6 +187,9 @@
 // }
 
 @media (max-width: 1199px) {
+    .pay-item button{
+        margin-top: 14px;
+    }
     .pay-item {
         min-width: 290px;
         max-width: 290px;
@@ -200,13 +202,13 @@
         }
 
         .privat-img {
-            margin-bottom: 37px;
+            margin-bottom: 27px;
             padding-top: 45px;
         }
 
         .visa-img {
             padding-top: 40px;
-            margin-bottom: 32px;
+            margin-bottom: 22px;
 
             img {
                 width: 200px;
@@ -371,16 +373,15 @@
 
         p {
             padding-top: 5px;
-            font-weight: 300;
-            font-size: 14px;
+            font-size: 12px;
             width: 190px;
         }
 
         button {
-            font-size: 16px;
+            font-size: 14px;
             width: 171px;
             height: 40px;
-            margin-top: 14px;
+            margin-top: 15px;
         }
     }
 

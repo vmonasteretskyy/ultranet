@@ -486,5 +486,12 @@ if ($('*').is('.main-privacy')) {
     $('.tab_elem1').fadeOut();
     $('.appear_taruf').fadeIn();
     })
-
+    $('.tab').click(function () {
+      $('.appear_taruf').fadeOut();
+      $('.tab_content').fadeIn();
+      })
+      $('.come-back').click(function () {
+        $('.tab_elem1').fadeIn();
+        $('.appear_taruf').fadeOut();
+        })    
 }

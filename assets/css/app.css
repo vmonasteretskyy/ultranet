@@ -779,8 +779,8 @@
 
   .carousel-item .background-img {
     height: 320px;
-    -o-object-position: 55% 50%;
-       object-position: 55% 50%;
+    -o-object-position: 37% 50%;
+       object-position: 37% 50%;
   }
 
   .carousel-caption {
@@ -790,17 +790,27 @@
   .main_text h2 {
     font-size: 22px;
     line-height: 135%;
+    width: 292px;
+  }
+  .main_text .text-main-adapt {
+    width: 280px;
+  }
+  .main_text .text-buy-adapt {
+    width: 150px;
   }
   .main_text p {
     margin: 10px 0px 15px 0px;
-    font-size: 14px;
-    line-height: 128%;
-    width: 180px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    width: 215px;
   }
   .main_text button {
-    width: 135px;
-    height: 40px;
+    width: 160px;
+    height: 60px;
     font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
     line-height: 0;
   }
@@ -914,8 +924,8 @@
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
-  max-width: 350px;
-  min-width: 350px;
+  max-width: 355px;
+  min-width: 355px;
   height: 400px;
   text-align: center;
   transition: 0.3s ease;
@@ -940,15 +950,15 @@
   font-size: 22px;
 }
 .pay-item p {
-  width: 290px;
+  width: 310px;
   padding-top: 28px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   margin: 0 auto;
 }
 .pay-item .last-pay-btn {
-  margin-top: -2px;
+  margin-top: 3.5px;
 }
 .pay-item button {
   margin-top: 28px;
@@ -971,7 +981,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
-  margin: 50px 15px 100px 15px;
+  margin: 50px 0px 100px 0px;
 }
 .pay_text-help span {
   font-weight: 500;
@@ -1006,7 +1016,7 @@
   height: 40px;
   background-color: white;
   border: 1px solid #ababab;
-  border-radius: 10px;
+  border-radius: 3px;
   text-align: left;
   padding: 5px 14px 0px 10px;
 }
@@ -1028,6 +1038,7 @@
 .select-selected {
   color: #000000;
   padding: 5px 16px;
+  font-weight: 300;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1039,7 +1050,7 @@
   position: absolute;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(171, 171, 171, 0.4);
-  border-radius: 10px;
+  border-radius: 3px;
   text-align: left;
   margin-left: 3px;
   top: 100%;
@@ -1148,6 +1159,10 @@
   }
 }
 @media (max-width: 767px) {
+  .pay-item button {
+    margin-top: 27px;
+  }
+
   .pay-services {
     overflow-x: scroll;
     flex-wrap: nowrap;
@@ -1170,13 +1185,14 @@
     overflow: hidden;
   }
 }
-@media (max-width: 550px) {
-  .pay-item .second-pay-btn {
-    margin-top: 33px;
+@media (max-width: 575px) {
+  .news-block .row {
+    margin-right: 6px;
   }
-
+}
+@media (max-width: 550px) {
   .pay-item .last-pay-btn {
-    margin-top: -11px;
+    margin-top: -6px;
   }
 
   .select-items div {
@@ -1243,8 +1259,8 @@
   }
   .pay-item p {
     padding-top: 5px;
-    font-size: 12px;
-    width: 190px;
+    font-size: 13px;
+    width: 200px;
   }
   .pay-item button {
     font-size: 14px;
@@ -1284,6 +1300,10 @@
   padding-bottom: 100px;
 }
 
+.news-block .news-big-item {
+  max-width: 555px;
+  margin-right: 15px;
+}
 .news-block .news-item .read-more-a {
   margin-top: -36px;
 }
@@ -1434,6 +1454,9 @@ footer {
   }
   .news-block .news-item a {
     margin-top: -30px;
+  }
+  .news-block .news-big-item {
+    margin-right: 0px;
   }
   .news-block .news-big-item a {
     margin-top: 10px;
@@ -1923,8 +1946,8 @@ footer {
   width: 320px;
 }
 .custom-selects-tarif .select-items {
-  width: 98%;
-  margin-left: 1px;
+  width: 100%;
+  margin-left: 0px;
 }
 
 .svg-select-i {
@@ -4360,10 +4383,120 @@ input[type=checkbox]:checked + label:before {
   display: none;
 }
 
+.appear_taruf {
+  margin-top: 30px;
+}
+.appear_taruf table td a {
+  color: #000000;
+}
+.appear_taruf table td a:not([href]) {
+  color: #000000;
+}
+.appear_taruf table td a:not([href]):hover {
+  color: #000000;
+}
+.appear_taruf h4 {
+  padding-top: 0px;
+}
+.appear_taruf .come-back {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 30px;
+}
+.appear_taruf .come-back .svg {
+  margin-right: 10px;
+}
+
+.btn_order {
+  text-align: center;
+  margin: 30px 0px;
+}
+.btn_order button {
+  background: #34A0D9;
+  border-radius: 3px;
+  width: 147px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.btn_order button:active {
+  background: #0B3661;
+}
+
+.appear_taruf .change_tar-text ul {
+  padding-top: 0px;
+  list-style-type: circle;
+}
+.appear_taruf .change_tar-text li {
+  display: flex;
+  align-items: flex-start;
+  list-style: initial;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #464646;
+  padding: 10px 0px 0px 35px;
+}
+
 @media (min-width: 500px) {
   .change_mail .modal-dialog {
     max-width: 742px;
     margin: 1.75rem auto;
+  }
+}
+@media (max-width: 1199px) {
+  .wrapper td {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+
+  .wrapper tr td:first-of-type {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .wrapper h4 {
+    font-size: 16px;
+  }
+  .wrapper td {
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .wrapper td span,
+.wrapper td a:not([href]) {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .wrapper td {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .wrapper td span {
+    display: block;
+  }
+
+  .wrapper tr td:first-of-type {
+    font-size: 16px;
+    width: 220px;
+  }
+
+  .privacy-block li {
+    padding: 15px 15px 15px 15px;
+    font-size: 16px;
+  }
+
+  .tab_content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    width: 100%;
+    z-index: 999;
+    overflow-y: scroll;
   }
 }
 * {
@@ -4381,6 +4514,10 @@ input[type=checkbox]:checked + label:before {
 
 button {
   font-family: "Inter", sans-serif;
+  transition: 0.4s ease;
+}
+button:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 
 button:focus {

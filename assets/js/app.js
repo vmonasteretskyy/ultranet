@@ -20789,6 +20789,14 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_taruf').fadeIn();
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_taruf').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_taruf').fadeOut();
+  });
 }
 
 /***/ }),

@@ -848,7 +848,7 @@ padding-left: 10px;
     }
     .carousel-item .background-img {
         height: 320px;
-        object-position: 55% 50%;
+        object-position: 37% 50%;
     }
 
     .carousel-caption {
@@ -861,20 +861,28 @@ padding-left: 10px;
         h2 {
             font-size: 22px;
             line-height: 135%;
-
+            width: 292px;
         }
-
+.text-main-adapt{
+    width: 280px;
+}
+.text-buy-adapt{
+    width: 150px;
+   }
         p {
             margin: 10px 0px 15px 0px;
-            font-size: 14px;
-            line-height: 128%;
-            width: 180px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            width: 215px;
         }
 
         button {
-            width: 135px;
-            height: 40px;
+            width: 160px;
+            height: 60px;
             font-size: 16px;
+            font-weight: 500;
+font-size: 18px;
         //   padding: 1px 0px 0px 0px;
           text-rendering: optimizeLegibility;
            line-height:0;

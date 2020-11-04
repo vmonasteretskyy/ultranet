@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);/*!
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);/*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -169,14 +169,14 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 11px;
+  padding-top: 14px;
   padding-left: 13px;
 }
 .main-count_slider span {
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  margin-top: 3px;
+  margin-top: 1px;
   margin-left: 5px;
 }
 
@@ -801,7 +801,6 @@
     width: 135px;
     height: 40px;
     font-size: 16px;
-    padding: 1px 0px 0px 0px;
     text-rendering: optimizeLegibility;
     line-height: 0;
   }
@@ -1068,7 +1067,7 @@
 
 @media (max-width: 1199px) {
   .pay-item button {
-    margin-top: 14px;
+    margin-top: 20px;
   }
 
   .pay-item {
@@ -1079,7 +1078,7 @@
     margin-right: 5px;
   }
   .pay-item .last-pay-btn {
-    margin-top: -3px;
+    margin-top: -5px;
   }
   .pay-item .privat-img {
     margin-bottom: 27px;
@@ -1094,7 +1093,7 @@
   }
   .pay-item .ibox-img {
     padding-top: 60px;
-    margin-bottom: 62px;
+    margin-bottom: 54px;
   }
   .pay-item .ibox-img img {
     width: 200px;
@@ -1103,8 +1102,7 @@
     width: 90%;
     padding-top: 10px;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 15px;
     margin: 0 auto;
   }
 
@@ -1173,6 +1171,14 @@
   }
 }
 @media (max-width: 550px) {
+  .pay-item .second-pay-btn {
+    margin-top: 33px;
+  }
+
+  .pay-item .last-pay-btn {
+    margin-top: -11px;
+  }
+
   .select-items div {
     padding: 6px 10px;
     font-size: 16px;
@@ -1414,6 +1420,21 @@ footer {
   }
 }
 @media (max-width: 1199px) {
+  .news-block .news-item .read-more-a {
+    margin-top: -19px;
+  }
+  .news-block .news-item p {
+    font-weight: 300;
+    font-size: 15px;
+    width: 95%;
+  }
+  .news-block .news-item a {
+    margin-top: -30px;
+  }
+  .news-block .news-big-item a {
+    margin-top: 10px;
+  }
+
   #map {
     height: 620px;
   }
@@ -1442,6 +1463,21 @@ footer {
   }
 }
 @media (max-width: 991px) {
+  .news-block .news-item .read-more-a {
+    margin-top: -9px;
+  }
+  .news-block .news-item p {
+    font-weight: 300;
+    font-size: 15px;
+    width: 95%;
+  }
+  .news-block .news-item a {
+    margin-top: -10px;
+  }
+  .news-block .news-big-item a {
+    margin-top: 0px;
+  }
+
   .news-item {
     height: auto;
   }
@@ -1473,6 +1509,10 @@ footer {
   }
 }
 @media (max-width: 767px) {
+  .news-block .news-big-item a {
+    margin-top: -20px;
+  }
+
   .footer-block {
     padding: 29px 25px 29px 0px;
   }
@@ -1512,6 +1552,10 @@ footer {
   }
 }
 @media (max-width: 575px) {
+  .news-block .news-big-item a {
+    margin-top: -10px;
+  }
+
   .footer-block {
     padding: 18px 0px 0px;
     flex-direction: column;
@@ -4325,14 +4369,14 @@ input[type=checkbox]:checked + label:before {
   outline: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-family: "Lato";
+  font-family: "Inter", sans-serif;
   vertical-align: baseline;
   list-style: none;
   box-sizing: border-box;
 }
 
 button {
-  font-family: "Lato";
+  font-family: "Inter", sans-serif;
 }
 
 button:focus {

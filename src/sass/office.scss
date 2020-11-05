@@ -143,6 +143,8 @@ font-size: 18px;
 line-height: 150%;
 color: #000000;
 .btn-delete{
+    position: absolute;
+    right: 35px;
 font-weight: 500;
 font-size: 18px;
 line-height: 150%;
@@ -188,9 +190,9 @@ color: #ABABAB;
     width: 353px;
 }
 .change_mail{
- .btn-delete{
-     margin-left: auto;
- }
+//  .btn-delete{
+//      margin-left: auto;
+//  }
     .enter-btn{
         margin-top: 40px;
         padding-bottom: 45px;
@@ -255,6 +257,10 @@ table td  {
         padding-top: 0px;
     }
     .come-back{
+        span{
+            display: flex;
+            align-items: center;
+        }
         cursor: pointer;
         font-weight: 500;
         font-size: 14px;
@@ -267,7 +273,7 @@ table td  {
 }
 .btn_order{
     text-align: center;
-    margin: 30px 0px;
+    margin: 30px 0px 17px 0px;
     button{
     background: #34A0D9;
     border-radius: 3px;
@@ -298,6 +304,20 @@ color: #FFFFFF;
         padding: 10px 0px 0px 35px;
     }
 }
+.close-tab-menu{
+    display: none;
+    h3{
+        font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+ 
+color: #000000;
+    }
+}
+.close-back{
+    display: none;
+}
 @media (min-width: 500px) {
 .change_mail {
         .modal-dialog {
@@ -308,18 +328,29 @@ color: #FFFFFF;
 }
 
 @media (max-width: 1199px){
-  
+    .appear_taruf {
+        .custom-selects-tarif .select-selected{
+            width: 300px;
+        }
+        .svg-select-i{
+            right: 30px;
+        }
+     .change_tar-text li{
+        padding-left: 10px;
+        font-size: 16px;
+    }
     .wrapper td{
         font-size: 16px;
         padding: 10px 10px;
     }
+}
     .wrapper tr td:first-of-type{
         font-size: 16px;
         width: 300px;
     }
     .wrapper {
         h4 {
-            font-size: 16px;
+            font-size: 18px;
         }
         td {
     font-size: 16px;
@@ -333,6 +364,10 @@ color: #FFFFFF;
 }
 
 @media (max-width: 991px){
+    .detail-txt{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
     .wrapper td{
         font-size: 16px;
         padding: 10px 10px;
@@ -351,14 +386,171 @@ color: #FFFFFF;
             font-size: 16px;
         }
     }
-    .tab_content{
-        // display: none;
+ 
+}
+@media (max-width: 767px){
+    .change_tel input{
+        max-width: 270px;
+    }
+    .change_tel div:first-of-type{
+        width: 300px;
+    }
+    .change_mail .modal-body{
+        padding: 8px 10px;
+    }
+    .appear_taruf {
+        margin-top: 0px;
+        .come-back{
+            span{
+                display: none;
+            }
+            .close-back{
+              display: block;
+              float: right;
+              margin-right: 5px;
+              margin-top: 5px;
+            }
+        }
+     .change_tar-text li{
+        padding-left: 10px;
+        font-size: 16px;
+        padding-right: 10px;
+    }
+ 
+}
+    .close-tab-menu{
+        display: block;
+   
+        img{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+        h3{
+            padding-top: 47px;
+            font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+     
+    color: #000000;
+        }
+    }
+    .wrapper h4 {
+      padding-top: 47px;
+    }
+   .tab_content{
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         background: #FFFFFF;
         width: 100%;
+        height: 100%;
         z-index: 999;
         overflow-y: scroll;
+    }
+}
+@media (max-width: 575px){
+    .change_tel div:first-of-type{
+        margin-bottom: 10px;
+    }
+    .change_tel{
+  
+        flex-direction: column;
+ align-items: flex-start;
+        font-size: 16px;
+    }
+    .wrapper h4 {
+        padding-top: 20px;
+    }
+    .change_mail{
+        .modal-header1 h5{
+             
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+.privacy-block{
+margin: 0px 0px;
+}
+}
+@media (max-width: 500px){
+    .detail-txt{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: -11px;
+    }
+    .tab_item p{
+        padding: 10px 15px;
+    }
+    .tab_content{
+        table tr td:nth-child(2){
+     padding-bottom: 0px;
+                }
+       table tr td:nth-child(3){
+    position: absolute;
+    right: 0px;
+    margin-top: 33px;
+    padding-right: 15px;
+        }
+        table td span{
+            display: inline;
+        }
+        table {
+            tr{
+            padding: 10px 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        td{
+            padding: 0;
+        }
+    }
+    }
+}
+@media (max-width:476px){
+    .change_mail .enter-btn{
+        flex-direction: column;
+        margin-top: 20px;
+    padding-bottom: 10px;
+    .enter{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 100%;
+    }
+    }
+    .change_mail{
+        .modal-header1 h5{
+             text-align: center;
+       margin: 0 auto;
+      padding-top: 30px;
+        }
+         .modal-header1 .close {
+            top: 0px;
+            padding-top: 10px;
+            padding-right: 10px;
+            margin-top: 0px;
+            right: 18px;
+         }
+    }
+}
+@media (max-width: 459px){
+    .btn_order {
+        margin: 20px 0px 8px 0px;
+        button{
+        width: 95%;
+        }
+    }
+    .appear_taruf {
+  
+        .svg-select-i{
+            right: 15px;
+        }
+
     }
 }

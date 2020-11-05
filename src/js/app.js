@@ -494,4 +494,9 @@ if ($('*').is('.main-privacy')) {
         $('.tab_elem1').fadeIn();
         $('.appear_taruf').fadeOut();
         })    
+        $('.close_tab').click(function () {
+          $('.tab_content').fadeOut();
+      
+          })
+        
 }

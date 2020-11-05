@@ -158,21 +158,21 @@ margin-top: 9px;
     // }
 }
 
-.home-internet-item:hover .home-internet-ecl {
-    transform: rotate(1turn);
-}
+// .home-internet-item:hover .home-internet-ecl {
+//     transform: rotate(1turn);
+// }
 
 .home-internet-ecl {
     margin-top: -145px;
-    transition: 3s ease;
-    animation: circle 2.5s ease-in-out;
+    // transition: 3s ease;
+    // animation: circle 2.5s ease-in-out;
 }
 
-@keyframes circle {
-    100% {
-        transform: rotate(1turn);
-    }
-}
+// @keyframes circle {
+//     100% {
+//         transform: rotate(1turn);
+//     }
+// }
 
 .text-m-bit {
     position: absolute;

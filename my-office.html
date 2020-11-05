@@ -227,6 +227,10 @@
                 <div class="col-md-8 tab_content">
                     <div class="tab_item tab_elem1">
                         <div>
+                            <div class="close-tab-menu">
+                                <img class="close_tab" src="src/img/close.svg" alt="">
+                                <h3>Загальна статистика</h3>
+                            </div>
                             <h4>Стан рахунку</h4>
                             <table>
                                 <tr>
@@ -290,7 +294,7 @@
                                 <tr>
                                     <td>Адреса електронної пошти:</td>
                                     <td>example@gmail.com</td>
-                                    <td><a data-toggle="modal" data-target="#change_mail">змінити</a></td>
+                                    <td><a  >змінити</a></td>
                                 </tr>
                                 <tr>
                                     <td>Основний телефонний номер:</td>
@@ -300,7 +304,7 @@
                                 <tr>
                                     <td>Додатковий телефонний номер:</td>
                                     <td>0632865432</td>
-                                    <td><a>змінити</a></td>
+                                    <td><a data-toggle="modal" data-target="#change_mail">змінити</a></td>
                                 </tr>
                             </table>
                         </div>
@@ -327,8 +331,9 @@
                     </div>
                     <div class="appear_taruf">
                         <div class="come-back">
-                            <img class="svg" src="src/img/Vector.svg" alt="">
-                            Назад
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                            Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
                         </div>
                         <h4>Змінити тариф</h4>
                         <table>
@@ -363,7 +368,7 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><a>Детальніше о тарифах</a></td>
+                                <td class="detail-txt"><a>Детальніше о тарифах</a></td>
                             </tr>
                             <tr>
                                 <td>Заявка на серпень:</td>
@@ -408,8 +413,8 @@
                             <form action="">
                                 <div class="change_tel">
                                     <div>Додатковий телефонний номер:</div>
-                                    <span>0632865432</span>
-                                    <span class="btn-delete">видалити</span>
+                                    <div><span>0632865432</span>
+                                    <span class="btn-delete">видалити</span></div>
                                 </div>
                                 <div class="change_tel">
                                     <div> Новий телефонний номер: </div>

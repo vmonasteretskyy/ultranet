@@ -209,17 +209,20 @@
   background: #34A0D9;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   color: #FFFFFF;
   transition: 0.4s ease;
-  padding: 13px 0px 16px 0px;
 }
 .main_text button:hover {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 .main_text button:active {
   background: #0B3661;
+}
+
+.br-main {
+  display: none;
 }
 
 .main_text-white {
@@ -755,6 +758,10 @@
   }
 }
 @media (max-width: 575px) {
+  .br-main {
+    display: block;
+  }
+
   .burger-menu_nav {
     width: 98%;
     right: 1%;
@@ -778,13 +785,18 @@
   }
 
   .carousel-item .background-img {
-    height: 320px;
-    -o-object-position: 37% 50%;
-       object-position: 37% 50%;
+    height: 360px;
+    -o-object-position: 48% 50%;
+       object-position: 48% 50%;
+  }
+
+  .second-slider .background-img {
+    -o-object-position: 100% 50%;
+       object-position: 100% 50%;
   }
 
   .carousel-caption {
-    top: 2%;
+    top: 5%;
   }
 
   .main_text h2 {
@@ -893,6 +905,12 @@
   .container-chat {
     bottom: 70px;
     width: 280px;
+  }
+}
+@media (max-width: 489px) {
+  .second-slider .background-img {
+    -o-object-position: 41% 50%;
+       object-position: 41% 50%;
   }
 }
 @media (max-width: 418px) {
@@ -1788,28 +1806,10 @@ footer {
   transition: 0.4s ease;
 }
 
-.home-internet-item:hover .home-internet-ecl {
-  transform: rotate(1turn);
-}
-
 .home-internet-ecl {
   margin-top: -145px;
-  transition: 3s ease;
-  -webkit-animation: circle 2.5s ease-in-out;
-          animation: circle 2.5s ease-in-out;
 }
 
-@-webkit-keyframes circle {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes circle {
-  100% {
-    transform: rotate(1turn);
-  }
-}
 .text-m-bit {
   position: absolute;
   margin-top: -186px;
@@ -4279,6 +4279,8 @@ input[type=checkbox]:checked + label:before {
   color: #000000;
 }
 .change_tel .btn-delete {
+  position: absolute;
+  right: 35px;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -4335,9 +4337,6 @@ input[type=checkbox]:checked + label:before {
   width: 353px;
 }
 
-.change_mail .btn-delete {
-  margin-left: auto;
-}
 .change_mail .enter-btn {
   margin-top: 40px;
   padding-bottom: 45px;
@@ -4405,13 +4404,17 @@ input[type=checkbox]:checked + label:before {
   color: #000000;
   margin-left: 30px;
 }
+.appear_taruf .come-back span {
+  display: flex;
+  align-items: center;
+}
 .appear_taruf .come-back .svg {
   margin-right: 10px;
 }
 
 .btn_order {
   text-align: center;
-  margin: 30px 0px;
+  margin: 30px 0px 17px 0px;
 }
 .btn_order button {
   background: #34A0D9;
@@ -4441,6 +4444,21 @@ input[type=checkbox]:checked + label:before {
   padding: 10px 0px 0px 35px;
 }
 
+.close-tab-menu {
+  display: none;
+}
+.close-tab-menu h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+.close-back {
+  display: none;
+}
+
 @media (min-width: 500px) {
   .change_mail .modal-dialog {
     max-width: 742px;
@@ -4448,7 +4466,17 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 1199px) {
-  .wrapper td {
+  .appear_taruf .custom-selects-tarif .select-selected {
+    width: 300px;
+  }
+  .appear_taruf .svg-select-i {
+    right: 30px;
+  }
+  .appear_taruf .change_tar-text li {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .appear_taruf .wrapper td {
     font-size: 16px;
     padding: 10px 10px;
   }
@@ -4459,7 +4487,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .wrapper h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .wrapper td {
     font-size: 16px;
@@ -4471,6 +4499,11 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .detail-txt {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
   .wrapper td {
     font-size: 16px;
     padding: 10px 10px;
@@ -4488,15 +4521,165 @@ input[type=checkbox]:checked + label:before {
     padding: 15px 15px 15px 15px;
     font-size: 16px;
   }
+}
+@media (max-width: 767px) {
+  .change_tel input {
+    max-width: 270px;
+  }
+
+  .change_tel div:first-of-type {
+    width: 300px;
+  }
+
+  .change_mail .modal-body {
+    padding: 8px 10px;
+  }
+
+  .appear_taruf {
+    margin-top: 0px;
+  }
+  .appear_taruf .come-back span {
+    display: none;
+  }
+  .appear_taruf .come-back .close-back {
+    display: block;
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .appear_taruf .change_tar-text li {
+    padding-left: 10px;
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  .close-tab-menu {
+    display: block;
+  }
+  .close-tab-menu img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  .close-tab-menu h3 {
+    padding-top: 47px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+  }
+
+  .wrapper h4 {
+    padding-top: 47px;
+  }
 
   .tab_content {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     background: #FFFFFF;
     width: 100%;
+    height: 100%;
     z-index: 999;
     overflow-y: scroll;
+  }
+}
+@media (max-width: 575px) {
+  .change_tel div:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  .change_tel {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+  }
+
+  .wrapper h4 {
+    padding-top: 20px;
+  }
+
+  .change_mail .modal-header1 h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .privacy-block {
+    margin: 0px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .detail-txt {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -11px;
+  }
+
+  .tab_item p {
+    padding: 10px 15px;
+  }
+
+  .tab_content table tr td:nth-child(2) {
+    padding-bottom: 0px;
+  }
+  .tab_content table tr td:nth-child(3) {
+    position: absolute;
+    right: 0px;
+    margin-top: 33px;
+    padding-right: 15px;
+  }
+  .tab_content table td span {
+    display: inline;
+  }
+  .tab_content table tr {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tab_content table td {
+    padding: 0;
+  }
+}
+@media (max-width: 476px) {
+  .change_mail .enter-btn {
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  .change_mail .enter-btn .enter {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .change_mail .enter-btn button {
+    width: 100%;
+  }
+
+  .change_mail .modal-header1 h5 {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .change_mail .modal-header1 .close {
+    top: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    right: 18px;
+  }
+}
+@media (max-width: 459px) {
+  .btn_order {
+    margin: 20px 0px 8px 0px;
+  }
+  .btn_order button {
+    width: 95%;
+  }
+
+  .appear_taruf .svg-select-i {
+    right: 15px;
   }
 }
 * {

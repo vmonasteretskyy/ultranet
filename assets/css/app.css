@@ -3728,11 +3728,11 @@ input[type=checkbox]:checked + label:before {
 }
 
 .news_box .grafic_box .news-item {
-  padding-bottom: 37px;
+  padding-bottom: 40px;
 }
 .news_box .grafic_box .news-item a {
   right: 35px;
-  margin-top: -21px;
+  margin-top: -19px;
 }
 .news_box .grafic_box1 .news-item a {
   right: 70px;

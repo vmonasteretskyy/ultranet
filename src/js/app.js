@@ -489,6 +489,8 @@ if ($('*').is('.main-privacy')) {
     $('.tab').click(function () {
       $('.appear-taruf').fadeOut();
       $('.appear_passoword').fadeOut();
+      $('.appear_pease').fadeOut();
+
 
       $('.tab_content').fadeIn();
       })
@@ -504,7 +506,7 @@ if ($('*').is('.main-privacy')) {
                  $('.tab_elem1').fadeOut();
             })
             $('.pause').click(function () {
-              $('.appear_passoword').fadeIn();
+              $('.appear_pease').fadeIn();
                $('.tab_elem1').fadeOut();
               })
             

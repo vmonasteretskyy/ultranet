@@ -236,6 +236,15 @@
 .appear_taruf {
     display: none;
 }
+.appear_pease{
+   table tr td:first-of-type{
+    width:auto;
+
+    }
+    table td {
+     width: auto;
+    }
+}
 .appear_taruf {
     table td {
         a {

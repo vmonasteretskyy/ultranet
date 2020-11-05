@@ -20792,6 +20792,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear-taruf').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeIn();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
@@ -20806,7 +20807,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pause').click(function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
   });
 }

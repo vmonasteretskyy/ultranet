@@ -1,9 +1,10 @@
 .actions {
     background: url(/src/img/action-bg.png) no-repeat;
     background-size: cover;
+    // height: 100vh;
+    background-attachment: fixed;
     height: 100%;
-
-    padding-bottom: 164px;
+    padding-bottom: 194px;
 }
 .modal .close {
     z-index: 9;
@@ -64,7 +65,7 @@
     background: #f5f3f1;
     filter: drop-shadow(0px 10px 20px rgba(171, 171, 171, 0.3));
     padding: 20px 35px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 10px;
     .btn_open {
         width: 100%;
@@ -81,6 +82,9 @@
         img {
             transition: 0.3s ease;
         }
+        &:hover{
+            filter:none;
+        }
     }
     .open_body {
         margin-top: 20px;
@@ -92,13 +96,13 @@
         }
         button {
             background: #34a0d9;
-            border-radius: 10px;
+            border-radius: 3px;
             width: 147px;
             height: 40px;
             font-weight: 500;
             font-size: 16px;
             color: #ffffff;
-            padding: 5px 0px 7px 0px;
+            // padding: 5px 0px 7px 0px;
             transition: 0.4s ease;
             margin-top: 10px;
             &:hover {
@@ -231,6 +235,12 @@
     #details .modal-dialog {
         max-width: 835px;
         margin: 1.75rem auto;
+    }
+}
+@media (max-width: 1599px){
+    .actions {
+ 
+        padding-bottom: 150px;
     }
 }
 @media (max-width: 1199px) {
@@ -420,6 +430,9 @@
     }
 }
 @media (max-width: 500px) {
+    .actions {
+ height: 100vh;
+    }
     .grafic {
         .modal-header1 .close {
             margin-top: 0px;

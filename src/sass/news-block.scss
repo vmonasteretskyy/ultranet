@@ -8,7 +8,7 @@
         max-width: 555px;
         margin-right: 15px;
         a{
-            margin-top: -18px;
+            margin-top: -21px;
         }
     }
     .news-item   .read-more-a{
@@ -23,7 +23,6 @@
     padding: 30px 35px;
     margin-bottom: 30px;
     transition: 0.3s ease;
-
    &:hover{
     box-shadow: 0px 5px 10px rgba(171, 171, 171, 0.4);
 
@@ -31,10 +30,11 @@
 
     p {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 150%;
         color: #000000;
         width: 95%;
+        overflow: hidden;
     }
 
     h3 {
@@ -56,7 +56,9 @@
         color: #000000;
     }
 }
-
+.date{
+    margin-bottom: 7px;
+}
 .news-big-item {
     padding: 40px 35px 10px 35px;
     height: 414px;
@@ -156,20 +158,23 @@ opacity: 0.8;
         .news-item   .read-more-a{
             margin-top: -19px;
         }
+        .read-more-a{
+            margin-top: -9px;
+        }
         .news-item p {
             font-weight: 300;
-            font-size: 15px;
+            font-size: 17px;
      
             width: 95%;
         }
         .news-item a{
-            margin-top: -30px;
+            margin-top: -10px;
         }
         .news-big-item{
             margin-right: 0px;
         }
         .news-big-item a{
-            margin-top: 17px;
+            margin-top: -15px;
         }
     }
     #map{
@@ -219,15 +224,18 @@ font-size: 15px;
         }
         .news-item p {
             font-weight: 300;
-            font-size: 15px;
+            font-size: 17px;
      
-            width: 95%;
+            width: 97%;
+        }
+        .news-item h3{
+            font-size: 22px;
         }
         .news-item a{
             margin-top: -10px;
         }
         .news-big-item a{
-            margin-top: 0px;
+            margin-top: 33px;
         }
     }
     .news-item {
@@ -269,9 +277,14 @@ font-size: 15px;
 @media (max-width: 767px){
     
     .news-block{
-   
+        .news-item{
+            margin-bottom: 20px;
+        }
+        .news-big-item{
+            padding-bottom: 30px;
+        }
         .news-big-item a{
-            margin-top: -24px;
+            margin-top: -4px;
         }
     }
     .footer-block{
@@ -314,7 +327,8 @@ font-size: 15px;
 @media (max-width: 575px){
     .news-block{
         .news-big-item a{
-            margin-top: -10px;
+            // margin-top: -4px;
+            bottom: 15px;
         }
     }
     .footer-block{

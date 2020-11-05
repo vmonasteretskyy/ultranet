@@ -3594,7 +3594,7 @@ input[type=checkbox]:checked + label:before {
   }
 }
 .actions {
-  background: url(/src/img/action-bg.png) no-repeat;
+  background: url(../../src/img/action-bg.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100%;

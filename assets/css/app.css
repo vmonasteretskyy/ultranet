@@ -785,7 +785,7 @@
   }
 
   .carousel-item .background-img {
-    height: 360px;
+    height: 367px;
     -o-object-position: 48% 50%;
        object-position: 48% 50%;
   }
@@ -796,7 +796,7 @@
   }
 
   .carousel-caption {
-    top: 5%;
+    top: 6%;
   }
 
   .main_text h2 {
@@ -1204,6 +1204,10 @@
   }
 }
 @media (max-width: 575px) {
+  .pay-services {
+    padding-bottom: 60px;
+  }
+
   .news-block .row {
     margin-right: 6px;
   }
@@ -1233,7 +1237,7 @@
   }
 
   .main-text-center {
-    padding: 40px 0px 0px 0px;
+    padding: 40px 0px 12px 0px;
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
@@ -1321,6 +1325,9 @@
 .news-block .news-big-item {
   max-width: 555px;
   margin-right: 15px;
+}
+.news-block .news-big-item a {
+  margin-top: -18px;
 }
 .news-block .news-item .read-more-a {
   margin-top: -36px;
@@ -1414,6 +1421,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
+  margin-bottom: 0px;
 }
 
 .rules-services {
@@ -1477,7 +1485,7 @@ footer {
     margin-right: 0px;
   }
   .news-block .news-big-item a {
-    margin-top: 10px;
+    margin-top: 17px;
   }
 
   #map {
@@ -1555,7 +1563,7 @@ footer {
 }
 @media (max-width: 767px) {
   .news-block .news-big-item a {
-    margin-top: -20px;
+    margin-top: -24px;
   }
 
   .footer-block {
@@ -1593,6 +1601,7 @@ footer {
     font-size: 16px;
   }
   .info-item p {
+    padding-bottom: 10px;
     font-size: 15px;
   }
 }
@@ -1634,7 +1643,7 @@ footer {
   }
 
   .contact-info {
-    padding: 20px 15px;
+    padding: 20px 15px 7px 15px;
     flex-wrap: wrap;
     margin-top: 0px;
     border-radius: 0px;
@@ -1669,10 +1678,17 @@ footer {
 
   .archive-news {
     margin-top: 0px;
+    font-size: 16px;
+    margin-right: 4px;
   }
 
   .news-block {
     padding-bottom: 40px;
+  }
+}
+@media (max-width: 485px) {
+  .news-block .news-big-item a {
+    margin-top: -15px;
   }
 }
 .home-atribute {
@@ -1708,7 +1724,7 @@ footer {
 .tarif-internet .tarif-item1 {
   background: #34a0d9;
   color: #ffffff;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 10px 0px 0px 10px;
 }
 .tarif-internet .tarif-item2 {
   position: relative;
@@ -1731,7 +1747,7 @@ footer {
 }
 
 .tarif-internet div:last-of-type {
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .privat-home .home-internet {
@@ -1838,7 +1854,7 @@ footer {
 }
 .home-int-grn button {
   background: #34a0d9;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 160px;
   height: 60px;
   font-weight: 500;
@@ -1979,7 +1995,7 @@ footer {
   margin-top: 3px;
   filter: drop-shadow(0px 4px 10px rgba(171, 171, 171, 0.4));
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 320px;
   height: 172px;
   font-weight: 300;
@@ -2070,7 +2086,7 @@ input[type=checkbox]:checked + label:before {
   color: #000000;
   background: #ffffff;
   border: 1px solid #ababab;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 320px;
   height: 40px;
   padding-left: 10px;
@@ -2270,7 +2286,7 @@ input[type=checkbox]:checked + label:before {
   background: #ffffff;
   border: 1px solid #ababab;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 7px 10px;
   font-weight: 300;
   font-size: 18px;
@@ -2337,7 +2353,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 3px;
   border: 1px solid #34a0d9;
   transition: 0.4s ease;
 }
@@ -2962,7 +2978,7 @@ input[type=checkbox]:checked + label:before {
 }
 .end_modal .on-general {
   background: #34a0d9;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 160px;
   height: 60px;
   padding: 14px 18px 18px 18px;
@@ -3089,7 +3105,7 @@ input[type=checkbox]:checked + label:before {
   height: 40px;
   background: #ffffff;
   border: 1px solid #ababab;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 .calcul-box input::-moz-placeholder {
   font-weight: 300;
@@ -4156,7 +4172,7 @@ input[type=checkbox]:checked + label:before {
   align-items: center;
 }
 .privacy-block li:hover a {
-  box-shadow: 0px 1px #0B3661;
+  box-shadow: 0px 1px #0b3661;
 }
 .privacy-block li a {
   transition: 0.3s ease;
@@ -4308,8 +4324,8 @@ input[type=checkbox]:checked + label:before {
 .change_tel input {
   width: 320px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #ABABAB;
+  background: #ffffff;
+  border: 1px solid #ababab;
   box-sizing: border-box;
   border-radius: 3px;
   padding: 7px 10px;
@@ -4318,19 +4334,19 @@ input[type=checkbox]:checked + label:before {
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
-  color: #ABABAB;
+  color: #ababab;
 }
 .change_tel input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
-  color: #ABABAB;
+  color: #ababab;
 }
 .change_tel input::placeholder {
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
-  color: #ABABAB;
+  color: #ababab;
 }
 
 .change_tel div:first-of-type {
@@ -4339,7 +4355,7 @@ input[type=checkbox]:checked + label:before {
 
 .change_mail .enter-btn {
   margin-top: 40px;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
   display: flex;
   justify-content: center;
 }
@@ -4352,25 +4368,25 @@ input[type=checkbox]:checked + label:before {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 .change_mail .enter-btn .enter {
-  background: #34A0D9;
+  background: #34a0d9;
   border-radius: 3px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   margin-right: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .change_mail .enter-btn .abonent {
-  background: #FFFFFF;
-  border: 1px solid #34A0D9;
+  background: #ffffff;
+  border: 1px solid #34a0d9;
   box-sizing: border-box;
   border-radius: 3px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #34A0D9;
+  color: #34a0d9;
 }
 
 .tel_element {
@@ -4417,16 +4433,16 @@ input[type=checkbox]:checked + label:before {
   margin: 30px 0px 17px 0px;
 }
 .btn_order button {
-  background: #34A0D9;
+  background: #34a0d9;
   border-radius: 3px;
   width: 147px;
   height: 40px;
   font-weight: 500;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .btn_order button:active {
-  background: #0B3661;
+  background: #0b3661;
 }
 
 .appear_taruf .change_tar-text ul {
@@ -4457,6 +4473,23 @@ input[type=checkbox]:checked + label:before {
 
 .close-back {
   display: none;
+}
+
+.mail-adapt {
+  display: none;
+}
+
+.appear_passoword {
+  display: none;
+}
+
+.input-pass input {
+  padding: 0px 10px;
+  background: #ffffff;
+  border: 1px solid #ababab;
+  width: 270px;
+  height: 40px;
+  border-radius: 3px;
 }
 
 @media (min-width: 500px) {
@@ -4499,6 +4532,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .input-pass input {
+    width: 230px;
+  }
+
   .detail-txt {
     padding-top: 5px;
     padding-bottom: 10px;
@@ -4523,6 +4560,11 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 767px) {
+  #change_address .change_tel div:first-of-type {
+    width: 250px;
+    margin-right: 35px;
+  }
+
   .change_tel input {
     max-width: 270px;
   }
@@ -4532,7 +4574,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .change_mail .modal-body {
-    padding: 8px 10px;
+    padding: 0px 10px 8px 10px;
   }
 
   .appear_taruf {
@@ -4543,7 +4585,8 @@ input[type=checkbox]:checked + label:before {
   }
   .appear_taruf .come-back .close-back {
     display: block;
-    float: right;
+    position: absolute;
+    right: 5px;
     margin-right: 5px;
     margin-top: 5px;
   }
@@ -4579,7 +4622,7 @@ input[type=checkbox]:checked + label:before {
     position: fixed;
     top: 0;
     left: 0;
-    background: #FFFFFF;
+    background: #ffffff;
     width: 100%;
     height: 100%;
     z-index: 999;
@@ -4587,6 +4630,14 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .wrapper .appear_taruf h4 {
+    padding-top: 47px;
+  }
+
+  .mail-adapt {
+    display: block;
+  }
+
   .change_tel div:first-of-type {
     margin-bottom: 10px;
   }
@@ -4609,6 +4660,11 @@ input[type=checkbox]:checked + label:before {
 
   .privacy-block {
     margin: 0px 0px;
+  }
+}
+@media (max-width: 532px) {
+  .change_mail .modal-header1 h5 {
+    text-align: center;
   }
 }
 @media (max-width: 500px) {

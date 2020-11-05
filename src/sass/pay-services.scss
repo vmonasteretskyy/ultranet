@@ -311,6 +311,9 @@ font-weight: 300;
 }
 
 @media (max-width: 575px) {
+    .pay-services {
+      padding-bottom: 60px;
+    }
 .news-block .row{
   margin-right: 6px;
 }
@@ -339,7 +342,7 @@ font-weight: 300;
         margin-right: 3px;
     }
     .main-text-center {
-        padding: 40px 0px 0px 0px;
+        padding: 40px 0px 12px 0px;
         font-weight: 500;
         font-size: 18px;
         line-height: 150%;

@@ -240,7 +240,7 @@
                                 <tr>
                                     <td>Послуга активна:</td>
                                     <td>Так</td>
-                                    <td><a>призупинити</a></td>
+                                    <td><a class="pause">призупинити</a></td>
                                 </tr>
                                 <tr>
                                     <td>Поточний місяць сплачено:</td>
@@ -280,7 +280,7 @@
                                 <tr>
                                     <td>Пароль:</td>
                                     <td>Masya</td>
-                                    <td><a>змінити</a></td>
+                                    <td><a class="change-pass">змінити</a></td>
                                 </tr>
                                 <tr>
                                     <td>Номер особового рахунку:</td>
@@ -294,12 +294,12 @@
                                 <tr>
                                     <td>Адреса електронної пошти:</td>
                                     <td>example@gmail.com</td>
-                                    <td><a  >змінити</a></td>
+                                    <td><a data-toggle="modal" data-target="#change_address" >змінити</a></td>
                                 </tr>
                                 <tr>
                                     <td>Основний телефонний номер:</td>
                                     <td>0632865431</td>
-                                    <td><a>змінити</a></td>
+                                    <td><a data-toggle="modal" data-target="#change_general-num">змінити</a></td>
                                 </tr>
                                 <tr>
                                     <td>Додатковий телефонний номер:</td>
@@ -329,7 +329,7 @@
 
                         </div>
                     </div>
-                    <div class="appear_taruf">
+                    <div class="appear_taruf appear-taruf">
                         <div class="come-back">
                             <span><img class="svg" src="src/img/Vector.svg" alt="">
                             Назад</span>
@@ -389,6 +389,68 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="appear_taruf appear_passoword">
+                        <div class="come-back">
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                            Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Зміна паролю</h4>
+                        <table>
+                            <tr>
+                                <td>Логін користувача:</td>
+                                <td>User_5000</td>
+                            </tr>
+                            <tr>
+                                <td>Старий пароль:</td>
+                                <td>Masya</td>
+                            </tr>
+                            <tr>
+                                <td>Новий пароль:</td>
+                                <td class="input-pass"><input type="password" placeholder="******"></td>
+                            </tr>
+                            <tr>
+                                <td>Підтвердити пароль:</td>
+                                <td class="input-pass"><input type="password" placeholder="******"></td>
+                            </tr>
+
+                        </table>
+                        <div class="btn_order">
+                            <button>Змінити</button>
+                        </div>
+                    
+                    </div>
+                    <div class="appear_taruf appear_pease">
+                        <div class="come-back">
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                            Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Зміна паролю</h4>
+                        <table>
+                            <tr>
+                                <td>Логін користувача:</td>
+                                <td>User_5000</td>
+                            </tr>
+                            <tr>
+                                <td>Старий пароль:</td>
+                                <td>Masya</td>
+                            </tr>
+                            <tr>
+                                <td>Новий пароль:</td>
+                                <td class="input-pass"><input type="password" placeholder="******"></td>
+                            </tr>
+                            <tr>
+                                <td>Підтвердити пароль:</td>
+                                <td class="input-pass"><input type="password" placeholder="******"></td>
+                            </tr>
+
+                        </table>
+                        <div class="btn_order">
+                            <button>Змінити</button>
+                        </div>
+                    
+                    </div>
                     <div class="tab_item">Содержимое 2</div>
                     <div class="tab_item">Содержимое 3</div>
                     <div class="tab_item">Содержимое 4</div>
@@ -435,8 +497,83 @@
                 </div>
             </div>
 
+  <!-- Modal Зміна основного телефонного номеру-->
+   <div class="modal fade change_mail" id="change_general-num" tabindex="-1" aria-labelledby="my_office"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+           <div class="modal-header modal-header1">
+               <h5 class="modal-title">Зміна основного телефонного номеру
+               </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
+                   </span>
+               </button>
+           </div>
+           <div class="modal-body modal-body1">
+               <form action="">
+                   <div class="change_tel">
+                       <div>Основний телефонний номер:</div>
+                       <div><span>0632865431</span>
+                       <span class="btn-delete"></span></div>
+                   </div>
+                   <div class="change_tel">
+                       <div> Новий телефонний номер: </div>
+                       <div class="tel_element">
+                           <label for="">Телефоний номер:</label>
+                           <input type="tel" name="" id="" placeholder="0632865431">
+                       </div>
+                   </div>
+                   <div class="enter-btn">
+                       <button class="enter">Змінити</button>
+                       <button class="abonent">Відміна</button>
+                   </div>
+               </form>
 
+           </div>
 
+       </div>
+   </div>
+</div>
+
+  <!-- Modal Зміна адреси електронної пошти-->
+  <div class="modal fade change_mail" id="change_address" tabindex="-1" aria-labelledby="my_office"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header modal-header1">
+              <h5 class="modal-title">Зміна адреси <br class="mail-adapt">електронної пошти
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
+                  </span>
+              </button>
+          </div>
+          <div class="modal-body modal-body1">
+              <form action="">
+                  <div class="change_tel">
+                      <div>Поточна адреса електронної пошти:</div>
+                      <div><span>example@gmail.com</span>
+                      <span class="btn-delete"></span></div>
+                  </div>
+                  <div class="change_tel">
+                      <div>Нова адреса електронної пошти:</div>
+                      <div class="tel_element">
+                          <label for="">Телефоний номер:</label>
+                          <input type="tel" name="" id="" placeholder="example@gmail.com">
+                      </div>
+                  </div>
+                  <div class="enter-btn">
+                      <button class="enter">Змінити</button>
+                      <button class="abonent">Відміна</button>
+                  </div>
+              </form>
+
+          </div>
+
+      </div>
+  </div>
+</div>
         </section>
     </main>
     <footer>

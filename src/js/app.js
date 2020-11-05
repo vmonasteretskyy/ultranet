@@ -484,19 +484,30 @@ $(".wrapper .tab").click(function() {
 if ($('*').is('.main-privacy')) {
   $('.change_taruf').click(function () {
     $('.tab_elem1').fadeOut();
-    $('.appear_taruf').fadeIn();
+    $('.appear-taruf').fadeIn();
     })
     $('.tab').click(function () {
-      $('.appear_taruf').fadeOut();
+      $('.appear-taruf').fadeOut();
+      $('.appear_passoword').fadeOut();
+
       $('.tab_content').fadeIn();
       })
       $('.come-back').click(function () {
         $('.tab_elem1').fadeIn();
-        $('.appear_taruf').fadeOut();
+        $('.appear-taruf').fadeOut();
         })    
         $('.close_tab').click(function () {
           $('.tab_content').fadeOut();
-      
           })
-        
+          $('.change-pass').click(function () {
+            $('.appear_passoword').fadeIn();
+                 $('.tab_elem1').fadeOut();
+            })
+            $('.pause').click(function () {
+              $('.appear_passoword').fadeIn();
+               $('.tab_elem1').fadeOut();
+              })
+            
+          
+          
 }

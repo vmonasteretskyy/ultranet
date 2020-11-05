@@ -3598,7 +3598,7 @@ input[type=checkbox]:checked + label:before {
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
-  padding-bottom: 194px;
+  padding-bottom: 239px;
 }
 
 .modal .close {

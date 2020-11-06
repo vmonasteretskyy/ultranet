@@ -1714,6 +1714,7 @@ footer {
   line-height: 10px;
   color: #000000;
   padding-top: 50px;
+  margin-left: -14px;
 }
 .home-atribute a {
   text-decoration: underline;
@@ -4211,15 +4212,16 @@ input[type=checkbox]:checked + label:before {
 .privacy-block {
   background: #ffffff;
   box-shadow: 4px 10px 20px rgba(171, 171, 171, 0.3);
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .privacy-block ul {
   margin: 0;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .privacy-block li {
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   padding: 15px 10px 15px 30px;
   font-weight: 500;
   font-size: 18px;
@@ -4232,13 +4234,29 @@ input[type=checkbox]:checked + label:before {
   box-shadow: 0px 1px #0b3661;
 }
 .privacy-block li a {
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   margin-left: 20px;
+}
+
+.datail-list {
+  display: none;
+}
+
+.tarif-list {
+  display: none;
+}
+
+.pass-list {
+  display: none;
 }
 
 .wrapper .active {
   color: #fbd060;
   background: #0b3661;
+}
+.wrapper .active .yellow-svg {
+  transition: 0.2s ease;
+  fill: #fbd060;
 }
 
 .wrapper tr td:first-of-type {
@@ -4493,7 +4511,9 @@ input[type=checkbox]:checked + label:before {
 }
 
 .btn_order {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 30px 0px 17px 0px;
 }
 .btn_order button {
@@ -4554,6 +4574,145 @@ input[type=checkbox]:checked + label:before {
   width: 270px;
   height: 40px;
   border-radius: 3px;
+}
+
+.restore {
+  display: none;
+  justify-content: center;
+}
+
+.btn_mod button {
+  background: #34A0D9;
+  border-radius: 3px;
+  width: 147px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.btn_mod button:active {
+  background: #0b3661;
+}
+.btn_mod .cansel {
+  margin-left: 30px;
+  background: #FFFFFF;
+  border: 1px solid #34A0D9;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #34A0D9;
+}
+.btn_mod .cansel:active {
+  border: 1px solid #0b3661;
+  color: #0b3661;
+  background: #FFFFFF;
+}
+
+.peause_modal .modal-content .modal-header1 h5 {
+  font-size: 22px;
+  width: 100%;
+}
+.peause_modal .modal-dialog {
+  max-width: 399px;
+}
+.peause_modal .modal-content {
+  max-width: 399px;
+}
+.peause_modal .modal-body1 {
+  padding: 24px 0px 45px 0px;
+}
+
+.table-menu {
+  float: right;
+  margin-right: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.table-menu span {
+  padding-bottom: 3px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.table-menu span:hover {
+  box-shadow: 0px 1px black;
+}
+.table-menu .month {
+  box-shadow: 0px 1px black;
+}
+
+.appear_table tr {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.appear_table table tr:first-of-type {
+  cursor: auto;
+}
+.appear_table table tr:first-of-type:hover {
+  background: white;
+}
+.appear_table table tr:hover {
+  background: #E8E8E8;
+}
+.appear_table table th:first-of-type {
+  width: 165px;
+}
+.appear_table table th {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  padding: 10px 30px;
+  color: #000000;
+}
+.appear_table table tr td:first-of-type {
+  width: auto;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  color: #464646;
+}
+.appear_table table tr td:nth-child(3) {
+  text-align: center;
+  padding-right: 30px;
+}
+.appear_table table tr td {
+  padding: 10px 0px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #464646;
+}
+.appear_table table #result-table td {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+.table_day {
+  display: none;
+}
+
+.day_txt {
+  display: none;
+}
+
+.table_year {
+  display: none;
+}
+
+.table_all-years {
+  display: none;
+}
+
+.open-table {
+  cursor: pointer;
 }
 
 @media (min-width: 500px) {

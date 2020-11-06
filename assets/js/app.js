@@ -20788,16 +20788,27 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change_taruf').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear-taruf').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeIn();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear-taruf').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').fadeOut();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear-taruf').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeOut();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close_tab').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeOut();
@@ -20805,10 +20816,116 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change-pass').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeIn();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pause').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-modal').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#peause_modal').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause_b').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restore').css("display", "block");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-modal2').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#restore_modal').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause_b').css("display", "block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restore').css("display", "none");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cansel').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#peause_modal').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#restore_modal').modal('hide');
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_trafic tr').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_trafic').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_day').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.day_txt').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.day-num').css("box-shadow", "0px 1px black");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.month').css("box-shadow", "0px 1px white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").mouseover(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").css("border-bottom", "1px solid black");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").mouseout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").css("border-bottom", "1px solid transparent");
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.month').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_trafic').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_day').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.day_txt').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.month').css("box-shadow", "0px 1px black");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").mouseover(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").css("border-bottom", "none");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").mouseout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".month").css("border-bottom", "none");
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_year tr').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_year').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.month').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_slash').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_trafic').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_year').css("box-shadow", "0px 1px white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").mouseover(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").css("border-bottom", "1px solid black");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").mouseout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").css("border-bottom", "1px solid transparent");
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_year').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_year').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_day').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_trafic').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.month').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_year').css("box-shadow", "0px 1px black");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.day_txt').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_slash').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").mouseover(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").css("border-bottom", "none");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").mouseout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".txt_year").css("border-bottom", "none");
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.all-years').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_year').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_year').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_all-years').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_day').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_trafic').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.month').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.all-years').css("box-shadow", "0px 1px black");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.day_txt').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_slash2').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_slash').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").mouseover(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").css("border-bottom", "none");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").mouseout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").css("border-bottom", "none");
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_all-years tr').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_year').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.table_all-years').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_slash2').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_year').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt_year').css("box-shadow", "0px 1px black");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.all-years').css("box-shadow", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").mouseover(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").css("border-bottom", "1px solid black");
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").mouseout(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".all-years").css("border-bottom", "1px solid transparent");
+    });
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.open-table').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').css("display", "none");
   });
 }
 

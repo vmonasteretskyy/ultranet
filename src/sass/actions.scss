@@ -371,6 +371,7 @@
             }
         }
     }
+  
     .news_box {
         .news-big-item {
             width: 95.6%;
@@ -398,6 +399,13 @@
     }
 }
 @media (max-width: 575px) {
+    .news_box .news-big-item{
+        width: 100%;
+    }
+    .news-adapt{
+        width: 100%;
+        padding-right: 20px;
+    }
     .show_more {
         padding-bottom: 30px;
         margin-top: 20px;
@@ -480,11 +488,11 @@
     }
 }
 @media (max-width: 394px) {
-    .news_box {
-        .news-big-item {
-            width: 94%;
-        }
-    }
+    // .news_box {
+    //     .news-big-item {
+    //         width: 94%;
+    //     }
+    // }
     .acord-item {
         .open_body {
             margin-top: 20px;

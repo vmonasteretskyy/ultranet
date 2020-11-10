@@ -83,6 +83,9 @@ color: #000000;
     }
 }
 }
+.tv_ad-text{
+    margin-left: -15px;
+}
 @media (max-width: 1199px) {
     .tarif_tv {
         .home-int-grn {
@@ -127,6 +130,9 @@ color: #000000;
     }
 }
 @media (max-width: 867px) {
+    .tv_ad-text{
+        margin-left: 0px;
+    }
     .mobile_con{
         .home-internet-text{
             margin-left: 10px;

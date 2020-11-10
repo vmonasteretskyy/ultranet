@@ -124,7 +124,7 @@ margin-top: 9px;
     margin-top: 100px;
     z-index: -1;
     background: #f5f3f1;
-    height: 825px;
+    height: 845px;
     width: 100%;
 }
 .home-internet {
@@ -612,7 +612,7 @@ height: auto;
         overflow: hidden;
     }
     .select-items {
-        padding-right: 20px;
+        // padding-right: 20px;
         font-size: 16px;
     }
     p {
@@ -893,12 +893,13 @@ height: auto;
 }
 
 @media (max-width: 867px) {
+    .backgroung-law {
+        height: 602px;
+    }
     .home-internet {
-   
         margin-left: 0px;
     }
     .home-internet-item {
-   
         .home-internet-ecl{
             margin-top: -100px;
         }

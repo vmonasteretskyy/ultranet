@@ -20798,6 +20798,10 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mob-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pay-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').fadeOut();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
@@ -20809,6 +20813,10 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-list').fadeOut();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-back-tele').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeOut();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close_tab').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeOut();
@@ -20822,6 +20830,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pause').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-list').fadeIn();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-modal').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#peause_modal').modal('hide');
@@ -20927,7 +20936,38 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').css("display", "none");
   });
-}
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab-tele').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab-mobile').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mob-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab-pay').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pay-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_item').css("display", "none");
+  });
+} //adapt table
+// $(window).resize(function(){
+// });
+//
+
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".check1").click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem1').is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".show-actions p").html("Обрано 1 акції");
+  }
+
+  if (!jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem1').is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".show-actions p").html("Обрано 0");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem2').is(':checked') && jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem1').is(':checked')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".show-actions p").html("Обрано 2 акції");
+  }
+});
 
 /***/ }),
 

@@ -292,6 +292,7 @@ if ($('*').is('.tarif-main')) {
 
 
 }
+ 
 
 
 $('.close').click(function () {
@@ -496,6 +497,10 @@ if ($('*').is('.main-privacy')) {
     $('.datail-list').fadeOut();
     $('.tarif-list').fadeOut();
     $('.pass-list').fadeOut();
+    $('.peause-list').fadeOut();
+    $('.tv-list').css("display", "none");
+    $('.mob-list').css("display", "none");
+    $('.pay-list').css("display", "none");
     $('.appear_table').fadeOut();
   })
   $('.come-back').click(function () {
@@ -507,7 +512,15 @@ if ($('*').is('.main-privacy')) {
     $('.datail-list').fadeOut();
     $('.tarif-list').fadeOut();
     $('.pass-list').fadeOut();
+    $('.peause-list').fadeOut();
+
+    
   })
+  $('.close-back-tele').click(function () {
+    $('.tab_content').fadeOut();
+ 
+  })
+  
   $('.close_tab').click(function () {
     $('.tab_content').fadeOut();
   })
@@ -521,6 +534,8 @@ if ($('*').is('.main-privacy')) {
   $('.pause').click(function () {
     $('.appear_pease').fadeIn();
     $('.tab_elem1').fadeOut();
+    $('.peause-list').fadeIn();
+
   })
 
   $('.peause-modal').click(function () {
@@ -635,5 +650,47 @@ if ($('*').is('.main-privacy')) {
     $('.tab_elem1').css("display", "none");
     
   })
+  $('.tab-tele').click(function () {
+    $('.tv-list').fadeIn();
+  })
+  $('.tab-mobile').click(function () {
+    $('.mob-list').fadeIn();
+  })
+  $('.tab-pay').click(function () {
+    $('.pay-list').fadeIn();
+  })
 
+    $('.magazine').click(function () {
+    $('.magazine-block').fadeIn();
+    $('.tab_item').css("display", "none");
+
+  })
+  
 }
+
+
+
+
+//adapt table
+
+// $(window).resize(function(){
+
+   
+
+// });
+
+
+
+
+//
+$(".check1").click(function(){
+  if ($('#elem1').is(':checked')) {
+  $(".show-actions p").html("Обрано 1 акції");
+  }
+  if (!$('#elem1').is(':checked')) {
+    $(".show-actions p").html("Обрано 0");
+    }
+    if ($('#elem2').is(':checked') && $('#elem1').is(':checked')) {
+      $(".show-actions p").html("Обрано 2 акції");
+      }
+});

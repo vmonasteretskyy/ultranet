@@ -142,6 +142,14 @@
                 <a href="/">Головна</a> / <span>Особистий кабінет</span>  <i class="datail-list"> / </i> <span class="datail-list">Детальна статистика</span>
                 <i class="tarif-list"> / </i> <span class="tarif-list">Змінити тариф</span>
                 <i class="pass-list"> / </i> <span class="pass-list">Змінити пароль</span>
+                <i class="peause-list"> / </i> <span class="peause-list">Призупинити надання послуг</span>
+                <i class="tv-list"> / </i> <span class="tv-list">Телебачення</span>
+                <i class="mob-list"> / </i> <span class="mob-list">Мобільний зв’язок</span>
+                <i class="pay-list"> / </i> <span class="pay-list">Оплата послуг</span>
+
+                
+
+
             </div>
             <div class="btn-back">
                 <a href="/"> <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -163,21 +171,21 @@
                                     fill="#0B3661" />
                             </svg>
                             <a>Загальна інформація</a></li>
-                        <li class="tab"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                        <li class="tab tab-tele"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="yellow-svg"
                                     d="M2.1875 3.9375H18.8125C19.5475 3.9375 20.125 4.50625 20.125 5.25V15.3125C20.125 16.0562 19.5475 16.625 18.8125 16.625H2.1875C1.44375 16.625 0.875 16.0562 0.875 15.3125V5.25C0.875 4.50625 1.44375 3.9375 2.1875 3.9375ZM8.49625 7.4375V13.125L13.4925 10.2375L8.49625 7.4375ZM15.0938 18.375H5.81875C5.55625 18.375 5.38125 18.2 5.38125 17.9375C5.38125 17.675 5.55625 17.5 5.81875 17.5H15.1813C15.4438 17.5 15.6188 17.675 15.6188 17.9375C15.6188 18.2 15.3562 18.375 15.0938 18.375Z"
                                     fill="#0B3661" />
                             </svg>
                             <a>Телебачення</a></li>
-                        <li class="tab"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                        <li class="tab tab-mobile"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="yellow-svg"
                                     d="M15.1562 0H5.96875C4.88184 0 4 0.881836 4 1.96875V19.0312C4 20.1182 4.88184 21 5.96875 21H15.1562C16.2432 21 17.125 20.1182 17.125 19.0312V1.96875C17.125 0.881836 16.2432 0 15.1562 0ZM10.5625 19.6875C9.83652 19.6875 9.25 19.101 9.25 18.375C9.25 17.649 9.83652 17.0625 10.5625 17.0625C11.2885 17.0625 11.875 17.649 11.875 18.375C11.875 19.101 11.2885 19.6875 10.5625 19.6875Z"
                                     fill="#0B3661" />
                             </svg>
                             <a>Мобільний зв’язок</a></li>
-                        <li class="tab"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                        <li class="tab tab-pay"><svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="yellow-svg"
                                     d="M21 6.68555V5.57812C21 4.30959 19.9717 3.28125 18.7031 3.28125H2.29688C1.02834 3.28125 0 4.30959 0 5.57812V6.68555C0 6.79879 0.091834 6.89062 0.205078 6.89062H20.7949C20.9082 6.89062 21 6.79879 21 6.68555Z"
@@ -856,9 +864,199 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="tab_item">Содержимое 2</div>
-                    <div class="tab_item">Содержимое 3</div>
-                    <div class="tab_item">Содержимое 4</div>
+                    <div class="tab_item">   
+                         <div class="tele">
+                        <div class="close-back-tele">
+                            <!-- <span><img class="svg" src="src/img/Vector.svg" alt="">
+                            Назад</span> -->
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Телебачення</h4>
+                        <table>
+                            <tr>
+                                <td>Поточний тариф:</td>
+                                <td>Послуга не замовлена</td>
+                            </tr>
+                            <tr>
+                                <td>Тариф на серпень:</td>
+                                <td>
+                                    <div class="custom-selects2 custom-selects-tarif">
+                                        <select>
+                                            <option value="0">157 каналів</option>
+                                            <option value="1">157 каналів</option>
+                                            <option value="2">196 каналів</option>
+                                
+                                        </select>
+                                        <img class="svg-select-i" src="src/img/select-ar.svg" alt="">
+
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="detail-txt"><a>Детальніше о тарифах</a></td>
+                            </tr>
+                            <tr>
+                                <td>Заявка на серпень:</td>
+                                <td>Заявок на серпень немає</td>
+                            </tr>
+
+                        </table>
+                        <div class="btn_order">
+                            <button>Замовити</button>
+                        </div>
+                        <div class="change_tar-text">
+                            <ul>
+                                <li><img src="/src/img/bi_dot.svg">Ви можете змінити заявку на зміну тарифу, якщо вже подали її. Для цього просто
+                                    подайте ще одну заявку з обраних тарифом. </li>
+                                <li><img src="/src/img/bi_dot.svg">При зміні тарифу буде враховуватися тільки ваша остання заявка.
+                                </li>
+                                <li><img src="/src/img/bi_dot.svg">Тариф буде дійсний, поки ви його не зміните.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <div class="tab_item">
+                        <div class="tele">
+                            <div class="close-back-tele">
+                                <!-- <span><img class="svg" src="src/img/Vector.svg" alt="">
+                                Назад</span> -->
+                                <img class="close-back" src="src/img/close.svg" alt="">
+                            </div>
+                            <h4>Мобільний зв’язок</h4>
+                            <table>
+                                <tr>
+                                    <td>Поточний тариф:</td>
+                                    <td>Послуга не замовлена</td>
+                                </tr>
+                                <tr>
+                                    <td>Тариф на серпень:</td>
+                                    <td>
+                                        <div class="custom-selects2 custom-selects-tarif">
+                                            <select>
+                                                <option value="0">Діджитал офіс 40</option>
+                                                <option value="1">Діджитал офіс 40</option>
+                                                <option value="2">Діджитал офіс 60</option>
+                                                <option value="3">Діджитал офіс 90</option>
+                                    
+                                            </select>
+                                            <img class="svg-select-i" src="src/img/select-ar.svg" alt="">
+    
+                                        </div>
+                                    </td>
+    
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="detail-txt"><a>Детальніше о тарифах</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Заявка на серпень:</td>
+                                    <td>Заявок на серпень немає</td>
+                                </tr>
+    
+                            </table>
+                            <div class="btn_order">
+                                <button>Замовити</button>
+                            </div>
+                            <div class="change_tar-text">
+                                <ul>
+                                    <li><img src="/src/img/bi_dot.svg">Ви можете змінити заявку на зміну тарифу, якщо вже подали її. Для цього просто
+                                        подайте ще одну заявку з обраних тарифом. </li>
+                                    <li><img src="/src/img/bi_dot.svg">При зміні тарифу буде враховуватися тільки ваша остання заявка.
+                                    </li>
+                                    <li><img src="/src/img/bi_dot.svg">Тариф буде дійсний, поки ви його не зміните.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_item">
+                        <div class="tele">
+                            <div class="close-back-tele">
+                                <img class="close-back" src="src/img/close.svg" alt="">
+                            </div>
+                            <h4>Оплата послуг</h4>
+                            <div class="block_pay-services">
+                                    <div class="pay-element">
+                                    <div class="priv-bl"><img  src="src/img/privat-24.png" alt=""></div>
+                                    <h4>Privat 24</h4>
+                                    <p>Оплата платіжною системою Privat 24 (в разділі «Мої платежі», у графі пошук ввести
+                                        «Ультранет»).</p>
+                                    <button>Перейти до оплати</button>
+                                    </div>
+                                    <div class="pay-element">
+                                    <div class="visa-bl"><img class="img" src="src/img/visa.png" alt=""></div>
+                                    <h4>Visa та Mastercard</h4>
+                                    <p>Оплата Visa, Mastercard та PCI DSS. Також Ви можете оплатити у мобільному додатку Tachcard.
+                                    </p>
+                                    <button class="second-pay-btn">Перейти до оплати</button>
+                              
+                                    </div>
+                                    <div class="pay-big-element">
+                                   <div class="ibox-bl" >
+                                   <img  src="src/img/ibox-p.png" alt=""> 
+                                    <h4>Платіжні термінали</h4>
+                                   </div>
+                                  <div>
+                                    <p>Оберіть платіжній термінал:</p>
+                                    <div class="custom-selects2" style="width:200px;">
+                                        <select>
+                                            <option value="1">Приватбанк</option>
+                                            <option value="2">Ibox</option>
+                                            <option value="3">24 Non stop</option>
+                                        </select>
+                                        <img class="pay-arrow-select" src="src/img/select-ar.svg" alt="">
+                               
+                                    </div>
+                                    <button  >Показати на карті</button>
+
+                                  </div>
+                                  </div>
+                                  <div class="print-box">
+<div class="print-block">
+ <img src="/src/img/notebook.svg" alt="">
+        Журнал платежів
+<button class="magazine">Перейти</button>
+</div>
+
+<div class="print-block notebook">
+<img src="/src/img/print.svg" alt="">
+Друк квитанції 
+<button class="payments">Перейти</button>
+</div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appear_taruf magazine-block">
+                        <div class="come-back">
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                            Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Журнал платежів</h4>
+                        <table class="table-magazine">
+                            <tr>
+                                <th>Дата</th>
+                                <th>Сума поповнення, грн.</th>
+                                <th>Статус</th>
+                            </tr>
+                            <tr>
+                                <td>25.06.2020</td>
+                                <td>1 000,00</td>
+                                <td>поповнено</td>
+                            </tr>
+                            <tr>
+                                <td>20.07.2020</td>
+                                <td>200,00</td>
+                                <td>в обробці</td>
+                            </tr>
+                        </table>
+                      
+                    </div>
+                    <div class="tab_item">Содержимое 5</div>
+
                 </div>
             </div>
 

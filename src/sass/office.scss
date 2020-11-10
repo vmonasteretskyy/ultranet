@@ -63,7 +63,7 @@
 }
 .wrapper {
     h4 {
-        padding-top: 50px;
+        margin-top: 50px;
         font-weight: 500;
         font-size: 18px;
         line-height: 150%;
@@ -260,7 +260,7 @@
      width: auto;
     }
 }
-.appear_taruf {
+.tele, .appear_taruf {
     table td {
         a {
             color: #000000;
@@ -276,7 +276,7 @@
     h4 {
         padding-top: 0px;
     }
-    .come-back {
+    .close-back-tele, .come-back {
         span {
             display: flex;
             align-items: center;
@@ -309,7 +309,7 @@
         }
     }
 }
-.appear_taruf .change_tar-text {
+.tele, .appear_taruf .change_tar-text {
     ul {
         padding-top: 0px;
         list-style-type: circle;
@@ -498,6 +498,183 @@ color: #000000;
 .open-table{
     cursor: pointer;
 }
+.peause-list{
+    display: none;
+}
+.block_pay-services div:nth-of-type(2){
+    margin-right: 0px;
+}
+.block_pay-services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    button{
+        background: #34A0D9;
+border-radius: 3px;
+width: 223px;
+height: 40px;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+&:active {
+background: #0b3661;
+}
+    }
+
+
+.pay-big-element{
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+border-radius: 10px;
+width: 602px;
+height: 221px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 56px 0px 82px;
+p{
+    font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+ padding: 0;
+color: #000000;
+}
+.custom-selects2 {
+    margin-bottom: 24px;
+    margin-top: 13px;
+    margin-left: 0px;
+ .pay-arrow-select {
+        position: absolute;
+        margin-left: 0px;
+        right: -10px;
+        margin-top: 8px;
+    }
+  }
+}
+    .pay-element{
+        margin: 0px 30px 30px 0px;
+        width:  286px;
+        height: 395px;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
+        border-radius: 10px;
+        .priv-bl{
+            margin-top: 40px;
+            margin-bottom: 19px;
+            img{
+                width: 95px;
+            }
+        }
+        .visa-bl{
+            margin-top: 26px;
+margin-bottom: 13px;
+        }
+        h4{
+            font-weight: normal;
+font-size: 18px;
+            margin: 0px;
+            padding: 0px 0px 20px 0px;
+        }
+        p{
+            width: 233px;
+            font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+ padding: 0px 0px 20px 0px;
+ margin: 0 auto;
+color: #000000;
+        }
+
+    }
+}
+.ibox-bl{
+  
+   img{  
+    margin-bottom: 19px;
+   }
+   h4{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+   margin: 0px 0px 0px -10px ;
+    color: #000000;
+   }
+}
+.print-block{
+    margin-right: 40px;
+height: 167px;
+padding-top: 40px;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+color: #000000;
+img{
+    margin-right: 20px;
+  
+}
+button{
+    margin-top: 20px;
+}
+}
+.notebook{
+    border-left: 1px solid #E8E8E8;
+  padding-left: 39px;
+}
+.print-box{
+width: 602px;
+background: #FFFFFF;
+height: 167px;
+border: 1px solid #E8E8E8;
+box-sizing: border-box;
+border-radius: 10px;
+display: flex;
+margin-top: 50px;
+align-items: center;
+padding: 0px 39px;
+margin-bottom: 50px;
+}
+.tv-list{
+    display: none;
+}
+.mob-list{
+    display: none;
+
+}
+.pay-list{
+    display: none;
+}
+.tab_content .table-magazine{
+
+     tr td:first-of-type{
+         width: auto;
+     }
+      tr td:nth-child(3){
+text-align: center;
+ 
+padding: 0px 40px 0px 0px;
+      }
+      tr th:nth-child(3){
+        padding: 0px 40px 0px 0px;
+              }
+    th{
+        padding: 10px 0px;
+        font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #000000;
+    }
+    td{
+        text-align: center;
+    }
+}
 @media (min-width: 500px) {
     .change_mail {
         .modal-dialog {
@@ -508,7 +685,20 @@ color: #000000;
 }
 
 @media (max-width: 1199px) {
-    .appear_taruf {
+    
+    .block_pay-services .pay-big-element{
+  
+    .custom-selects2 {
+     
+     .pay-arrow-select {
+            position: absolute;
+            margin-left: 0px;
+            right: 10px;
+            margin-top: 8px;
+        }
+      }
+    }
+    .tele,   .appear_taruf {
         .custom-selects-tarif .select-selected {
             width: 300px;
         }
@@ -544,6 +734,51 @@ color: #000000;
 }
 
 @media (max-width: 991px) {
+    .print-block{
+        margin-right: 0px;
+   height: auto;
+    padding-top: 20px;
+  
+   
+    }
+    .notebook{
+        border-top: 1px solid #E8E8E8;
+        border-left: none;
+      padding-left: 0px;
+      margin-bottom: 20px;
+    }
+    .print-box{
+        width: 286px;
+ 
+    height: auto;
+  
+   
+    flex-direction: column;
+    margin-top: 30px;
+   justify-content: center;
+    align-items: center;
+    padding: 0px 39px;
+    margin-bottom: 0px;
+    }
+    .block_pay-services   .pay-big-element{
+    
+        align-items: center;
+        padding:  30px;
+        flex-direction: column;
+        height: auto;
+        width: 286px;
+        .custom-selects2 {
+      
+            margin-left: 10px;
+        }
+    }
+    .block_pay-services .pay-element{
+        margin: 0px 0px 30px 0px;
+        height: auto;
+button{
+    margin-bottom: 30px;
+}
+    }
     .input-pass {
         input {
             width: 230px;
@@ -572,6 +807,24 @@ color: #000000;
     }
 }
 @media (max-width: 767px) {
+   
+    .block_pay-services .pay-big-element{
+        margin-right: 20px;
+
+    }
+    .block_pay-services div:first-of-type{
+        margin-right: 20px;
+
+    }
+    .appear_table{
+       .table-menu{
+           padding-top: 49px;
+       }
+       table th{
+        font-weight: 500;
+        font-size: 16px;
+       }
+    }
     #change_address {
         .change_tel div:first-of-type {
             width: 250px;
@@ -587,9 +840,9 @@ color: #000000;
     .change_mail .modal-body {
         padding: 0px 10px 8px 10px;
     }
-    .appear_taruf {
+    .tele, .appear_taruf {
         margin-top: 0px;
-        .come-back {
+        .close-back-tele, .come-back {
             span {
                 display: none;
             }
@@ -602,9 +855,10 @@ color: #000000;
             }
         }
         .change_tar-text li {
-            padding-left: 10px;
+            
             font-size: 16px;
-            padding-right: 10px;
+          
+            padding: 5px 10px 5px 10px;
         }
     }
     .close-tab-menu {
@@ -627,6 +881,8 @@ color: #000000;
     }
     .wrapper h4 {
         padding-top: 47px;
+        margin-top: 0px;
+
     }
     .tab_content {
         display: none;
@@ -640,9 +896,21 @@ color: #000000;
         overflow-y: scroll;
     }
 }
+@media (max-width: 591px) {
+    .block_pay-services .pay-big-element{
+        margin-right: 0px;
+
+    }
+    .block_pay-services div:first-of-type{
+        margin-right: 0px;
+
+    }
+}
 @media (max-width: 575px) {
-    .wrapper .appear_taruf h4 {
-        padding-top: 47px;
+   
+    .wrapper  .appear_taruf h4 {
+        padding-top: 20px;
+        margin-top: 0px;
     }
     .mail-adapt {
         display: block;
@@ -658,6 +926,7 @@ color: #000000;
     }
     .wrapper h4 {
         padding-top: 20px;
+        margin-top: 0px;
     }
     .change_mail {
         .modal-header1 h5 {
@@ -670,6 +939,63 @@ color: #000000;
         margin: 0px 0px;
     }
 }
+@media (max-width: 550px) {
+
+.block_pay-services   .pay-big-element{
+    .custom-selects2 {
+        .pay-arrow-select {
+    
+            right: 25px;
+   
+        }
+    }
+}
+.block_pay-services .pay-element {
+    width: 240px;
+    p{
+        width: 200px;
+        font-weight: 300;
+font-size: 14px;
+    }
+    h4{
+    
+font-size: 16px
+    }
+    .priv-bl{
+margin-top: 20px;
+      img{
+        width: 50px;
+    }
+}
+    .visa-bl img{
+        width: 125px;
+    }
+}
+.block_pay-services{
+     .pay-big-element{
+         width: 240px;
+         text-align: center;
+         h4{
+             font-size: 16px;
+         }
+         p{
+             font-size: 14px;
+         }
+         .ibox-bl img{
+             width: 109px;
+         }
+     }
+    button{
+ 
+width: 190px;
+height: 40px;
+
+font-size: 16px;
+ 
+ 
+    }
+}
+}
 @media (max-width: 532px) {
     .change_mail {
         .modal-header1 h5 {
@@ -678,6 +1004,43 @@ color: #000000;
     }
 }
 @media (max-width: 500px) {
+    .tab_content .table-magazine{
+width: 100%;
+         th:first-of-type {
+            width: 80px;
+        }
+          tr th:nth-child(2) {
+           
+            padding: 10px 0px 0px;
+        }
+        tr td:nth-child(2) {
+           
+            padding: 10px 0px 0px 0px;
+        }
+    tr td:nth-child(3) {
+            position: relative;
+            right: 0px;
+            margin-top: 33px;
+            padding-right: 0px;
+        }
+    
+ 
+            th{
+             
+                font-weight: 500;
+                font-size: 16px;
+                padding: 10px 10px;
+            }
+            tr {
+                padding: 10px 15px;
+                display: inherit;
+            
+            }
+          td{
+              font-size: 16px;
+          }
+       
+}
     .detail-txt {
         padding-top: 0px;
         padding-bottom: 0px;
@@ -708,6 +1071,73 @@ color: #000000;
             td {
                 padding: 0;
             }
+        }
+    }
+    .tab_content .appear_table {
+        .table_year{
+            #result-table td:first-of-type {
+                white-space: pre-wrap;
+                max-width: 30px;
+                overflow: visible;
+                padding-left: 15px;
+            }
+
+              tr td:first-of-type{
+                padding-left: 15px;
+            }
+        }
+          table #result-table td{
+              font-size: 16px;
+          }
+          table #result-table td:first-of-type{
+            white-space: nowrap;
+            max-width: 60px;
+            overflow: hidden;
+       padding-left: 20px;
+
+        }
+        .table-menu {
+            float: left;
+            margin-right: 0px;
+            margin-left: 15px;
+            font-size: 16px;
+
+        }
+          table th:first-of-type {
+            width: 80px;
+        }
+        table tr th:nth-child(2) {
+           
+            padding: 10px 0px 0px;
+        }
+        table tr td:nth-child(2) {
+           
+            padding: 10px 0px 0px 0px;
+        }
+        table tr td:nth-child(3) {
+            position: relative;
+            right: 0px;
+            margin-top: 33px;
+            padding-right: 0px;
+        }
+        table td span {
+            display: inline;
+        }
+        table {
+            th{
+             
+                font-weight: 500;
+                font-size: 16px;
+                padding: 10px 10px;
+            }
+            tr {
+                padding: 10px 15px;
+                display: inherit;
+            
+            }
+          td{
+              font-size: 16px;
+          }
         }
     }
 }
@@ -746,7 +1176,7 @@ color: #000000;
             width: 95%;
         }
     }
-    .appear_taruf {
+    .tele, .appear_taruf {
         .svg-select-i {
             right: 15px;
         }

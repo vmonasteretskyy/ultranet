@@ -490,6 +490,7 @@ if ($('*').is('.main-privacy')) {
 
   })
   $('.tab').click(function () {
+    $('.magazine-block').css("display", "none");
     $('.appear-taruf').fadeOut();
     $('.appear_passoword').fadeOut();
     $('.appear_pease').fadeOut();
@@ -502,6 +503,19 @@ if ($('*').is('.main-privacy')) {
     $('.mob-list').css("display", "none");
     $('.pay-list').css("display", "none");
     $('.appear_table').fadeOut();
+    $('.mag-list').css("display", "none");
+    $('.rec-list').fadeOut();
+    $('.receipt-block').css("display", "none");
+    $('.ip-list').css("display", "none");
+    $('.net-list').css("display", "none");
+    $('.appear_instruct').css("display", "none");
+    $('.instr-list').css("display", "none");
+    $('.appear_set_dir').css("display", "none");
+    $('.dir-list').css("display", "none");
+    $('.tenda-list').css("display", "none");
+    $('.appear_tenda').css("display", "none");
+    
+
   })
   $('.come-back').click(function () {
     $('.tab_elem1').fadeIn();
@@ -514,8 +528,8 @@ if ($('*').is('.main-privacy')) {
     $('.pass-list').fadeOut();
     $('.peause-list').fadeOut();
 
-    
   })
+
   $('.close-back-tele').click(function () {
     $('.tab_content').fadeOut();
  
@@ -540,6 +554,7 @@ if ($('*').is('.main-privacy')) {
 
   $('.peause-modal').click(function () {
     $('#peause_modal').modal('hide');
+    $('#ip-order_modal').modal('hide');
     $('.peause_b').css("display", "none");
     $('.restore').css("display", "block");
   })
@@ -547,6 +562,9 @@ if ($('*').is('.main-privacy')) {
     $('#restore_modal').modal('hide');
     $('.peause_b').css("display", "block");
     $('.restore').css("display", "none");
+    $('#ip-cansel_modal').modal('hide');
+
+    
   })
   $('.cansel').click(function () {
     $('#peause_modal').modal('hide');
@@ -663,6 +681,71 @@ if ($('*').is('.main-privacy')) {
     $('.magazine').click(function () {
     $('.magazine-block').fadeIn();
     $('.tab_item').css("display", "none");
+    $('.mag-list').fadeIn();
+  })
+  $('.close-pay').click(function () {
+    $('.magazine-block').fadeOut();
+    $('.tab_pay').fadeIn();
+    $('.mag-list').css("display", "none");
+    $('.rec-list').fadeOut();
+    $('.receipt-block').css("display", "none");
+    $('.appear_instruct').css("display", "none");
+
+  })
+
+  $('.payments').click(function () {
+    $('.receipt-block').fadeIn();
+    $('.rec-list').fadeIn();
+
+    $('.tab_item').css("display", "none");
+    $('.receipt-list').fadeIn();
+  })
+  
+  $('.tab_ip-ad').click(function () {
+    $('.ip-list').fadeIn();
+  })
+  $('.tab_net').click(function () {
+    $('.net-list').fadeIn();
+  })
+
+  $('.print').click(function(){
+    window.print();
+  });
+  //instructiob
+  $('.instruction').click(function () {
+    $('.appear_instruct').fadeIn();
+    $('.network_set').css("display", "none");
+    $('.instr-list').fadeIn();
+
+   
+  })
+  $('.close-inst').click(function () {
+    $('.appear_instruct').css("display", "none");
+    $('.instr-list').css("display", "none");
+    $('.network_set').fadeIn();
+
+  })
+  
+  $('.setting-dir').click(function () {
+    $('.appear_instruct').css("display", "none");
+    $('.appear_set_dir').fadeIn();
+    $('.dir-list').fadeIn();
+
+  })
+
+  $('.close-setting').click(function () {
+    $('.appear_instruct').fadeIn();
+    $('.appear_set_dir').css("display", "none");
+    $('.dir-list').css("display", "none");
+    $('.tenda-list').css("display", "none");
+    $('.appear_tenda').css("display", "none");
+
+  })
+
+  $('.setting-tenda').click(function () {
+    $('.appear_instruct').css("display", "none");
+    $('.appear_tenda').fadeIn();
+    $('.tenda-list').fadeIn();
 
   })
   

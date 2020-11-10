@@ -20791,6 +20791,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeIn();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear-taruf').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeOut();
@@ -20803,6 +20804,17 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mob-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pay-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mag-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rec-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.receipt-block').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ip-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.net-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.instr-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_set_dir').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dir-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tenda-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_tenda').css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeIn();
@@ -20834,6 +20846,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-modal').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#peause_modal').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ip-order_modal').modal('hide');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause_b').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restore').css("display", "block");
   });
@@ -20841,6 +20854,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#restore_modal').modal('hide');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause_b').css("display", "block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restore').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ip-cansel_modal').modal('hide');
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cansel').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#peause_modal').modal('hide');
@@ -20948,6 +20962,58 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_item').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mag-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-pay').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_pay').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mag-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rec-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.receipt-block').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.payments').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.receipt-block').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rec-list').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_item').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.receipt-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_ip-ad').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ip-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_net').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.net-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.print').click(function () {
+    window.print();
+  }); //instructiob
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.instruction').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.network_set').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.instr-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-inst').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.instr-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.network_set').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.setting-dir').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_set_dir').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dir-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-setting').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_set_dir').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dir-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tenda-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_tenda').css("display", "none");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.setting-tenda').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_tenda').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tenda-list').fadeIn();
   });
 } //adapt table
 // $(window).resize(function(){

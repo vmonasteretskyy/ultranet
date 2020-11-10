@@ -994,6 +994,9 @@
 .pay-item button:hover {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
+.pay-item button:active {
+  background: #0b3661;
+}
 
 .pay_text-help {
   font-weight: 300;
@@ -1016,6 +1019,7 @@
   position: absolute;
   margin-left: 84px;
   margin-top: 8px;
+  pointer-events: none;
 }
 
 .custom-selects2 {

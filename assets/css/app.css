@@ -4124,6 +4124,10 @@ input[type=checkbox]:checked + label:before {
   box-shadow: 0px 1px black;
 }
 
+.active {
+  box-shadow: 0px 1px black;
+}
+
 .rules-info {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -4180,6 +4184,11 @@ input[type=checkbox]:checked + label:before {
 }
 
 @media (max-width: 1199px) {
+  .rules ul {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .rules-info {
     height: 646px;
   }

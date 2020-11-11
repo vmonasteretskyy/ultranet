@@ -737,7 +737,35 @@ if (window.matchMedia('(max-width: 767px)').matches) {
 
 }
 
+ 
+  
+ var naavy = document.querySelectorAll(".rules-menu li a");
+var length = naavy.length;
 
+for(var i=0; i<length; i++) {
+    naavy[i].addEventListener("click", function() {
+        highlight(this);
+    });
+}
+
+function highlight(element) {
+    for(var i=0; i<length; i++) {
+       naavy[i].classList.remove("active");
+    }
+    
+    element.classList.add("active");
+}
+
+// $('.rules-menu li a').click(function () {
+//   $('.elem-li1 a').css("box-shadow","0px 1px black");
+// })
+// $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
+//   var block = $(".rules-menu li a"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
+//   if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
+//       && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
+//       block.css("box-shadow","none"); // если условия выполняются - скрываем наш элемент
+//   }
+// });
 //
 // $(".check1").click(function(){
 //   if ($('#elem1').is(':checked')) {

@@ -21052,28 +21052,14 @@ function highlight(element) {
   }
 
   element.classList.add("active");
-} // $('.rules-menu li a').click(function () {
-//   $('.elem-li1 a').css("box-shadow","0px 1px black");
-// })
-// $(document).mouseup(function (e){ // отслеживаем событие клика по веб-документу
-//   var block = $(".rules-menu li a"); // определяем элемент, к которому будем применять условия (можем указывать ID, класс либо любой другой идентификатор элемента)
-//   if (!block.is(e.target) // проверка условия если клик был не по нашему блоку
-//       && block.has(e.target).length === 0) { // проверка условия если клик не по его дочерним элементам
-//       block.css("box-shadow","none"); // если условия выполняются - скрываем наш элемент
-//   }
-// });
-//
-// $(".check1").click(function(){
-//   if ($('#elem1').is(':checked')) {
-//   $(".show-actions p").html("Обрано 1 акції");
-//   }
-//   if (!$('#elem1').is(':checked')) {
-//     $(".show-actions p").html("Обрано 0");
-//     }
-//     if ($('#elem2').is(':checked') && $('#elem1').is(':checked')) {
-//       $(".show-actions p").html("Обрано 2 акції");
-//       }
-// });
+}
+
+var myCount = function myCount() {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions p').html('Вибрано ' + jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check input:checked').length + ' акції');
+}; // myCount();
+
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check input').on('click', myCount);
 
 /***/ }),
 

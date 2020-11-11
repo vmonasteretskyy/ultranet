@@ -20373,12 +20373,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
 
 
- // $("body").on("click", "a", function (event) {
-//   event.preventDefault();
-//   var id = $(this).attr('href'),
-//       top = $(id).offset().marginTop -130;
-//   $('body,html').animate({ scrollTop: top }, 1600);
-// });
+
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.form-connect')) {
   var element = document.getElementById('mask-phone');
@@ -20412,33 +20407,23 @@ function burgerMenu(selector) {
 burgerMenu('.burger-menu'); //select
 
 var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-
 x = document.getElementsByClassName("custom-selects2");
 l = x.length;
 
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
-
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
 
   for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function (e) {
-      /*when an item is clicked, update the original select box,
-      and the selected item:*/
       var y, i, k, s, h, sl, yl;
       s = this.parentNode.parentNode.getElementsByTagName("select")[0];
       sl = s.length;
@@ -20467,8 +20452,6 @@ for (i = 0; i < l; i++) {
 
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
-    /*when the select box is clicked, close any other select boxes,
-    and open/close the current select box:*/
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
@@ -20477,8 +20460,6 @@ for (i = 0; i < l; i++) {
 }
 
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x,
       y,
       i,
@@ -20505,16 +20486,28 @@ function closeAllSelect(elmnt) {
   }
 }
 
-document.addEventListener("click", closeAllSelect); //online-chat
+document.addEventListener("click", closeAllSelect);
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-support').click(function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeIn();
-  });
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.suport-chat')) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default.a.fn.toggleClick = function (funcArray) {
+    return this.click(function () {
+      var elem = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this);
+      var index = elem.data('index') || 0;
+      funcArray[index]();
+      elem.data('index', (index + 1) % funcArray.length);
+    });
+  }; //online-chat
+
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-chat').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeOut();
   });
-});
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-support').toggleClick([function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeIn();
+  }, function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeOut();
+  }]);
+}
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.contact')) {
   //map
@@ -20523,8 +20516,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.contact')) {
     var uluru = {
       lat: 51.4916388,
       lng: 31.3037690
-    }; // The map, centered at Uluru
-
+    };
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 19,
       center: uluru
@@ -20559,17 +20551,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   }, function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideUp("slow");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)");
-  }]); // $('.connect-dropt').click(function () {
-  //   if(  $('.box-show-check').slideUp()){
-  //    $('.svg-dropt').css("transform","rotate(180deg)");
-  //     $('.box-show-check').slideDown( "slow" )
-  //   }
-  // else{ if( $('.box-show-check').slideDown()){
-  //      $('.box-show-check').slideUp( "slow" )
-  //    }
-  //   }
-  // });
-
+  }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.action-txt').toggleClick([function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').css("height", "auto");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideDown();
@@ -20581,12 +20563,10 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').toggleClick([function () {
-    // $('.tv-text-hide').css("display","none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideDown("slow");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').css("display", "block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(180deg)");
   }, function () {
-    // $('.tv-text-hide').css("display","block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideUp();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(0deg)");
   }]);
@@ -20594,43 +20574,25 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none"); // $('.box-show-check').slideUp();
-    // $('.svg-dropt').css("transform","rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check2').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none"); // $('.box-show-check').slideUp();
-    // $('.show-move-friend').slideUp();
-    // $('.svg-dropt').css("transform","rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check3').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none"); // $('.box-show-check').slideUp();
-    // $('.show-move-friend').slideUp();
-    // $('.svg-dropt').css("transform","rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check4').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none"); // $('.box-show-check').slideUp();
-    // $('.svg-dropt').css("transform","rotate(0deg)");
-    //   if ($("#elem4").is(":checked")) {  
-    //     $('.show-move-friend').slideDown();
-    //   }
-    //   if ($('#elem4').not(':checked').length) {
-    //     $('.show-move-friend').slideUp();
-    // }
-    // if ($("#elem-a4").is(":checked")) {  
-    //   $('.show-move-friend').slideDown();
-    // }
-    // if ($('#elem-a4').not(':checked')) {
-    //   $('.show-move-friend').slideUp();
-    // }
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
   });
 }
 
@@ -20717,14 +20679,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail_btn').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_mob').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#details').modal('hide');
-}); //connect tarif
-// $('.private-change-close').click(function () {
-//   $('#change_privat-tarif"').modal('hide');
-// })
-// $('.connect-privat-close').click(function () {
-//   $('#connect_privat-home"').modal('hide');
-// })
-//radio input
+}); //radio input
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
@@ -21081,21 +21036,17 @@ if (window.matchMedia('(max-width: 767px)').matches) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#header').fadeIn();
   });
 } //
-
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(".check1").click(function () {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem1').is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".show-actions p").html("Обрано 1 акції");
-  }
-
-  if (!jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem1').is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".show-actions p").html("Обрано 0");
-  }
-
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem2').is(':checked') && jquery__WEBPACK_IMPORTED_MODULE_0___default()('#elem1').is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".show-actions p").html("Обрано 2 акції");
-  }
-});
+// $(".check1").click(function(){
+//   if ($('#elem1').is(':checked')) {
+//   $(".show-actions p").html("Обрано 1 акції");
+//   }
+//   if (!$('#elem1').is(':checked')) {
+//     $(".show-actions p").html("Обрано 0");
+//     }
+//     if ($('#elem2').is(':checked') && $('#elem1').is(':checked')) {
+//       $(".show-actions p").html("Обрано 2 акції");
+//       }
+// });
 
 /***/ }),
 

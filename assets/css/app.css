@@ -906,6 +906,10 @@
     bottom: 70px;
     width: 280px;
   }
+
+  .content-chat {
+    height: 280px;
+  }
 }
 @media (max-width: 489px) {
   .second-slider .background-img {
@@ -1776,6 +1780,10 @@ footer {
   justify-content: center;
 }
 
+.privat-block-adap {
+  margin-left: 35px;
+}
+
 #for-tarif {
   font-weight: 300;
   font-size: 12px;
@@ -2432,6 +2440,13 @@ input[type=checkbox]:checked + label:before {
 }
 
 @media (max-width: 1199px) {
+  .privat-block-adap {
+    margin-left: 30px;
+  }
+  .privat-block-adap .home-internet div:first-of-type {
+    margin-right: 20px;
+  }
+
   .home-internet {
     margin-left: -15px;
   }
@@ -2533,6 +2548,13 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 867px) {
+  .privat-block-adap {
+    margin-left: 0px;
+  }
+  .privat-block-adap .home-internet div:first-of-type {
+    margin-right: 10px;
+  }
+
   .backgroung-law {
     height: 602px;
   }
@@ -2593,6 +2615,13 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 767px) {
+  .privat-block-adap {
+    margin-left: 0px;
+  }
+  .privat-block-adap .home-internet div:first-of-type {
+    margin-right: 7px;
+  }
+
   .tarif-internet div {
     width: 220px;
     height: 53px;
@@ -4235,7 +4264,7 @@ input[type=checkbox]:checked + label:before {
   box-shadow: 4px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
   position: relative;
-  z-index: 6;
+  z-index: 2;
 }
 .privacy-block ul {
   margin: 0;

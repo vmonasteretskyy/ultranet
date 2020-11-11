@@ -2,14 +2,6 @@ import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
 import IMask from 'imask';
 
-// $("body").on("click", "a", function (event) {
-//   event.preventDefault();
-//   var id = $(this).attr('href'),
-//       top = $(id).offset().marginTop -130;
-//   $('body,html').animate({ scrollTop: top }, 1600);
-
-// });
-
 if ($('*').is('.form-connect')) {
   let element = document.getElementById('mask-phone');
   let maskOptions = {
@@ -17,7 +9,6 @@ if ($('*').is('.form-connect')) {
   };
   let mask = IMask(element, maskOptions);
 }
-
 function burgerMenu(selector) {
   let menu = $(selector);
   let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -42,28 +33,25 @@ function burgerMenu(selector) {
 burgerMenu('.burger-menu');
 //select
 var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-selects2");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
+ 
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
+
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
+   
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function (e) {
-      /*when an item is clicked, update the original select box,
-      and the selected item:*/
+  
       var y, i, k, s, h, sl, yl;
       s = this.parentNode.parentNode.getElementsByTagName("select")[0];
       sl = s.length;
@@ -87,8 +75,6 @@ for (i = 0; i < l; i++) {
   }
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
-    /*when the select box is clicked, close any other select boxes,
-    and open/close the current select box:*/
     e.stopPropagation();
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
@@ -96,8 +82,6 @@ for (i = 0; i < l; i++) {
   });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x, y, i, xl, yl, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
@@ -116,27 +100,33 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-
 document.addEventListener("click", closeAllSelect);
 
 
+if ($('*').is('.suport-chat')) {
+  $.fn.toggleClick = function (funcArray) {
+    return this.click(function () {
+      var elem = $(this);
+      var index = elem.data('index') || 0;
 
-
-
-
-//online-chat
-$(document).ready(function () {
-  $('.svg-support').click(function () {
-    $(".container-chat").fadeIn();
-  });
+      funcArray[index]();
+      elem.data('index', (index + 1) % funcArray.length);
+    });
+  };
+  //online-chat
   $('.close-chat').click(function () {
     $(".container-chat").fadeOut();
-
   });
+  $('.svg-support').toggleClick([
+    function () {
+      $(".container-chat").fadeIn();
+    },
+    function () {
+      $(".container-chat").fadeOut();
+    }
+  ]);
 
-
-
-});
+}
 
 if ($('*').is('.contact')) {
 
@@ -144,7 +134,6 @@ if ($('*').is('.contact')) {
   function initMap() {
     // 51.4916588,31.3032475
     const uluru = { lat: 51.4916388, lng: 31.3037690 };
-    // The map, centered at Uluru
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 19,
       center: uluru,
@@ -187,22 +176,6 @@ if ($('*').is('.tarif-main')) {
     }
 
   ]);
-  // $('.connect-dropt').click(function () {
-  //   if(  $('.box-show-check').slideUp()){
-  //    $('.svg-dropt').css("transform","rotate(180deg)");
-
-  //     $('.box-show-check').slideDown( "slow" )
-  //   }
-  // else{ if( $('.box-show-check').slideDown()){
-
-  //      $('.box-show-check').slideUp( "slow" )
-  //    }
-  //   }
-  // });
-
-
-
-
 
   $('.action-txt').toggleClick([
     function () {
@@ -220,16 +193,11 @@ if ($('*').is('.tarif-main')) {
   ]);
   $('.tv-text').toggleClick([
     function () {
-      // $('.tv-text-hide').css("display","none");
-
       $('.tv-show').slideDown("slow");
       $('.tv-show').css("display", "block");
-
       $('.svg-show').css("transform", "rotate(180deg)");
     },
     function () {
-      // $('.tv-text-hide').css("display","block");
-
       $('.tv-show').slideUp();
       $('.svg-show').css("transform", "rotate(0deg)");
 
@@ -241,59 +209,27 @@ if ($('*').is('.tarif-main')) {
     $(".dropt-3").css("display", "none");
     $(".dropt-2").css("display", "none");
     $(".dropt-4").css("display", "none");
-    // $('.box-show-check').slideUp();
-    // $('.svg-dropt').css("transform","rotate(0deg)");
-
-
   });
   $('.check2').click(function () {
     $(".dropt-2").css("display", "inline");
     $(".dropt-1").css("display", "none");
     $(".dropt-3").css("display", "none");
     $(".dropt-4").css("display", "none");
-    // $('.box-show-check').slideUp();
-    // $('.show-move-friend').slideUp();
 
-    // $('.svg-dropt').css("transform","rotate(0deg)");
   });
   $('.check3').click(function () {
     $(".dropt-3").css("display", "inline");
     $(".dropt-1").css("display", "none");
     $(".dropt-2").css("display", "none");
     $(".dropt-4").css("display", "none");
-    // $('.box-show-check').slideUp();
-    // $('.show-move-friend').slideUp();
-
-    // $('.svg-dropt').css("transform","rotate(0deg)");
-
   });
   $('.check4').click(function () {
     $(".dropt-4").css("display", "inline");
     $(".dropt-1").css("display", "none");
     $(".dropt-2").css("display", "none");
     $(".dropt-3").css("display", "none");
-    // $('.box-show-check').slideUp();
-    // $('.svg-dropt').css("transform","rotate(0deg)");
-
-
-    //   if ($("#elem4").is(":checked")) {  
-    //     $('.show-move-friend').slideDown();
-    //   }
-    //   if ($('#elem4').not(':checked').length) {
-    //     $('.show-move-friend').slideUp();
-    // }
-    // if ($("#elem-a4").is(":checked")) {  
-    //   $('.show-move-friend').slideDown();
-    // }
-    // if ($('#elem-a4').not(':checked')) {
-    //   $('.show-move-friend').slideUp();
-    // }
   });
-
-
 }
- 
-
 
 $('.close').click(function () {
   $('.show-move-friend').slideUp();
@@ -322,10 +258,7 @@ if ($('*').is('.box-show-check')) {
   ]);
 }
 
-
-
 //mmodal
-
 $('.tarif-item1').click(function () {
   $('.block-home-internet').fadeOut();
   $('.tarif-item1').css("background", "#34A0D9");
@@ -373,8 +306,6 @@ $('.close-mod1').click(function () {
   $('#change_tarif').modal('hide');
   $('#change_privat-tarif').modal('hide');
   $('#ch-business-law').modal('hide');
-
-
 })
 //connect tarif
 $('.close-mod2').click(function () {
@@ -388,53 +319,39 @@ $('.close-mod2').click(function () {
   $('#connect_tv204').modal('hide');
   $('#connect_mob').modal('hide');
 
-
-
 })
 $('.datail_btn').click(function () {
-
   $('#connect_mob').modal('hide');
   $('#details').modal('hide');
-
-
 })
-
-//connect tarif
-// $('.private-change-close').click(function () {
-//   $('#change_privat-tarif"').modal('hide');
-// })
-
-// $('.connect-privat-close').click(function () {
-//   $('#connect_privat-home"').modal('hide');
-// })
 //radio input
 if ($('*').is('.change_privat-tarif')) {
 
-$('#radio-2').click(function () {
-  if ($("#radio-2").is(':checked')) {
-    $('.calculator-speed').slideDown();
+  $('#radio-2').click(function () {
+    if ($("#radio-2").is(':checked')) {
+      $('.calculator-speed').slideDown();
 
-  }
-})
-$('#radio-1').click(function () {
-  if ($("#radio-1").is(':checked')) {
-    $('.calculator-speed').slideUp();
+    }
+  })
+  $('#radio-1').click(function () {
+    if ($("#radio-1").is(':checked')) {
+      $('.calculator-speed').slideUp();
 
-  }
-})
+    }
+  })
 
-$('#radio-4').click(function () {
-  if ($("#radio-4").is(':checked')) {
-    $('.calculator-speed').slideDown();
+  $('#radio-4').click(function () {
+    if ($("#radio-4").is(':checked')) {
+      $('.calculator-speed').slideDown();
 
-  }
-})
-$('#radio-3').click(function () {
-  if ($("#radio-3").is(':checked')) {
-    $('.calculator-speed').slideUp();
+    }
+  })
+  $('#radio-3').click(function () {
+    if ($("#radio-3").is(':checked')) {
+      $('.calculator-speed').slideUp();
 
-  }
-})
+    }
+  })
 }
 
 
@@ -540,9 +457,9 @@ if ($('*').is('.main-privacy')) {
 
   $('.close-back-tele').click(function () {
     $('.tab_content').fadeOut();
- 
+
   })
-  
+
   $('.close_tab').click(function () {
     $('.tab_content').fadeOut();
   })
@@ -565,11 +482,11 @@ if ($('*').is('.main-privacy')) {
     $('#ip-order_modal').modal('hide');
     $('.peause_b').css("display", "none");
     $('.restore').css("display", "block");
-  $(".serv-not").html("Послуга замовлена");
-  $(".static-ip").html("10.128.2.20");
-  $(".active_txt").html("Призупинений");
+    $(".serv-not").html("Послуга замовлена");
+    $(".static-ip").html("10.128.2.20");
+    $(".active_txt").html("Призупинений");
 
- 
+
 
   })
   $('.peause-modal2').click(function () {
@@ -580,7 +497,7 @@ if ($('*').is('.main-privacy')) {
     $(".serv-not").html("Послуга не замовлена");
     $(".static-ip").html("Послуга не замовлена");
     $(".active_txt").html("Активний");
-    
+
   })
   $('.cansel').click(function () {
     $('#peause_modal').modal('hide');
@@ -682,7 +599,7 @@ if ($('*').is('.main-privacy')) {
     $('.datail-list').fadeIn();
 
     $('.tab_elem1').css("display", "none");
-    
+
   })
   $('.tab-tele').click(function () {
     $('.tv-list').fadeIn();
@@ -694,7 +611,7 @@ if ($('*').is('.main-privacy')) {
     $('.pay-list').fadeIn();
   })
 
-    $('.magazine').click(function () {
+  $('.magazine').click(function () {
     $('.magazine-block').fadeIn();
     $('.tab_item').css("display", "none");
     $('.mag-list').fadeIn();
@@ -716,7 +633,7 @@ if ($('*').is('.main-privacy')) {
     $('.tab_item').css("display", "none");
     $('.receipt-list').fadeIn();
   })
-  
+
   $('.tab_ip-ad').click(function () {
     $('.ip-list').fadeIn();
   })
@@ -724,7 +641,7 @@ if ($('*').is('.main-privacy')) {
     $('.net-list').fadeIn();
   })
 
-  $('.print').click(function(){
+  $('.print').click(function () {
     window.print();
   });
   //instructiob
@@ -733,7 +650,7 @@ if ($('*').is('.main-privacy')) {
     $('.network_set').css("display", "none");
     $('.instr-list').fadeIn();
 
-   
+
   })
   $('.close-inst').click(function () {
     $('.appear_instruct').css("display", "none");
@@ -741,7 +658,7 @@ if ($('*').is('.main-privacy')) {
     $('.network_set').fadeIn();
 
   })
-  
+
   $('.setting-dir').click(function () {
     $('.appear_instruct').css("display", "none");
     $('.appear_set_dir').fadeIn();
@@ -802,15 +719,12 @@ if ($('*').is('.main-privacy')) {
       }
     })
   }
+
 }
-
-
-
-
 
 //adapt table
 
-if(window.matchMedia('(max-width: 767px)').matches){
+if (window.matchMedia('(max-width: 767px)').matches) {
   $('.tab').click(function () {
     $('#header').fadeOut();
   })
@@ -824,17 +738,15 @@ if(window.matchMedia('(max-width: 767px)').matches){
 }
 
 
-
-
 //
-$(".check1").click(function(){
-  if ($('#elem1').is(':checked')) {
-  $(".show-actions p").html("Обрано 1 акції");
-  }
-  if (!$('#elem1').is(':checked')) {
-    $(".show-actions p").html("Обрано 0");
-    }
-    if ($('#elem2').is(':checked') && $('#elem1').is(':checked')) {
-      $(".show-actions p").html("Обрано 2 акції");
-      }
-});
+// $(".check1").click(function(){
+//   if ($('#elem1').is(':checked')) {
+//   $(".show-actions p").html("Обрано 1 акції");
+//   }
+//   if (!$('#elem1').is(':checked')) {
+//     $(".show-actions p").html("Обрано 0");
+//     }
+//     if ($('#elem2').is(':checked') && $('#elem1').is(':checked')) {
+//       $(".show-actions p").html("Обрано 2 акції");
+//       }
+// });

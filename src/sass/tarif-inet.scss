@@ -81,6 +81,9 @@ margin-left: -14px;
         justify-content: center;
     }
 }
+.privat-block-adap {
+    margin-left: 35px;
+}
 #for-tarif{
     font-weight: 300;
 font-size: 12px;
@@ -785,6 +788,12 @@ height: auto;
 }
 
 @media (max-width: 1199px) {
+    .privat-block-adap {
+        margin-left: 30px;
+        .home-internet div:first-of-type{
+            margin-right: 20px;
+        }
+    }
     .home-internet {
    
         margin-left: -15px;
@@ -894,6 +903,12 @@ height: auto;
 }
 
 @media (max-width: 867px) {
+    .privat-block-adap {
+        margin-left: 0px;
+        .home-internet div:first-of-type{
+            margin-right: 10px;
+        }
+    }
     .backgroung-law {
         height: 602px;
     }
@@ -959,6 +974,12 @@ height: auto;
 }
 
 @media (max-width: 767px) {
+    .privat-block-adap {
+        margin-left: 0px;
+        .home-internet div:first-of-type{
+            margin-right: 7px;
+        }
+    }
     .tarif-internet {
         div {
             width: 220px;

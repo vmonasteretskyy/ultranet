@@ -408,6 +408,8 @@ $('.datail_btn').click(function () {
 //   $('#connect_privat-home"').modal('hide');
 // })
 //radio input
+if ($('*').is('.change_privat-tarif')) {
+
 $('#radio-2').click(function () {
   if ($("#radio-2").is(':checked')) {
     $('.calculator-speed').slideDown();
@@ -421,7 +423,6 @@ $('#radio-1').click(function () {
   }
 })
 
-
 $('#radio-4').click(function () {
   if ($("#radio-4").is(':checked')) {
     $('.calculator-speed').slideDown();
@@ -434,6 +435,8 @@ $('#radio-3').click(function () {
 
   }
 })
+}
+
 
 $('#collapseOne').on('hidden.bs.collapse', function () {
   $('.arr-accord1').css("transform", "rotate(0deg)")
@@ -514,8 +517,13 @@ if ($('*').is('.main-privacy')) {
     $('.dir-list').css("display", "none");
     $('.tenda-list').css("display", "none");
     $('.appear_tenda').css("display", "none");
-    
-
+    $('.appear_windows7').css("display", "none");
+    $('.appear_windows10').css("display", "none");
+    $('.glass-list').css("display", "none");
+    $('.wind-list').css("display", "none");
+    $('.windows-list').css("display", "none");
+    $('.windows-list').css("display", "none");
+    $('.looking_glass').css("display", "none");
   })
   $('.come-back').click(function () {
     $('.tab_elem1').fadeIn();
@@ -557,13 +565,21 @@ if ($('*').is('.main-privacy')) {
     $('#ip-order_modal').modal('hide');
     $('.peause_b').css("display", "none");
     $('.restore').css("display", "block");
+  $(".serv-not").html("Послуга замовлена");
+  $(".static-ip").html("10.128.2.20");
+  $(".active_txt").html("Призупинений");
+
+ 
+
   })
   $('.peause-modal2').click(function () {
     $('#restore_modal').modal('hide');
     $('.peause_b').css("display", "block");
     $('.restore').css("display", "none");
     $('#ip-cansel_modal').modal('hide');
-
+    $(".serv-not").html("Послуга не замовлена");
+    $(".static-ip").html("Послуга не замовлена");
+    $(".active_txt").html("Активний");
     
   })
   $('.cansel').click(function () {
@@ -739,7 +755,13 @@ if ($('*').is('.main-privacy')) {
     $('.dir-list').css("display", "none");
     $('.tenda-list').css("display", "none");
     $('.appear_tenda').css("display", "none");
+    $('.appear_windows7').css("display", "none");
+    $('.wind-list').css("display", "none");
+    $('.appear_windows10').css("display", "none");
+    $('.windows-list').css("display", "none");
+    $('.glass-list').css("display", "none");
 
+    $('.looking_glass').css("display", "none");
   })
 
   $('.setting-tenda').click(function () {
@@ -748,19 +770,58 @@ if ($('*').is('.main-privacy')) {
     $('.tenda-list').fadeIn();
 
   })
-  
+  $('.setting-wind7').click(function () {
+    $('.appear_instruct').css("display", "none");
+    $('.appear_windows7').fadeIn();
+    $('.wind-list').fadeIn();
+
+  })
+  $('.setting-wind10').click(function () {
+    $('.appear_instruct').css("display", "none");
+    $('.appear_windows10').fadeIn();
+    $('.windows-list').fadeIn();
+
+  })
+  $('.look-glass').click(function () {
+    $('.appear_instruct').css("display", "none");
+    $('.looking_glass').fadeIn();
+    $('.glass-list').fadeIn();
+
+  })
+  if ($('*').is('.looking_glass')) {
+    $('#radio-2').click(function () {
+      if ($("#radio-2").is(':checked')) {
+        $('.look-li1').css("display", "none");
+        $('.look-li2').html("Запити відправляються з нашого сервера, що дозволяє перевірити якість зв'язку, а також локалізувати можливі несправності абонентів.");
+      }
+    })
+    $('#radio-1').click(function () {
+      if ($("#radio-1").is(':checked')) {
+        $('.look-li1').fadeIn();
+        $('.look-li2').html("Велике час відгуку шлюзу може не відображати його фактичної пропускної здатності.");
+      }
+    })
+  }
 }
+
 
 
 
 
 //adapt table
 
-// $(window).resize(function(){
+if(window.matchMedia('(max-width: 767px)').matches){
+  $('.tab').click(function () {
+    $('#header').fadeOut();
+  })
+  $('.close-tab-menu').click(function () {
+    $('#header').fadeIn();
+  })
+  $('.close-back-tele').click(function () {
+    $('#header').fadeIn();
+  })
 
-   
-
-// });
+}
 
 
 

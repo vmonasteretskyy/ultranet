@@ -20726,26 +20726,29 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail_btn').click(function () {
 // })
 //radio input
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
-  }
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-1").is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
-  }
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-4').click(function () {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-4").is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
-  }
-});
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
-  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-3").is(':checked')) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
-  }
-});
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif')) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-1").is(':checked')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-4').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-4").is(':checked')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-3").is(':checked')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
+    }
+  });
+}
+
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#collapseOne').on('hidden.bs.collapse', function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.arr-accord1').css("transform", "rotate(0deg)");
 });
@@ -20815,6 +20818,13 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dir-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tenda-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_tenda').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_windows7').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_windows10').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.glass-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.wind-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.windows-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.windows-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.looking_glass').css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeIn();
@@ -20849,12 +20859,18 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ip-order_modal').modal('hide');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause_b').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restore').css("display", "block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".serv-not").html("Послуга замовлена");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".static-ip").html("10.128.2.20");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".active_txt").html("Призупинений");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-modal2').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#restore_modal').modal('hide');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause_b').css("display", "block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.restore').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ip-cansel_modal').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".serv-not").html("Послуга не замовлена");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".static-ip").html("Послуга не замовлена");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".active_txt").html("Активний");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cansel').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#peause_modal').modal('hide');
@@ -21009,16 +21025,62 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.dir-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tenda-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_tenda').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_windows7').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.wind-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_windows10').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.windows-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.glass-list').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.looking_glass').css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.setting-tenda').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_tenda').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tenda-list').fadeIn();
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.setting-wind7').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_windows7').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.wind-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.setting-wind10').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_windows10').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.windows-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.look-glass').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.looking_glass').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.glass-list').fadeIn();
+  });
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.looking_glass')) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
+      if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.look-li1').css("display", "none");
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.look-li2').html("Запити відправляються з нашого сервера, що дозволяє перевірити якість зв'язку, а також локалізувати можливі несправності абонентів.");
+      }
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
+      if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-1").is(':checked')) {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.look-li1').fadeIn();
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.look-li2').html("Велике час відгуку шлюзу може не відображати його фактичної пропускної здатності.");
+      }
+    });
+  }
 } //adapt table
-// $(window).resize(function(){
-// });
-//
+
+
+if (window.matchMedia('(max-width: 767px)').matches) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#header').fadeOut();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-tab-menu').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#header').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-back-tele').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#header').fadeIn();
+  });
+} //
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".check1").click(function () {

@@ -138,6 +138,7 @@
         </div>
 
         <section class="container">
+            
             <div class="home-atribute">
                 <a href="/">Головна</a> / <span>Особистий кабінет</span> <i class="datail-list"> / </i> <span
                     class="datail-list">Детальна статистика</span>
@@ -154,8 +155,9 @@
                 <i class="instr-list"> / </i> <span class="instr-list">Інструкція</span>
                 <i class="dir-list"> / </i> <span class="dir-list">D-Link Dir-300 (320)</span>
                 <i class="tenda-list"> / </i> <span class="tenda-list">Tenda W316R</span>
-
-
+                <i class="wind-list"> / </i> <span class="wind-list">Windows 7</span>
+                <i class="windows-list"> / </i> <span class="windows-list">Windows 10</span>
+                <i class="glass-list"> / </i> <span class="glass-list">Looking Glass</span>
             </div>
             <div class="btn-back">
                 <a href="/"> <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -166,6 +168,8 @@
                     </svg></a>
             </div>
             <div class="tarif-txt">Особистий кабінет</div>
+            <div class="office-decor container"><img src="/src/img/office-decor.png" alt=""></div>
+
             <div class="wrapper row privacy-block">
                 <div class="col-md-4 info_box">
                     <ul class="tabs">
@@ -452,7 +456,7 @@
                             </tr>
                             <tr>
                                 <td>Поточний статус:</td>
-                                <td>Активний</td>
+                                <td class="active_txt">Активний</td>
                             </tr>
                         </table>
                         <div class="btn_order">
@@ -1101,11 +1105,11 @@
                             <table>
                                 <tr>
                                     <td>Поточний статус:</td>
-                                    <td>Послуга не замовлена</td>
+                                    <td class="serv-not">Послуга не замовлена</td>
                                 </tr>
                                 <tr>
                                     <td>Ваша статична IP-адреса:</td>
-                                    <td>Послуга не замовлена</td>
+                                    <td class="static-ip">Послуга не замовлена</td>
                                 </tr>
                                 <tr>
                                     <td>Вартість:</td>
@@ -1224,19 +1228,19 @@
                                     <div class="setting-tenda">Настройка WiFi роутера «Tenda W316R»</div>
                                 </li>
                                 <li><img src="/src/img/bi_dot.svg">
-                                    <div>Підключення до Інтернет (Windows 7)</div>
+                                    <div class="setting-wind7">Підключення до Інтернет (Windows 7)</div>
                                 </li>
                                 <li><img src="/src/img/bi_dot.svg">
-                                    <div>Підключення до Інтернет (Windows 10)</div>
+                                    <div class="setting-wind10">Підключення до Інтернет (Windows 10)</div>
                                 </li>
                                 <li><img src="/src/img/bi_dot.svg">
-                                    <div>Looking glass</div>
+                                    <div class="look-glass">Looking glass</div>
                                 </li>
                                 <li><img src="/src/img/bi_dot.svg">
-                                    <div>Ресурс для тесту швидкості з'єднання з Інтернет</div>
+                                    <div><a href="">Ресурс для тесту швидкості з'єднання з Інтернет</a></div>
                                 </li>
                                 <li><img src="/src/img/bi_dot.svg">
-                                    <div>Ресурс для тесту швидкості в Інтернет</div>
+                                    <div><a href="">Ресурс для тесту швидкості в Інтернет</a></div>
                                 </li>
 
 
@@ -1521,7 +1525,8 @@
                                 <li><img src="/src/img/bi_dot.svg">
                                     <div>В полі «Destination network IP address» введіть «172.16.0.0», в полі «Subnet
                                         Mask» введіть «255.240.0.0», в полі «Gateway» введіть «172.20.X.100» (де «X» -
-                                        дані з <b>додатку_1</b>, а саме замінивши «Х» на передостаннє число в вашому «основному
+                                        дані з <b>додатку_1</b>, а саме замінивши «Х» на передостаннє число в вашому
+                                        «основному
                                         шлюзі»).
                                         Наприклад, якщо у вас вказано «основний шлюз» - «172.20.19.100», тоді в
                                         настройках роутера введіть «172.20.19.100» (без лапок).</div>
@@ -1532,8 +1537,153 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="appear_taruf appear_windows7">
+                        <div class="close-setting">
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                                Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Налаштування WiFi роутера «Tenda W316R»</h4>
+
+                        <div class="change_tar-text">
+                            <ul>
+                                <li>
+                                    <div><span class="file-conf">Скачати</span> програму для автоматичного створення
+                                        Інтернет-підключення.</div>
+                                </li>
+                                <li>Важливо! Не налаштовуйте підключення до Інтернет, якщо у вас не встановлено
+                                    підключення по локальній мережі.</li>
+                                <li>
+                                    <div><b>Налаштування підключення до Інтернет (Windows 7):</b></div>
+                                </li>
+                                <li>1. Натисніть «Пуск». У меню, виберіть «Панель керування» («Налаштування»).</li>
+                                <li>2. Відкриваємо категорію «Мережа та Інтернет» (даного пункту може не бути).</li>
+                                <li>3. Далі шукаємо і натискаємо на посилання «Відкрити центр управління мережами і
+                                    загальним доступом».</li>
+                                <li>4. Далі натискаємо на кнопку «Створення нового підключення або мережі».</li>
+                                <li>5. Вибираємо «Підключення до робочого місця».</li>
+                                <li>6. Вибираємо «Ні, створити нове підключення» і натискаємо на кнопку «Далі» (цей
+                                    пункт може бути відсутнім).</li>
+                                <li>7. Натискаємо «Використовувати моє підключення до Інтернету (VPN)». Потім «Відкласти
+                                    настройку підключення до Інтернету».</li>
+                                <li>8. У вікні вводимо адресу сервера vpn.un і назва ВПН поключенія (будь-яка назва
+                                    наприклад Internet) натискаємо на кнопку «Далі».</li>
+                                <li>9. Вводимо свій логін і пароль і натискаємо «Створити».</li>
+                                <li>10. Натисніть «Закрити».</li>
+                                <li>11. Запускаємо управління мережею як в п.1-3 після чого вибираємо «Зміна параметрів
+                                    адаптера».</li>
+                                <li>12. Клацаємо правою кнопкою миші на ярлику для підключення до Інтернету і вибираємо
+                                    «Властивості».</li>
+                                <li>13. Перейдіть на вкладку «Безпека»: в рядку Тип VPN вибираємо «Тунельний протокол
+                                    точка-точка (PPTP)», в рядку Шифрування даних вибираємо «необов'язкове (підключитися
+                                    навіть без шифрування)».</li>
+                                <li>14. Ставимо галочку «Дозволити наступні протоколи» і прибираємо знизу все галочки,
+                                    крім Microsoft Chap версія 2 (MS-CHAP v2).</li>
+                                <li>15. Далі натискаємо кнопку «OK». </li>
+                                <li>16. Натискаємо «Підключення» - настройка завершена.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="appear_taruf appear_windows10">
+                        <div class="close-setting">
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                                Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Підключення до Інтернет (Windows 10)</h4>
+
+                        <div class="change_tar-text">
+                            <ul>
+                                <li>
+                                    <div><span class="file-conf">Скачати</span> програму для автоматичного створення
+                                        Інтернет-підключення.</div>
+                                </li>
+                                <li>Налаштування підключення до Інтернет (Windows 10):</li>
+                                <li>
+                                    1. Натисніть «Пуск». У меню, виберіть «Параметри».
+                                </li>
+                                <li>2. Відкриваємо категорію «Мережа та Інтернет».</li>
+                                <li>3. Відкрийте категорію «VPN».</li>
+                                <li>4. Натисніть на посилання «Центр управління мережами і загальним доступом».</li>
+                                <div class="img-setting"> <img src="/src/img/windows1.png" alt=""> </div>
+                                <li>5. Виберіть пункт «Створення та налагодження нового підключення або мережі».</li>
+                                <div class="img-setting"> <img src="/src/img/windows2.png" alt=""> </div>
+                                <li>6. Виберіть «Підключення до робочого місця».</li>
+                                <div class="img-setting"> <img src="/src/img/windows3.png" alt=""> </div>
+                                <li>7. Виберіть «Ні, створити нове підключення» і натисніть на кнопку «Далі» (цей пункт
+                                    може бути відсутнім).</li>
+                                <li>8. Натисніть «Використовувати моє підключення до Інтернету (VPN)».</li>
+                                <div class="img-setting"> <img src="/src/img/windows4.png" alt=""> </div>
+                                <li>9. У вікні, введіть адресу сервера: «vpn.un» і назву VPN-поключенія (будь-яке,
+                                    наприклад «Internet»). Натисніть на кнопку «Створити».</li>
+                                <div class="img-setting"> <img src="/src/img/windows5.png" alt=""> </div>
+                                <li>10. Запустіть управління мережею (як в п.1-4) після чого виберіть «Зміна параметрів
+                                    адаптера».</li>
+                                <div class="img-setting"> <img src="/src/img/windows6.png" alt=""> </div>
+                                <li>11. Натисніть правою кнопкою миші на ярлику для підключення до Інтернет і виберіть
+                                    пункт меню «Властивості».</li>
+                                <div class="img-setting"> <img src="/src/img/windows7.png" alt=""> </div>
+                                <li>12. У вкладці «Загальні» перевірте адресу сервера підключення (він повинен бути
+                                    «vpn.un»).</li>
+                                <div class="img-small img-setting"> <img src="/src/img/windows8.png" alt=""> </div>
+                                <li>13. Перейдіть на вкладку «Безпека»: в рядку Тип VPN вибираємо «Тунельний протокол
+                                    точка-точка (PPTP)», в рядку Шифрування даних вибираємо «необов'язкове (підключитися
+                                    навіть без шифрування)».</li>
+                                <li>14. Ставимо галочку «Дозволити наступні протоколи» і прибираємо знизу все галочки,
+                                    окрім «Microsoft Chap версія 2 (MS-CHAP v2)».</li>
+                                <div class="img-small img-setting"> <img src="/src/img/windows9.png" alt=""> </div>
+                                <li>15. Далі натискаємо кнопку «OK».
+                                </li>
+                                <li>16. Запустіть ваше підключення.</li>
+                                <li>17. Введіть «Ім'я користувача» та «Пароль», далі натисніть кнопку «ОК». Налаштування
+                                    завершено.</li>
+                                <div class="img-setting"> <img src="/src/img/windows10.png" alt=""> </div>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="appear_taruf looking_glass">
+                        <div class="close-setting">
+                            <span><img class="svg" src="src/img/Vector.svg" alt="">
+                                Назад</span>
+                            <img class="close-back" src="src/img/close.svg" alt="">
+                        </div>
+                        <h4>Looking Glass</h4>
+
+                        <form>
+                            <div class="speed-box">
+                                <div class="form_radio">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label for="radio-1">трасування маршруту</label>
+                                </div>
+
+                                <div class="form_radio">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2">ехо-запит (ping)</label>
+                                </div>
+                            </div>
+                            <div class="site-form">
+                                <span>Сайт:</span>
+                                <input type="text" placeholder="google.com.ua"> <button>Перевірити</button>
+                                <textarea name="" id="" cols="40" rows="10"></textarea>
+                            </div>
+
+                        </form>
+                        <div class="change_tar-text">
+                            <ul>
+                                <li class="look-li1">Трасування проізвідіться з нашого сервера, що дозволяє перевірити
+                                    якість зв'язку, а також локалізувати можливі несправності абонентів.
+                                </li>
+                                <li class="look-li2">
+                                    Велике час відгуку шлюзу може не відображати його фактичної пропускної здатності.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="office-decor2 container"><img src="/src/img/office-decor.png" alt=""></div>
 
             <!-- Modal Зміна адреси електронної пошти-->
             <div class="modal fade change_mail" id="change_mail" tabindex="-1" aria-labelledby="my_office"

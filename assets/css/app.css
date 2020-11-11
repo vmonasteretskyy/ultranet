@@ -4362,7 +4362,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .main-privacy {
-  background: #F5F3F1;
+  background: #f5f3f1;
   padding-bottom: 200px;
 }
 
@@ -5273,10 +5273,11 @@ input[type=checkbox]:checked + label:before {
 }
 
 .tab_item .tele .select-items {
-  width: 93%;
+  width: 99%;
 }
-.tab_item .tele .select-items div, .tab_item .tele .select-selected {
-  padding-top: 7px;
+.tab_item .tele .select-items div,
+.tab_item .tele .select-selected {
+  padding-top: 6px;
 }
 
 @media (min-width: 500px) {
@@ -5303,6 +5304,14 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 1199px) {
+  .tab_item .tele .select-items {
+    width: 93%;
+  }
+  .tab_item .tele .select-items div,
+.tab_item .tele .select-selected {
+    padding-top: 6px;
+  }
+
   .office-decor {
     margin-top: -30px;
     margin-left: 30px;
@@ -6013,6 +6022,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 459px) {
+  .tab_item .tele .select-items {
+    width: 99%;
+  }
+
   .peause_modal .modal-content .modal-header1 h5 {
     font-size: 17px;
     text-align: center;

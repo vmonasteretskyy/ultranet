@@ -2,8 +2,8 @@
     background: #ffffff;
     box-shadow: 4px 10px 20px rgba(171, 171, 171, 0.3);
     border-radius: 10px;
-position: relative;
-z-index: 6;
+    position: relative;
+    z-index: 6;
     ul {
         margin: 0;
         padding-top: 50px;
@@ -28,23 +28,20 @@ z-index: 6;
         }
     }
 }
-.office-decor{
+.office-decor {
     position: absolute;
-margin-top: -55px;
-margin-left: 59px;
-z-index: 1;
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
- 
+    margin-top: -55px;
+    margin-left: 59px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
-.office-decor2{
+.office-decor2 {
     position: absolute;
-margin-top: -141px;
-margin-left: -89px;
-z-index: 1;
-  
- 
+    margin-top: -141px;
+    margin-left: -89px;
+    z-index: 1;
 }
 .datail-list {
     display: none;
@@ -127,7 +124,7 @@ z-index: 1;
     }
 }
 .main-privacy {
-    background: #F5F3F1;
+    background: #f5f3f1;
     padding-bottom: 200px;
 }
 
@@ -948,11 +945,11 @@ z-index: 1;
 }
 .tab_item .tele {
     .select-items {
-        width: 93%;
-       
+        width: 99%;
     }
-    .select-items div, .select-selected{
-        padding-top: 7px;
+    .select-items div,
+    .select-selected {
+        padding-top: 6px;
     }
 }
 
@@ -966,35 +963,34 @@ z-index: 1;
 }
 
 @media (max-width: 1309px) {
-    .office-decor{
-     
-    margin-top: -30px;
-    margin-left: 30px;
-   
+    .office-decor {
+        margin-top: -30px;
+        margin-left: 30px;
     }
-    .office-decor2{
-      
-    margin-top: -165px;
-    margin-left: -65px;
-     
-      
-     
+    .office-decor2 {
+        margin-top: -165px;
+        margin-left: -65px;
     }
 }
 @media (max-width: 1242px) {
-    .office-decor{
-     
-    margin-top: -10px;
-    margin-left: 10px;
-   
+    .office-decor {
+        margin-top: -10px;
+        margin-left: 10px;
     }
 }
 @media (max-width: 1199px) {
-      .office-decor{
-     
-    margin-top: -30px;
-    margin-left: 30px;
-   
+    .tab_item .tele {
+        .select-items {
+            width: 93%;
+        }
+        .select-items div,
+        .select-selected {
+            padding-top: 6px;
+        }
+    }
+    .office-decor {
+        margin-top: -30px;
+        margin-left: 30px;
     }
     .looking_glass {
         .site-form textarea {
@@ -1054,12 +1050,12 @@ z-index: 1;
     }
 }
 @media (max-width: 1051px) {
-    .office-decor{
-     display: none;
+    .office-decor {
+        display: none;
     }
-    .office-decor2{
-     display: none;
-     }
+    .office-decor2 {
+        display: none;
+    }
 }
 @media (max-width: 991px) {
     .wrapper .tab_item .change_tar-text {
@@ -1142,9 +1138,9 @@ z-index: 1;
     }
 
     .looking_glass {
-      .change_tar-text  ul {
+        .change_tar-text ul {
             padding-bottom: 0px;
-            li{
+            li {
                 padding-left: 20px;
             }
         }
@@ -1153,18 +1149,16 @@ z-index: 1;
             margin-bottom: 10px;
         }
         .speed-box {
-      
             margin-left: 20px;
         }
         .site-form {
             margin-left: 20px;
-        
+
             textarea {
-                
                 height: 180px;
                 min-height: 60px;
                 margin-top: 20px;
-             
+
                 margin-bottom: 0px;
             }
             input {
@@ -1180,7 +1174,6 @@ z-index: 1;
             }
             button {
                 margin-left: 0px;
-               
             }
         }
     }
@@ -1194,7 +1187,7 @@ z-index: 1;
     .block_pay-services div:first-of-type {
         margin-right: 20px;
     }
-    .block_pay-services  .print-box div:first-of-type {
+    .block_pay-services .print-box div:first-of-type {
         margin-right: 0px;
     }
     .block_pay-services .pay-big-element {
@@ -1296,18 +1289,17 @@ z-index: 1;
     .block_pay-services div:first-of-type {
         margin-right: 0px;
     }
-   .block_pay-services{
-       flex-direction: column;
-   }
-}
- 
-@media (max-width: 575px) {
-    .wrapper .tab_item .ip-address h4{
-padding-top: 40px;
-    
+    .block_pay-services {
+        flex-direction: column;
     }
-   .wrapper .tab_item .tele h4{
-padding-top: 40px;
+}
+
+@media (max-width: 575px) {
+    .wrapper .tab_item .ip-address h4 {
+        padding-top: 40px;
+    }
+    .wrapper .tab_item .tele h4 {
+        padding-top: 40px;
     }
     .img-setting {
         margin-left: 10px;
@@ -1418,7 +1410,7 @@ padding-top: 40px;
     }
 }
 @media (max-width: 500px) {
-    .tab_content .table-magazine tr td:first-of-type{
+    .tab_content .table-magazine tr td:first-of-type {
         padding-bottom: 10px;
     }
     .looking_glass {
@@ -1427,25 +1419,24 @@ padding-top: 40px;
         }
         .site-form {
             margin-left: 10px;
-            
-          
-              input {
-                  margin-bottom: 20px;
-                  margin-top: 27px;
-                  width: 280px;
-                  height: 40px;
-                  font-size: 18px;
-  
-                  &::placeholder {
-                      font-size: 18px;
-                  }
-              }
-              button {
-                  margin-left: 0px;
-                 margin-right: 20px;
-              }
-          }
-      }
+
+            input {
+                margin-bottom: 20px;
+                margin-top: 27px;
+                width: 280px;
+                height: 40px;
+                font-size: 18px;
+
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+            button {
+                margin-left: 0px;
+                margin-right: 20px;
+            }
+        }
+    }
     .appear_instruct .change_tar-text ul li {
         div {
             font-weight: 500;
@@ -1677,6 +1668,11 @@ padding-top: 40px;
     }
 }
 @media (max-width: 459px) {
+    .tab_item .tele {
+        .select-items {
+            width: 99%;
+        }
+    }
     .peause_modal .modal-content .modal-header1 h5 {
         font-size: 17px;
         text-align: center;

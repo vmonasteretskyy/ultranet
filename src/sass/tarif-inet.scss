@@ -3,8 +3,8 @@
     font-size: 14px;
     line-height: 10px;
     color: #000000;
-   padding-top: 50px;
-margin-left: -14px;
+    padding-top: 50px;
+    margin-left: -14px;
     a {
         text-decoration: underline;
         transition: 0.3s ease;
@@ -83,20 +83,21 @@ margin-left: -14px;
 }
 .privat-block-adap {
     margin-left: 35px;
+    .home-internet {
+        margin-left: 0;
+    }
 }
-#for-tarif{
+#for-tarif {
     font-weight: 300;
-font-size: 12px;
-line-height: 150%;
- position: absolute;
- 
-color: #464646;
-margin-left: 0px;
-margin-top: 9px;
- 
+    font-size: 12px;
+    line-height: 150%;
+    position: absolute;
+    color: #464646;
+    margin-left: 0px;
+    margin-top: 9px;
 }
-#connect_tv204{
-    .choose-speed{
+#connect_tv204 {
+    .choose-speed {
         margin-top: 45px;
     }
 }
@@ -136,7 +137,7 @@ margin-top: 9px;
     justify-content: space-between;
     margin-left: -15px;
 }
-.home-internet div:nth-child(2){
+.home-internet div:nth-child(2) {
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -519,7 +520,7 @@ input[type="checkbox"]:checked + label:before {
 
 .about-action {
     margin-top: 32px;
-z-index: 5;
+    z-index: 5;
     a {
         font-weight: 500;
         font-size: 16px;
@@ -539,7 +540,7 @@ z-index: 5;
     line-height: 150%;
     background: #fbd060;
     width: 100%;
-height: auto;
+    height: auto;
     padding: 15px 35px;
     left: 0;
     color: #000000;
@@ -611,7 +612,7 @@ height: auto;
 
 .tv-item {
     margin-top: 15px;
-    .custom-selects-tarif .select-selected{
+    .custom-selects-tarif .select-selected {
         padding-right: 20px;
         overflow: hidden;
     }
@@ -769,7 +770,6 @@ height: auto;
 
 .txt-privat-home {
     display: none;
- 
 }
 
 .footer-other {
@@ -785,20 +785,40 @@ height: auto;
     .tarif-txt {
         font-size: 18px;
     }
+    .home-internet {
+        margin-left: -48px;
+    }
 }
-
+.business-law .home-internet {
+    margin-left: 21px;
+}
+.block-home-internet .home-internet-text{
+    margin-left: -14px;
+}
 @media (max-width: 1199px) {
+   .business .business-law .home-cont-internet {
+        .home-internet {
+            margin-left: 10px;
+        }
+        .home-internet div:first-of-type {
+            margin-right: 20px;
+        }
+    }
+    .business {
+        .home-cont-internet .home-internet div:first-of-type {
+            margin-right: 0px;
+        }
+    }
     .privat-block-adap {
         margin-left: 30px;
-        .home-internet div:first-of-type{
+        .home-internet div:first-of-type {
             margin-right: 20px;
         }
     }
     .home-internet {
-   
         margin-left: -15px;
     }
-    .home-internet div:nth-child(2){
+    .home-internet div:nth-child(2) {
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -823,7 +843,33 @@ height: auto;
 }
 
 @media (max-width: 991px) {
-  
+    .block-home-internet .home-internet-text{
+        margin-left: -25px;
+    }
+    .business .business-law .home-cont-internet {
+        .home-internet {
+             
+                margin-left: auto;
+                margin-right: auto;
+            
+        }
+        .home-internet div:first-of-type {
+            margin-right: 5px;
+        }
+    }
+    .privat-block-adap {
+        .home-internet div:first-of-type {
+            margin-right: 5px;
+        }
+    }
+    .business {
+        .home-cont-internet .home-internet div:first-of-type {
+            margin-right: 5px;
+        }
+        .home-cont-internet .home-internet div {
+            margin-right: 5px;
+        }
+    }
     .footer-other {
         margin-top: 40px;
     }
@@ -845,10 +891,9 @@ height: auto;
     }
 
     .home-internet {
-   
         margin-left: -32px;
     }
-    .home-internet div:nth-child(2){
+    .home-internet div:nth-child(2) {
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -859,11 +904,11 @@ height: auto;
         text-align: center;
         margin-left: 5px;
         margin-right: 5px;
-        .home-internet-ecl{
+        .home-internet-ecl {
             margin-top: -110px;
         }
         .svg {
-           object-fit: cover;
+            object-fit: cover;
             width: 100%;
         }
     }
@@ -903,36 +948,46 @@ height: auto;
 }
 
 @media (max-width: 867px) {
-    .privat-block-adap {
+    .block-home-internet .home-internet-text{
+        margin-left: 5px;
+    }
+    .business .home-internet {
         margin-left: 0px;
-        .home-internet div:first-of-type{
+    }
+    .privat-block-adap {
+        margin-left: 10px;
+        .home-internet div:first-of-type {
             margin-right: 10px;
         }
     }
     .backgroung-law {
         height: 602px;
+        // margin-top:25px;
+    
     }
     .home-internet {
         margin-left: 0px;
     }
     .home-internet-item {
-        .home-internet-ecl{
+        .home-internet-ecl {
             margin-top: -100px;
         }
         .svg {
-           object-fit: cover;
+            object-fit: cover;
             width: 100%;
         }
     }
 
     .tarif-internet {
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
-
+.business .tarif-txt{
+    margin-top: 40px;
+}
     .privat-home {
         .home-internet {
-            width: 500px;
+            width: 510px;
             margin-top: 0px;
             padding-bottom: 20px;
             overflow: hidden;
@@ -940,6 +995,7 @@ height: auto;
         }
     }
     .business-law {
+       
         .home-internet {
             width: 500px;
             margin-top: 0px;
@@ -976,7 +1032,7 @@ height: auto;
 @media (max-width: 767px) {
     .privat-block-adap {
         margin-left: 0px;
-        .home-internet div:first-of-type{
+        .home-internet div:first-of-type {
             margin-right: 7px;
         }
     }
@@ -991,6 +1047,10 @@ height: auto;
 }
 
 @media (max-width: 575px) {
+    .backgroung-law {
+      margin-top:25px;
+        
+    }
     .privat-home {
         .home-internet-text {
             text-align: left;
@@ -998,7 +1058,7 @@ height: auto;
         }
     }
     .business-law {
-        padding-top: 150px;
+        padding-top: 75px;
     }
     .tarif-txt {
         margin-top: -10px;
@@ -1099,9 +1159,7 @@ height: auto;
 
 @media (max-width: 476px) {
     .tv-item {
-
-        .select-items div{
-       
+        .select-items div {
             font-size: 14px;
         }
     }
@@ -1175,7 +1233,6 @@ height: auto;
         // overflow: hidden;
         font-size: 12px;
         font-weight: 400;
-
     }
 
     .svg-dropt {

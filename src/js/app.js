@@ -441,6 +441,8 @@ if ($('*').is('.main-privacy')) {
     $('.windows-list').css("display", "none");
     $('.windows-list').css("display", "none");
     $('.looking_glass').css("display", "none");
+    $('.magazine-block0').css("display", "none");
+
   })
   $('.come-back').click(function () {
     $('.tab_elem1').fadeIn();
@@ -452,6 +454,12 @@ if ($('*').is('.main-privacy')) {
     $('.tarif-list').fadeOut();
     $('.pass-list').fadeOut();
     $('.peause-list').fadeOut();
+    $('.magazine-block0').fadeOut();
+    $('.pay-list').fadeOut();
+    $('.mag-list').fadeOut();
+    $('.tab_general').addClass('active');
+    $('.tab-pay').removeClass('active');
+    
 
   })
 
@@ -626,6 +634,7 @@ if ($('*').is('.main-privacy')) {
 
   })
 
+
   $('.payments').click(function () {
     $('.receipt-block').fadeIn();
     $('.rec-list').fadeIn();
@@ -705,6 +714,18 @@ if ($('*').is('.main-privacy')) {
     $('.glass-list').fadeIn();
 
   })
+  $('.magazine-check').click(function () {
+    $('.magazine-block0').fadeIn();
+    $('.tab_elem1').css("display", "none");
+    $('.pay-list').fadeIn();
+    $('.mag-list').fadeIn();
+    $('.tab-pay').addClass('active');
+    $('.tab_general').removeClass('active');
+
+    
+    
+  })
+
   if ($('*').is('.looking_glass')) {
     $('#radio-2').click(function () {
       if ($("#radio-2").is(':checked')) {

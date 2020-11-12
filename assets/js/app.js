@@ -20780,6 +20780,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.windows-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.windows-list').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.looking_glass').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block0').css("display", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.come-back').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeIn();
@@ -20791,6 +20792,11 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-list').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block0').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pay-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mag-list').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_general').addClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab-pay').removeClass('active');
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-back-tele').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_content').fadeOut();
@@ -21006,6 +21012,14 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_instruct').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.looking_glass').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.glass-list').fadeIn();
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-check').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.magazine-block0').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pay-list').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mag-list').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab-pay').addClass('active');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_general').removeClass('active');
   });
 
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.looking_glass')) {

@@ -14,7 +14,7 @@
 #header {
   width: 100%;
   top: 0px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   padding-bottom: 9px;
   padding-top: 0px;
@@ -40,7 +40,7 @@
 }
 
 .header-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header-white .under-logo {
   position: absolute;
@@ -55,7 +55,7 @@
   box-shadow: 0px 1px white;
 }
 .header-white .privacy-office div:last-of-type {
-  border-bottom: 1px solid #ffffff;
+  box-shadow: 0px 1px white;
 }
 
 .header-contact_number {
@@ -91,11 +91,11 @@
 }
 
 .privacy-office div:last-of-type {
-  border-bottom: 1px solid #000000;
+  box-shadow: 0px 1px black;
   transition: 0.4s ease;
 }
 .privacy-office div:last-of-type:hover {
-  border-bottom: 1px solid transparent;
+  box-shadow: none;
 }
 
 .header-menu {
@@ -109,7 +109,7 @@
   margin-right: 15px;
   font-weight: 500;
   font-size: 16px;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .header-menu li:hover {
   box-shadow: 0px 1px black;
@@ -125,9 +125,10 @@
 
 .burger2 .burger-menu_button {
   top: 14px;
+  z-index: 9999;
 }
 .burger2 .burger-menu_nav {
-  top: 94px;
+  top: 5px;
 }
 
 #main-prev {
@@ -161,7 +162,7 @@
   color: #000000;
   position: absolute;
   z-index: 2;
-  background: #E8E8E8;
+  background: #e8e8e8;
   width: 106px;
   height: 68px;
   margin-top: -68px;
@@ -189,7 +190,7 @@
 }
 
 .main_text {
-  color: #0B3661;
+  color: #0b3661;
 }
 .main_text h2 {
   font-weight: 800;
@@ -206,19 +207,19 @@
 .main_text button {
   width: 189px;
   height: 60px;
-  background: #34A0D9;
+  background: #34a0d9;
   border-radius: 3px;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.4s ease;
 }
 .main_text button:hover {
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 .main_text button:active {
-  background: #0B3661;
+  background: #0b3661;
 }
 
 .br-main {
@@ -226,7 +227,7 @@
 }
 
 .main_text-white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .carousel-item .background-img {
@@ -244,7 +245,7 @@
   position: absolute;
   top: 14px;
   right: 20px;
-  z-index: 30;
+  z-index: 999;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -303,18 +304,18 @@
 .burger-menu_nav {
   padding-top: 20px;
   position: absolute;
-  top: 65px;
+  top: 5px;
   margin-bottom: 30px;
   z-index: 99;
   display: flex;
   flex-flow: column;
-  height: 450px;
+  height: 420px;
   width: 40%;
   margin: 0 auto;
-  background: #FFFFFF;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 10px 0px 0px 10px;
   overflow-y: scroll;
-  right: 1%;
+  right: 0%;
   visibility: hidden;
   overflow: hidden;
   transition: 0.4s ease;
@@ -346,6 +347,10 @@
   border-bottom: 1px solid #000000;
 }
 
+.burger-menu_nav li:last-of-type {
+  margin-bottom: 2px;
+}
+
 .burger-menu_active .burger-menu_nav {
   visibility: visible;
   box-shadow: 0px 43px 80px rgba(37, 90, 251, 0.08), 0px 17.9644px 33.4221px rgba(37, 90, 251, 0.0575083), 0px 0px 17.869px rgba(37, 90, 251, 0.0476886), 0px 0px 10.0172px rgba(37, 90, 251, 0.04), 0px 2.85954px 5.32008px rgba(37, 90, 251, 0.0323114), 0px 1.18992px 2.21381px rgba(37, 90, 251, 0.0224916);
@@ -358,7 +363,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .burger-menu_link:hover {
@@ -394,7 +399,7 @@
 .social-network .svg {
   margin-bottom: 15px;
   padding-left: 2px;
-  background: #34A0D9;
+  background: #34a0d9;
   border-radius: 10px;
   height: 50px;
   width: 50px;
@@ -404,7 +409,7 @@
   box-shadow: -4px -4px 10px rgba(52, 160, 217, 0.3), 4px 4px 10px rgba(52, 160, 217, 0.3);
 }
 .social-network .svg:active {
-  background-color: #0B3661;
+  background-color: #0b3661;
 }
 
 .svg-support {
@@ -422,7 +427,7 @@
   filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
 }
 .svg-support .svg:active .circle {
-  fill: #0B3661;
+  fill: #0b3661;
 }
 
 .close-chat {
@@ -430,7 +435,7 @@
 }
 
 .container-chat {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
   width: 360px;
@@ -444,7 +449,7 @@
 .header-chat {
   height: 67px;
   padding: 0px 7px 0px 20px;
-  background: #34A0D9;
+  background: #34a0d9;
   box-shadow: 0px 5px 5px rgba(171, 171, 171, 0.3);
   border-radius: 10px 10px 0px 0px;
   display: flex;
@@ -453,7 +458,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .content-chat {
@@ -467,7 +472,7 @@
 }
 
 .message-chat {
-  background: #E8E8E8;
+  background: #e8e8e8;
   border-radius: 10px;
   font-weight: 300;
   font-size: 14px;
@@ -481,26 +486,26 @@
   border-radius: 0pt 0pt 10px 10px;
   padding: 0px 58px 0px 20px;
   width: 100%;
-  background: #F5F3F1;
+  background: #f5f3f1;
   height: 61px;
 }
 .enter-chat input::-moz-placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 150%;
-  color: #ABABAB;
+  color: #ababab;
 }
 .enter-chat input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 150%;
-  color: #ABABAB;
+  color: #ababab;
 }
 .enter-chat input::placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 150%;
-  color: #ABABAB;
+  color: #ababab;
 }
 .enter-chat .enter-svg {
   position: absolute;
@@ -764,7 +769,6 @@
 
   .burger-menu_nav {
     width: 98%;
-    right: 1%;
   }
 
   .burger2 .burger-menu_button {
@@ -772,7 +776,7 @@
     top: 6px;
   }
   .burger2 .burger-menu_nav {
-    top: 57px;
+    top: 5px;
   }
 
   .svg-support {
@@ -899,7 +903,7 @@
   }
 
   .burger-menu_nav {
-    top: 43px;
+    top: 5px;
   }
 
   .container-chat {
@@ -1335,7 +1339,7 @@
   margin-right: 15px;
 }
 .news-block .news-big-item a {
-  margin-top: -21px;
+  margin-top: -18px;
 }
 .news-block .news-item .read-more-a {
   margin-top: -36px;
@@ -1782,6 +1786,9 @@ footer {
 
 .privat-block-adap {
   margin-left: 35px;
+}
+.privat-block-adap .home-internet {
+  margin-left: 0;
 }
 
 #for-tarif {
@@ -2438,8 +2445,30 @@ input[type=checkbox]:checked + label:before {
 .business .tarif-txt {
   font-size: 18px;
 }
+.business .home-internet {
+  margin-left: -48px;
+}
+
+.business-law .home-internet {
+  margin-left: 21px;
+}
+
+.block-home-internet .home-internet-text {
+  margin-left: -14px;
+}
 
 @media (max-width: 1199px) {
+  .business .business-law .home-cont-internet .home-internet {
+    margin-left: 10px;
+  }
+  .business .business-law .home-cont-internet .home-internet div:first-of-type {
+    margin-right: 20px;
+  }
+
+  .business .home-cont-internet .home-internet div:first-of-type {
+    margin-right: 0px;
+  }
+
   .privat-block-adap {
     margin-left: 30px;
   }
@@ -2472,6 +2501,29 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .block-home-internet .home-internet-text {
+    margin-left: -25px;
+  }
+
+  .business .business-law .home-cont-internet .home-internet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .business .business-law .home-cont-internet .home-internet div:first-of-type {
+    margin-right: 5px;
+  }
+
+  .privat-block-adap .home-internet div:first-of-type {
+    margin-right: 5px;
+  }
+
+  .business .home-cont-internet .home-internet div:first-of-type {
+    margin-right: 5px;
+  }
+  .business .home-cont-internet .home-internet div {
+    margin-right: 5px;
+  }
+
   .footer-other {
     margin-top: 40px;
   }
@@ -2548,8 +2600,16 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 867px) {
-  .privat-block-adap {
+  .block-home-internet .home-internet-text {
+    margin-left: 5px;
+  }
+
+  .business .home-internet {
     margin-left: 0px;
+  }
+
+  .privat-block-adap {
+    margin-left: 10px;
   }
   .privat-block-adap .home-internet div:first-of-type {
     margin-right: 10px;
@@ -2574,11 +2634,15 @@ input[type=checkbox]:checked + label:before {
 
   .tarif-internet {
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+
+  .business .tarif-txt {
+    margin-top: 40px;
   }
 
   .privat-home .home-internet {
-    width: 500px;
+    width: 510px;
     margin-top: 0px;
     padding-bottom: 20px;
     overflow: hidden;
@@ -2630,13 +2694,17 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .backgroung-law {
+    margin-top: 25px;
+  }
+
   .privat-home .home-internet-text {
     text-align: left;
     font-size: 16px;
   }
 
   .business-law {
-    padding-top: 150px;
+    padding-top: 75px;
   }
 
   .tarif-txt {
@@ -3646,6 +3714,9 @@ input[type=checkbox]:checked + label:before {
   height: 100%;
   padding-bottom: 239px;
 }
+.actions .home-atribute {
+  margin-left: 2px;
+}
 
 .modal .close {
   z-index: 9;
@@ -4401,7 +4472,7 @@ input[type=checkbox]:checked + label:before {
 
 .main-privacy {
   background: #f5f3f1;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .info_box {
@@ -5009,6 +5080,10 @@ input[type=checkbox]:checked + label:before {
   display: none;
 }
 
+.magazine-check {
+  cursor: pointer;
+}
+
 .tab_content .table-magazine tr td:first-of-type {
   width: auto;
 }
@@ -5072,6 +5147,7 @@ input[type=checkbox]:checked + label:before {
   text-align: center;
 }
 
+.magazine-block0 h4,
 .magazine-block h4 {
   margin-top: 0px;
 }

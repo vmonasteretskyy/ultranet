@@ -771,11 +771,15 @@ if (window.matchMedia('(max-width: 767px)').matches) {
   })
   $('.close-tab-menu').click(function () {
     $('#header').fadeIn();
+  
   })
   $('.close-back-tele').click(function () {
     $('#header').fadeIn();
   })
-
+  $('.close_tab').click(function () {
+    $('.tab_general').removeClass('.active');
+  })
+  
 }
 
  

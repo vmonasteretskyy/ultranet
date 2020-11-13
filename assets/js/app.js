@@ -21062,6 +21062,9 @@ if (window.matchMedia('(max-width: 767px)').matches) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-back-tele').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#header').fadeIn();
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close_tab').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_general').removeClass('.active');
+  });
 }
 
 var naavy = document.querySelectorAll(".rules-menu li a");

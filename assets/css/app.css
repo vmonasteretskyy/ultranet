@@ -5693,6 +5693,25 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 767px) {
+  .wrapper .active {
+    box-shadow: none;
+    color: #0b3661;
+    background: transparent;
+  }
+  .wrapper .active .yellow-svg {
+    transition: 0.2s ease;
+    fill: #0b3661;
+  }
+
+  .tabs li:hover {
+    color: #fbd060;
+    background: #0b3661;
+  }
+  .tabs li:hover .yellow-svg {
+    transition: 0.2s ease;
+    fill: #fbd060;
+  }
+
   .appear_windows10 .change_tar-text ul,
 .appear_tenda .change_tar-text ul,
 .appear_set_dir .change_tar-text ul {
@@ -5839,16 +5858,6 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
-  .wrapper .active {
-    box-shadow: none;
-    color: #0b3661;
-    background: transparent;
-  }
-  .wrapper .active .yellow-svg {
-    transition: 0.2s ease;
-    fill: #0b3661;
-  }
-
   .main-privacy {
     padding-bottom: 40px;
   }

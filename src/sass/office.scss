@@ -1185,6 +1185,23 @@
     }
 }
 @media (max-width: 767px) {
+    .wrapper .active {
+        box-shadow: none;
+        color: #0b3661;
+        background: transparent;
+        .yellow-svg {
+            transition: 0.2s ease;
+            fill: #0b3661;
+        }
+    }
+    .tabs li:hover{
+        color: #fbd060;
+        background: #0b3661;
+        .yellow-svg {
+            transition: 0.2s ease;
+            fill: #fbd060;
+        }
+    }
     .appear_windows10,
 .appear_tenda,
 .appear_set_dir {
@@ -1313,16 +1330,7 @@
 }
 
 @media (max-width: 575px) {
-    .wrapper .active {
-        box-shadow: none;
-        color: #0b3661;
-        background: transparent;
-        .yellow-svg {
-            transition: 0.2s ease;
-    
-            fill: #0b3661;
-        }
-    }
+ 
     .main-privacy {
    
         padding-bottom: 40px;

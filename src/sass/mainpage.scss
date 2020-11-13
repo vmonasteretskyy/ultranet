@@ -310,7 +310,7 @@ header {
 .burger-menu_active .burger-menu_lines {
     background-color: transparent;
 }
-
+ 
 .burger-menu_active .burger-menu_lines::before {
     top: 0;
     transform: rotate(45deg);
@@ -323,7 +323,9 @@ header {
     transform: rotate(-45deg);
     width: 20px;
 }
-
+.shadow {
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3);
+  }
 .burger-menu_nav {
     padding-top: 20px;
     position: absolute;
@@ -339,7 +341,6 @@ header {
     border-radius: 10px 0px 0px 10px;
     overflow-y: scroll;
     right: 0%;
-
     visibility: hidden;
     overflow: hidden;
     // -webkit-transition: 1s;
@@ -378,9 +379,11 @@ header {
 }
 .burger-menu_active .burger-menu_nav {
     visibility: visible;
-    box-shadow: 0px 43px 80px rgba(37, 90, 251, 0.08), 0px 17.9644px 33.4221px rgba(37, 90, 251, 0.0575083),
-        0px 0px 17.869px rgba(37, 90, 251, 0.0476886), 0px 0px 10.0172px rgba(37, 90, 251, 0.04),
-        0px 2.85954px 5.32008px rgba(37, 90, 251, 0.0323114), 0px 1.18992px 2.21381px rgba(37, 90, 251, 0.0224916);
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.5);
+
+    // box-shadow: 0px 43px 80px rgba(37, 90, 251, 0.08), 0px 17.9644px 33.4221px rgba(37, 90, 251, 0.0575083),
+    //     0px 0px 17.869px rgba(37, 90, 251, 0.0476886), 0px 0px 10.0172px rgba(37, 90, 251, 0.04),
+    //     0px 2.85954px 5.32008px rgba(37, 90, 251, 0.0323114), 0px 1.18992px 2.21381px rgba(37, 90, 251, 0.0224916);
     // -webkit-transition: 0s;
     // -moz-transition: 0s;
     // -o-transition: 0s;
@@ -448,7 +451,8 @@ header {
     position: fixed;
     bottom: 30px;
     right: 45px;
-    z-index: 4;
+    z-index: 2;
+    // z-index: 4;
 }
 .svg-support .svg {
     transition: 0.4s ease;
@@ -502,7 +506,7 @@ header {
     background: #e8e8e8;
     border-radius: 10px;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 150%;
     color: #000000;
     margin-left: 5px;
@@ -511,14 +515,13 @@ header {
 .enter-chat {
     input {
         border-radius: 0pt 0pt 10px 10px;
-
         padding: 0px 58px 0px 20px;
         width: 100%;
         background: #f5f3f1;
         height: 61px;
         &::placeholder {
             font-weight: 300;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 150%;
             color: #ababab;
         }

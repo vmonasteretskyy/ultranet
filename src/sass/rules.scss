@@ -171,14 +171,16 @@ transition: 0.4s ease;
 @media (max-width: 767px) {
     .rules-container{
         overflow-x: scroll;
-     
+     margin-left: -25px;
     }
     .rules{
-        height: 580px;
-        width: 517px;
-        padding-bottom: 20px;
+        height: auto;
+        width: 597px;
+        padding-bottom: 0px;
  padding-left: 10px;
  padding-right: 10px;
+ margin-left: 20px;
+ 
  ul{
     padding-top: 20px;
     padding-left: 0px;
@@ -200,4 +202,26 @@ font-size: 15px;
 
   
   
+}
+@media (max-width: 575px) {
+    // .rules-container {
+  
+    //     margin-right: -15px;
+    // }
+    .main-rules{
+        padding-bottom: 00px;
+    }
+    .rules{
+        margin-bottom: 40px;
+    }
+    .rules-menu{
+        padding-left: 5px;
+        // max-width: 200px;
+    }
+    .rules li:last-of-type{
+        padding-bottom: 4px;
+    }
+    .rules-info {
+        height: 560px;
+    }
 }

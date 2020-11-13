@@ -116,17 +116,28 @@ if ($('*').is('.suport-chat')) {
   //online-chat
   $('.close-chat').click(function () {
     $(".container-chat").fadeOut();
+    $(".container-chat").css("box-shadow","none");
+
   });
   $('.svg-support').toggleClick([
     function () {
       $(".container-chat").fadeIn();
+      $(".container-chat").css("box-shadow","0 0 0 9999px rgba(0,0,0, 0.3)");
+
     },
     function () {
       $(".container-chat").fadeOut();
+      $(".container-chat").css("box-shadow","none");
+
     }
   ]);
 
 }
+
+ 
+$(".burger-menu_button").click(function () {
+  $(".burger").toggleClass("shadow");
+  })
 
 if ($('*').is('.contact')) {
 
@@ -479,12 +490,18 @@ if ($('*').is('.main-privacy')) {
 
   })
   $('.pause').click(function () {
+    $('.appear_pease').animate({
+      scrollTop: 0
+  }, 500);
+ 
     $('.appear_pease').fadeIn();
     $('.tab_elem1').fadeOut();
     $('.peause-list').fadeIn();
 
   })
-
+ 
+  
+ 
   $('.peause-modal').click(function () {
     $('#peause_modal').modal('hide');
     $('#ip-order_modal').modal('hide');
@@ -603,7 +620,10 @@ if ($('*').is('.main-privacy')) {
     });
   })
   $('.open-table').click(function () {
-    $('.appear_table').fadeIn();
+    $('.appear_table').animate({
+      scrollTop: 0
+  }, 500);
+  $('.appear_table').fadeIn();
     $('.datail-list').fadeIn();
 
     $('.tab_elem1').css("display", "none");
@@ -783,3 +803,23 @@ const myCount = function() {
 // myCount();
 
 $('.box-show-check input').on('click', myCount);
+
+
+if (window.matchMedia('(max-width: 575px)').matches) {
+  let first = function() {
+    $('.short-text').html('Сума');
+    $('#result-table td:first-of-type').html('Всього:');
+
+    
+  };
+  first();
+// (function( $ ) {
+
+//   let a = new String;
+//   a = $('.short-text').text();
+//   let b = a.split(' ')[0];
+//   $(b).css("display", "block");
+  
+  
+// })();
+}

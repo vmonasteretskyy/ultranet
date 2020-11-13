@@ -444,6 +444,13 @@
 @media (max-width: 500px) {
     .actions {
  height: 100vh;
+ 
+    }
+    .show_more {
+        p {
+        
+            font-size: 16px;
+        }
     }
     .grafic {
         .modal-header1 .close {

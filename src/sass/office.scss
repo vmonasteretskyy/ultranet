@@ -107,7 +107,7 @@
             color: #0b3661;
         }
         span {
-            margin-right: 10px;
+            margin-right: 0px;
         }
         a:not([href]) {
             cursor: pointer;
@@ -640,6 +640,7 @@
         margin-top: 20px;
     }
 }
+ 
 .notebook {
     border-left: 1px solid #e8e8e8;
     padding-left: 39px;
@@ -669,6 +670,7 @@
 .magazine-check{
     cursor: pointer;
 }
+
 .tab_content .table-magazine {
     tr td:first-of-type {
         width: auto;
@@ -715,7 +717,7 @@
     button {
         background: #34a0d9;
         border-radius: 3px;
-        width: 147px;
+        width: 200px;
         height: 40px;
         font-weight: 500;
         font-size: 18px;
@@ -729,7 +731,7 @@
     }
 }
 .receipt {
-    max-width: 93%;
+     width: 93%;
     text-align: center;
 }
 .magazine-block0 h4,
@@ -949,7 +951,7 @@
 }
 .tab_item .tele {
     .select-items {
-        width: 99%;
+        width: 100%;
     }
     .select-items div,
     .select-selected {
@@ -1183,6 +1185,18 @@
     }
 }
 @media (max-width: 767px) {
+    .appear_windows10,
+.appear_tenda,
+.appear_set_dir {
+  
+    .change_tar-text {
+     
+        ul {
+            height: auto;
+            padding-bottom: 0;
+        }
+    }
+}
     .ip-address {
         .change_tar-text {
             padding-right: 15px;
@@ -1212,12 +1226,12 @@
     }
     #change_address {
         .change_tel div:first-of-type {
-            width: 250px;
+            width: 97%;
             margin-right: 35px;
         }
     }
     .change_tel input {
-        max-width: 270px;
+        max-width: 470px;
     }
     .change_tel div:first-of-type {
         width: 300px;
@@ -1299,6 +1313,33 @@
 }
 
 @media (max-width: 575px) {
+    .wrapper .active {
+        box-shadow: none;
+        color: #0b3661;
+        background: transparent;
+        .yellow-svg {
+            transition: 0.2s ease;
+    
+            fill: #0b3661;
+        }
+    }
+    .main-privacy {
+   
+        padding-bottom: 40px;
+    }
+    .print-page{
+        overflow-x: scroll;
+        margin-left: 15px;
+       
+    }
+    .receipt {
+        margin-right: 15px;
+         width: 560px;
+    }
+    .wrapper .tab_item .tele .block_pay-services h4{
+        padding-top: 0px;
+    }
+
     .wrapper .tab_item .ip-address h4 {
         padding-top: 40px;
     }
@@ -1345,6 +1386,9 @@
     }
     .privacy-block {
         margin: 0px 0px;
+        ul{
+            padding: 13px 0px 13px 0px;
+        }
     }
 }
 @media (max-width: 550px) {
@@ -1414,6 +1458,9 @@
     }
 }
 @media (max-width: 500px) {
+    #looking_adapt{
+        display: none;
+    }
     .tab_content .table-magazine tr td:first-of-type {
         padding-bottom: 10px;
     }
@@ -1495,7 +1542,7 @@
     }
     .appear_windows7 h4,
     .appear_tenda h4 {
-        width: 180px;
+        width: 190px;
         margin: 0 auto;
     }
     .ip-address h4 {
@@ -1503,7 +1550,10 @@
         margin: 0 auto 20px auto;
     }
     .receipt-block {
-        text-align: center;
+         button{
+             margin-left: 15px;
+         }
+        text-align: left;
         p {
             font-size: 14px;
         }
@@ -1513,6 +1563,45 @@
     }
     .print-block img {
         margin-right: 5px;
+    }
+   .wrapper .tab_content .magazine-block0 .table-magazine {
+        width: 100%;
+        th:first-of-type {
+            width: 20%;
+            padding-left: 20px;
+        }
+        tr th:nth-child(2) {
+            padding: 10px 0px 0px;
+        }
+        tr td:nth-child(2) {
+            padding: 10px 0px 0px 0px;
+        }
+        tr th:nth-child(3) {
+            width: 20%;
+
+            padding: 0px;
+        }
+        tr td:nth-child(3) {
+            position: relative;
+            right: 0px;
+            margin-top: 33px;
+            padding-right: 0px;
+        }
+
+        // th {
+        //     width: 30%;
+        //     font-weight: 500;
+        //     font-size: 16px;
+        //     padding: 10px 10px;
+        // }
+        tr {
+            padding: 10px 15px;
+            display: inherit;
+        }
+        td {
+            font-size: 16px;    width: 20%;
+padding-left: 13px;
+        }
     }
     .tab_content .table-magazine {
         width: 100%;
@@ -1598,10 +1687,10 @@
             font-size: 16px;
         }
         table #result-table td:first-of-type {
-            white-space: nowrap;
-            max-width: 60px;
-            overflow: hidden;
-            padding-left: 20px;
+            // white-space: nowrap;
+            // max-width: 60px;
+            // overflow: hidden;
+            // padding-left: 20px;
         }
         .table-menu {
             float: left;
@@ -1644,6 +1733,17 @@
     }
 }
 @media (max-width: 476px) {
+    .change_tel .btn-delete{
+        right: 15px;
+    }
+        .change_mail{
+        .tel_element{
+            width: 100%;
+        }
+        .change_tel input{
+            width: 100%;
+        }
+    }
     .change_mail .enter-btn {
         flex-direction: column;
         margin-top: 20px;
@@ -1674,7 +1774,7 @@
 @media (max-width: 459px) {
     .tab_item .tele {
         .select-items {
-            width: 99%;
+            width: 100%;
         }
     }
     .peause_modal .modal-content .modal-header1 h5 {

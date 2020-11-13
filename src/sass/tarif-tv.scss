@@ -237,6 +237,13 @@ color: #000000;
     }
 }
 @media (max-width: 420px) {
+    #for-tarif {
+      display: block;
+        position: relative;
+       margin-bottom: 0px;
+        margin-left: 0px;
+       padding-top: 5px;
+    }
     .tarif_tv{
         .count-channels{ 
             flex-direction: column;

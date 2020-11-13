@@ -119,6 +119,8 @@
     padding-top: 150px;
 
     .home-internet {
+        padding-bottom: 30px;
+    padding-left: 20px;
         justify-content: center;
     }
 }
@@ -953,6 +955,7 @@ input[type="checkbox"]:checked + label:before {
     }
     .business .home-internet {
         margin-left: 0px;
+        
     }
     .privat-block-adap {
         margin-left: 10px;
@@ -967,6 +970,7 @@ input[type="checkbox"]:checked + label:before {
     }
     .home-internet {
         margin-left: 0px;
+        padding-left: 5px;
     }
     .home-internet-item {
         .home-internet-ecl {
@@ -995,11 +999,13 @@ input[type="checkbox"]:checked + label:before {
         }
     }
     .business-law {
-       
+         .tarif-txt{
+            margin-top: 0px;
+        }
         .home-internet {
             width: 500px;
             margin-top: 0px;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             overflow: hidden;
             margin: 0 auto;
         }
@@ -1008,7 +1014,7 @@ input[type="checkbox"]:checked + label:before {
         padding-top: 20px;
         width: 760px;
         margin-top: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         overflow: hidden;
     }
 
@@ -1047,6 +1053,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 575px) {
+    .home-cont-internet {
+  
+        margin-right: -15px;
+    }
     .backgroung-law {
       margin-top:25px;
         
@@ -1058,7 +1068,7 @@ input[type="checkbox"]:checked + label:before {
         }
     }
     .business-law {
-        padding-top: 75px;
+        padding-top: 60px;
     }
     .tarif-txt {
         margin-top: -10px;
@@ -1074,7 +1084,17 @@ input[type="checkbox"]:checked + label:before {
         padding-top: 8px;
         display: block;
     }
-
+    .privat-block-adap,
+.block-home-internet{
+    .home-internet-text{
+        margin-top: 0px;
+    }
+    .home-internet-text p {
+     
+        margin-top: 10px;
+        
+    }
+}
     .home-internet-text {
         color: #000000;
         margin-top: 30px;
@@ -1083,7 +1103,7 @@ input[type="checkbox"]:checked + label:before {
             font-weight: 300;
             font-size: 16px;
             line-height: 150%;
-            margin-top: 20px;
+            margin-top: 10px;
             margin-bottom: 10px;
         }
 
@@ -1109,6 +1129,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 532px) {
+    .tarif-internet {
+     
+        margin-left: -11px;
+        margin-right: -11px;
+    }
     .choose-speed {
         padding-left: 10px;
     }

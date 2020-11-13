@@ -20501,13 +20501,20 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.suport-chat')) {
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-chat').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").css("box-shadow", "none");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-support').toggleClick([function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").css("box-shadow", "0 0 0 9999px rgba(0,0,0, 0.3)");
   }, function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").css("box-shadow", "none");
   }]);
 }
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(".burger-menu_button").click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".burger").toggleClass("shadow");
+});
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.contact')) {
   //map
@@ -20811,6 +20818,9 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeIn();
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pause').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').animate({
+      scrollTop: 0
+    }, 500);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.peause-list').fadeIn();
@@ -20923,6 +20933,9 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
     });
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.open-table').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').animate({
+      scrollTop: 0
+    }, 500);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_table').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail-list').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').css("display", "none");
@@ -21074,6 +21087,20 @@ var myCount = function myCount() {
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check input').on('click', myCount);
+
+if (window.matchMedia('(max-width: 575px)').matches) {
+  var first = function first() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.short-text').html('Сума');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#result-table td:first-of-type').html('Всього:');
+  };
+
+  first(); // (function( $ ) {
+  //   let a = new String;
+  //   a = $('.short-text').text();
+  //   let b = a.split(' ')[0];
+  //   $(b).css("display", "block");
+  // })();
+}
 
 /***/ }),
 

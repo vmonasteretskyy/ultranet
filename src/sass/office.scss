@@ -770,6 +770,28 @@
         text-decoration-line: none;
     }
 }
+.big-rece{
+    display: none;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+ align-items: center;
+ justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    .clos_white{
+       margin-left: auto;
+       margin-right: 40px;
+       margin-bottom: 15px;
+    }
+}
+.print-page{
+    cursor: pointer;
+}
 @media print {
     body * {
         visibility: hidden;
@@ -1185,6 +1207,14 @@
     }
 }
 @media (max-width: 767px) {
+  .receipt-block  .big-rece{
+    // transform: rotate(90deg);
+        .clos_white{
+           margin-left: auto;
+           margin-right: 40px;
+           margin-bottom: 15px;
+        }
+    }
     .wrapper .active {
         box-shadow: none;
         color: #0b3661;
@@ -1780,6 +1810,27 @@ padding-left: 13px;
     }
 }
 @media (max-width: 459px) {
+    .input-pass {
+        input {
+            width: 100%;
+        }
+    }
+    .appear-taruf, .tele{
+
+      .custom-selects-tarif .select-selected, .ip-address .custom-selects-tarif .select-selected, .appear_taruf .custom-selects-tarif .select-selected {
+        width: 100%;
+      }
+       .custom-selects-tarif {
+        max-width: 100%;
+        width: 100%;
+
+    }
+    .custom-selects-tarif .select-selected{
+        width: 100%;
+        max-width: 100%;
+
+    }
+    }
     .tab_item .tele {
         .select-items {
             width: 100%;
@@ -1813,7 +1864,7 @@ padding-left: 13px;
     .btn_order {
         margin: 20px 0px 8px 0px;
         button {
-            width: 95%;
+            width: 94%;
         }
     }
     .tele,

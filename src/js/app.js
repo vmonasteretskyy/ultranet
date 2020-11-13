@@ -762,7 +762,15 @@ if ($('*').is('.main-privacy')) {
   }
 
 }
+ if ($('*').is('.main-privacy')) {
+  $('.print-page').click(function () {
+    $('.big-rece').fadeIn();
+    $('.big-rece').css("display","flex");
 
+  })
+  }
+
+ 
 //adapt table
 
 if (window.matchMedia('(max-width: 767px)').matches) {

@@ -5258,6 +5258,30 @@ input[type=checkbox]:checked + label:before {
           text-decoration-line: none;
 }
 
+.big-rece {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+.big-rece .clos_white {
+  margin-left: auto;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+.print-page {
+  cursor: pointer;
+}
+
 @media print {
   body * {
     visibility: hidden;
@@ -5693,6 +5717,12 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 767px) {
+  .receipt-block .big-rece .clos_white {
+    margin-left: auto;
+    margin-right: 40px;
+    margin-bottom: 15px;
+  }
+
   .wrapper .active {
     box-shadow: none;
     color: #0b3661;
@@ -6298,6 +6328,22 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 459px) {
+  .input-pass input {
+    width: 100%;
+  }
+
+  .appear-taruf .custom-selects-tarif .select-selected, .appear-taruf .ip-address .custom-selects-tarif .select-selected, .appear-taruf .appear_taruf .custom-selects-tarif .select-selected, .tele .custom-selects-tarif .select-selected, .tele .ip-address .custom-selects-tarif .select-selected, .tele .appear_taruf .custom-selects-tarif .select-selected {
+    width: 100%;
+  }
+  .appear-taruf .custom-selects-tarif, .tele .custom-selects-tarif {
+    max-width: 100%;
+    width: 100%;
+  }
+  .appear-taruf .custom-selects-tarif .select-selected, .tele .custom-selects-tarif .select-selected {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .tab_item .tele .select-items {
     width: 100%;
   }
@@ -6334,7 +6380,7 @@ input[type=checkbox]:checked + label:before {
     margin: 20px 0px 8px 0px;
   }
   .btn_order button {
-    width: 95%;
+    width: 94%;
   }
 
   .tele .svg-select-i,

@@ -21049,13 +21049,6 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
       }
     });
   }
-}
-
-if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.print-page').click(function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.big-rece').fadeIn();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.big-rece').css("display", "flex");
-  });
 } //adapt table
 
 

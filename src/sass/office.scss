@@ -770,25 +770,50 @@
         text-decoration-line: none;
     }
 }
-.big-rece{
-    display: none;
-  position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    background-color: rgba(0, 0, 0, 0.5);
- align-items: center;
- justify-content: center;
-    overflow: hidden;
-    flex-direction: column;
-    .clos_white{
-       margin-left: auto;
-       margin-right: 40px;
-       margin-bottom: 15px;
+#receipt_modal{
+    .modal-content{
+        background-color: transparent;
+        border: none;
+        margin: 20px;
+    }
+    .receipt {
+        width: 100%;
+    }
+    .modal-header{
+        border: none;
+    }
+    .modal-body1 {
+        padding-top: 0px;
     }
 }
+
+@media (min-width: 576px){
+    #receipt_modal .modal-dialog {
+    max-width: 100%;
+    margin: 1.75rem auto;
+}
+}
+// .big-rece{
+//     display: none;
+//   position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 5;
+//     background-color: rgba(0, 0, 0, 0.5);
+//  align-items: center;
+//  justify-content: center;
+//     // overflow: hidden;
+//     flex-direction: column;
+//     .clos_white{
+//        margin-left: auto;
+//        margin-right: 40px;
+//        margin-bottom: 15px;
+//        z-index: 6;
+//        position: relative;
+//     }
+// }
 .print-page{
     cursor: pointer;
 }
@@ -1207,14 +1232,43 @@
     }
 }
 @media (max-width: 767px) {
-  .receipt-block  .big-rece{
-    // transform: rotate(90deg);
-        .clos_white{
-           margin-left: auto;
-           margin-right: 40px;
-           margin-bottom: 15px;
-        }
+//   .receipt-block  .big-rece{
+//     // transform: rotate(90deg);
+//         .clos_white{
+//            margin-left: auto;
+//            margin-right: 40px;
+//            margin-bottom: 15px;
+//         }
+//     }
+#receipt_modal{
+    .modal-dialog-centered{
+      
+        padding-top: 200px;
+      
+        justify-content: center;
+        align-items: flex-start;
     }
+    .receipt {
+        width: 800px;
+    }
+     .modal-dialog {
+        max-width: 700px;
+    }
+    .modal-header{
+        padding: 0px;
+        margin-right: 15px;
+    }
+    .modal-header .close {
+      
+        margin: -1rem 0rem rem;
+    }
+    .modal-content{
+        flex-direction: row;
+    transform: rotate(90deg);
+    // margin-left: 70px;
+    }
+   
+}
     .wrapper .active {
         box-shadow: none;
         color: #0b3661;
@@ -1348,6 +1402,13 @@
 }
 
 @media (max-width: 591px) {
+    #receipt_modal{
+        .modal-dialog-centered {
+       padding-top: 140px;
+        }
+     
+       
+    }
     .block_pay-services .pay-big-element {
         margin-right: 0px;
     }
@@ -1430,6 +1491,14 @@
     }
 }
 @media (max-width: 550px) {
+    #receipt_modal{
+     
+        .modal-content{
+      
+      margin-top: 0px;
+        }
+       
+    }
     .ip-address .change_tar-text {
         padding-right: 0px;
     }
@@ -1810,6 +1879,14 @@ padding-left: 13px;
     }
 }
 @media (max-width: 459px) {
+    #receipt_modal{
+        .modal-dialog-centered {
+       padding-top: 110px;
+           
+        }
+     
+       
+    }
     .input-pass {
         input {
             width: 100%;
@@ -1874,3 +1951,12 @@ padding-left: 13px;
         }
     }
 }
+@media (max-width: 380px) {
+    #receipt_modal{
+        .modal-dialog-centered {
+       padding-top: 65px;
+           
+        }
+     
+    }
+    }

@@ -1117,9 +1117,9 @@
                             <img class="close-back" src="src/img/close.svg" alt="">
                         </div>
                         <h4>Квитанція</h4>
-                        <div class="print-page"> <img class="receipt" src="src/img/receipt 1.png" alt="">
-                          <div class="big-rece">  <img class="clos_white" src="src/img/closw-white.svg" alt="">
-                             <img class="receipt" src="src/img/receipt 1.png" alt=""></div> 
+                        <div class="print-page" data-toggle="modal"
+                        data-target="#receipt_modal"> <img class="receipt" src="src/img/receipt 1.png" alt="">
+        
                         </div>
                         <p>Для поліпшення віддрукованного матеріалу приберіть колонтитули, усі поля сторінки виставте в
                             «0» (Головне меню «Файл» - «Параметри сторінки» / «Параметри друку»).</p>
@@ -1923,6 +1923,26 @@
                     </div>
                 </div>
             </div>
+                       <!-- Modal Квитанція-->
+<div class="modal fade" id="receipt_modal" tabindex="-1"
+aria-labelledby="my_office" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="modal-header">
+         
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><img src="src/img/closw-white.svg" alt="">
+                </span>
+            </button>
+        </div>
+        <div class="modal-body modal-body1">
+               <div class="big-rece">  
+                <img class="receipt" src="src/img/receipt 1.png" alt="">
+            </div>  
+        </div>
+    </div>
+</div>
+</div>
         </section>
     </main>
     <footer>

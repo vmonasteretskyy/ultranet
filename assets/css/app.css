@@ -4414,7 +4414,7 @@ input[type=checkbox]:checked + label:before {
   box-shadow: 4px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .privacy-block ul {
   margin: 0;

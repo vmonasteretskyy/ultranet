@@ -493,6 +493,7 @@ margin-right: 35px;
 }
 
 @media (max-width: 420px) {
+  
     .br-fob{
         display: block;
     }
@@ -516,6 +517,34 @@ margin-right: 35px;
 }
 
 @media (max-width: 400px) {
+    .custom-selects-tarif .select-selected {
+        max-width: 100%;
+    }
+    .custom-selects-tarif .select-selected {
+        width: 100%;
+    }
+    .custom-selects-tarif {
+        max-width: 97%;
+        width: 97%;
+    }
+    .tv-show{
+       
+.custom-selects-tarif {
+    max-width: 100%;
+    width: 100%;
+} 
+    }
+    .box-show-check {
+        max-width: 100%;
+    width: 100%;
+    }
+    .connect-dropt{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .form-connect input {
+        width: 97%;}
     .con-mob .modal-header1 h5{
 width: 260px;
     }

@@ -1005,7 +1005,10 @@
         padding-top: 6px;
     }
 }
-
+.tab_pay .pay .block_pay-services .pay-big-element .select-items {
+    width: 110%;
+    margin-left: 1px;
+}
 @media (min-width: 500px) {
     .change_mail {
         .modal-dialog {
@@ -1032,6 +1035,10 @@
     }
 }
 @media (max-width: 1199px) {
+    .tab_pay .pay .block_pay-services .pay-big-element .select-items {
+        width: 100%;
+        margin-left: 1px;
+    }
     .tab_item .tele {
         .select-items {
             width: 93%;
@@ -1421,7 +1428,36 @@
 }
 
 @media (max-width: 575px) {
- 
+    .tele .change_tar-text li, .ip-address .change_tar-text li, .appear_taruf .change_tar-text li{
+        padding: 5px 15px;
+    }
+    .print-box {
+     text-align: center;
+     padding: 0;
+    }
+    .print-block{
+        font-size: 16px;
+    }
+    .block_pay-services .print-box div:first-of-type {
+        margin-right: 0px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e8e8e8;
+
+    }
+ .tab_pay {
+    .block_pay-services button{
+        width: 180px;
+    }
+
+    .pay-big-element{
+       .custom-selects2 {
+            margin-left: 19px;
+        }
+    }
+ }
+ .tab_pay .pay .block_pay-services .pay-big-element .select-items {
+    width: 100%;
+}
     .main-privacy {
    
         padding-bottom: 40px;
@@ -1491,6 +1527,10 @@
     }
 }
 @media (max-width: 550px) {
+    .tab_pay .pay .block_pay-services .pay-big-element .select-items {
+        width: 90%;
+        margin-left: 1px;
+    }
     #receipt_modal{
      
         .modal-content{
@@ -1505,7 +1545,7 @@
 
     .network-setting .change_tar-text h5 {
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         margin-top: 20px;
     }
     .block_pay-services .pay-big-element {
@@ -1612,7 +1652,7 @@
     .appear_tenda,
     .appear_set_dir {
         .change_tar-text ul li {
-            padding: 10px 10px 0px 10px;
+            padding: 10px 15px 0px 15px;
         }
     }
     .appear_instruct h4 {
@@ -1644,11 +1684,15 @@
         margin: 0 auto;
         margin-bottom: 20px;
     }
+    .appear_tenda h4 {
+        width: 230px;
+        
+    }
     .appear_windows10 h4 {
         width: 280px;
     }
-    .appear_windows7 h4,
-    .appear_tenda h4 {
+    .appear_windows7 h4
+   {
         width: 190px;
         margin: 0 auto;
     }
@@ -1941,7 +1985,7 @@ padding-left: 13px;
     .btn_order {
         margin: 20px 0px 8px 0px;
         button {
-            width: 94%;
+            width: 92%;
         }
     }
     .tele,

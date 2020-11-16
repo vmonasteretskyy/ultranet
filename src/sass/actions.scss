@@ -407,8 +407,11 @@
     }
     .news-adapt{
         width: 100%;
-        padding-right: 20px;
+        padding-right: 31px;
     }
+    .news_box .news-big-item {
+       
+        margin-left: 15px;}
     .show_more {
         padding-bottom: 30px;
         margin-top: 20px;
@@ -431,19 +434,20 @@
             padding-bottom: 20px;
         }
         .grafic_box2 {
-            padding: 10px 10px 0px 10px;
+            padding: 10px 15px 0px 15px;
         }
         .grafic_box1 {
-            padding: 10px 10px 0px 10px;
+            padding: 10px 15px 0px 15px;
         }
         .grafic_box {
-            padding: 10px 10px 0px 10px;
+            padding: 10px 15px 0px 15px;
         }
     }
 }
 @media (max-width: 500px) {
     .actions {
- height: 100vh;
+ height: 100%;
+ padding-bottom: 40px;
  
     }
     .show_more {

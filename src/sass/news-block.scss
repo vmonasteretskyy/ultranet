@@ -325,12 +325,16 @@ font-size: 15px;
         }
 }
 @media (max-width: 575px){
+   .news-item p{
+        font-size: 16px;
+    }
     .news-block{
         .news-big-item a{
             // margin-top: -4px;
             bottom: 15px;
         }
     }
+     
     .footer-block{
      
         padding: 18px 0px 0px;
@@ -346,7 +350,7 @@ font-size: 15px;
     .rules-services{
         margin-top: 20px;
         margin-bottom: 40px;
-        padding-left: 20px;
+        padding-left: 15px;
         padding-right: 20px;
         p{
             font-weight: 300;

@@ -2722,6 +2722,12 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .block-home-internet .home-int-grn p,
+.privat-home .home-int-grn p,
+.business .home-int-grn p {
+    padding-bottom: 3px;
+  }
+
   .home-cont-internet {
     margin-right: -15px;
   }

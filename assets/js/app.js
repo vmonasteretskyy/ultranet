@@ -20611,8 +20611,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideUp();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp(); // $("#radio-3").attr('checked','checked');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)"); // $('.calculator-speed').slideUp();
+  // $("#radio-3").attr('checked','checked');
   // $("#radio-1").attr('checked','checked');
 });
 
@@ -21104,6 +21104,15 @@ if (window.matchMedia('(max-width: 575px)').matches) {
   //   $(b).css("display", "block");
   // })();
 }
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').change(function (ev) {
+  var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').val() * 14;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat').html(total);
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').change(function (ev) {
+  var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').val() * 14;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat2').html(total);
+});
 
 /***/ }),
 

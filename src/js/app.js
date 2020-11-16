@@ -251,7 +251,7 @@ $('.close').click(function () {
   $('.show-move-friend').slideUp();
   $('.box-show-check').slideUp();
   $('.svg-dropt').css("transform", "rotate(0deg)");
-  $('.calculator-speed').slideUp();
+  // $('.calculator-speed').slideUp();
   // $("#radio-3").attr('checked','checked');
   // $("#radio-1").attr('checked','checked');
 
@@ -829,3 +829,13 @@ if (window.matchMedia('(max-width: 575px)').matches) {
   
 // })();
 }
+ 
+$('#calcul1').change(function(ev){
+  var total = $('#calcul1').val() * 14;
+  $('#rezultat').html((total));
+});
+$('#calcul2').change(function(ev){
+  var total = $('#calcul2').val() * 14;
+  $('#rezultat2').html((total));
+});
+  

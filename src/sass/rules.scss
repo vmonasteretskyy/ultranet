@@ -179,9 +179,12 @@ transition: 0.4s ease;
         overflow-x: scroll;
      margin-left: -25px;
     }
+    .adapt_rul{
+        width: 620px;
+       
+    }
     .rules{
         height: auto;
-        width: 597px;
         padding-bottom: 0px;
  padding-left: 10px;
  padding-right: 10px;
@@ -210,6 +213,10 @@ font-size: 15px;
   
 }
 @media (max-width: 575px) {
+    .adapt_rul{
+    
+        padding-right: 31px;
+    }
     .rules-container{
  
      margin-left: -20px;

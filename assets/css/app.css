@@ -252,10 +252,6 @@
   transition: 0.4s;
 }
 
-.burger-menu_button:hover .burger-menu_lines {
-  filter: brightness(0.7);
-}
-
 .burger-menu_lines::before,
 .burger-menu_lines::after,
 .burger-menu_lines {
@@ -286,7 +282,6 @@
 
 .burger-menu_active .burger-menu_lines {
   background-color: transparent;
-  margin-top: 70px;
 }
 
 .burger-menu_active .burger-menu_lines::before {
@@ -294,12 +289,14 @@
   transform: rotate(45deg);
   width: 20px;
   margin-left: 0px;
+  background-color: white;
 }
 
 .burger-menu_active .burger-menu_lines::after {
   top: 0;
   transform: rotate(-45deg);
   width: 20px;
+  background-color: white;
 }
 
 .shadow {
@@ -768,8 +765,8 @@
   }
 }
 @media (max-width: 575px) {
-  .burger-menu_active .burger-menu_lines {
-    margin-top: 58px;
+  .modal-dialog {
+    margin: 15px;
   }
 
   .br-main {
@@ -921,16 +918,31 @@
   }
 
   .content-chat {
-    height: 280px;
+    height: 320px;
+  }
+
+  .container-chat {
+    left: 15px;
+    width: 94%;
   }
 }
 @media (max-width: 489px) {
+  .container-chat {
+    left: 15px;
+    width: 92.5%;
+  }
+
   .second-slider .background-img {
     -o-object-position: 41% 50%;
        object-position: 41% 50%;
   }
 }
 @media (max-width: 418px) {
+  .container-chat {
+    left: 15px;
+    width: 91%;
+  }
+
   .one-grn {
     display: block;
   }
@@ -1233,6 +1245,11 @@
   }
 }
 @media (max-width: 575px) {
+  .pay-services-block .select-items {
+    width: 180px;
+    margin-left: 0px;
+  }
+
   .pay-services {
     padding-bottom: 60px;
   }
@@ -1310,7 +1327,7 @@
     margin-bottom: 25px;
   }
   .pay-item .ibox-img img {
-    width: 110px;
+    width: 150px;
   }
   .pay-item .img {
     margin: 0 auto;
@@ -3002,7 +3019,7 @@ input[type=checkbox]:checked + label:before {
 }
 @media (max-width: 394px) {
   .form-connect input {
-    height: 46px;
+    height: 40px;
   }
 
   .footer-modal {
@@ -3016,8 +3033,9 @@ input[type=checkbox]:checked + label:before {
   }
   .footer-modal button {
     width: 94%;
-    height: 46px;
+    height: 40px;
     padding: 0;
+    font-size: 16px;
   }
   .footer-modal .authorization {
     margin-top: 10px;
@@ -4201,6 +4219,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 500px) {
+  .adapd-grn {
+    display: block;
+  }
+
   .actions {
     height: 100%;
     padding-bottom: 40px;
@@ -4210,11 +4232,8 @@ input[type=checkbox]:checked + label:before {
     font-size: 16px;
   }
 
-  .grafic .modal-header1 .close {
-    margin-top: 0px;
-  }
   .grafic .modal-body1 {
-    padding: 24px 10px 10px 10px;
+    padding: 24px 15px 10px 15px;
   }
   .grafic .modal-body1 p {
     font-size: 16px;
@@ -4248,6 +4267,17 @@ input[type=checkbox]:checked + label:before {
     padding: 8px 10px;
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-height: 622px) {
+  .actions {
+    height: 100vh;
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 476px) {
+  .grafic .modal-header1 .close {
+    margin-top: 0px;
   }
 }
 @media (max-width: 394px) {
@@ -4428,9 +4458,12 @@ input[type=checkbox]:checked + label:before {
     margin-left: -25px;
   }
 
+  .adapt_rul {
+    width: 620px;
+  }
+
   .rules {
     height: auto;
-    width: 597px;
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
@@ -4454,6 +4487,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .adapt_rul {
+    padding-right: 31px;
+  }
+
   .rules-container {
     margin-left: -20px;
   }
@@ -5564,7 +5601,7 @@ input[type=checkbox]:checked + label:before {
 
 .tab_pay .pay .block_pay-services .pay-big-element .select-items {
   width: 110%;
-  margin-left: 1px;
+  margin-left: 0px;
 }
 
 @media (min-width: 500px) {
@@ -5593,7 +5630,6 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 1199px) {
   .tab_pay .pay .block_pay-services .pay-big-element .select-items {
     width: 100%;
-    margin-left: 1px;
   }
 
   .tab_item .tele .select-items {
@@ -5993,7 +6029,9 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
-  .tele .change_tar-text li, .ip-address .change_tar-text li, .appear_taruf .change_tar-text li {
+  .tele .change_tar-text li,
+.ip-address .change_tar-text li,
+.appear_taruf .change_tar-text li {
     padding: 5px 15px;
   }
 
@@ -6050,7 +6088,10 @@ input[type=checkbox]:checked + label:before {
   }
 
   .img-setting {
-    margin-left: 10px;
+    margin-left: 15px;
+  }
+  .img-setting img {
+    width: 94%;
   }
 
   .change_tar-text .img-small img {
@@ -6101,7 +6142,6 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 550px) {
   .tab_pay .pay .block_pay-services .pay-big-element .select-items {
     width: 90%;
-    margin-left: 1px;
   }
 
   #receipt_modal .modal-content {
@@ -6288,6 +6328,39 @@ input[type=checkbox]:checked + label:before {
     margin-right: 5px;
   }
 
+  .wrapper .tab_content .magazine-block .table-magazine {
+    width: 100%;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine th:first-of-type {
+    width: 20%;
+    padding-left: 20px;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine tr th:nth-child(2) {
+    padding: 10px 0px 0px;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine tr td:nth-child(2) {
+    padding: 10px 0px 0px 0px;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine tr th:nth-child(3) {
+    width: 20%;
+    padding: 0px;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine tr td:nth-child(3) {
+    position: relative;
+    right: 0px;
+    margin-top: 33px;
+    padding-right: 0px;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine tr {
+    padding: 10px 15px;
+    display: inherit;
+  }
+  .wrapper .tab_content .magazine-block .table-magazine td {
+    font-size: 16px;
+    width: 20%;
+    padding-left: 13px;
+  }
+
   .wrapper .tab_content .magazine-block0 .table-magazine {
     width: 100%;
   }
@@ -6405,8 +6478,8 @@ input[type=checkbox]:checked + label:before {
     margin-left: 15px;
     font-size: 16px;
   }
-  .tab_content .appear_table table th:first-of-type {
-    width: 80px;
+  .tab_content .appear_table table th {
+    width: 170px;
   }
   .tab_content .appear_table table tr th:nth-child(2) {
     padding: 10px 0px 0px;
@@ -6483,14 +6556,21 @@ input[type=checkbox]:checked + label:before {
     width: 100%;
   }
 
-  .appear-taruf .custom-selects-tarif .select-selected, .appear-taruf .ip-address .custom-selects-tarif .select-selected, .appear-taruf .appear_taruf .custom-selects-tarif .select-selected, .tele .custom-selects-tarif .select-selected, .tele .ip-address .custom-selects-tarif .select-selected, .tele .appear_taruf .custom-selects-tarif .select-selected {
+  .appear-taruf .custom-selects-tarif .select-selected,
+.appear-taruf .ip-address .custom-selects-tarif .select-selected,
+.appear-taruf .appear_taruf .custom-selects-tarif .select-selected,
+.tele .custom-selects-tarif .select-selected,
+.tele .ip-address .custom-selects-tarif .select-selected,
+.tele .appear_taruf .custom-selects-tarif .select-selected {
     width: 100%;
   }
-  .appear-taruf .custom-selects-tarif, .tele .custom-selects-tarif {
+  .appear-taruf .custom-selects-tarif,
+.tele .custom-selects-tarif {
     max-width: 100%;
     width: 100%;
   }
-  .appear-taruf .custom-selects-tarif .select-selected, .tele .custom-selects-tarif .select-selected {
+  .appear-taruf .custom-selects-tarif .select-selected,
+.tele .custom-selects-tarif .select-selected {
     width: 100%;
     max-width: 100%;
   }
@@ -6542,6 +6622,14 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 380px) {
   #receipt_modal .modal-dialog-centered {
     padding-top: 65px;
+  }
+
+  .tab_content .appear_table table th:first-of-type {
+    width: 95px;
+  }
+  .tab_content .appear_table table th {
+    width: 142px;
+    padding: 10px 0px;
   }
 }
 * {

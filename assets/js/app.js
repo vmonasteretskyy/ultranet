@@ -21093,15 +21093,17 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check input').on('click
 
 if (window.matchMedia('(max-width: 575px)').matches) {
   var first = function first() {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.short-text').html('Сума');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.short-text').html('Сума, грн');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#result-table td:first-of-type').html('Всього:');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.traf_gb').html('Вхід. / Вих. (ГБ)');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.all_gb').html('Всього (ГБ)');
   };
 
   first(); // (function( $ ) {
   //   let a = new String;
   //   a = $('.short-text').text();
   //   let b = a.split(' ')[0];
-  //   $(b).css("display", "block");
+  //   $(b).css("display", "block");  
   // })();
 }
 

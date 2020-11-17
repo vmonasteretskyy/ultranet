@@ -813,20 +813,20 @@ $('.box-show-check input').on('click', myCount);
 
 if (window.matchMedia('(max-width: 575px)').matches) {
   let first = function() {
-    $('.short-text').html('Сума');
+    $('.short-text').html('Сума, грн');
     $('#result-table td:first-of-type').html('Всього:');
+    $('.traf_gb').html('Вхід. / Вих. (ГБ)');
+    $('.all_gb').html('Всього (ГБ)');
 
-    
+
   };
   first();
-// (function( $ ) {
 
+// (function( $ ) {
 //   let a = new String;
 //   a = $('.short-text').text();
 //   let b = a.split(' ')[0];
-//   $(b).css("display", "block");
-  
-  
+//   $(b).css("display", "block");  
 // })();
 }
  

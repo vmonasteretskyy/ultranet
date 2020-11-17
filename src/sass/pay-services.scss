@@ -322,6 +322,12 @@ font-weight: 300;
 }
 
 @media (max-width: 575px) {
+       .pay-services-block{
+         .select-items {
+            width: 180px;
+            margin-left: 0px;
+        }
+    }
     .pay-services {
       padding-bottom: 60px;
     }
@@ -399,7 +405,7 @@ padding-bottom: 2px;
             padding-top: 30px;
             margin-bottom: 25px;
             img {
-                width: 110px;
+                width: 150px;
             }
         }
 

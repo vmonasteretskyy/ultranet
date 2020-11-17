@@ -1669,7 +1669,13 @@
 }
 
 @media (max-width: 575px) {
-
+    .wrapper   .appear_table{
+        .close-back {
+         
+             margin-right: 0px;
+        }
+            
+     }
     .tele .change_tar-text li,
     .ip-address .change_tar-text li,
     .appear_taruf .change_tar-text li {

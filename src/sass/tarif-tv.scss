@@ -207,6 +207,12 @@ color: #000000;
     }
 }
 @media (max-width: 575px) {
+    .tar_box{
+        .home-internet-text {
+     
+            margin-top: 10px;
+        }
+    }
     .mobile_con{
         .tarif-txt{
             line-height: 150%;

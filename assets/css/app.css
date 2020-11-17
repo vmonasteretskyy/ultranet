@@ -2755,7 +2755,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .home-cont-internet {
-    margin-left: -8px;
+    margin-left: -11px;
     margin-right: -15px;
   }
 
@@ -3759,6 +3759,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .tar_box .home-internet-text {
+    margin-top: 10px;
+  }
+
   .mobile_con .tarif-txt {
     line-height: 150%;
     margin-bottom: 15px;

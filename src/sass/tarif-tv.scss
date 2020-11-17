@@ -237,6 +237,9 @@ color: #000000;
     }
 }
 @media (max-width: 420px) {
+    .adap_tv{
+        display: block;
+    }
     #for-tarif {
       display: block;
         position: relative;

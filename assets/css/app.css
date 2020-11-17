@@ -2711,9 +2711,13 @@ input[type=checkbox]:checked + label:before {
     margin: 0 auto;
   }
 
+  .tar_box .home-internet, .block-home-internet .home-internet {
+    padding-right: 35px;
+  }
+
   .home-internet {
     padding-top: 20px;
-    width: 760px;
+    width: 765px;
     margin-top: 0px;
     padding-bottom: 30px;
     overflow: hidden;
@@ -2748,6 +2752,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .business .business-law .home-cont-internet .home-internet {
+    margin-left: -8px;
+  }
+
   .block-home-internet .home-int-grn p,
 .privat-home .home-int-grn p,
 .business .home-int-grn p {
@@ -2755,7 +2763,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .home-cont-internet {
-    margin-left: -11px;
+    margin-left: -9px;
     margin-right: -15px;
   }
 
@@ -2763,9 +2771,29 @@ input[type=checkbox]:checked + label:before {
     margin-top: 25px;
   }
 
+  .privat-block-adap .home-internet div:first-of-type {
+    margin-right: 2px;
+  }
+
+  .business .home-internet {
+    padding-top: 20px;
+    width: 780px;
+    padding-right: 5px;
+  }
+  .business .business-law .home-internet {
+    width: 528px;
+    padding-right: 15px;
+  }
+
+  .privat-home .home-internet {
+    padding-right: 10px;
+  }
   .privat-home .home-internet-text {
     text-align: left;
     font-size: 16px;
+  }
+  .privat-home .home-cont-internet {
+    margin-left: -6px;
   }
 
   .business-law {
@@ -2824,11 +2852,6 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 532px) {
-  .tarif-internet {
-    margin-left: -11px;
-    margin-right: -11px;
-  }
-
   .choose-speed {
     padding-left: 10px;
   }

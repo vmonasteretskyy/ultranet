@@ -370,7 +370,7 @@
 
 .box-show-check {
     // position: absolute;
-    margin-top: 3px;
+    // margin-top: 3px;
     filter: drop-shadow(0px 4px 10px rgba(171, 171, 171, 0.4));
     background: #ffffff;
     border-radius: 3px;
@@ -386,7 +386,7 @@
     }
 
     div:hover {
-        border-radius: 10px;
+        border-radius: 3px;
 
         background: #f5f3f1;
     }
@@ -1315,7 +1315,7 @@ input[type="checkbox"]:checked + label:before {
 
     .box-show-check {
         max-width: 270px;
-        height: 150px;
+        height: 148px;
     }
 
     .box-show-check .checkbox label {

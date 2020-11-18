@@ -324,7 +324,7 @@ font-weight: 300;
 @media (max-width: 575px) {
        .pay-services-block{
          .select-items {
-            width: 180px;
+            width: 200px;
             margin-left: 0px;
         }
     }
@@ -339,6 +339,10 @@ font-weight: 300;
 //     .pay-item .second-pay-btn{
 //        margin-top: 33px;
 //    }
+.type_pay{
+    width: 749px;
+ 
+}
 .pay-services-block{
     padding-right: 0px;
     padding-left: 0px;
@@ -365,8 +369,8 @@ padding-bottom: 2px;
         max-width: 230px;
         min-width: 230px;
         height: 270px;
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 4px;
+        margin-right: 5px;
     }
     .main-text-center {
         padding: 40px 0px 12px 0px;
@@ -437,20 +441,23 @@ padding-bottom: 2px;
     .custom-selects2 {
         margin-bottom: 0px;
         margin-top: 15px;
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     .select-selected {
         font-size: 16px;
-        width: 180px;
+        width: 190px;
         padding: 6px 10px;
     }
 
     .pay-arrow-select {
-        margin-left: 46px;
+        margin-left: 54px;
         margin-top: 9px;
     }
+    .pay-services-block .select-items{
+        width: 190px;
 
+    }
     .select-items {
         width: 175px;
     }

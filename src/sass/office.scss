@@ -1700,11 +1700,23 @@
     .tab_pay {
         .block_pay-services button {
             width: 180px;
+            font-size: 16px;
         }
+        .pay-big-element {
+            text-align: center;
+            .select-selected {
+                width: 180px;
+            }
+          .custom-selects2{
+            max-width: 180px;
 
+          }
+        }
         .pay-big-element {
             .custom-selects2 {
-                margin-left: 19px;
+                margin-left: 10px;
+                margin-right: auto;
+    margin-left: auto;
             }
         }
     }
@@ -1799,10 +1811,10 @@
 }
 
 @media (max-width: 550px) {
-    .tab_pay .pay .block_pay-services .pay-big-element .select-items {
-        width: 90%;
-        // margin-left: 1px;
-    }
+    // .tab_pay .pay .block_pay-services .pay-big-element .select-items {
+    //     width: 90%;
+    //     // margin-left: 1px;
+    // }
 
     #receipt_modal {
         .modal-content {
@@ -1820,13 +1832,13 @@
         margin-top: 20px;
     }
 
-    .block_pay-services .pay-big-element {
-        .custom-selects2 {
-            .pay-arrow-select {
-                right: 25px;
-            }
-        }
-    }
+    // .block_pay-services .pay-big-element {
+    //     .custom-selects2 {
+    //         .pay-arrow-select {
+    //             right: 25px;
+    //         }
+    //     }
+    // }
 
     .block_pay-services .pay-element {
         width: 240px;
@@ -1864,7 +1876,7 @@
             }
 
             p {
-                font-size: 14px;
+                font-size: 13px;
             }
 
             .ibox-bl img {

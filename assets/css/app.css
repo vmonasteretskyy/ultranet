@@ -6094,9 +6094,21 @@ input[type=checkbox]:checked + label:before {
 
   .tab_pay .block_pay-services button {
     width: 180px;
+    font-size: 16px;
+  }
+  .tab_pay .pay-big-element {
+    text-align: center;
+  }
+  .tab_pay .pay-big-element .select-selected {
+    width: 180px;
   }
   .tab_pay .pay-big-element .custom-selects2 {
-    margin-left: 19px;
+    max-width: 180px;
+  }
+  .tab_pay .pay-big-element .custom-selects2 {
+    margin-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .tab_pay .pay .block_pay-services .pay-big-element .select-items {
@@ -6182,10 +6194,6 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 550px) {
-  .tab_pay .pay .block_pay-services .pay-big-element .select-items {
-    width: 90%;
-  }
-
   #receipt_modal .modal-content {
     margin-top: 0px;
   }
@@ -6198,10 +6206,6 @@ input[type=checkbox]:checked + label:before {
     font-size: 16px;
     margin-bottom: 0px;
     margin-top: 20px;
-  }
-
-  .block_pay-services .pay-big-element .custom-selects2 .pay-arrow-select {
-    right: 25px;
   }
 
   .block_pay-services .pay-element {
@@ -6233,7 +6237,7 @@ input[type=checkbox]:checked + label:before {
     font-size: 16px;
   }
   .block_pay-services .pay-big-element p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .block_pay-services .pay-big-element .ibox-bl img {
     width: 109px;

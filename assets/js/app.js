@@ -20697,6 +20697,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif'
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-1").is(':checked')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat').html('180');
     }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-4').click(function () {
@@ -20707,6 +20708,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif'
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-3").is(':checked')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideUp();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat2').html('180');
     }
   });
 }
@@ -21105,13 +21107,20 @@ if (window.matchMedia('(max-width: 575px)').matches) {
   //   let b = a.split(' ')[0];
   //   $(b).css("display", "block");  
   // })();
-}
+} // window.myFunction = function () { myFunction() };
+// function myFunction() {
+//   let total = $('#calcul1').val() * 14;
+//   $('#rezultat').html((total));
+//   let total1 = $('#calcul2').val() * 14;
+//   $('#rezultat2').html((total1));
+// }
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').change(function (ev) {
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').keyup(function () {
   var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').val() * 14;
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat').html(total);
 });
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').change(function (ev) {
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').keyup(function () {
   var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').val() * 14;
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat2').html(total);
 });

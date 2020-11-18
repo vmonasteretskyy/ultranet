@@ -345,7 +345,7 @@
   color: #000000;
 }
 .burger-menu_nav .burger-privacy {
-  width: 164px;
+  width: 150px;
   border-bottom: 1px solid #000000;
 }
 
@@ -2514,6 +2514,11 @@ input[type=checkbox]:checked + label:before {
   margin-left: -14px;
 }
 
+#rezultat2,
+#rezultat {
+  font-weight: 400;
+}
+
 @media (max-width: 1199px) {
   .business .business-law .home-cont-internet .home-internet {
     margin-left: 10px;
@@ -2700,7 +2705,8 @@ input[type=checkbox]:checked + label:before {
   }
 
   .privat-home .home-internet {
-    width: 510px;
+    width: 519px;
+    padding-left: 8px;
     margin-top: 0px;
     padding-bottom: 20px;
     overflow: hidden;
@@ -2759,8 +2765,16 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .block-home-internet .home-internet div:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .block-home-internet .home-internet {
+    width: 775px;
+  }
+
   .business .business-law .home-cont-internet .home-internet {
-    margin-left: -10px;
+    margin-left: -8px;
   }
 
   .block-home-internet .home-int-grn p,
@@ -2779,17 +2793,17 @@ input[type=checkbox]:checked + label:before {
   }
 
   .privat-block-adap .home-internet div:first-of-type {
-    margin-right: 2px;
+    margin-right: 5px;
   }
 
   .business .home-internet {
     padding-top: 20px;
-    width: 780px;
-    padding-right: 5px;
+    width: 774px;
+    padding-right: 11px;
   }
   .business .business-law .home-internet {
     width: 528px;
-    padding-right: 15px;
+    padding-right: 13px;
   }
 
   .privat-home .home-internet {
@@ -3592,7 +3606,7 @@ input[type=checkbox]:checked + label:before {
   .con-mob .modal-body1 .count-channels {
     flex-direction: row;
     padding-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
   }
   .con-mob .modal-body1 .no-limit {
     margin-left: 20px;
@@ -3793,6 +3807,10 @@ input[type=checkbox]:checked + label:before {
     margin-top: 10px;
   }
 
+  .mobile_con .home-internet {
+    padding-right: 11px;
+    width: 776px;
+  }
   .mobile_con .tarif-txt {
     line-height: 150%;
     margin-bottom: 15px;
@@ -4487,6 +4505,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 767px) {
+  .rules .cansel-rul {
+    width: 170px;
+  }
+
   .br-tow {
     display: block;
   }

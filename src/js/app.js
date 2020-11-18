@@ -347,19 +347,21 @@ if ($('*').is('.change_privat-tarif')) {
   $('#radio-1').click(function () {
     if ($("#radio-1").is(':checked')) {
       $('.calculator-speed').slideUp();
+  $('#rezultat').html('180');
 
     }
   })
 
   $('#radio-4').click(function () {
     if ($("#radio-4").is(':checked')) {
-      $('.calculator-speed').slideDown();
+        $('.calculator-speed').slideDown();
 
     }
   })
   $('#radio-3').click(function () {
     if ($("#radio-3").is(':checked')) {
       $('.calculator-speed').slideUp();
+      $('#rezultat2').html('180');
 
     }
   })
@@ -829,12 +831,21 @@ if (window.matchMedia('(max-width: 575px)').matches) {
 //   $(b).css("display", "block");  
 // })();
 }
+// window.myFunction = function () { myFunction() };
+
+// function myFunction() {
+//   let total = $('#calcul1').val() * 14;
+//   $('#rezultat').html((total));
+
+//   let total1 = $('#calcul2').val() * 14;
+//   $('#rezultat2').html((total1));
+// }
  
-$('#calcul1').change(function(ev){
+$('#calcul1').keyup(function(){
   var total = $('#calcul1').val() * 14;
   $('#rezultat').html((total));
 });
-$('#calcul2').change(function(ev){
+$('#calcul2').keyup(function(){
   var total = $('#calcul2').val() * 14;
   $('#rezultat2').html((total));
 });

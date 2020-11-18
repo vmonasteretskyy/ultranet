@@ -797,6 +797,10 @@ input[type="checkbox"]:checked + label:before {
 .block-home-internet .home-internet-text{
     margin-left: -14px;
 }
+#rezultat2,
+#rezultat{
+    font-weight: 400;
+}
 @media (max-width: 1199px) {
    .business .business-law .home-cont-internet {
         .home-internet {
@@ -991,7 +995,8 @@ input[type="checkbox"]:checked + label:before {
 }
     .privat-home {
         .home-internet {
-            width: 510px;
+            width: 519px;
+            padding-left: 8px;
             margin-top: 0px;
             padding-bottom: 20px;
             overflow: hidden;
@@ -1059,11 +1064,19 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 575px) {
- 
+ .block-home-internet{
+    .home-internet div:nth-child(2) {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .home-internet {
+        width: 775px;
+    }
+ }
     .business .business-law .home-cont-internet {
         .home-internet {
              
-                margin-left: -10px;            
+                margin-left: -8px;            
         }
     }
     .block-home-internet,
@@ -1084,17 +1097,17 @@ input[type="checkbox"]:checked + label:before {
         
     }
     .privat-block-adap .home-internet div:first-of-type {
-        margin-right: 2px;
+        margin-right: 5px;
     }
     .business{
         .home-internet {
             padding-top: 20px;
-            width: 780px;
-            padding-right: 5px;
+            width: 774px;
+            padding-right: 11px;
         }
         .business-law .home-internet {
             width: 528px;
-            padding-right: 15px;
+            padding-right: 13px;
 
         }
     }

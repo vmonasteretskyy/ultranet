@@ -1391,7 +1391,7 @@
   margin-right: 15px;
 }
 .news-block .news-big-item a {
-  margin-top: -18px;
+  margin-top: -21px;
 }
 .news-block .news-item .read-more-a {
   margin-top: -36px;
@@ -1687,6 +1687,16 @@ footer {
   }
 }
 @media (max-width: 575px) {
+  .news-block .news-item h3 {
+    font-size: 16px;
+  }
+  .news-block .news-item p {
+    font-size: 16px;
+  }
+  .news-block .news-item a {
+    font-size: 16px;
+  }
+
   .news-item p {
     font-size: 16px;
   }
@@ -1764,7 +1774,7 @@ footer {
   .archive-news {
     margin-top: 0px;
     font-size: 16px;
-    margin-right: 4px;
+    margin-right: 2px;
   }
 
   .news-block {
@@ -2697,7 +2707,7 @@ input[type=checkbox]:checked + label:before {
 
   .tarif-internet {
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .business .tarif-txt {
@@ -2729,7 +2739,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .home-internet {
-    padding-top: 20px;
+    padding-top: 0px;
     width: 765px;
     margin-top: 0px;
     padding-bottom: 30px;
@@ -2765,6 +2775,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .home-internet-wrap:hover .home-internet-item {
+    transform: none;
+  }
+
   .block-home-internet .home-internet div:nth-child(2) {
     margin-left: 5px;
     margin-right: 5px;
@@ -3820,6 +3834,14 @@ input[type=checkbox]:checked + label:before {
     margin-top: 10px;
   }
 
+  .tarif_tv .home-internet {
+    margin-left: -3px;
+    width: 775px;
+  }
+  .tarif_tv .home-internet-item {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
   .tarif_tv .total-cost {
     margin-top: 17px;
   }
@@ -3828,6 +3850,7 @@ input[type=checkbox]:checked + label:before {
   }
   .tarif_tv .tarif-txt {
     margin-top: 4px;
+    margin-bottom: 40px;
   }
 
   .count-channels .total-cost {
@@ -4046,7 +4069,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .grafic .modal-body1 {
-  padding: 18px 35px 30px 35px;
+  padding: 5px 35px 30px 35px;
 }
 .grafic .modal-body1 span {
   font-weight: 300;
@@ -4173,7 +4196,7 @@ input[type=checkbox]:checked + label:before {
     text-align: left;
     font-weight: 800;
     font-size: 18px;
-    line-height: 130%;
+    line-height: 150%;
   }
   .acord-item .btn_open img {
     margin-left: 20px;
@@ -4289,14 +4312,15 @@ input[type=checkbox]:checked + label:before {
   }
 
   .grafic .modal-body1 {
-    padding: 24px 15px 10px 15px;
+    padding: 29px 20px 10px 20px;
   }
   .grafic .modal-body1 p {
     font-size: 16px;
   }
   .grafic .modal-body1 h5 {
     width: 80%;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .acord-item {

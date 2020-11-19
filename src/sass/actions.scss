@@ -179,7 +179,7 @@
 
 .grafic {
     .modal-body1 {
-        padding: 18px 35px 30px 35px;
+        padding: 5px 35px 30px 35px;
         span {
             font-weight: 300;
             font-size: 16px;
@@ -327,7 +327,7 @@
                 text-align: left;
                 font-weight: 800;
                 font-size: 18px;
-                line-height: 130%;
+                line-height: 150%;
             }
             img {
                 margin-left: 20px;
@@ -466,13 +466,14 @@
         //     margin-top: 0px;
         // }
         .modal-body1 {
-            padding: 24px 15px 10px 15px;
+            padding: 29px 20px 10px 20px;
             p {
                 font-size: 16px;
             }
             h5 {
                 width: 80%;
-                font-size: 16px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }

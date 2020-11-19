@@ -228,6 +228,14 @@ color: #000000;
         }
     }
     .tarif_tv {
+        .home-internet {
+      margin-left: -3px;
+            width: 775px;
+        }
+        .home-internet-item{
+            margin-left: 7px;
+            margin-right: 7px;
+        }
         .total-cost{
             margin-top: 17px;
         }
@@ -237,6 +245,7 @@ color: #000000;
         }
         .tarif-txt {
             margin-top: 4px;
+            margin-bottom: 40px;
         }
     }
     .count-channels{

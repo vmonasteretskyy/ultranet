@@ -988,7 +988,7 @@ input[type="checkbox"]:checked + label:before {
 
     .tarif-internet {
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 .business .tarif-txt{
     margin-top: 40px;
@@ -1022,7 +1022,7 @@ input[type="checkbox"]:checked + label:before {
         }
     }
     .home-internet {
-        padding-top: 20px;
+        padding-top: 0px;
         width: 765px;
         margin-top: 0px;
         padding-bottom: 30px;
@@ -1064,6 +1064,9 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 575px) {
+    .home-internet-wrap:hover .home-internet-item {
+        transform: none;
+    }
  .block-home-internet{
     .home-internet div:nth-child(2) {
         margin-left: 5px;

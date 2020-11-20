@@ -20570,10 +20570,20 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').toggleClick([function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text-hide').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("position", "absolute");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("right", "35px");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideDown("slow");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').css("display", "block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(180deg)");
+
+    if (window.matchMedia('(max-width: 532px)').matches) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("right", "10px");
+    }
   }, function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text-hide').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("position", "relative");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("right", "0px");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideUp();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(0deg)");
   }]);
@@ -20604,9 +20614,9 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
 }
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideUp();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-show').css("transform", "rotate(0deg)");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp(); // $('.tv-show').slideUp();
+  // $('.svg-show').css("transform", "rotate(0deg)");
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp();
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)");
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
@@ -20691,6 +20701,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail_btn').click(function () {
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-2').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').css("animation-name", "highlite");
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
     }
   });
@@ -20703,6 +20714,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif'
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-4').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-4").is(':checked')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').css("animation-name", "highlite");
     }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {
@@ -21124,6 +21136,53 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').keyup(function () {
   var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').val() * 14;
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat2').html(total);
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').change(function () {
+  var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').val() * 14;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat').html(total);
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').change(function () {
+  var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').val() * 14;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat2').html(total);
+}); // if ($('*').is('.tarif-main')) {
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#privat-select').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
+}); // }
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()("#home_mod").val('2').click(function () {
+  // $('#home_mod option[value="1"]').attr("selected", "selected");
+  // $("#home_mod>option[value='1']").attr("selected", "selected");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('show');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("overflow-y", "scroll");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+}); // $("#home_mod").val('3').click(function (){
+//   $('#connect_internet').modal('hide');
+//   $('#connect_privat-home').css("display", "none");
+//   $('#business-fop').modal('show');
+//   // $('#business-fop').css("overflow-y", "scroll");
+//   // $('.block-home-internet').fadeOut();
+//   // $('.tarif-item2').css("background", "white");
+//   // $('.tarif-item2').css("color", "#ABABAB");
+//   // $('.tarif-item1').css("color", "#ABABAB");
+//   // $('.tarif-item1').css("background", "white");
+//   // $('.privat-home').fadeOut();
+//   // $('.txt-privat-home').css("display", "none");
+//   // $('.txt-business-home').fadeIn();
+//   // $('.business').fadeIn();
+//   // $('.tarif-item3').css("background", "#34A0D9");
+//   // $('.tarif-item3').css("color", "white");
+// });
 
 /***/ }),
 

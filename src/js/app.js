@@ -204,11 +204,22 @@ if ($('*').is('.tarif-main')) {
   ]);
   $('.tv-text').toggleClick([
     function () {
+      $('.tv-text-hide').fadeOut();
+      $('.tv-text').css("position", "absolute");
+      $('.tv-text').css("right", "35px");
       $('.tv-show').slideDown("slow");
       $('.tv-show').css("display", "block");
       $('.svg-show').css("transform", "rotate(180deg)");
+      if (window.matchMedia('(max-width: 532px)').matches) {
+        $('.tv-text').css("right", "10px");
+  
+        }
     },
     function () {
+      $('.tv-text-hide').fadeIn()
+      $('.tv-text').css("position", "relative");
+      $('.tv-text').css("right", "0px");
+
       $('.tv-show').slideUp();
       $('.svg-show').css("transform", "rotate(0deg)");
 
@@ -244,8 +255,8 @@ if ($('*').is('.tarif-main')) {
 
 $('.close').click(function () {
   $('.show-move-friend').slideUp();
-  $('.tv-show').slideUp();
-  $('.svg-show').css("transform", "rotate(0deg)");
+  // $('.tv-show').slideUp();
+  // $('.svg-show').css("transform", "rotate(0deg)");
   $('.show-actions').slideUp();
   $('.svg-actions').css("transform", "rotate(0deg)");
   $('.show-move-friend').slideUp();
@@ -339,23 +350,23 @@ $('.datail_btn').click(function () {
 if ($('*').is('.change_privat-tarif')) {
 
   $('#radio-2').click(function () {
+  
     if ($("#radio-2").is(':checked')) {
-      $('.calculator-speed').slideDown();
-
+    $('.calculator-speed').css("animation-name","highlite");
+      $('.calculator-speed').slideDown();    
     }
   })
   $('#radio-1').click(function () {
     if ($("#radio-1").is(':checked')) {
       $('.calculator-speed').slideUp();
-  $('#rezultat').html('180');
-
+      $('#rezultat').html('180');
     }
   })
 
   $('#radio-4').click(function () {
     if ($("#radio-4").is(':checked')) {
         $('.calculator-speed').slideDown();
-
+        $('.calculator-speed').css("animation-name","highlite");
     }
   })
   $('#radio-3').click(function () {
@@ -512,9 +523,6 @@ if ($('*').is('.main-privacy')) {
     $(".serv-not").html("Послуга замовлена");
     $(".static-ip").html("10.128.2.20");
     $(".active_txt").html("Призупинений");
-
-
-
   })
   $('.peause-modal2').click(function () {
     $('#restore_modal').modal('hide');
@@ -849,4 +857,55 @@ $('#calcul2').keyup(function(){
   var total = $('#calcul2').val() * 14;
   $('#rezultat2').html((total));
 });
+$('#calcul1').change(function(){
+  var total = $('#calcul1').val() * 14;
+  $('#rezultat').html((total));
+});
+$('#calcul2').change(function(){
+  var total = $('#calcul2').val() * 14;
+  $('#rezultat2').html((total));
+});
   
+// if ($('*').is('.tarif-main')) {
+  $('#privat-select').click(function () {
+    $('#connect_internet').modal('hide');
+ 
+  })
+// }
+
+$("#home_mod").val('2').click(function (){
+  // $('#home_mod option[value="1"]').attr("selected", "selected");
+  // $("#home_mod>option[value='1']").attr("selected", "selected");
+  $('#connect_internet').modal('hide');
+  $('#connect_privat-home').modal('show');
+  $('#connect_privat-home').css("overflow-y", "scroll");
+  $('.block-home-internet').fadeOut();
+  $('.tarif-item2').css("background", "#34A0D9");
+  $('.tarif-item2').css("color", "white");
+  $('.tarif-item1').css("color", "#ABABAB");
+  $('.tarif-item1').css("background", "white");
+  $('.privat-home').fadeIn();
+  $('.txt-privat-home').fadeIn();
+  $('.txt-business-home').css("display", "none");
+  $('.business').fadeOut();
+  $('.tarif-item3').css("background", "white");
+  $('.tarif-item3').css("color", "#ABABAB");
+});
+
+// $("#home_mod").val('3').click(function (){
+//   $('#connect_internet').modal('hide');
+//   $('#connect_privat-home').css("display", "none");
+//   $('#business-fop').modal('show');
+//   // $('#business-fop').css("overflow-y", "scroll");
+//   // $('.block-home-internet').fadeOut();
+//   // $('.tarif-item2').css("background", "white");
+//   // $('.tarif-item2').css("color", "#ABABAB");
+//   // $('.tarif-item1').css("color", "#ABABAB");
+//   // $('.tarif-item1').css("background", "white");
+//   // $('.privat-home').fadeOut();
+//   // $('.txt-privat-home').css("display", "none");
+//   // $('.txt-business-home').fadeIn();
+//   // $('.business').fadeIn();
+//   // $('.tarif-item3').css("background", "#34A0D9");
+//   // $('.tarif-item3').css("color", "white");
+// });

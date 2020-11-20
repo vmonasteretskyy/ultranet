@@ -297,8 +297,9 @@
                             <div class="choose-speed">
                                 <p>Інтернет тариф: </p>
                                 <span>Оберіть тариф:</span>
-                                <div class="custom-selects2 custom-selects-tarif">
+                                <div id="home_mod" class="custom-selects2 custom-selects-tarif">
                                     <select>
+                                        <!-- <option value="0">Домашній інтернет</option> -->
                                         <option value="1">Домашній інтернет</option>
                                         <option value="2">Приватні будинки</option>
                                         <option value="3">ФОП та приватні особи</option>
@@ -825,7 +826,13 @@
                 </div>
 
                 <div class="tv-box">
-                    <div>
+                    <div class="tv-text">
+                        <div><span class="tv-text-hide">+ Телебачення та Мобільний зв’язок</span> </div>
+                        <div>
+                            <img class="svg-show" src="src/img/action-ar.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="tv-show">
                         <div class="tv-item">
                             <p>+ Телебачення: </p>
                             <span>Тариф на телебачення:</span>
@@ -849,7 +856,6 @@
                                 <div class="custom-selects2 custom-selects-tarif">
                                     <select>
                                         <option value="0">Оберіть тариф</option>
-                                       
                                         <option value="1">Діджитал офіс 40 - 40 грн./міс.</option>
                                         <option value="2">Діджитал офіс 60 - 60 грн./міс.</option>
                                         <option value="3">Діджитал офіс 90 - 90 грн./міс.</option>
@@ -938,9 +944,9 @@ aria-hidden="true">
                 <div class="custom-selects2 custom-selects-tarif">
                     <select>
                         <option value="1">ФОП та приватні особи</option>
-                        <!-- <option value="2">Домашній інтернет</option>
+                        <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
-                        <option value="4">Юридичні особи</option> -->
+                        <option value="4">Юридичні особи</option>
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
 
@@ -1047,9 +1053,9 @@ aria-hidden="true">
                 <div class="custom-selects2 custom-selects-tarif">
                     <select>
                         <option value="1">ФОП та приватні особи</option>
-                        <!-- <option value="2">Домашній інтернет</option>
+                        <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
-                        <option value="4">Юридичні особи</option> -->
+                        <option value="4">Юридичні особи</option>
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
 
@@ -1107,15 +1113,15 @@ aria-hidden="true">
                 <div class="custom-selects2 custom-selects-tarif">
                     <select>
                         <option value="1">Юридичні особи</option>
-                        <!-- <option value="2">Домашній інтернет</option>
+                        <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
-                        <option value="4">ФОП та приватні особи</option> -->
+                        <option value="4">ФОП та приватні особи</option>
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
 
                 </div>
             </div>
-            <div class="choose-speed adapt-speed">
+            <div class="choose-speed adapt-speed highlite_sp">
                 <p>Швидкість: </p>
                
                 <form class="speed-box">
@@ -1208,15 +1214,15 @@ aria-hidden="true">
                 <div class="custom-selects2 custom-selects-tarif">
                     <select>
                         <option value="1">Юридичні особи</option>
-                        <!-- <option value="2">Домашній інтернет</option>
+                        <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
-                        <option value="4">ФОП та приватні особи</option> -->
+                        <option value="4">ФОП та приватні особи</option>
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
 
                 </div>
             </div>
-            <div class="choose-speed adapt-speed">
+            <div class="choose-speed adapt-speed highlite_sp">
                 <p>Швидкість: </p>
                
                 <form class="speed-box">
@@ -1226,7 +1232,7 @@ aria-hidden="true">
                     </div>
                      
                     <div class="form_radio">
-                        <input id="radio-4" type="radio" name="radio" value="4">
+                        <input id="radio-4" type="radio" name="radio" value="4" checked>
                         <label for="radio-4">20 Мбіт/с та більше</label>
                     </div>
                      

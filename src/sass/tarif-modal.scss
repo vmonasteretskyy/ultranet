@@ -259,10 +259,39 @@
 // .form_radio label:hover:before {
 // 	filter: brightness(120%);
 // }
+@keyframes highlite {
+    80% {
+       background-color:rgb(52, 160, 217,0.1);
+    }
+    100%{
+        background-color:rgb(52, 160, 217,0);
 
+    }
+}
+.highlite_sp{
+    padding-left: 0px;
+    p{
+        padding-left: 35px;
+    }
+    .speed-box{
+        padding-left: 35px;
+
+    }
+    .calculator-speed{
+        margin-top: 10px;
+        padding: 5px 0px 5px 35px;
+        p{
+            padding-left: 0px;
+
+        }
+
+    }
+}
 .calculator-speed {
     margin-top: 15px;
     display: none;
+    animation: 3s linear;
+   
     span{
         font-weight: normal;
 font-size: 12px;
@@ -299,7 +328,7 @@ color: #ABABAB;
 font-size: 12px;
 line-height: 150%;
 color: #464646;
-margin-right: 35px;
+margin-right: 47px;
 }
 .br-fob{
     display: none;
@@ -335,7 +364,12 @@ margin-right: 35px;
  
  
 @media (max-width: 575px) {
-  
+    .speed-box .form_radio:first-of-type{
+        margin-bottom: 8px;
+    }
+    .highlite_sp .calculator-speed{
+        margin-top: 2px;
+    }
     #my_office {
         .modal-content {
             max-width: 360px;
@@ -357,6 +391,27 @@ margin-right: 35px;
 }
 
 @media (max-width: 532px) {
+    .highlite_sp{
+        padding-left: 0px;
+        p{
+            padding-left: 10px;
+        }
+        .speed-box{
+            padding-left: 10px;
+            padding-left: 10px;
+
+    
+        }
+        .calculator-speed{
+            // margin-top: 10px;
+            padding: 5px 0px 5px 10px;
+            p{
+                padding-left: 0px;
+    
+            }
+    
+        }
+    }
     .modal-content {
         border-radius: 10px;
     }

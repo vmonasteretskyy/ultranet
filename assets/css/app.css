@@ -1533,11 +1533,6 @@ footer {
   opacity: 0.8;
 }
 
-@media (max-width: 1305px) {
-  .footer-block {
-    padding: 29px 50px;
-  }
-}
 @media (max-width: 1199px) {
   .news-block .news-item .read-more-a {
     margin-top: -19px;
@@ -1585,6 +1580,11 @@ footer {
   }
   .info-item p {
     font-size: 15px;
+  }
+}
+@media (max-width: 1054px) {
+  .footer-block {
+    padding: 29px 27px 29px 0px;
   }
 }
 @media (max-width: 991px) {
@@ -1680,9 +1680,10 @@ footer {
   .info-item h4 {
     height: auto;
     font-size: 16px;
+    margin-bottom: 10px;
   }
   .info-item p {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 15px;
   }
 }
@@ -1738,7 +1739,7 @@ footer {
   }
 
   .contact-info {
-    padding: 20px 15px 7px 15px;
+    padding: 20px 15px 0px 15px;
     flex-wrap: wrap;
     margin-top: 0px;
     border-radius: 0px;
@@ -1784,6 +1785,10 @@ footer {
 @media (max-width: 485px) {
   .news-block .news-big-item a {
     margin-top: -15px;
+  }
+
+  .index-contact .rules-services p {
+    white-space: pre-line;
   }
 }
 .home-atribute {
@@ -1872,6 +1877,11 @@ footer {
 }
 
 @media (min-width: 500px) {
+  #business-fop .modal-dialog {
+    max-width: 451px;
+    margin: 1.75rem auto;
+  }
+
   #ch-business-law .modal-dialog {
     max-width: 440px;
     margin: 1.75rem auto;
@@ -1897,7 +1907,7 @@ footer {
   margin-top: 100px;
   z-index: -1;
   background: #f5f3f1;
-  height: 845px;
+  height: 865px;
   width: 100%;
 }
 
@@ -2095,6 +2105,10 @@ footer {
   line-height: 150%;
   color: #464646;
   margin-bottom: 6px;
+}
+
+.text-speed p:last-of-type {
+  margin-bottom: 15px;
 }
 
 .box-show-check {
@@ -2325,9 +2339,6 @@ input[type=checkbox]:checked + label:before {
   color: #000000;
 }
 
-.tv-item {
-  margin-top: 15px;
-}
 .tv-item .custom-selects-tarif .select-selected {
   padding-right: 20px;
   overflow: hidden;
@@ -2517,7 +2528,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .business-law .home-internet {
-  margin-left: 21px;
+  margin-left: -8px;
 }
 
 .block-home-internet .home-internet-text {
@@ -2775,6 +2786,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .text-speed p:last-of-type {
+    margin-bottom: 10px;
+  }
+
   .home-internet-wrap:hover .home-internet-item {
     transform: none;
   }
@@ -3342,9 +3357,44 @@ input[type=checkbox]:checked + label:before {
 }
 
 /* Hover */
+@-webkit-keyframes highlite {
+  80% {
+    background-color: rgba(52, 160, 217, 0.1);
+  }
+  100% {
+    background-color: rgba(52, 160, 217, 0);
+  }
+}
+@keyframes highlite {
+  80% {
+    background-color: rgba(52, 160, 217, 0.1);
+  }
+  100% {
+    background-color: rgba(52, 160, 217, 0);
+  }
+}
+.highlite_sp {
+  padding-left: 0px;
+}
+.highlite_sp p {
+  padding-left: 35px;
+}
+.highlite_sp .speed-box {
+  padding-left: 35px;
+}
+.highlite_sp .calculator-speed {
+  margin-top: 10px;
+  padding: 5px 0px 5px 35px;
+}
+.highlite_sp .calculator-speed p {
+  padding-left: 0px;
+}
+
 .calculator-speed {
   margin-top: 15px;
   display: none;
+  -webkit-animation: 3s linear;
+          animation: 3s linear;
 }
 .calculator-speed span {
   font-weight: normal;
@@ -3391,7 +3441,7 @@ input[type=checkbox]:checked + label:before {
   font-size: 12px;
   line-height: 150%;
   color: #464646;
-  margin-right: 35px;
+  margin-right: 47px;
 }
 
 .br-fob {
@@ -3420,6 +3470,14 @@ input[type=checkbox]:checked + label:before {
 }
 
 @media (max-width: 575px) {
+  .speed-box .form_radio:first-of-type {
+    margin-bottom: 8px;
+  }
+
+  .highlite_sp .calculator-speed {
+    margin-top: 2px;
+  }
+
   #my_office .modal-content {
     max-width: 360px;
   }
@@ -3437,6 +3495,23 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 532px) {
+  .highlite_sp {
+    padding-left: 0px;
+  }
+  .highlite_sp p {
+    padding-left: 10px;
+  }
+  .highlite_sp .speed-box {
+    padding-left: 10px;
+    padding-left: 10px;
+  }
+  .highlite_sp .calculator-speed {
+    padding: 5px 0px 5px 10px;
+  }
+  .highlite_sp .calculator-speed p {
+    padding-left: 0px;
+  }
+
   .modal-content {
     border-radius: 10px;
   }

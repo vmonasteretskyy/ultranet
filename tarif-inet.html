@@ -13,6 +13,7 @@
 </head>
 
 <body>
+ 
     <header id="header">
         <div class="header-block header-block2">
             <div class="logotip">
@@ -298,8 +299,8 @@
                                 <p>Інтернет тариф: </p>
                                 <span>Оберіть тариф:</span>
                                 <div id="home_mod" class="custom-selects2 custom-selects-tarif">
-                                    <select>
-                                        <!-- <option value="0">Домашній інтернет</option> -->
+                                    <select >
+                                        <option value="0">Домашній інтернет</option>
                                         <option value="1">Домашній інтернет</option>
                                         <option value="2">Приватні будинки</option>
                                         <option value="3">ФОП та приватні особи</option>
@@ -311,12 +312,12 @@
                             <div class="choose-speed adapt-speed">
                                 <p>Швидкість: </p>
                                 <span>Швидкість доступу до інтернет:</span>
-                                <div class="custom-selects2 custom-selects-tarif">
-                                    <select>
+                                <div id="sum_first" class="custom-selects2 custom-selects-tarif">
+                                    <select name="sum_first" >
                                         <option value="0">60 Мбіт/с</option>
-                                        <option value="1">60 Мбіт/с</option>
-                                        <option value="2">100 Мбіт/с</option>
-                                        <option value="3">200 Мбіт/с</option>
+                                        <option value="130">60 Мбіт/с</option>
+                                        <option value="175">100 Мбіт/с</option>
+                                        <option value="300">200 Мбіт/с</option>
 
                                     </select>
                                     <img class="svg-select-i" src="src/img/select-ar.svg" alt="">
@@ -386,12 +387,12 @@
                                         <p>+ Телебачення: </p>
                                         <span>Тариф на телебачення:</span>
                                         <div class="box-mobile">
-                                            <div class="custom-selects2 custom-selects-tarif">
-                                                <select>
+                                            <div id="sum_second"  class="custom-selects2 custom-selects-tarif">
+                                                <select name="sum_second">
                                                     <option value="0">Оберіть тариф</option>
-                                                    <option value="1">157 каналів - 40 грн./міс.</option>
-                                                    <option value="2">196 каналів - 50 грн./міс.</option>
-                                                    <option value="3">204 канали - 70 грн./міс.</option>
+                                                    <option value="40">157 каналів - 40 грн./міс.</option>
+                                                    <option value="50">196 каналів - 50 грн./міс.</option>
+                                                    <option value="70">204 канали - 70 грн./міс.</option>
                                                 </select>
                                                 <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
                                             </div>
@@ -402,8 +403,8 @@
                                         <p>+ Мобільний зв’язок від lifecell: </p>
                                         <span>Тариф мобільного зв’язку:</span>
                                         <div class="box-mobile">
-                                            <div class="custom-selects2 custom-selects-tarif">
-                                                <select>
+                                            <div id="sum_third" class="custom-selects2 custom-selects-tarif">
+                                                <select name="sum_third">
                                                     <option value="0">Оберіть тариф</option>
                                                     <option value="1">Діджитал офіс 40 - 40 грн./міс.</option>
                                                     <option value="2">Діджитал офіс 60 - 60 грн./міс.</option>
@@ -416,7 +417,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="total-cost">Загальна вартість:<span>130 грн. / міс.</span> </div>
+                            <div class="total-cost">Загальна вартість:<span class="result">130</span> грн. / міс. </div>
                             <div class="form-connect">
                                 <p>Форма для зв’язку:</p>
                                 <form action="">
@@ -477,8 +478,9 @@
                             <div class="choose-speed">
                                 <p>Інтернет тариф: </p>
                                 <span>Оберіть тариф:</span>
-                                <div class="custom-selects2 custom-selects-tarif">
+                                <div id="ch_home" class="custom-selects2 custom-selects-tarif">
                                     <select>
+                                        <option value="0">Домашній інтернет</option>
                                         <option value="1">Домашній інтернет</option>
                                         <option value="2">Приватні будинки</option>
                                         <option value="3">ФОП та приватні особи</option>
@@ -640,8 +642,9 @@
              <div class="choose-speed">
                  <p>Інтернет тариф: </p>
                  <span>Оберіть тариф:</span>
-                 <div class="custom-selects2 custom-selects-tarif">
+                 <div id="privat_mod" class="custom-selects2 custom-selects-tarif">
                      <select>
+                        <option value="0">Приватні будинки</option>
                          <option value="1">Приватні будинки</option>
                          <option value="2">Домашній інтернет</option>
                          <option value="3">ФОП та приватні особи</option>
@@ -793,8 +796,9 @@
                 <div class="choose-speed">
                     <p>Інтернет тариф: </p>
                     <span>Оберіть тариф:</span>
-                    <div class="custom-selects2 custom-selects-tarif">
+                    <div id="ch_privat" class="custom-selects2 custom-selects-tarif">
                         <select>
+                            <option value="0">Приватні будинки</option>
                             <option value="1">Приватні будинки</option>
                             <option value="2">Домашній інтернет</option>
                             <option value="3">ФОП та приватні особи</option>
@@ -941,8 +945,9 @@ aria-hidden="true">
             <div class="choose-speed">
                 <p>Інтернет тариф: </p>
                 <span>Оберіть тариф:</span>
-                <div class="custom-selects2 custom-selects-tarif">
+                <div id="bussines-f" class="custom-selects2 custom-selects-tarif">
                     <select>
+                        <option value="0">ФОП та приватні особи</option>
                         <option value="1">ФОП та приватні особи</option>
                         <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
@@ -1050,8 +1055,9 @@ aria-hidden="true">
             <div class="choose-speed">
                 <p>Інтернет тариф: </p>
                 <span>Оберіть тариф:</span>
-                <div class="custom-selects2 custom-selects-tarif">
+                <div id="ch_bussines" class="custom-selects2 custom-selects-tarif">
                     <select>
+                        <option value="0">ФОП та приватні особи</option>
                         <option value="1">ФОП та приватні особи</option>
                         <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
@@ -1110,8 +1116,9 @@ aria-hidden="true">
             <div class="choose-speed">
                 <p>Інтернет тариф: </p>
                 <span>Оберіть тариф:</span>
-                <div class="custom-selects2 custom-selects-tarif">
+                <div id="bussines-ur" class="custom-selects2 custom-selects-tarif">
                     <select>
+                        <option value="0">Юридичні особи</option>
                         <option value="1">Юридичні особи</option>
                         <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
@@ -1211,8 +1218,9 @@ aria-hidden="true">
             <div class="choose-speed">
                 <p>Інтернет тариф: </p>
                 <span>Оберіть тариф:</span>
-                <div class="custom-selects2 custom-selects-tarif">
+                <div id="ch_bus_ur" class="custom-selects2 custom-selects-tarif">
                     <select>
+                        <option value="0">Юридичні особи</option>
                         <option value="1">Юридичні особи</option>
                         <option value="2">Домашній інтернет</option>
                         <option value="3">Приватні будинки</option>
@@ -1227,12 +1235,12 @@ aria-hidden="true">
                
                 <form class="speed-box">
                     <div class="form_radio">
-                        <input id="radio-3" type="radio" name="radio" value="3">
+                        <input id="radio-3" type="radio" name="radio" value="3" checked>
                         <label for="radio-3">10 Мбіт/с</label>
                     </div>
                      
                     <div class="form_radio">
-                        <input id="radio-4" type="radio" name="radio" value="4" checked>
+                        <input id="radio-4" type="radio" name="radio" value="4">
                         <label for="radio-4">20 Мбіт/с та більше</label>
                     </div>
                      

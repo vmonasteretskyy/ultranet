@@ -873,13 +873,315 @@ $('#calcul2').change(function(){
   })
 // }
 
-$("#home_mod").val('2').click(function (){
-  // $('#home_mod option[value="1"]').attr("selected", "selected");
-  // $("#home_mod>option[value='1']").attr("selected", "selected");
+
+$('#home_mod').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#connect_internet').modal('hide');
+    $('#connect_privat-home').modal('show');
+    $('#connect_privat-home').css("overflow-y", "scroll");
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background", "#34A0D9");
+    $('.tarif-item2').css("color", "white");
+    $('.tarif-item1').css("color", "#ABABAB");
+    $('.tarif-item1').css("background", "white");
+    $('.privat-home').fadeIn();
+    $('.txt-privat-home').fadeIn();
+    $('.txt-business-home').css("display", "none");
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  } 
+  if ($("option:selected", this).val() == "3") {
   $('#connect_internet').modal('hide');
-  $('#connect_privat-home').modal('show');
-  $('#connect_privat-home').css("overflow-y", "scroll");
+  $('#connect_privat-home').css("display", "none");
+  $('#business-fop').modal('show');
+  $('#business-fop').css("overflow-y", "scroll");
   $('.block-home-internet').fadeOut();
+  $('.tarif-item2').css("background", "white");
+  $('.tarif-item2').css("color", "#ABABAB");
+  $('.tarif-item1').css("color", "#ABABAB");
+  $('.tarif-item1').css("background", "white");
+  $('.privat-home').fadeOut();
+  $('.txt-privat-home').css("display", "none");
+  $('.txt-business-home').fadeIn();
+  $('.business').fadeIn();
+  $('.tarif-item3').css("background", "#34A0D9");
+  $('.tarif-item3').css("color", "white");
+  } 
+  if ($("option:selected", this).val() == "4") {
+    $('#connect_internet').modal('hide');
+    $('#business-law').modal('show');
+    $('#business-law').css("overflow-y", "scroll");
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background", "white");
+    $('.tarif-item2').css("color", "#ABABAB");
+    $('.tarif-item1').css("color", "#ABABAB");
+    $('.tarif-item1').css("background", "white");
+    $('.privat-home').fadeOut();
+    $('.txt-privat-home').css("display", "none");
+    $('.txt-business-home').fadeIn();
+    $('.business').fadeIn();
+    $('.tarif-item3').css("background", "#34A0D9");
+    $('.tarif-item3').css("color", "white");
+  } 
+});
+//second popup
+$('#privat_mod').click(function () {
+  if ($("option:selected", this).val() == "2") {
+  $('#connect_internet').css("overflow-y", "scroll");
+    $('#connect_internet').modal('show');
+    $('#connect_privat-home').modal('hide');
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item1').css("background", "#34A0D9");
+    $('.tarif-item1').css("color", "white");
+    $('.tarif-item2').css("color", "#ABABAB");
+    $('.tarif-item2').css("background", "white");
+    $('.privat-home').fadeOut();
+    $('.block-home-internet').fadeIn();
+    $('.txt-privat-home').fadeOut();
+    $('.txt-business-home').fadeOut();
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  } 
+  if ($("option:selected", this).val() == "3") {
+    $('#business-fop').css("overflow-y", "scroll");
+      $('#business-fop').modal('show');
+      $('#connect_privat-home').modal('hide');
+      $('.block-home-internet').fadeOut();
+      $('.tarif-item2').css("background", "white");
+      $('.tarif-item2').css("color", "#ABABAB");
+      $('.tarif-item1').css("color", "#ABABAB");
+      $('.tarif-item1').css("background", "white");
+      $('.privat-home').fadeOut();
+      $('.txt-privat-home').css("display", "none");
+      $('.txt-business-home').fadeIn();
+      $('.business').fadeIn();
+      $('.tarif-item3').css("background", "#34A0D9");
+      $('.tarif-item3').css("color", "white");
+    } 
+    if ($("option:selected", this).val() == "4") {
+      $('#business-law').css("overflow-y", "scroll");
+        $('#business-law').modal('show');
+        $('#connect_privat-home').modal('hide');
+        $('.block-home-internet').fadeOut();
+        $('.tarif-item2').css("background", "white");
+        $('.tarif-item2').css("color", "#ABABAB");
+        $('.tarif-item1').css("color", "#ABABAB");
+        $('.tarif-item1').css("background", "white");
+        $('.privat-home').fadeOut();
+        $('.txt-privat-home').css("display", "none");
+        $('.txt-business-home').fadeIn();
+        $('.business').fadeIn();
+        $('.tarif-item3').css("background", "#34A0D9");
+        $('.tarif-item3').css("color", "white");
+      } 
+});
+$('#bussines-f').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#connect_internet').css("overflow-y", "scroll");
+    $('#connect_internet').modal('show');
+    $('#business-fop').modal('hide');
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item1').css("background", "#34A0D9");
+    $('.tarif-item1').css("color", "white");
+    $('.tarif-item2').css("color", "#ABABAB");
+    $('.tarif-item2').css("background", "white");
+    $('.privat-home').fadeOut();
+    $('.block-home-internet').fadeIn();
+    $('.txt-privat-home').fadeOut();
+    $('.txt-business-home').fadeOut();
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  }
+  if ($("option:selected", this).val() == "3") {
+    $('#connect_privat-home').css("overflow-y", "scroll");
+    $('#connect_privat-home').modal('show');
+    $('#business-fop').modal('hide');
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background", "#34A0D9");
+    $('.tarif-item2').css("color", "white");
+    $('.tarif-item1').css("color", "#ABABAB");
+    $('.tarif-item1').css("background", "white");
+    $('.privat-home').fadeIn();
+    $('.txt-privat-home').fadeIn();
+    $('.txt-business-home').css("display", "none");
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  }
+  if ($("option:selected", this).val() == "4") {
+    $('#business-law').css("overflow-y", "scroll");
+    $('#business-law').modal('show');
+    $('#business-fop').modal('hide');
+  }
+});
+$('#bussines-ur').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#connect_internet').css("overflow-y", "scroll");
+    $('#connect_internet').modal('show');
+    $('#business-law').modal('hide');
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item1').css("background", "#34A0D9");
+    $('.tarif-item1').css("color", "white");
+    $('.tarif-item2').css("color", "#ABABAB");
+    $('.tarif-item2').css("background", "white");
+    $('.privat-home').fadeOut();
+    $('.block-home-internet').fadeIn();
+    $('.txt-privat-home').fadeOut();
+    $('.txt-business-home').fadeOut();
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  }
+  if ($("option:selected", this).val() == "3") {
+    $('#connect_privat-home').css("overflow-y", "scroll");
+    $('#connect_privat-home').modal('show');
+    $('#business-law').modal('hide');
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background", "#34A0D9");
+    $('.tarif-item2').css("color", "white");
+    $('.tarif-item1').css("color", "#ABABAB");
+    $('.tarif-item1').css("background", "white");
+    $('.privat-home').fadeIn();
+    $('.txt-privat-home').fadeIn();
+    $('.txt-business-home').css("display", "none");
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  }
+  if ($("option:selected", this).val() == "4") {
+    $('#business-fop').css("overflow-y", "scroll");
+    $('#business-fop').modal('show');
+    $('#business-law').modal('hide');
+  }
+});
+$('#ch_home').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#change_tarif').modal('hide');
+    $('#change_privat-tarif').modal('show');
+    $('#change_privat-tarif').css("overflow-y", "scroll");
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background", "#34A0D9");
+    $('.tarif-item2').css("color", "white");
+    $('.tarif-item1').css("color", "#ABABAB");
+    $('.tarif-item1').css("background", "white");
+    $('.privat-home').fadeIn();
+    $('.txt-privat-home').fadeIn();
+    $('.txt-business-home').css("display", "none");
+    $('.business').fadeOut();
+    $('.tarif-item3').css("background", "white");
+    $('.tarif-item3').css("color", "#ABABAB");
+  } 
+  if ($("option:selected", this).val() == "3") {
+  $('#change_tarif').modal('hide');
+  $('#connect_privat-home').css("display", "none");
+  $('#ch-business-fop').modal('show');
+  $('#ch-business-fop').css("overflow-y", "scroll");
+  $('.block-home-internet').fadeOut();
+  $('.tarif-item2').css("background", "white");
+  $('.tarif-item2').css("color", "#ABABAB");
+  $('.tarif-item1').css("color", "#ABABAB");
+  $('.tarif-item1').css("background", "white");
+  $('.privat-home').fadeOut();
+  $('.txt-privat-home').css("display", "none");
+  $('.txt-business-home').fadeIn();
+  $('.business').fadeIn();
+  $('.tarif-item3').css("background", "#34A0D9");
+  $('.tarif-item3').css("color", "white");
+  } 
+  if ($("option:selected", this).val() == "4") {
+    $('#change_tarif').modal('hide');
+    $('#ch-business-law').modal('show');
+    $('#ch-business-law').css("overflow-y", "scroll");
+    $('.block-home-internet').fadeOut();
+    $('.tarif-item2').css("background", "white");
+    $('.tarif-item2').css("color", "#ABABAB");
+    $('.tarif-item1').css("color", "#ABABAB");
+    $('.tarif-item1').css("background", "white");
+    $('.privat-home').fadeOut();
+    $('.txt-privat-home').css("display", "none");
+    $('.txt-business-home').fadeIn();
+    $('.business').fadeIn();
+    $('.tarif-item3').css("background", "#34A0D9");
+    $('.tarif-item3').css("color", "white");
+  } 
+});
+$('#ch_privat').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#change_tarif').modal('show');
+    $('#change_tarif').css("overflow-y", "scroll");
+      $('#change_privat-tarif').modal('hide');
+      $('.block-home-internet').fadeOut();
+      $('.tarif-item1').css("background", "#34A0D9");
+      $('.tarif-item1').css("color", "white");
+      $('.tarif-item2').css("color", "#ABABAB");
+      $('.tarif-item2').css("background", "white");
+      $('.privat-home').fadeOut();
+      $('.block-home-internet').fadeIn();
+      $('.txt-privat-home').fadeOut();
+      $('.txt-business-home').fadeOut();
+      $('.business').fadeOut();
+      $('.tarif-item3').css("background", "white");
+      $('.tarif-item3').css("color", "#ABABAB");
+    } 
+    if ($("option:selected", this).val() == "3") {
+      $('#ch-business-fop').modal('show');
+  $('#ch-business-fop').css("overflow-y", "scroll");
+        $('#change_privat-tarif').modal('hide');
+        $('.block-home-internet').fadeOut();
+        $('.tarif-item2').css("background", "white");
+        $('.tarif-item2').css("color", "#ABABAB");
+        $('.tarif-item1').css("color", "#ABABAB");
+        $('.tarif-item1').css("background", "white");
+        $('.privat-home').fadeOut();
+        $('.txt-privat-home').css("display", "none");
+        $('.txt-business-home').fadeIn();
+        $('.business').fadeIn();
+        $('.tarif-item3').css("background", "#34A0D9");
+        $('.tarif-item3').css("color", "white");
+      } 
+      if ($("option:selected", this).val() == "4") {
+        $('#ch-business-law').modal('show');
+        $('#ch-business-law').css("overflow-y", "scroll");
+          $('#change_privat-tarif').modal('hide');
+          $('.block-home-internet').fadeOut();
+          $('.tarif-item2').css("background", "white");
+          $('.tarif-item2').css("color", "#ABABAB");
+          $('.tarif-item1').css("color", "#ABABAB");
+          $('.tarif-item1').css("background", "white");
+          $('.privat-home').fadeOut();
+          $('.txt-privat-home').css("display", "none");
+          $('.txt-business-home').fadeIn();
+          $('.business').fadeIn();
+          $('.tarif-item3').css("background", "#34A0D9");
+          $('.tarif-item3').css("color", "white");
+        } 
+});
+$('#ch_bussines').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#change_tarif').modal('show');
+    $('#change_tarif').css("overflow-y", "scroll");
+      $('#ch-business-fop').modal('hide');
+      $('.block-home-internet').fadeOut();
+      $('.tarif-item1').css("background", "#34A0D9");
+      $('.tarif-item1').css("color", "white");
+      $('.tarif-item2').css("color", "#ABABAB");
+      $('.tarif-item2').css("background", "white");
+      $('.privat-home').fadeOut();
+      $('.block-home-internet').fadeIn();
+      $('.txt-privat-home').fadeOut();
+      $('.txt-business-home').fadeOut();
+      $('.business').fadeOut();
+      $('.tarif-item3').css("background", "white");
+      $('.tarif-item3').css("color", "#ABABAB");
+    } 
+    if ($("option:selected", this).val() == "3") {
+      $('#change_privat-tarif').modal('show');
+    $('#change_privat-tarif').css("overflow-y", "scroll");
+        $('#ch-business-fop').modal('hide');
+        $('.block-home-internet').fadeOut();
   $('.tarif-item2').css("background", "#34A0D9");
   $('.tarif-item2').css("color", "white");
   $('.tarif-item1').css("color", "#ABABAB");
@@ -890,22 +1192,61 @@ $("#home_mod").val('2').click(function (){
   $('.business').fadeOut();
   $('.tarif-item3').css("background", "white");
   $('.tarif-item3').css("color", "#ABABAB");
+      } 
+      if ($("option:selected", this).val() == "4") {
+        $('#ch-business-law').modal('show');
+        $('#ch-business-law').css("overflow-y", "scroll");
+          $('#ch-business-fop').modal('hide');
+     
+        } 
+});
+$('#ch_bus_ur').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    $('#change_tarif').modal('show');
+    $('#change_tarif').css("overflow-y", "scroll");
+      $('#ch-business-law').modal('hide');
+      $('.block-home-internet').fadeOut();
+      $('.tarif-item1').css("background", "#34A0D9");
+      $('.tarif-item1').css("color", "white");
+      $('.tarif-item2').css("color", "#ABABAB");
+      $('.tarif-item2').css("background", "white");
+      $('.privat-home').fadeOut();
+      $('.block-home-internet').fadeIn();
+      $('.txt-privat-home').fadeOut();
+      $('.txt-business-home').fadeOut();
+      $('.business').fadeOut();
+      $('.tarif-item3').css("background", "white");
+      $('.tarif-item3').css("color", "#ABABAB");
+    } 
+    if ($("option:selected", this).val() == "3") {
+      $('#change_privat-tarif').modal('show');
+    $('#change_privat-tarif').css("overflow-y", "scroll");
+        $('#ch-business-law').modal('hide');
+        $('.block-home-internet').fadeOut();
+        $('.tarif-item2').css("background", "#34A0D9");
+        $('.tarif-item2').css("color", "white");
+        $('.tarif-item1').css("color", "#ABABAB");
+        $('.tarif-item1').css("background", "white");
+        $('.privat-home').fadeIn();
+        $('.txt-privat-home').fadeIn();
+        $('.txt-business-home').css("display", "none");
+        $('.business').fadeOut();
+        $('.tarif-item3').css("background", "white");
+        $('.tarif-item3').css("color", "#ABABAB");
+      } 
+      if ($("option:selected", this).val() == "4") {
+        $('#ch-business-fop').modal('show');
+        $('#ch-business-fop').css("overflow-y", "scroll");
+          $('#ch-business-law').modal('hide');
+     
+        } 
 });
 
-// $("#home_mod").val('3').click(function (){
-//   $('#connect_internet').modal('hide');
-//   $('#connect_privat-home').css("display", "none");
-//   $('#business-fop').modal('show');
-//   // $('#business-fop').css("overflow-y", "scroll");
-//   // $('.block-home-internet').fadeOut();
-//   // $('.tarif-item2').css("background", "white");
-//   // $('.tarif-item2').css("color", "#ABABAB");
-//   // $('.tarif-item1').css("color", "#ABABAB");
-//   // $('.tarif-item1').css("background", "white");
-//   // $('.privat-home').fadeOut();
-//   // $('.txt-privat-home').css("display", "none");
-//   // $('.txt-business-home').fadeIn();
-//   // $('.business').fadeIn();
-//   // $('.tarif-item3').css("background", "#34A0D9");
-//   // $('.tarif-item3').css("color", "white");
+// $('#connect_internet').keyup(function() {
+ 
+//     let a = $("#sum_first option:selected").val();
+//     let b = $("#sum_second option:selected").val();
+// let s=a+b;
+//    console.log(s);
+//    $('.result').text(s);
 // });

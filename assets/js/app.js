@@ -21149,39 +21149,392 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#privat-select').click(function (
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
 }); // }
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()("#home_mod").val('2').click(function () {
-  // $('#home_mod option[value="1"]').attr("selected", "selected");
-  // $("#home_mod>option[value='1']").attr("selected", "selected");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('show');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("overflow-y", "scroll");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
-}); // $("#home_mod").val('3').click(function (){
-//   $('#connect_internet').modal('hide');
-//   $('#connect_privat-home').css("display", "none");
-//   $('#business-fop').modal('show');
-//   // $('#business-fop').css("overflow-y", "scroll");
-//   // $('.block-home-internet').fadeOut();
-//   // $('.tarif-item2').css("background", "white");
-//   // $('.tarif-item2').css("color", "#ABABAB");
-//   // $('.tarif-item1').css("color", "#ABABAB");
-//   // $('.tarif-item1').css("background", "white");
-//   // $('.privat-home').fadeOut();
-//   // $('.txt-privat-home').css("display", "none");
-//   // $('.txt-business-home').fadeIn();
-//   // $('.business').fadeIn();
-//   // $('.tarif-item3').css("background", "#34A0D9");
-//   // $('.tarif-item3').css("color", "white");
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#home_mod').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+}); //second popup
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#privat_mod').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#bussines-f').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('hide');
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#bussines-ur').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-fop').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#business-law').modal('hide');
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_home').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_privat').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "white");
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_bussines').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('hide');
+  }
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_bus_ur').click(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_tarif').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_privat-tarif').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('hide');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.block-home-internet').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("background", "#34A0D9");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item2').css("color", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("color", "#ABABAB");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item1').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-privat-home').fadeIn();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.txt-business-home').css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.business').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("background", "white");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif-item3').css("color", "#ABABAB");
+  }
+
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').modal('show');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').css("overflow-y", "scroll");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('hide');
+  }
+}); // $('#connect_internet').keyup(function() {
+//     let a = $("#sum_first option:selected").val();
+//     let b = $("#sum_second option:selected").val();
+// let s=a+b;
+//    console.log(s);
+//    $('.result').text(s);
 // });
 
 /***/ }),

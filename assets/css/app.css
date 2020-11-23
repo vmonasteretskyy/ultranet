@@ -26,6 +26,21 @@
   margin-top: 12px;
 }
 
+.carousel .logotip {
+  margin-top: -11px;
+}
+.carousel .privacy-office {
+  margin-top: -11px;
+}
+
+.logotip {
+  margin-top: -9px;
+}
+
+.privacy-office {
+  margin-top: -9px;
+}
+
 .header-block {
   padding-top: 10px;
   display: flex;
@@ -971,8 +986,8 @@
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
   border-radius: 10px;
-  max-width: 355px;
-  min-width: 355px;
+  max-width: 350px;
+  min-width: 345px;
   height: 400px;
   text-align: center;
   transition: 0.3s ease;
@@ -1103,12 +1118,11 @@
   box-shadow: 0px 4px 10px rgba(171, 171, 171, 0.4);
   border-radius: 3px;
   text-align: left;
-  margin-left: 3px;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
-  width: 213px;
+  width: 223px;
   font-size: 18px;
 }
 
@@ -3273,9 +3287,8 @@ input[type=checkbox]:checked + label:before {
 
 #connect_privat-home .modal-header1 h5 {
   text-align: left;
-  width: 320px;
   padding-left: 20px;
-  padding-top: 30px;
+  padding-top: 25px;
   margin: 0;
   white-space: normal;
 }

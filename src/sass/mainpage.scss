@@ -455,8 +455,7 @@ header {
         padding-left: 2px;
         background: #34a0d9;
         border-radius: 10px;
-        height: 50px;
-        width: 50px;
+       padding: 4px;
         transition: 0.3s ease;
         &:hover {
             box-shadow: -4px -4px 10px rgba(52, 160, 217, 0.3), 4px 4px 10px rgba(52, 160, 217, 0.3);

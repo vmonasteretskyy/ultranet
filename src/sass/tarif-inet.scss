@@ -810,6 +810,11 @@ input[type="checkbox"]:checked + label:before {
 #rezultat{
     font-weight: 400;
 }
+#change_tarif{
+    .modal-header1 h5{     
+        margin-left: auto;
+        margin-right: auto;}
+}
 @media (max-width: 1199px) {
    .business .business-law .home-cont-internet {
         .home-internet {
@@ -1073,6 +1078,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 575px) {
+  
     .text-speed p:last-of-type{
         margin-bottom: 10px;
     }
@@ -1200,6 +1206,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 532px) {
+    #change_tarif{
+        .modal-header1 h5{     
+            margin-left: 0;
+            margin-right: 0;}
+    }
     // .tarif-internet {
      
     //     margin-left: -11px;

@@ -29,9 +29,8 @@
 // .form-my_office label:last-of-type{
 //     font-size: 16px;
 //   }
-.form-my_office .checkbox label{
+.form-my_office .checkbox label {
     line-height: 28px;
-
 }
 .form-my_office {
     width: 225px;
@@ -251,7 +250,7 @@
 }
 .speed-box {
     margin-top: 10px;
- 
+
     display: flex;
     flex-direction: row;
 }
@@ -261,41 +260,37 @@
 // }
 @keyframes highlite {
     80% {
-       background-color:rgb(52, 160, 217,0.1);
+        background-color: rgb(52, 160, 217, 0.1);
     }
-    100%{
-        background-color:rgb(52, 160, 217,0);
-
+    100% {
+        background-color: rgb(52, 160, 217, 0);
     }
 }
-.highlite_sp{
+.highlite_sp {
     padding-left: 0px;
-    p{
+    p {
         padding-left: 35px;
     }
-    .speed-box{
+    .speed-box {
         padding-left: 35px;
-
     }
-    .calculator-speed{
+    .calculator-speed {
         margin-top: 10px;
         padding: 5px 0px 5px 35px;
-        p{
+        p {
             padding-left: 0px;
-
         }
-
     }
 }
 .calculator-speed {
     margin-top: 15px;
     display: none;
     animation: 3s linear;
-   
-    span{
+
+    span {
         font-weight: normal;
-font-size: 12px;
-color: #000000;
+        font-size: 12px;
+        color: #000000;
     }
 }
 .calcul-box {
@@ -307,39 +302,41 @@ color: #000000;
         background: #ffffff;
         border: 1px solid #ababab;
         border-radius: 3px;
-        &::placeholder{
+        font-size: 18px;
+
+        &::placeholder {
             font-weight: 300;
-font-size: 18px;
- 
-color: #ABABAB;
+            font-size: 18px;
+
+            color: #ababab;
         }
     }
-    label{
+    label {
         margin-left: 10px;
+        font-size: 18px;
     }
 }
-.calcul-text{
+.calcul-text {
     padding-left: 35px;
 }
-.calcul-text p{
+.calcul-text p {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 300;
-font-size: 12px;
-line-height: 150%;
-color: #464646;
-margin-right: 47px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #464646;
+    margin-right: 47px;
 }
-.br-fob{
+.br-fob {
     display: none;
 }
-.no-limit{
+.no-limit {
     font-weight: 300;
     font-size: 18px;
     margin-left: 20px;
-
 }
- .modal-body1 .count-minutes{
+.modal-body1 .count-minutes {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -348,26 +345,21 @@ margin-right: 47px;
     // .cost-tv{
     //     margin-top: 30px;
     // }
-    .total-cost{
+    .total-cost {
         margin-top: 0px;
-     
+
         font-size: 18px;
-
-        
     }
-    .no-limit{
-   white-space: nowrap;
-
-
+    .no-limit {
+        white-space: nowrap;
     }
 }
- 
- 
+
 @media (max-width: 575px) {
-    .speed-box .form_radio:first-of-type{
+    .speed-box .form_radio:first-of-type {
         margin-bottom: 8px;
     }
-    .highlite_sp .calculator-speed{
+    .highlite_sp .calculator-speed {
         margin-top: 2px;
     }
     #my_office {
@@ -391,47 +383,52 @@ margin-right: 47px;
 }
 
 @media (max-width: 532px) {
-    .highlite_sp{
-        padding-left: 0px;
-        p{
-            padding-left: 10px;
-        }
-        .speed-box{
-            padding-left: 10px;
-            padding-left: 10px;
+    .calcul-box {
+        input {
+            font-size: 16px;
 
-    
+            &::placeholder {
+                font-size: 16px;
+            }
         }
-        .calculator-speed{
+        label {
+            font-size: 16px;
+        }
+    }
+    .highlite_sp {
+        padding-left: 0px;
+        p {
+            padding-left: 10px;
+        }
+        .speed-box {
+            padding-left: 10px;
+            padding-left: 10px;
+        }
+        .calculator-speed {
             // margin-top: 10px;
             padding: 5px 0px 5px 10px;
-            p{
+            p {
                 padding-left: 0px;
-    
             }
-    
         }
     }
     .modal-content {
         border-radius: 10px;
     }
-    .con-mob .modal-body1{
-        .total-cost{
-       
+    .con-mob .modal-body1 {
+        .total-cost {
             font-size: 18px;
-            span{
-            font-size: 18px;
-
+            span {
+                font-size: 18px;
             }
         }
     }
-    .calcul-text{
+    .calcul-text {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .change_privat-tarif 
-    {
-        .modal-header1 .close{
+    .change_privat-tarif {
+        .modal-header1 .close {
             margin-top: 2px;
         }
         .modal-header1 h5 {
@@ -461,11 +458,10 @@ margin-right: 47px;
     #business-fop .total-cost {
         margin-top: 18px;
     }
-    .calculator-speed{
+    .calculator-speed {
         margin-top: 3px;
     }
     .speed-box {
-    
         flex-direction: column;
     }
     #ch-business-fop .modal-content .modal-header1 h5 {
@@ -548,8 +544,7 @@ margin-right: 47px;
 }
 
 @media (max-width: 420px) {
-  
-    .br-fob{
+    .br-fob {
         display: block;
     }
     #ch-business-fop {
@@ -582,42 +577,41 @@ margin-right: 47px;
         max-width: 97%;
         width: 97%;
     }
-    .tv-show{
-       
-.custom-selects-tarif {
-    max-width: 100%;
-    width: 100%;
-} 
+    .tv-show {
+        .custom-selects-tarif {
+            max-width: 100%;
+            width: 100%;
+        }
     }
     .box-show-check {
         max-width: 100%;
-    width: 100%;
+        width: 100%;
     }
-    .connect-dropt{
+    .connect-dropt {
         width: 100%;
         max-width: 100%;
     }
-    
+
     .form-connect input {
-        width: 97%;}
-    .con-mob .modal-header1 h5{
-width: 260px;
+        width: 97%;
     }
-    .con-mob .modal-body1{
-        
-        .count-channels{
+    .con-mob .modal-header1 h5 {
+        width: 260px;
+    }
+    .con-mob .modal-body1 {
+        .count-channels {
             flex-direction: row;
             padding-right: 10px;
             margin-bottom: 1px;
         }
-        .no-limit{
+        .no-limit {
             margin-left: 20px;
             font-size: 18px;
         }
-        .total-cost{
+        .total-cost {
             margin-bottom: 0px;
             font-size: 18px;
-            br{
+            br {
                 display: none;
             }
             span {
@@ -625,7 +619,7 @@ width: 260px;
             }
         }
     }
-    .modal-body1 .count-minutes{
+    .modal-body1 .count-minutes {
         padding-right: 10px;
         margin-bottom: 20px;
     }

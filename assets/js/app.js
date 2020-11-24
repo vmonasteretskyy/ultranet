@@ -21529,13 +21529,91 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_bus_ur').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-fop').css("overflow-y", "scroll");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch-business-law').modal('hide');
   }
-}); // $('#connect_internet').keyup(function() {
-//     let a = $("#sum_first option:selected").val();
-//     let b = $("#sum_second option:selected").val();
-// let s=a+b;
-//    console.log(s);
-//    $('.result').text(s);
-// });
+});
+var selectItems = document.querySelectorAll('.select-items div');
+var test2 = document.querySelector('.test2');
+var test3 = document.querySelector('.test3');
+var test1 = document.querySelector('.test1');
+var price = document.querySelector('.price');
+
+for (var _i = 0; _i < selectItems.length; _i++) {
+  var getPrice = function getPrice() {
+    price.textContent = parseInt(test2.value) + parseInt(test3.value) + parseInt(test1.value);
+  };
+
+  selectItems[_i].addEventListener('click', getPrice);
+} //change
+
+
+var selectItem = document.querySelectorAll('.select-items div');
+var sel1 = document.querySelector('.select1');
+var sel2 = document.querySelector('.select2');
+var sel3 = document.querySelector('.select3');
+var price1 = document.querySelector('.price1');
+
+for (var _i2 = 0; _i2 < selectItem.length; _i2++) {
+  var getPrice1 = function getPrice1() {
+    price1.textContent = parseInt(sel1.value) + parseInt(sel2.value) + parseInt(sel3.value);
+  };
+
+  selectItem[_i2].addEventListener('click', getPrice1);
+} //second block
+
+
+var selectItem3 = document.querySelectorAll('.select-items div');
+var select1 = document.querySelector('.sel1');
+var select2 = document.querySelector('.sel2');
+var select3 = document.querySelector('.sel3');
+var price2 = document.querySelector('.price2');
+
+for (var _i3 = 0; _i3 < selectItem.length; _i3++) {
+  var getPrice2 = function getPrice2() {
+    price2.textContent = parseInt(select1.value) + parseInt(select2.value) + parseInt(select3.value);
+  };
+
+  selectItem3[_i3].addEventListener('click', getPrice2);
+} //second block change
+
+
+var sselectItem3 = document.querySelectorAll('.select-items div');
+var sselect1 = document.querySelector('.ssel1');
+var sselect2 = document.querySelector('.ssel2');
+var sselect3 = document.querySelector('.ssel3');
+var sprice2 = document.querySelector('.sprice2');
+
+for (var _i4 = 0; _i4 < selectItem.length; _i4++) {
+  var sgetPrice2 = function sgetPrice2() {
+    sprice2.textContent = parseInt(sselect1.value) + parseInt(sselect2.value) + parseInt(sselect3.value);
+  };
+
+  sselectItem3[_i4].addEventListener('click', sgetPrice2);
+} //third block 
+
+
+var sselectItem4 = document.querySelectorAll('.select-items div');
+var sel_it1 = document.querySelector('.sel_it1');
+var resBus = document.querySelector('.resBus');
+
+for (var _i5 = 0; _i5 < selectItem.length; _i5++) {
+  var thirdRes = function thirdRes() {
+    resBus.textContent = parseInt(sel_it1.value);
+  };
+
+  sselectItem4[_i5].addEventListener('click', thirdRes);
+} //third block change
+
+
+var cselectItem4 = document.querySelectorAll('.select-items div');
+var csel_it1 = document.querySelector('.csel_it1');
+var cresBus = document.querySelector('.cresBus');
+
+for (var _i6 = 0; _i6 < selectItem.length; _i6++) {
+  var cthirdRes = function cthirdRes() {
+    cresBus.textContent = parseInt(csel_it1.value);
+  };
+
+  cselectItem4[_i6].addEventListener('click', cthirdRes);
+}
 
 /***/ }),
 

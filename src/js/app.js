@@ -1242,11 +1242,80 @@ $('#ch_bus_ur').click(function () {
         } 
 });
 
-// $('#connect_internet').keyup(function() {
- 
-//     let a = $("#sum_first option:selected").val();
-//     let b = $("#sum_second option:selected").val();
-// let s=a+b;
-//    console.log(s);
-//    $('.result').text(s);
-// });
+let selectItems = document.querySelectorAll('.select-items div')
+let test2 = document.querySelector('.test2') 
+let test3 = document.querySelector('.test3') 
+let test1 = document.querySelector('.test1') 
+let price = document.querySelector('.price') 
+
+for(let i = 0; i<selectItems.length; i++){
+  selectItems[i].addEventListener('click', getPrice)
+function  getPrice(){
+  price.textContent =  parseInt(test2.value) + parseInt(test3.value) + parseInt(test1.value) 
+}
+}
+//change
+let selectItem = document.querySelectorAll('.select-items div')
+let sel1 = document.querySelector('.select1') 
+let sel2 = document.querySelector('.select2') 
+let sel3 = document.querySelector('.select3') 
+let price1 = document.querySelector('.price1') 
+
+for(let i = 0; i<selectItem.length; i++){
+  selectItem[i].addEventListener('click', getPrice1)
+function  getPrice1(){
+  price1.textContent =  parseInt(sel1.value) + parseInt(sel2.value) + parseInt(sel3.value) 
+}
+}
+//second block
+let selectItem3 = document.querySelectorAll('.select-items div')
+let select1 = document.querySelector('.sel1') 
+let select2 = document.querySelector('.sel2') 
+let select3 = document.querySelector('.sel3') 
+let price2 = document.querySelector('.price2') 
+
+for(let i = 0; i<selectItem.length; i++){
+  selectItem3[i].addEventListener('click', getPrice2)
+function  getPrice2(){
+  price2.textContent =  parseInt(select1.value) + parseInt(select2.value) + parseInt(select3.value) 
+}
+}
+//second block change
+let sselectItem3 = document.querySelectorAll('.select-items div')
+let sselect1 = document.querySelector('.ssel1') 
+let sselect2 = document.querySelector('.ssel2') 
+let sselect3 = document.querySelector('.ssel3') 
+let sprice2 = document.querySelector('.sprice2') 
+
+for(let i = 0; i<selectItem.length; i++){
+  sselectItem3[i].addEventListener('click', sgetPrice2)
+function  sgetPrice2(){
+  sprice2.textContent =  parseInt(sselect1.value) + parseInt(sselect2.value) + parseInt(sselect3.value) 
+}
+}
+
+//third block 
+let sselectItem4 = document.querySelectorAll('.select-items div')
+let sel_it1 = document.querySelector('.sel_it1') 
+
+let resBus = document.querySelector('.resBus') 
+
+for(let i = 0; i<selectItem.length; i++){
+  sselectItem4[i].addEventListener('click', thirdRes)
+function  thirdRes(){
+  resBus.textContent =  parseInt(sel_it1.value)
+}
+}
+
+//third block change
+let cselectItem4 = document.querySelectorAll('.select-items div')
+let csel_it1 = document.querySelector('.csel_it1') 
+
+let cresBus = document.querySelector('.cresBus') 
+
+for(let i = 0; i<selectItem.length; i++){
+  cselectItem4[i].addEventListener('click', cthirdRes)
+function  cthirdRes(){
+  cresBus.textContent =  parseInt(csel_it1.value)
+}
+}

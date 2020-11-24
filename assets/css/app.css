@@ -2329,7 +2329,6 @@ input[type=checkbox]:checked + label:before {
   color: #000000;
 }
 .total-cost span {
-  font-weight: 300;
   font-size: 18px;
   line-height: 150%;
   margin-left: 20px;

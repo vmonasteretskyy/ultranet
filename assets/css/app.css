@@ -530,6 +530,14 @@
   cursor: pointer;
 }
 
+.main_text .text-main-adapt {
+  width: 380px;
+}
+
+.main_text .text-main-adapt2 {
+  width: 540px;
+}
+
 @media (max-width: 1900px) {
   .carousel-item .background-img {
     height: 900px;
@@ -756,6 +764,10 @@
   }
 }
 @media (max-width: 767px) {
+  .main_text .text-main-adapt2 {
+    width: 300px;
+  }
+
   .social-network {
     display: none;
   }
@@ -779,6 +791,10 @@
   }
 }
 @media (max-width: 575px) {
+  .main_text .text-main-adapt2 {
+    width: 240px;
+  }
+
   .modal-dialog {
     margin: 15px;
   }

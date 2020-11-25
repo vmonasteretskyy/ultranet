@@ -174,7 +174,7 @@
                     <div class="home-int-grn">
                         <span>99 грн. / місяць</span>
                         <p>50 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_tv196">Підключити</button>
+                        <button data-toggle="modal" data-target="#connect_tv">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                     <div class="home-int-grn">
                         <span>139 грн. / місяць</span>
                         <p>70 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_tv204">Підключити</button>
+                        <button data-toggle="modal" data-target="#connect_tv">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -218,24 +218,26 @@ aria-hidden="true">
         </div>
         <div class="modal-body modal-body1">
             <div class="count-channels">
-                <div class="total-cost">Кількість каналів: <span>157</span> </div>
+                <div class="total-cost">Кількість каналів: <span class="count_can">157</span> 
+                    <span id="for-tarif">* Дійсно для тарифу 100 Мбіт/с та вище.</span> 
+                </div>
                 <div ><a href="">Список каналів</a></div>
             </div>
-            <div class="choose-speed">
+            <div class="tarif_204 choose-speed">
                 <p>Обраний тариф: </p>
                 <span>Тариф на телебачення:</span>
-                <div class="custom-selects2 custom-selects-tarif">
-                    <select>
-                        <option value="1">157 каналів</option>
-                        <option value="2">157 каналів</option>
-                        <option value="3">196 каналів</option>
-                        <option value="4">204 каналів</option>
+                <div id="tar_tvs" class="custom-selects2 custom-selects-tarif">
+                    <select class="csel_it5">
+                        <option value="40">157 каналів</option>
+                        <option value="40">157 каналів</option>
+                        <option value="50">196 каналів</option>
+                        <option value="70">204 каналів</option>
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
 
                 </div>
             </div>
-            <div class="total-cost">Вартість: <span>40 грн. / міс.</span> </div>
+            <div class="total-cost">Вартість: <span class="cresBus5">40</span> грн. / міс.</div>
          
             <div class="footer-modal">
                 <button class="order close-mod2" data-toggle="modal"
@@ -248,53 +250,28 @@ aria-hidden="true">
 </div>
 </div>
 
-<!-- Modal Заявка на підключення 
-телебачення від «TRINITY-TV» 196-->
-<div class="modal fade ch-tarif change_privat-tarif" id="connect_tv196" tabindex="-1" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header modal-header1">
-            <h5 class="modal-title" id="exampleModalLabel">Заявка на підключення 
-                <span>телебачення від «TRINITY-TV»</span>
-            </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
-                </span>
-            </button>
-        </div>
-        <div class="modal-body modal-body1">
-            <div class="count-channels">
-                <div class="total-cost">Кількість каналів: <span>196</span> </div>
-                <div ><a href="">Список каналів</a></div>
-            </div>
-            <div class="choose-speed">
-                <p>Обраний тариф: </p>
-                <span>Тариф на телебачення:</span>
-                <div class="custom-selects2 custom-selects-tarif">
-                    <select>
-                        <option value="1">196 каналів</option>
-                        <option value="2">196 каналів</option>
-                        <option value="3">157 каналів</option>
-                        <option value="4">204 каналів</option>
-                    </select>
-                    <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
+ <!-- Modal Вітаємо! Ви замовили 
+послугу телебачення!-->
+ <div class="modal fade end_modal" id="order_tv" tabindex="-1" aria-labelledby="my_office"
+ aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+         <div class="modal-header modal-header1">
+             <h5 class="modal-title">Вітаємо! Ви замовили  <br> послугу телебачення!  </h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
+                 </span>
+             </button>
+         </div>
+         <div class="modal-body modal-body1">
+             <div class="on-general">
+                 <a href="">На головну</a>
+             </div>
+         </div>
 
-                </div>
-            </div>
-            <div class="total-cost">Вартість: <span>50 грн. / міс.</span> </div>
-         
-            <div class="footer-modal">
-                <button class="order close-mod2" data-toggle="modal"
-                    data-target="#order_tv">Замовити</button>
-
-            </div>
-        </div>
- 
-    </div>
+     </div>
+ </div>
 </div>
-</div>
-
 <!-- Modal Заявка на підключення 
 телебачення від «TRINITY-TV» 204-->
 <div class="modal fade ch-tarif change_privat-tarif" id="connect_tv204" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -343,28 +320,11 @@ aria-hidden="true">
     </div>
 </div>
 </div>
- <!-- Modal Вітаємо! Ви замовили 
-послугу телебачення!-->
- <div class="modal fade end_modal" id="order_tv" tabindex="-1" aria-labelledby="my_office"
- aria-hidden="true">
- <div class="modal-dialog modal-dialog-centered">
-     <div class="modal-content">
-         <div class="modal-header modal-header1">
-             <h5 class="modal-title">Вітаємо! Ви замовили  <br> послугу телебачення!  </h5>
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                 <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
-                 </span>
-             </button>
-         </div>
-         <div class="modal-body modal-body1">
-             <div class="on-general">
-                 <a href="">На головну</a>
-             </div>
-         </div>
 
-     </div>
- </div>
-</div>
+
+
+
+
     </section>
     <footer class="footer-other">
         <div class="container">

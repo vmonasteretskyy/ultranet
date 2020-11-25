@@ -1241,6 +1241,7 @@ $('#ch_bus_ur').click(function () {
      
         } 
 });
+if ($('*').is('.tarif-main')) {
 
 let selectItems = document.querySelectorAll('.select-items div')
 let test2 = document.querySelector('.test2') 
@@ -1319,3 +1320,78 @@ function  cthirdRes(){
   cresBus.textContent =  parseInt(csel_it1.value)
 }
 }
+}
+//tarifs tv
+
+if ($('*').is('#connect_tv')) {
+
+let cselectItem5 = document.querySelectorAll('.select-items div')
+let csel_it5 = document.querySelector('.csel_it5') 
+
+let cresBus5 = document.querySelector('.cresBus5') 
+
+for(let i = 0; i<selectItem.length; i++){
+  cselectItem5[i].addEventListener('click', cthirdRes5)
+function  cthirdRes5(){
+  cresBus5.textContent =  parseInt(csel_it5.value)
+}
+}
+}
+//mobile connect 
+if ($('*').is('.con-mob')) {
+
+let cselectItem6 = document.querySelectorAll('.select-items div')
+let csel_it6 = document.querySelector('.csel_it6') 
+
+let cresBus6 = document.querySelector('.cresBus6') 
+
+for(let i = 0; i<cselectItem6.length; i++){
+  cselectItem6[i].addEventListener('click', cthirdRes6)
+function  cthirdRes6(){
+  cresBus6.textContent =  parseInt(csel_it6.value)
+}
+}
+$('#connect_mob').click(function () {
+  if ($("option:selected", this).val() == "40") {
+    $('.c_minut').html("100 хв");
+    $('.c_gb').html("4 ГБ");
+  }
+  if ($("option:selected", this).val() == "60") {
+    $('.c_minut').html("200 хв");
+    $('.c_gb').html("6 ГБ");
+
+  }
+  if ($("option:selected", this).val() == "90") {
+    $('.c_minut').html("300 хв");
+    $('.c_gb').html("10 ГБ");
+
+  }
+});
+
+}
+$('#tar_tvs').click(function () {
+  if ($("option:selected", this).val() == "40") {
+    $('.count_can').html("157");
+  }
+  if ($("option:selected", this).val() == "50") {
+    $('.count_can').html("196");
+  }
+  if ($("option:selected", this).val() == "70") {
+  $('#for-tarif').fadeIn();
+  $('#for-tarif').css("display", "block");
+  $('.tarif_204').css("margin-top", "60px");
+   $('.count_can').html("204*");
+if (window.matchMedia('(max-width: 767px)').matches) {
+  $('.tarif_204').css("margin-top", "15px");
+
+}
+  }
+  else{
+  $('#for-tarif').css("display", "none");
+  $('.tarif_204').css("margin-top", "30px");
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    $('.tarif_204').css("margin-top", "10px");
+  
+  }
+  }
+});

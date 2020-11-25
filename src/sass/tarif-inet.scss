@@ -87,15 +87,7 @@
         margin-left: 0;
     }
 }
-#for-tarif {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 150%;
-    position: absolute;
-    color: #464646;
-    margin-left: 0px;
-    margin-top: 9px;
-}
+
 #connect_tv204 {
     .choose-speed {
         margin-top: 45px;
@@ -816,10 +808,19 @@ input[type="checkbox"]:checked + label:before {
         margin-right: auto;}
 }
 @media (max-width: 1199px) {
+    .business .home-internet {
+    margin-left: -35px;
+}
+.business .business-law {
+    .tarif-txt {
+        margin-left: -20px;
+    }
+}
    .business .business-law .home-cont-internet {
         .home-internet {
-            margin-left: 10px;
+            margin-left: -36px;
         }
+      
         .home-internet div:first-of-type {
             margin-right: 20px;
         }
@@ -863,6 +864,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 991px) {
+    .business .business-law {
+        .tarif-txt {
+            margin-left: 0px;
+        }
+    }
     .block-home-internet .home-internet-text{
         margin-left: -25px;
     }
@@ -1265,6 +1271,11 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 476px) {
+    #connect_tv{
+        .footer-modal{
+            margin-bottom: 0;
+        }
+    }
     .tv-item {
         .select-items div {
             font-size: 14px;

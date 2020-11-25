@@ -1902,16 +1902,6 @@ footer {
   margin-left: 0;
 }
 
-#for-tarif {
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 150%;
-  position: absolute;
-  color: #464646;
-  margin-left: 0px;
-  margin-top: 9px;
-}
-
 #connect_tv204 .choose-speed {
   margin-top: 45px;
 }
@@ -2585,8 +2575,16 @@ input[type=checkbox]:checked + label:before {
 }
 
 @media (max-width: 1199px) {
+  .business .home-internet {
+    margin-left: -35px;
+  }
+
+  .business .business-law .tarif-txt {
+    margin-left: -20px;
+  }
+
   .business .business-law .home-cont-internet .home-internet {
-    margin-left: 10px;
+    margin-left: -36px;
   }
   .business .business-law .home-cont-internet .home-internet div:first-of-type {
     margin-right: 20px;
@@ -2628,6 +2626,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .business .business-law .tarif-txt {
+    margin-left: 0px;
+  }
+
   .block-home-internet .home-internet-text {
     margin-left: -25px;
   }
@@ -2998,6 +3000,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 476px) {
+  #connect_tv .footer-modal {
+    margin-bottom: 0;
+  }
+
   .tv-item .select-items div {
     font-size: 14px;
   }
@@ -3502,17 +3508,19 @@ input[type=checkbox]:checked + label:before {
   font-weight: 300;
   font-size: 18px;
   margin-left: 20px;
+  width: 60px;
 }
 
 .modal-body1 .count-minutes {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   padding-right: 35px;
   margin-bottom: 30px;
 }
 .modal-body1 .count-minutes .total-cost {
   margin-top: 0px;
+  width: 330px;
   font-size: 18px;
 }
 .modal-body1 .count-minutes .no-limit {
@@ -3583,6 +3591,7 @@ input[type=checkbox]:checked + label:before {
   }
 
   .con-mob .modal-body1 .total-cost {
+    width: 330px;
     font-size: 18px;
   }
   .con-mob .modal-body1 .total-cost span {
@@ -3722,6 +3731,26 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 400px) {
+  .tarif_tv .count-minutes .no-limit {
+    width: 130px;
+  }
+  .tarif_tv .count-channels {
+    flex-direction: column;
+    padding-right: 15px;
+    margin-bottom: 17px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 10px;
+  }
+  .tarif_tv .count-channels .no-limit {
+    width: 80px;
+  }
+  .tarif_tv .count-channels .total-cost {
+    padding-left: 0px;
+    margin-bottom: 10px;
+    width: 207px;
+  }
+
   .custom-selects-tarif .select-selected {
     max-width: 100%;
   }
@@ -3762,6 +3791,7 @@ input[type=checkbox]:checked + label:before {
     flex-direction: row;
     padding-right: 10px;
     margin-bottom: 1px;
+    justify-content: space-between;
   }
   .con-mob .modal-body1 .no-limit {
     margin-left: 20px;
@@ -3770,6 +3800,7 @@ input[type=checkbox]:checked + label:before {
   .con-mob .modal-body1 .total-cost {
     margin-bottom: 0px;
     font-size: 18px;
+    width: 245px;
   }
   .con-mob .modal-body1 .total-cost br {
     display: none;
@@ -3781,6 +3812,18 @@ input[type=checkbox]:checked + label:before {
   .modal-body1 .count-minutes {
     padding-right: 10px;
     margin-bottom: 20px;
+  }
+
+  .tarif_tv .count-channels .no-limit {
+    width: 95px;
+  }
+
+  #connect_mob .count-minutes .no-limit {
+    width: 95px;
+  }
+
+  .modal-body1 .count-minutes {
+    margin-top: 20px;
   }
 }
 .tarif_tv .text-m-bit {
@@ -3832,7 +3875,7 @@ input[type=checkbox]:checked + label:before {
 
 .count-channels {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   padding-right: 35px;
   margin-bottom: 30px;
@@ -3863,6 +3906,17 @@ input[type=checkbox]:checked + label:before {
 
 .tv_ad-text {
   margin-left: -15px;
+}
+
+#for-tarif {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  position: absolute;
+  color: #464646;
+  margin-left: 0px;
+  margin-top: 11px;
+  display: none;
 }
 
 @media (max-width: 1199px) {
@@ -3921,6 +3975,11 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (min-width: 500px) {
+  #connect_mob .modal-dialog {
+    max-width: 473px;
+    margin: 1.75rem auto;
+  }
+
   .tarif_tv .modal-dialog {
     max-width: 453px;
     margin: 1.75rem auto;
@@ -3999,29 +4058,38 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 420px) {
+  .modal-body1 .count-minutes {
+    margin-bottom: 20px;
+  }
+
   .adap_tv {
     display: block;
   }
 
   #for-tarif {
-    display: block;
     position: relative;
     margin-bottom: 0px;
     margin-left: 0px;
     padding-top: 5px;
   }
 
+  .tarif_tv .count-minutes .no-limit {
+    width: 70px;
+  }
   .tarif_tv .count-channels {
-    flex-direction: column;
+    flex-direction: row;
     padding-right: 15px;
     margin-bottom: 17px;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     padding-left: 10px;
+  }
+  .tarif_tv .count-channels .no-limit {
+    width: 99px;
   }
   .tarif_tv .count-channels .total-cost {
     padding-left: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   .count-channels {

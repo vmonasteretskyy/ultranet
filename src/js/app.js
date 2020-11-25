@@ -876,6 +876,7 @@ $('#calcul2').change(function(){
 
 $('#home_mod').click(function () {
   if ($("option:selected", this).val() == "2") {
+    // document.getElementById('home_modal').getElementsByTagName('option')[1].selected = 'selected';
     $('#connect_internet').modal('hide');
     $('#connect_privat-home').modal('show');
     $('#connect_privat-home').css("overflow-y", "scroll");
@@ -926,9 +927,14 @@ $('#home_mod').click(function () {
   } 
 });
 //second popup
+$("#home_mod").click(function () {
+  $("#home_modal").val('3');
+  console.log("dddd");
+});
 $('#privat_mod').click(function () {
-  if ($("option:selected", this).val() == "2") {
-  $('#connect_internet').css("overflow-y", "scroll");
+if ($("option:selected", this).val() == "2") {
+  document.getElementById('home_modal').getElementsByTagName('option')[1].selected = 'selected';
+    $('#connect_internet').css("overflow-y", "scroll");
     $('#connect_internet').modal('show');
     $('#connect_privat-home').modal('hide');
     $('.block-home-internet').fadeOut();
@@ -1243,14 +1249,14 @@ $('#ch_bus_ur').click(function () {
 });
 if ($('*').is('.tarif-main')) {
 
-let selectItems = document.querySelectorAll('.select-items div')
+let selectItems9 = document.querySelectorAll('.select-items div')
 let test2 = document.querySelector('.test2') 
 let test3 = document.querySelector('.test3') 
 let test1 = document.querySelector('.test1') 
 let price = document.querySelector('.price') 
 
-for(let i = 0; i<selectItems.length; i++){
-  selectItems[i].addEventListener('click', getPrice)
+for(let i = 0; i<selectItems9.length; i++){
+  selectItems9[i].addEventListener('click', getPrice)
 function  getPrice(){
   price.textContent =  parseInt(test2.value) + parseInt(test3.value) + parseInt(test1.value) 
 }

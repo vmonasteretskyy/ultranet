@@ -171,6 +171,10 @@
 }
 
 .change_mail {
+    h5 {
+        font-size: 22px;
+    }
+
     .modal-body {
         padding: 8px 35px;
     }
@@ -277,7 +281,7 @@
             background: #34a0d9;
             border-radius: 3px;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 150%;
             text-align: center;
             margin-right: 30px;
@@ -290,7 +294,7 @@
             box-sizing: border-box;
             border-radius: 3px;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 150%;
             text-align: center;
             color: #34a0d9;
@@ -306,6 +310,16 @@
 
 .appear_taruf {
     display: none;
+
+    h4 {
+        margin-top: 0px;
+
+    }
+
+    // .come-back{
+    //     margin-top: 50px;
+
+    // }
 }
 
 .ip-address,
@@ -376,7 +390,7 @@
         width: 147px;
         height: 40px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         color: #ffffff;
 
         &:active {
@@ -485,7 +499,7 @@
 
 .peause_modal {
     .modal-content .modal-header1 h5 {
-        font-size: 22px;
+        font-size: 18px;
         width: 100%;
     }
 
@@ -741,9 +755,9 @@
     font-size: 18px;
     line-height: 150%;
     color: #000000;
-
+text-align: center;
     img {
-        margin-right: 20px;
+        margin-right: 16px;
     }
 
     button {
@@ -754,6 +768,9 @@
 .notebook {
     border-left: 1px solid #e8e8e8;
     padding-left: 39px;
+    img{
+        margin-left: -10px;
+    }
 }
 
 .print-box {
@@ -789,8 +806,10 @@
 .tab_content .table-magazine {
     tr td:first-of-type {
         width: auto;
+       font-weight: 300;
+       color: #464646;
     }
-
+  
     tr td:nth-child(3) {
         text-align: center;
 
@@ -921,7 +940,15 @@
         padding-top: 0px;
     }
 }
-
+@media (min-width: 992px) {
+ .container .wrapper .tab_content .magazine-block, .magazine-block0{
+       table tr td:first-of-type {
+         
+            padding: 10px 15px 10px 30px;
+        
+    }
+}
+}
 @media (min-width: 576px) {
     #receipt_modal .modal-dialog {
         max-width: 100%;
@@ -1179,8 +1206,12 @@
 }
 
 .tab_pay .pay .block_pay-services .pay-big-element .select-items {
-    width: 110%;
+    width: 111.5%;
     margin-left: 0px;
+}
+
+.new_telef {
+    margin-top: 15px;
 }
 
 @media (min-width: 500px) {
@@ -1593,6 +1624,7 @@
             span {
                 display: none;
             }
+
             .close-back {
                 display: block;
                 position: absolute;
@@ -1601,12 +1633,14 @@
                 margin-top: 5px;
             }
         }
+
         .change_tar-text li {
             font-size: 16px;
 
             padding: 5px 10px 5px 10px;
         }
     }
+
     .close-tab-menu {
         display: block;
 
@@ -1666,13 +1700,38 @@
 }
 
 @media (max-width: 575px) {
-    .wrapper   .appear_table{
-        .close-back {
-         
-             margin-right: 0px;
+    .btn_order button{
+        font-size: 16px;
+    }
+    .change_mail {
+        .enter-btn {
+            .enter {
+                font-size: 16px;
+            }
+            .abonent {
+                font-size: 16px;
+            }
         }
-            
-     }
+    }
+
+    .new_telef {
+        margin-top: 0px;
+    }
+
+    .change_mail {
+        h5 {
+            font-size: 18px;
+        }
+    }
+
+    .wrapper .appear_table {
+        .close-back {
+
+            margin-right: 0px;
+        }
+
+    }
+
     .tele .change_tar-text li,
     .ip-address .change_tar-text li,
     .appear_taruf .change_tar-text li {
@@ -1699,21 +1758,25 @@
             width: 180px;
             font-size: 16px;
         }
+
         .pay-big-element {
             text-align: center;
+
             .select-selected {
                 width: 180px;
             }
-          .custom-selects2{
-            max-width: 180px;
 
-          }
+            .custom-selects2 {
+                max-width: 180px;
+
+            }
         }
+
         .pay-big-element {
             .custom-selects2 {
                 margin-left: 10px;
                 margin-right: auto;
-    margin-left: auto;
+                margin-left: auto;
             }
         }
     }
@@ -1750,9 +1813,10 @@
 
     .img-setting {
         margin-left: 15px;
-        img{
+
+        img {
             width: 94%;
-           
+
         }
     }
 
@@ -2028,6 +2092,7 @@
     .print-block img {
         margin-right: 5px;
     }
+
     .wrapper .tab_content .magazine-block .table-magazine {
         width: 100%;
 
@@ -2242,6 +2307,7 @@
         table th {
             width: 170px;
         }
+
         table tr th:nth-child(2) {
             padding: 10px 0px 0px;
         }
@@ -2420,14 +2486,15 @@
     }
 
     .tab_content .appear_table {
-        table th:first-of-type{
+        table th:first-of-type {
             width: 95px;
         }
+
         table th {
             width: 142px;
             padding: 10px 0px;
 
         }
-       
+
     }
 }

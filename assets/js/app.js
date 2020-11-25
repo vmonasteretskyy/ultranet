@@ -21151,6 +21151,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#privat-select').click(function (
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#home_mod').click(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    // document.getElementById('home_modal').getElementsByTagName('option')[1].selected = 'selected';
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('hide');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('show');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').css("overflow-y", "scroll");
@@ -21203,8 +21204,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#home_mod').click(function () {
   }
 }); //second popup
 
+jquery__WEBPACK_IMPORTED_MODULE_0___default()("#home_mod").click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("#home_modal").val('3');
+  console.log("dddd");
+});
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('#privat_mod').click(function () {
   if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+    document.getElementById('home_modal').getElementsByTagName('option')[1].selected = 'selected';
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').css("overflow-y", "scroll");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_internet').modal('show');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_privat-home').modal('hide');
@@ -21533,18 +21539,18 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_bus_ur').click(function () {
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   (function () {
-    var selectItems = document.querySelectorAll('.select-items div');
+    var selectItems9 = document.querySelectorAll('.select-items div');
     var test2 = document.querySelector('.test2');
     var test3 = document.querySelector('.test3');
     var test1 = document.querySelector('.test1');
     var price = document.querySelector('.price');
 
-    for (var _i = 0; _i < selectItems.length; _i++) {
+    for (var _i = 0; _i < selectItems9.length; _i++) {
       var getPrice = function getPrice() {
         price.textContent = parseInt(test2.value) + parseInt(test3.value) + parseInt(test1.value);
       };
 
-      selectItems[_i].addEventListener('click', getPrice);
+      selectItems9[_i].addEventListener('click', getPrice);
     } //change
 
 

@@ -1132,6 +1132,7 @@
 }
 
 .select-items {
+  margin-top: 2px;
   position: absolute;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(171, 171, 171, 0.4);
@@ -2142,6 +2143,7 @@ footer {
 }
 
 .box-show-check {
+  margin-top: 2px;
   filter: drop-shadow(0px 4px 10px rgba(171, 171, 171, 0.4));
   background: #ffffff;
   border-radius: 3px;
@@ -4971,6 +4973,9 @@ input[type=checkbox]:checked + label:before {
   margin-bottom: 0px;
 }
 
+.change_mail h5 {
+  font-size: 22px;
+}
 .change_mail .modal-body {
   padding: 8px 35px;
 }
@@ -5072,7 +5077,7 @@ input[type=checkbox]:checked + label:before {
   background: #34a0d9;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   text-align: center;
   margin-right: 30px;
@@ -5084,7 +5089,7 @@ input[type=checkbox]:checked + label:before {
   box-sizing: border-box;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   text-align: center;
   color: #34a0d9;
@@ -5097,6 +5102,9 @@ input[type=checkbox]:checked + label:before {
 
 .appear_taruf {
   display: none;
+}
+.appear_taruf h4 {
+  margin-top: 0px;
 }
 
 .ip-address table tr td:first-of-type,
@@ -5202,7 +5210,7 @@ input[type=checkbox]:checked + label:before {
   width: 147px;
   height: 40px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
 }
 .btn_order button:active {
@@ -5298,7 +5306,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .peause_modal .modal-content .modal-header1 h5 {
-  font-size: 22px;
+  font-size: 18px;
   width: 100%;
 }
 .peause_modal .modal-dialog {
@@ -5518,9 +5526,10 @@ input[type=checkbox]:checked + label:before {
   font-size: 18px;
   line-height: 150%;
   color: #000000;
+  text-align: center;
 }
 .print-block img {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 .print-block button {
   margin-top: 20px;
@@ -5529,6 +5538,9 @@ input[type=checkbox]:checked + label:before {
 .notebook {
   border-left: 1px solid #e8e8e8;
   padding-left: 39px;
+}
+.notebook img {
+  margin-left: -10px;
 }
 
 .print-box {
@@ -5563,6 +5575,8 @@ input[type=checkbox]:checked + label:before {
 
 .tab_content .table-magazine tr td:first-of-type {
   width: auto;
+  font-weight: 300;
+  color: #464646;
 }
 .tab_content .table-magazine tr td:nth-child(3) {
   text-align: center;
@@ -5680,6 +5694,11 @@ input[type=checkbox]:checked + label:before {
   padding-top: 0px;
 }
 
+@media (min-width: 992px) {
+  .container .wrapper .tab_content .magazine-block table tr td:first-of-type, .magazine-block0 table tr td:first-of-type {
+    padding: 10px 15px 10px 30px;
+  }
+}
 @media (min-width: 576px) {
   #receipt_modal .modal-dialog {
     max-width: 100%;
@@ -5897,8 +5916,12 @@ input[type=checkbox]:checked + label:before {
 }
 
 .tab_pay .pay .block_pay-services .pay-big-element .select-items {
-  width: 110%;
+  width: 111.5%;
   margin-left: 0px;
+}
+
+.new_telef {
+  margin-top: 15px;
 }
 
 @media (min-width: 500px) {
@@ -6326,6 +6349,25 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .btn_order button {
+    font-size: 16px;
+  }
+
+  .change_mail .enter-btn .enter {
+    font-size: 16px;
+  }
+  .change_mail .enter-btn .abonent {
+    font-size: 16px;
+  }
+
+  .new_telef {
+    margin-top: 0px;
+  }
+
+  .change_mail h5 {
+    font-size: 18px;
+  }
+
   .wrapper .appear_table .close-back {
     margin-right: 0px;
   }

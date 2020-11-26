@@ -20376,7 +20376,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.form-connect')) {
-  var element = document.getElementById('mask-phone');
+  var element = document.querySelector('.mask-phone');
   var maskOptions = {
     mask: '+{38}(000)000-00-00'
   };

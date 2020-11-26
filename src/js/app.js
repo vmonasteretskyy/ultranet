@@ -3,11 +3,12 @@ import "../bootstrap/js/bootstrap.min.js";
 import IMask from 'imask';
 
 if ($('*').is('.form-connect')) {
-  let element = document.getElementById('mask-phone');
+  let element = document.querySelector('.mask-phone');
   let maskOptions = {
     mask: '+{38}(000)000-00-00'
   };
   let mask = IMask(element, maskOptions);
+  
 }
 function burgerMenu(selector) {
   let menu = $(selector);

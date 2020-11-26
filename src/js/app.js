@@ -876,7 +876,7 @@ $('#calcul2').change(function(){
 
 $('#home_mod').click(function () {
   if ($("option:selected", this).val() == "2") {
-    // document.getElementById('home_modal').getElementsByTagName('option')[1].selected = 'selected';
+    // document.getElementById('home_modal').getElementsByTagName('option')[0].selected = 'selected';
     $('#connect_internet').modal('hide');
     $('#connect_privat-home').modal('show');
     $('#connect_privat-home').css("overflow-y", "scroll");
@@ -927,13 +927,13 @@ $('#home_mod').click(function () {
   } 
 });
 //second popup
-$("#home_mod").click(function () {
-  $("#home_modal").val('3');
-  console.log("dddd");
-});
+
+
+ 
 $('#privat_mod').click(function () {
 if ($("option:selected", this).val() == "2") {
-  document.getElementById('home_modal').getElementsByTagName('option')[1].selected = 'selected';
+
+
     $('#connect_internet').css("overflow-y", "scroll");
     $('#connect_internet').modal('show');
     $('#connect_privat-home').modal('hide');
@@ -1401,3 +1401,423 @@ if (window.matchMedia('(max-width: 767px)').matches) {
   }
   }
 });
+
+ 
+// let selectItems0 = document.querySelectorAll('#bussines-f .select-items div')
+// let privat_mod0 = document.querySelector('#home_mod') 
+// let chosen0 = document.querySelector('.choosen') 
+// let selectSelected0 = document.querySelector('#bussines-f .select-selected') 
+// privat_mod0.addEventListener('click', getFirst00)
+// function getFirst00(){
+//   selectSelected0.textContent = chosen0.textContent
+
+//   for(let i = 0; i<selectItems0.length; i++){
+//   selectItems0[i].classList.remove('same-as-selected')
+//   selectItems0[0].classList.add('same-as-selected')
+// }
+// }
+ 
+let selectItems = document.querySelectorAll('#home_mod .select-items div')
+let privat_mod = document.querySelector('#privat_mod') 
+let chosen = document.querySelector('.choosen') 
+let selectSelected = document.querySelector('#home_mod .select-selected') 
+privat_mod.addEventListener('click', getFirst0)
+function getFirst0(){
+  selectSelected.textContent = chosen.textContent
+
+  for(let i = 0; i<selectItems.length; i++){
+  selectItems[i].classList.remove('same-as-selected')
+  selectItems[0].classList.add('same-as-selected')
+}
+}
+
+// //privat
+let selectItems1 = document.querySelectorAll('#privat_mod .select-items div')
+let privat_mod1 = document.querySelector('#home_mod') 
+let chosen1 = document.querySelector('.choosens') 
+let selectSelected1 = document.querySelector('#privat_mod .select-selected') 
+privat_mod1.addEventListener('click', getFirst1)
+function getFirst1(){
+
+  selectSelected1.textContent = chosen1.textContent
+
+  for(let i = 0; i<selectItems1.length; i++){
+  selectItems1[i].classList.remove('same-as-selected')
+  selectItems1[0].classList.add('same-as-selected')
+
+}
+}
+
+// bussines
+let selectItems2 = document.querySelectorAll('#home_mod .select-items div')
+let privat_mod2 = document.querySelector('#bussines-f') 
+let chosen2 = document.querySelector('.choosen') 
+let selectSelected2 = document.querySelector('#home_mod .select-selected') 
+privat_mod2.addEventListener('click', getFirst2)
+function getFirst2(){
+
+  selectSelected2.textContent = chosen2.textContent
+
+  for(let i = 0; i<selectItems2.length; i++){
+  selectItems2[i].classList.remove('same-as-selected')
+  selectItems2[0].classList.add('same-as-selected')
+   
+}
+}
+
+// bussines
+let selectItems3 = document.querySelectorAll('#bussines-f .select-items div')
+let privat_mod3 = document.querySelector('#home_mod') 
+let chosen3 = document.querySelector('.choosen3') 
+let selectSelected3 = document.querySelector('#bussines-f .select-selected') 
+privat_mod3.addEventListener('click', getFirst3)
+function getFirst3(){
+
+  selectSelected3.textContent = chosen3.textContent
+
+  for(let i = 0; i<selectItems3.length; i++){
+  selectItems3[i].classList.remove('same-as-selected')
+  selectItems3[0].classList.add('same-as-selected')
+   
+}
+}
+// bussines privat
+let selectItems4 = document.querySelectorAll('#bussines-f .select-items div')
+let privat_mod4 = document.querySelector('#privat_mod') 
+let chosen4 = document.querySelector('.choosen4') 
+let selectSelected4 = document.querySelector('#bussines-f .select-selected') 
+privat_mod4.addEventListener('click', getFirst4)
+function getFirst4(){
+  selectSelected4.textContent = chosen4.textContent
+  for(let i = 0; i<selectItems4.length; i++){
+  selectItems4[i].classList.remove('same-as-selected')
+  selectItems4[0].classList.add('same-as-selected')
+   
+}
+}
+
+// bussines
+let selectItems5 = document.querySelectorAll('#privat_mod .select-items div')
+let privat_mod5 = document.querySelector('#bussines-f') 
+let chosen5 = document.querySelector('.choosens') 
+let selectSelected5 = document.querySelector('#privat_mod .select-selected') 
+privat_mod5.addEventListener('click', getFirst5)
+function getFirst5(){
+
+  selectSelected5.textContent = chosen5.textContent
+
+  for(let i = 0; i<selectItems5.length; i++){
+  selectItems5[i].classList.remove('same-as-selected')
+  selectItems5[0].classList.add('same-as-selected')
+   
+}
+}
+
+
+
+
+
+
+//Ur
+let selectItems6 = document.querySelectorAll('#home_mod .select-items div')
+let privat_mod6 = document.querySelector('#bussines-ur') 
+let chosen6 = document.querySelector('.choosen') 
+let selectSelected6 = document.querySelector('#home_mod .select-selected') 
+privat_mod6.addEventListener('click', getFirst6)
+function getFirst6(){
+
+
+  selectSelected6.textContent = chosen6.textContent
+
+  for(let i = 0; i<selectItems6.length; i++){
+  selectItems6[i].classList.remove('same-as-selected')
+  selectItems6[0].classList.add('same-as-selected')
+   
+}
+}
+
+ // bussines Ur
+let selectItems7 = document.querySelectorAll('#bussines-ur .select-items div')
+let privat_mod7 = document.querySelector('#home_mod') 
+let chosen7 = document.querySelector('.choosen4') 
+let selectSelected7 = document.querySelector('#bussines-ur .select-selected') 
+privat_mod7.addEventListener('click', getFirst7)
+function getFirst7(){
+
+  selectSelected7.textContent = chosen7.textContent
+
+  for(let i = 0; i<selectItems7.length; i++){
+  selectItems7[i].classList.remove('same-as-selected')
+  selectItems7[0].classList.add('same-as-selected')
+   
+}
+}
+//  bussines Ur
+ let selectItems8 = document.querySelectorAll('#bussines-ur .select-items div')
+ let privat_mod8 = document.querySelector('#privat_mod') 
+ let chosen8 = document.querySelector('.choosen4') 
+ let selectSelected8 = document.querySelector('#bussines-ur .select-selected') 
+ privat_mod8.addEventListener('click', getFirst8)
+ function getFirst8(){
+
+   selectSelected8.textContent = chosen8.textContent
+ 
+   for(let i = 0; i<selectItems8.length; i++){
+   selectItems8[i].classList.remove('same-as-selected')
+   selectItems8[0].classList.add('same-as-selected')
+    
+ }
+ }
+ //
+ let selectItems9 = document.querySelectorAll('#privat_mod .select-items div')
+ let privat_mod9 = document.querySelector('#bussines-ur') 
+ let chosen9 = document.querySelector('.choosens') 
+ let selectSelected9 = document.querySelector('#privat_mod .select-selected') 
+ privat_mod9.addEventListener('click', getFirst9)
+ function getFirst9(){
+
+   selectSelected9.textContent = chosen9.textContent
+ 
+   for(let i = 0; i<selectItems9.length; i++){
+   selectItems9[i].classList.remove('same-as-selected')
+   selectItems9[0].classList.add('same-as-selected')
+    
+ }
+ }
+
+ //
+ let selectItems10= document.querySelectorAll('#bussines-f .select-items div')
+ let privat_mod10 = document.querySelector('#bussines-ur') 
+ let chosen10 = document.querySelector('.choosen3') 
+ let selectSelected10 = document.querySelector('#bussines-f .select-selected') 
+ privat_mod10.addEventListener('click', getFirst10)
+ function getFirst10(){
+
+   selectSelected10.textContent = chosen10.textContent
+ 
+   for(let i = 0; i<selectItems10.length; i++){
+   selectItems10[i].classList.remove('same-as-selected')
+   selectItems10[0].classList.add('same-as-selected')
+    
+ }
+ }
+  //
+  let selectItems11= document.querySelectorAll('#bussines-ur .select-items div')
+  let privat_mod11 = document.querySelector('#bussines-f') 
+  let chosen11 = document.querySelector('.choosen4') 
+  let selectSelected11 = document.querySelector('#bussines-ur .select-selected') 
+  privat_mod11.addEventListener('click', getFirst11)
+  function getFirst11(){
+ 
+    selectSelected11.textContent = chosen11.textContent
+  
+    for(let i = 0; i<selectItems11.length; i++){
+    selectItems11[i].classList.remove('same-as-selected')
+    selectItems11[0].classList.add('same-as-selected')
+     
+  }
+  }
+
+
+///////change/////
+
+
+   let selectItems12= document.querySelectorAll('#ch_privat .select-items div')
+   let privat_mod12 = document.querySelector('#ch_home') 
+   let chosen12 = document.querySelector('.ch_choose2') 
+   let selectSelected12 = document.querySelector('#ch_privat .select-selected') 
+   privat_mod12.addEventListener('click', getFirst12)
+   function getFirst12(){
+  
+     selectSelected12.textContent = chosen12.textContent
+   
+     for(let i = 0; i<selectItems12.length; i++){
+     selectItems12[i].classList.remove('same-as-selected')
+     selectItems12[0].classList.add('same-as-selected')
+      
+   }
+   }
+
+   let selectItems13= document.querySelectorAll('#ch_home .select-items div')
+   let privat_mod13 = document.querySelector('#ch_privat') 
+   let chosen13 = document.querySelector('.ch_choose1') 
+   let selectSelected13 = document.querySelector('#ch_home .select-selected') 
+   privat_mod13.addEventListener('click', getFirst13)
+   function getFirst13(){
+  
+     selectSelected13.textContent = chosen13.textContent
+   
+     for(let i = 0; i<selectItems13.length; i++){
+     selectItems13[i].classList.remove('same-as-selected')
+     selectItems13[0].classList.add('same-as-selected')
+      
+   }
+   }
+   //
+
+   
+   let selectItems14= document.querySelectorAll('#ch_bussines .select-items div')
+   let privat_mod14 = document.querySelector('#ch_home') 
+   let chosen14 = document.querySelector('.ch_choose3') 
+   let selectSelected14 = document.querySelector('#ch_bussines .select-selected') 
+   privat_mod14.addEventListener('click', getFirst14)
+   function getFirst14(){
+  
+     selectSelected14.textContent = chosen14.textContent
+   
+     for(let i = 0; i<selectItems14.length; i++){
+     selectItems14[i].classList.remove('same-as-selected')
+     selectItems14[0].classList.add('same-as-selected')
+      
+   }
+   }
+
+   let selectItems15= document.querySelectorAll('#ch_home .select-items div')
+   let privat_mod15 = document.querySelector('#ch_bussines') 
+   let chosen15 = document.querySelector('.ch_choose1') 
+   let selectSelected15 = document.querySelector('#ch_home .select-selected') 
+   privat_mod15.addEventListener('click', getFirst15)
+   function getFirst15(){
+  
+     selectSelected15.textContent = chosen15.textContent
+   
+     for(let i = 0; i<selectItems15.length; i++){
+     selectItems15[i].classList.remove('same-as-selected')
+     selectItems15[0].classList.add('same-as-selected')
+      
+   }
+   }
+
+   
+   //
+   let selectItems16= document.querySelectorAll('#ch_bus_ur .select-items div')
+   let privat_mod16 = document.querySelector('#ch_home') 
+   let chosen16 = document.querySelector('.ch_choose4') 
+   let selectSelected16 = document.querySelector('#ch_bus_ur .select-selected') 
+   privat_mod16.addEventListener('click', getFirst16)
+   function getFirst16(){
+  
+     selectSelected16.textContent = chosen16.textContent
+   
+     for(let i = 0; i<selectItems16.length; i++){
+     selectItems16[i].classList.remove('same-as-selected')
+     selectItems16[0].classList.add('same-as-selected')
+      
+   }
+   }
+
+   let selectItems17= document.querySelectorAll('#ch_home .select-items div')
+   let privat_mod17 = document.querySelector('#ch_bus_ur') 
+   let chosen17 = document.querySelector('.ch_choose1') 
+   let selectSelected17 = document.querySelector('#ch_home .select-selected') 
+   privat_mod17.addEventListener('click', getFirst17)
+   function getFirst17(){
+  
+     selectSelected17.textContent = chosen17.textContent
+   
+     for(let i = 0; i<selectItems17.length; i++){
+     selectItems17[i].classList.remove('same-as-selected')
+     selectItems17[0].classList.add('same-as-selected')
+      
+   }
+   }
+   //privat
+   
+   let selectItems18= document.querySelectorAll('#ch_privat .select-items div')
+   let privat_mod18 = document.querySelector('#ch_bussines') 
+   let chosen18 = document.querySelector('.ch_choose2') 
+   let selectSelected18 = document.querySelector('#ch_privat .select-selected') 
+   privat_mod18.addEventListener('click', getFirst18)
+   function getFirst18(){
+  
+     selectSelected18.textContent = chosen18.textContent
+   
+     for(let i = 0; i<selectItems18.length; i++){
+     selectItems18[i].classList.remove('same-as-selected')
+     selectItems18[0].classList.add('same-as-selected')
+      
+   }
+   }
+
+   let selectItems19= document.querySelectorAll('#ch_bussines .select-items div')
+   let privat_mod19 = document.querySelector('#ch_privat') 
+   let chosen19 = document.querySelector('.ch_choose3') 
+   let selectSelected19 = document.querySelector('#ch_bussines .select-selected') 
+   privat_mod19.addEventListener('click', getFirst19)
+   function getFirst19(){
+  
+     selectSelected19.textContent = chosen19.textContent
+   
+     for(let i = 0; i<selectItems19.length; i++){
+     selectItems19[i].classList.remove('same-as-selected')
+     selectItems19[0].classList.add('same-as-selected')
+      
+   }
+   }
+
+
+      //privat +ur
+   
+      let selectItems20= document.querySelectorAll('#ch_privat .select-items div')
+      let privat_mod20 = document.querySelector('#ch_bus_ur') 
+      let chosen20 = document.querySelector('.ch_choose2') 
+      let selectSelected20 = document.querySelector('#ch_privat .select-selected') 
+      privat_mod20.addEventListener('click', getFirst20)
+      function getFirst20(){
+     
+        selectSelected20.textContent = chosen20.textContent
+      
+        for(let i = 0; i<selectItems20.length; i++){
+        selectItems20[i].classList.remove('same-as-selected')
+        selectItems20[0].classList.add('same-as-selected')
+         
+      }
+      }
+   
+      let selectItems21= document.querySelectorAll('#ch_bus_ur .select-items div')
+      let privat_mod21 = document.querySelector('#ch_privat') 
+      let chosen21 = document.querySelector('.ch_choose4') 
+      let selectSelected21 = document.querySelector('#ch_bus_ur .select-selected') 
+      privat_mod21.addEventListener('click', getFirst21)
+      function getFirst21(){
+     
+        selectSelected21.textContent = chosen21.textContent
+      
+        for(let i = 0; i<selectItems21.length; i++){
+        selectItems21[i].classList.remove('same-as-selected')
+        selectItems21[0].classList.add('same-as-selected')
+         
+      }
+      }
+            //fop +ur
+   
+            let selectItems22= document.querySelectorAll('#ch_bussines .select-items div')
+            let privat_mod22 = document.querySelector('#ch_bus_ur') 
+            let chosen22 = document.querySelector('.ch_choose3') 
+            let selectSelected22 = document.querySelector('#ch_bussines .select-selected') 
+            privat_mod22.addEventListener('click', getFirst22)
+            function getFirst22(){
+           
+              selectSelected22.textContent = chosen22.textContent
+              for(let i = 0; i<selectItems22.length; i++){
+              selectItems22[i].classList.remove('same-as-selected')
+              selectItems22[0].classList.add('same-as-selected')
+               
+            }
+            }
+         
+            let selectItems23= document.querySelectorAll('#ch_bus_ur .select-items div')
+            let privat_mod23 = document.querySelector('#ch_bussines') 
+            let chosen23 = document.querySelector('.ch_choose4') 
+            let selectSelected23 = document.querySelector('#ch_bus_ur .select-selected') 
+            privat_mod23.addEventListener('click', getFirst23)
+            function getFirst23(){
+           
+              selectSelected23.textContent = chosen23.textContent
+            
+              for(let i = 0; i<selectItems23.length; i++){
+              selectItems23[i].classList.remove('same-as-selected')
+              selectItems23[0].classList.add('same-as-selected')
+               
+            }
+            }

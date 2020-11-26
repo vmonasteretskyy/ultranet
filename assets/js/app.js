@@ -20703,6 +20703,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif'
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-2").is(':checked')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').css("animation-name", "highlite");
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
+      var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul1').val() * 14;
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat').html(total);
     }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-1').click(function () {
@@ -20715,6 +20717,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif'
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("#radio-4").is(':checked')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').slideDown();
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.calculator-speed').css("animation-name", "highlite");
+      var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#calcul2').val() * 14;
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('#rezultat2').html(total);
     }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#radio-3').click(function () {

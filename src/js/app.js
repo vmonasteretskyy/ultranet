@@ -353,7 +353,11 @@ if ($('*').is('.change_privat-tarif')) {
   
     if ($("#radio-2").is(':checked')) {
     $('.calculator-speed').css("animation-name","highlite");
-      $('.calculator-speed').slideDown();    
+      $('.calculator-speed').slideDown(); 
+   
+        var total = $('#calcul1').val() * 14;
+        $('#rezultat').html((total));
+    
     }
   })
   $('#radio-1').click(function () {
@@ -367,6 +371,10 @@ if ($('*').is('.change_privat-tarif')) {
     if ($("#radio-4").is(':checked')) {
         $('.calculator-speed').slideDown();
         $('.calculator-speed').css("animation-name","highlite");
+     
+          var total = $('#calcul2').val() * 14;
+          $('#rezultat2').html((total));
+       
     }
   })
   $('#radio-3').click(function () {

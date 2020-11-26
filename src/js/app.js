@@ -872,6 +872,7 @@ $('#calcul2').change(function(){
  
   })
 // }
+if ($('*').is('.tarif-main')) {
 
 
 $('#home_mod').click(function () {
@@ -1327,6 +1328,7 @@ function  cthirdRes(){
 }
 }
 }
+}
 //tarifs tv
 
 if ($('*').is('#connect_tv')) {
@@ -1402,20 +1404,7 @@ if (window.matchMedia('(max-width: 767px)').matches) {
   }
 });
 
- 
-// let selectItems0 = document.querySelectorAll('#bussines-f .select-items div')
-// let privat_mod0 = document.querySelector('#home_mod') 
-// let chosen0 = document.querySelector('.choosen') 
-// let selectSelected0 = document.querySelector('#bussines-f .select-selected') 
-// privat_mod0.addEventListener('click', getFirst00)
-// function getFirst00(){
-//   selectSelected0.textContent = chosen0.textContent
-
-//   for(let i = 0; i<selectItems0.length; i++){
-//   selectItems0[i].classList.remove('same-as-selected')
-//   selectItems0[0].classList.add('same-as-selected')
-// }
-// }
+if ($('*').is('.tarif-main')) {
  
 let selectItems = document.querySelectorAll('#home_mod .select-items div')
 let privat_mod = document.querySelector('#privat_mod') 
@@ -1821,3 +1810,4 @@ function getFirst7(){
                
             }
             }
+          }

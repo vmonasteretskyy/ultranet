@@ -867,6 +867,9 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 991px) {
+   .home-internet-item .twenty-plus{
+        width: 182px;
+    }
     .business .business-law {
         .tarif-txt {
             margin-left: 0px;
@@ -1246,10 +1249,10 @@ input[type="checkbox"]:checked + label:before {
 
     .total-cost {
         padding-left: 10px;
-        font-size: 16px;
+        font-size: 18px;
 
         span {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
 

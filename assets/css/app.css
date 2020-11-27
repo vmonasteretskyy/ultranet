@@ -2632,6 +2632,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .home-internet-item .twenty-plus {
+    width: 182px;
+  }
+
   .business .business-law .tarif-txt {
     margin-left: 0px;
   }
@@ -2980,10 +2984,10 @@ input[type=checkbox]:checked + label:before {
 
   .total-cost {
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .total-cost span {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .form-connect {
@@ -3925,6 +3929,10 @@ input[type=checkbox]:checked + label:before {
   display: none;
 }
 
+#connect_mob .modal-header1 h5 {
+  width: 410px;
+}
+
 @media (max-width: 1199px) {
   .tarif_tv .home-int-grn ul {
     margin-left: 85px;
@@ -4023,6 +4031,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  #connect_mob .modal-header1 h5 {
+    width: 260px;
+  }
+
   .tar_box .home-internet-text {
     margin-top: 10px;
   }
@@ -4064,6 +4076,14 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 420px) {
+  .tv-text div:first-of-type {
+    width: 200px;
+  }
+
+  .calcul-text p:last-of-type {
+    margin-right: 0px;
+  }
+
   .modal-body1 .count-minutes {
     margin-bottom: 20px;
   }

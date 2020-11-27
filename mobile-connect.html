@@ -128,7 +128,7 @@
                             <li>100 хв. по Україні</li>
                           </ul>  
                         <p>40 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_mob">Підключити</button>
+                        <button class="btn_life1" data-toggle="modal" data-target="#connect_mob">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                             <li>200 хв. по Україні</li>
                           </ul>  
                         <p>60 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_mob">Підключити</button>
+                        <button class="btn_life2" data-toggle="modal" data-target="#connect_mob">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@
                             <li>300 хв. по Україні</li>
                           </ul>  
                         <p>90 грн. / місяць</p>
-                        <button data-toggle="modal" data-target="#connect_mob">Підключити</button>
+                        <button class="btn_life3" data-toggle="modal" data-target="#connect_mob">Підключити</button>
                     </div>
                 </div>
             </div>
@@ -187,8 +187,7 @@ aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
         <div class="modal-header modal-header1">
-             <h5 class="modal-title" id="exampleModalLabel">Заявка на підключення тарифу мобільного
-               <span>  зв’язку lifecell «Діджитал офіс 40»</span>
+             <h5 class="modal-title" >Заявка на підключення тарифу мобільного зв’язку lifecell «Діджитал офіс <span id="ch_ofice">40</span>» 
              </h5>
              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
              <span aria-hidden="true"><img src="src/img/close-modal.svg" alt="">
@@ -211,12 +210,12 @@ aria-hidden="true">
             <div class="choose-speed">
                 <p>Обраний тариф: </p>
                 <span>Тариф на телебачення:</span>
-                <div class="custom-selects2 custom-selects-tarif">
-                    <select class="csel_it6">
+                <div id="lifecell_sel" class="custom-selects2 custom-selects-tarif">
+                    <select  class="csel_it6">
                         <option value="40">Діджитал офіс 40</option>
-                        <option value="40">Діджитал офіс 40</option>
-                        <option value="60">Діджитал офіс 60</option>
-                        <option value="90">Діджитал офіс 90</option>
+                        <option class="choosenl" value="40">Діджитал офіс 40</option>
+                        <option class="choosenl2" value="60">Діджитал офіс 60</option>
+                        <option class="choosenl3" value="90">Діджитал офіс 90</option>
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
                 </div>

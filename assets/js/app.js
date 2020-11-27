@@ -22086,6 +22086,69 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   privat_mod23.addEventListener('click', getFirst23);
 }
 
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.mobile_con')) {
+  var getFirstl1 = function getFirstl1() {
+    selectSelectedl1.textContent = chosenl1.textContent;
+
+    for (var _i33 = 0; _i33 < selectItemsl1.length; _i33++) {
+      selectItemsl1[_i33].classList.remove('same-as-selected');
+
+      selectItemsl1[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst24 = function getFirst24() {
+    selectSelected24.textContent = chosen24.textContent;
+
+    for (var _i34 = 0; _i34 < selectItems24.length; _i34++) {
+      selectItems24[_i34].classList.remove('same-as-selected');
+
+      selectItems24[1].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst25 = function getFirst25() {
+    selectSelected25.textContent = chosen25.textContent;
+
+    for (var _i35 = 0; _i35 < selectItems25.length; _i35++) {
+      selectItems25[_i35].classList.remove('same-as-selected');
+
+      selectItems25[1].classList.add('same-as-selected');
+    }
+  };
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.btn_life1').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_ofice').html("40");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_minut').html("100 хв");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_gb').html("4 ГБ");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.btn_life2').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_ofice').html("60");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_minut').html("200 хв");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_gb').html("6 ГБ");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.btn_life3').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_ofice').html("90");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_minut').html("300 хв");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_gb').html("10 ГБ");
+  });
+  var selectItemsl1 = document.querySelectorAll('#lifecell_sel .select-items div');
+  var privat_modl1 = document.querySelector('.btn_life1');
+  var chosenl1 = document.querySelector('.choosenl');
+  var selectSelectedl1 = document.querySelector('#lifecell_sel .select-selected');
+  privat_modl1.addEventListener('click', getFirstl1);
+  var selectItems24 = document.querySelectorAll('#lifecell_sel .select-items div');
+  var privat_mod24 = document.querySelector('.btn_life2');
+  var chosen24 = document.querySelector('.choosenl2');
+  var selectSelected24 = document.querySelector('#lifecell_sel .select-selected');
+  privat_mod24.addEventListener('click', getFirst24);
+  var selectItems25 = document.querySelectorAll('#lifecell_sel .select-items div');
+  var privat_mod25 = document.querySelector('.btn_life3');
+  var chosen25 = document.querySelector('.choosenl3');
+  var selectSelected25 = document.querySelector('#lifecell_sel .select-selected');
+  privat_mod25.addEventListener('click', getFirst25);
+}
+
 /***/ }),
 
 /***/ "./src/sass/app.scss":

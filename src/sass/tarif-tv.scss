@@ -97,7 +97,11 @@ color: #000000;
     display: none;
 
 }
- 
+ #connect_mob{
+    .modal-header1 h5 {
+        width: 410px;
+    }
+ }
 @media (max-width: 1199px) {
     .tarif_tv {
         .home-int-grn {
@@ -225,7 +229,11 @@ color: #000000;
     }
 }
 @media (max-width: 575px) {
- 
+    #connect_mob{
+        .modal-header1 h5 {
+            width: 260px;
+        }
+     }
     .tar_box{
         .home-internet-text {
      
@@ -275,6 +283,12 @@ color: #000000;
     }
 }
 @media (max-width: 420px) {
+    .tv-text div:first-of-type{
+        width: 200px;
+    }
+    .calcul-text p:last-of-type{
+        margin-right: 0px;
+    }
     .modal-body1 .count-minutes{
         margin-bottom: 20px;
     }

@@ -164,6 +164,10 @@ if ($('*').is('.contact')) {
 }
 
 if ($('*').is('.tarif-main')) {
+  if (window.matchMedia('(max-width: 500px)').matches) {
+    $('.total-cost').css("right", "10px");
+
+    }
   //popup  Заявка на підключення домашнього інтернету
   $.fn.toggleClick = function (funcArray) {
     return this.click(function () {
@@ -1820,3 +1824,75 @@ function getFirst7(){
             }
             }
           }
+
+if ($('*').is('.mobile_con')){
+
+$('.btn_life1').click(function () {
+  $('#ch_ofice').html("40");
+  $('.c_minut').html("100 хв");
+  $('.c_gb').html("4 ГБ");
+
+});
+$('.btn_life2').click(function () {
+  $('#ch_ofice').html("60");
+  $('.c_minut').html("200 хв");
+  $('.c_gb').html("6 ГБ");
+
+});
+$('.btn_life3').click(function () {
+  $('#ch_ofice').html("90");
+  $('.c_minut').html("300 хв");
+  $('.c_gb').html("10 ГБ");
+
+});
+let selectItemsl1 = document.querySelectorAll('#lifecell_sel .select-items div')
+let privat_modl1 = document.querySelector('.btn_life1') 
+let chosenl1 = document.querySelector('.choosenl') 
+let selectSelectedl1 = document.querySelector('#lifecell_sel .select-selected') 
+privat_modl1.addEventListener('click', getFirstl1)
+
+function getFirstl1(){
+  selectSelectedl1.textContent = chosenl1.textContent
+ 
+  for(let i = 0; i<selectItemsl1.length; i++){
+  selectItemsl1[i].classList.remove('same-as-selected')
+  selectItemsl1[0].classList.add('same-as-selected')
+}
+}
+
+
+let selectItems24= document.querySelectorAll('#lifecell_sel .select-items div')
+let privat_mod24 = document.querySelector('.btn_life2') 
+let chosen24 = document.querySelector('.choosenl2') 
+let selectSelected24 = document.querySelector('#lifecell_sel .select-selected') 
+privat_mod24.addEventListener('click', getFirst24)
+function getFirst24(){
+
+  selectSelected24.textContent = chosen24.textContent
+
+  for(let i = 0; i<selectItems24.length; i++){
+  selectItems24[i].classList.remove('same-as-selected')
+  selectItems24[1].classList.add('same-as-selected')
+   
+}
+}
+
+let selectItems25= document.querySelectorAll('#lifecell_sel .select-items div')
+let privat_mod25 = document.querySelector('.btn_life3') 
+let chosen25 = document.querySelector('.choosenl3') 
+let selectSelected25 = document.querySelector('#lifecell_sel .select-selected') 
+privat_mod25.addEventListener('click', getFirst25)
+function getFirst25(){
+
+  selectSelected25.textContent = chosen25.textContent
+
+  for(let i = 0; i<selectItems25.length; i++){
+  selectItems25[i].classList.remove('same-as-selected')
+  selectItems25[1].classList.add('same-as-selected')
+   
+}
+}
+
+
+}
+

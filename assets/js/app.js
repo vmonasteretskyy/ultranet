@@ -22345,16 +22345,19 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.mobile_con')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_ofice').html("40");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_minut').html("100 хв");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_gb').html("4 ГБ");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cresBus6').html("40");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.btn_life2').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_ofice').html("60");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_minut').html("200 хв");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_gb').html("6 ГБ");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cresBus6').html("60");
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.btn_life3').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ch_ofice').html("90");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_minut').html("300 хв");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.c_gb').html("10 ГБ");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.cresBus6').html("90");
   });
   var selectItemsl1 = document.querySelectorAll('#lifecell_sel .select-items div');
   var privat_modl1 = document.querySelector('.btn_life1');

@@ -1591,6 +1591,8 @@ function  cthirdRes6(){
   cresBus6.textContent =  parseInt(csel_it6.value)
 }
 }
+
+
 $('#connect_mob').click(function () {
   if ($("option:selected", this).val() == "40") {
     $('.c_minut').html("100 хв");
@@ -2063,19 +2065,21 @@ $('.btn_life1').click(function () {
   $('#ch_ofice').html("40");
   $('.c_minut').html("100 хв");
   $('.c_gb').html("4 ГБ");
-
+  $('.cresBus6').html("40");
 });
 $('.btn_life2').click(function () {
   $('#ch_ofice').html("60");
   $('.c_minut').html("200 хв");
   $('.c_gb').html("6 ГБ");
+  $('.cresBus6').html("60");
 
+  
 });
 $('.btn_life3').click(function () {
   $('#ch_ofice').html("90");
   $('.c_minut').html("300 хв");
   $('.c_gb').html("10 ГБ");
-
+  $('.cresBus6').html("90");
 });
 let selectItemsl1 = document.querySelectorAll('#lifecell_sel .select-items div')
 let privat_modl1 = document.querySelector('.btn_life1') 

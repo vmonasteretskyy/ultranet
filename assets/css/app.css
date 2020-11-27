@@ -3946,6 +3946,10 @@ input[type=checkbox]:checked + label:before {
   justify-content: space-between;
 }
 
+#connect_mob .total-cost {
+  font-weight: 400;
+}
+
 @media (max-width: 1199px) {
   .tarif_tv .home-int-grn ul {
     margin-left: 85px;

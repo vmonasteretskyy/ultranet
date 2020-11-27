@@ -119,6 +119,7 @@ color: #000000;
          font-weight: 400;
      }
  }
+
 @media (max-width: 1199px) {
     .tarif_tv {
         .home-int-grn {
@@ -301,6 +302,15 @@ color: #000000;
     }
 }
 @media (max-width: 440px){
+    .mobile_con{
+        .home-internet-text {
+            margin-left: 0px;
+        }
+        .home-internet-text p{
+           width: 280px;
+           font-size: 15px;
+        }
+    }
 .tar_box {
     .change_privat-tarif{
         .count-channels{

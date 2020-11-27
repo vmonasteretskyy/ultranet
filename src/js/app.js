@@ -164,8 +164,129 @@ if ($('*').is('.contact')) {
 }
 
 if ($('*').is('.tarif-main')) {
+  $('.home_btn0').click(function () {
+$('.price').text("130")
+  });
+  $('.home_btn1').click(function () {
+    $('.price').text("175")
+      });
+      $('.home_btn2').click(function () {
+        $('.price').text("300")
+          });
+          $('.privat_btn2').click(function () {
+            $('.sprice2').html("189")
+              });
+          
+                  $('.btn_fop1').click(function () {
+                    $('.resBus').html("150")
+                      });
+              
+
+  let selectItemsh25= document.querySelectorAll('#sum_first .select-items div')
+  let privat_modh25 = document.querySelector('.home_btn0') 
+  let chosenh25 = document.querySelector('.change_b0') 
+  let selectSelectedh25 = document.querySelector('#sum_first .select-selected') 
+  privat_modh25.addEventListener('click', getFirsth25)
+  function getFirsth25(){
+  
+    selectSelectedh25.textContent = chosenh25.textContent
+  
+    for(let i = 0; i<selectItemsh25.length; i++){
+    selectItemsh25[i].classList.remove('same-as-selected')
+    selectItemsh25[1].classList.add('same-as-selected')
+     
+  }
+  }
+
+  let selectItemsh26= document.querySelectorAll('#sum_first .select-items div')
+  let privat_modh26 = document.querySelector('.home_btn1') 
+  let chosenh26 = document.querySelector('.change_b') 
+  let selectSelectedh26 = document.querySelector('#sum_first .select-selected') 
+  privat_modh26.addEventListener('click', getFirsth26)
+  function getFirsth26(){
+  
+    selectSelectedh26.textContent = chosenh26.textContent
+  
+    for(let i = 0; i<selectItemsh26.length; i++){
+    selectItemsh26[i].classList.remove('same-as-selected')
+    selectItemsh26[1].classList.add('same-as-selected')
+     
+  }
+  }
+
+  let selectItemsh24= document.querySelectorAll('#sum_first .select-items div')
+  let privat_modh24 = document.querySelector('.home_btn2') 
+  let chosenh24 = document.querySelector('.change_b2') 
+  let selectSelectedh24 = document.querySelector('#sum_first .select-selected') 
+  privat_modh24.addEventListener('click', getFirsth24)
+  function getFirsth24(){
+  
+    selectSelectedh24.textContent = chosenh24.textContent
+  
+    for(let i = 0; i<selectItemsh24.length; i++){
+    selectItemsh24[i].classList.remove('same-as-selected')
+    selectItemsh24[2].classList.add('same-as-selected')
+     
+  }
+  }
+  //pr
+  let selectItemsh23= document.querySelectorAll('#select2_pr .select-items div')
+  let privat_modh23 = document.querySelector('.privat_btn2') 
+  let chosenh23 = document.querySelector('.select-mb') 
+  let selectSelectedh23 = document.querySelector('#select2_pr .select-selected') 
+  privat_modh23.addEventListener('click', getFirsth23)
+  function getFirsth23(){
+  
+    selectSelectedh23.textContent = chosenh23.textContent
+  
+    for(let i = 0; i<selectItemsh23.length; i++){
+    selectItemsh23[i].classList.remove('same-as-selected')
+    selectItemsh23[1].classList.add('same-as-selected')
+     
+  }
+  }
+
+
+  let selectItemsh21= document.querySelectorAll('#fop_speed .select-items div')
+  let privat_modh21 = document.querySelector('.btn_fop1') 
+  let chosenh21 = document.querySelector('.select_fop0') 
+  let selectSelectedh21 = document.querySelector('#fop_speed .select-selected') 
+  privat_modh21.addEventListener('click', getFirsth21)
+  function getFirsth21(){
+  
+    selectSelectedh21.textContent = chosenh21.textContent
+  
+    for(let i = 0; i<selectItemsh21.length; i++){
+    selectItemsh21[i].classList.remove('same-as-selected')
+    selectItemsh21[0].classList.add('same-as-selected')
+     
+  }
+}
+  //fop
+if ($('*').is('.third_wrap_bus')) {
+  $('.btn_fop3').click(function () {
+    $('.resBus').html("300")
+      });
+  let selectItemsh22= document.querySelectorAll('#fop_speed .select-items div')
+  let privat_modh22 = document.querySelector('.btn_fop3') 
+  let chosenh22 = document.querySelector('.select_fop') 
+  let selectSelectedh22 = document.querySelector('#fop_speed .select-selected') 
+  privat_modh22.addEventListener('click', getFirsth22)
+  function getFirsth22(){
+  
+    selectSelectedh22.textContent = chosenh22.textContent
+  
+    for(let i = 0; i<selectItemsh22.length; i++){
+    selectItemsh22[i].classList.remove('same-as-selected')
+    selectItemsh22[2].classList.add('same-as-selected')
+     
+  }
+}
+  }
+
+
   if (window.matchMedia('(max-width: 500px)').matches) {
-    $('.total-cost').css("right", "10px");
+    $('.txt_cost').text("Вартість: ");
 
     }
   //popup  Заявка на підключення домашнього інтернету
@@ -1344,19 +1465,117 @@ function  cthirdRes(){
 }
 //tarifs tv
 
-if ($('*').is('#connect_tv')) {
+if ($('*').is('.tar_box')) {
 
+  $('.btn_tv1').click(function () {
+    $('.cresBus5').html("40");
+    $('.count_can').html("157");
+    $('#for-tarif').css("display", "none");
+    $('.tarif_204').css("margin-top", "30px");
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      $('.tarif_204').css("margin-top", "10px");
+    
+    }
+    if (window.matchMedia('(max-width: 440px)').matches) {
+      $('.list_of_kan').css("margin-top", "10px");
+
+    }
+    });
+    $('.btn_tv2').click(function () {
+      $('.cresBus5').html("50");
+      $('.count_can').html("196");
+  $('#for-tarif').css("display", "none");
+  $('.tarif_204').css("margin-top", "30px");
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    $('.tarif_204').css("margin-top", "10px");
+  
+  }
+  if (window.matchMedia('(max-width: 440px)').matches) {
+    $('.list_of_kan').css("margin-top", "10px");
+  
+  }
+      });
+      $('.btn_tv3').click(function () {
+        $('.cresBus5').html("70");
+  $('#for-tarif').css("display", "block");
+        $('.tarif_204').css("margin-top", "60px");
+   $('.count_can').html("204*");
+if (window.matchMedia('(max-width: 767px)').matches) {
+  $('.tarif_204').css("margin-top", "15px");
+
+}
+if (window.matchMedia('(max-width: 440px)').matches) {
+  $('.list_of_kan').css("margin-top", "40px");
+
+}
+if (window.matchMedia('(max-width: 420px)').matches) {
+  $('.list_of_kan').css("margin-top", "10px");
+
+}
+        });
 let cselectItem5 = document.querySelectorAll('.select-items div')
 let csel_it5 = document.querySelector('.csel_it5') 
 
 let cresBus5 = document.querySelector('.cresBus5') 
 
-for(let i = 0; i<selectItem.length; i++){
+for(let i = 0; i<cselectItem5.length; i++){
   cselectItem5[i].addEventListener('click', cthirdRes5)
 function  cthirdRes5(){
   cresBus5.textContent =  parseInt(csel_it5.value)
 }
 }
+
+
+let selectItemsh1= document.querySelectorAll('#tar_tvs .select-items div')
+let privat_modh1 = document.querySelector('.btn_tv1') 
+let chosenh1 = document.querySelector('.choos_tv1') 
+let selectSelectedh1 = document.querySelector('#tar_tvs .select-selected') 
+privat_modh1.addEventListener('click', getFirsth1)
+function getFirsth1(){
+
+  selectSelectedh1.textContent = chosenh1.textContent
+
+  for(let i = 0; i<selectItemsh1.length; i++){
+  selectItemsh1[i].classList.remove('same-as-selected')
+  selectItemsh1[0].classList.add('same-as-selected')
+   
+}
+}
+
+//
+let selectItemsh2= document.querySelectorAll('#tar_tvs .select-items div')
+let privat_modh2 = document.querySelector('.btn_tv2') 
+let chosenh2 = document.querySelector('.choos_tv2') 
+let selectSelectedh2 = document.querySelector('#tar_tvs .select-selected') 
+privat_modh2.addEventListener('click', getFirsth2)
+function getFirsth2(){
+
+  selectSelectedh2.textContent = chosenh2.textContent
+
+  for(let i = 0; i<selectItemsh2.length; i++){
+  selectItemsh2[i].classList.remove('same-as-selected')
+  selectItemsh2[1].classList.add('same-as-selected')
+   
+}
+}
+//
+let selectItemsh3= document.querySelectorAll('#tar_tvs .select-items div')
+let privat_modh3 = document.querySelector('.btn_tv3') 
+let chosenh3 = document.querySelector('.choos_tv3') 
+let selectSelectedh3 = document.querySelector('#tar_tvs .select-selected') 
+privat_modh3.addEventListener('click', getFirsth3)
+function getFirsth3(){
+
+  selectSelectedh3.textContent = chosenh3.textContent
+
+  for(let i = 0; i<selectItemsh3.length; i++){
+  selectItemsh3[i].classList.remove('same-as-selected')
+  selectItemsh3[2].classList.add('same-as-selected')
+   
+}
+}
+
+
 }
 //mobile connect 
 if ($('*').is('.con-mob')) {
@@ -1391,6 +1610,7 @@ $('#connect_mob').click(function () {
 
 }
 $('#tar_tvs').click(function () {
+
   if ($("option:selected", this).val() == "40") {
     $('.count_can').html("157");
   }
@@ -1406,12 +1626,24 @@ if (window.matchMedia('(max-width: 767px)').matches) {
   $('.tarif_204').css("margin-top", "15px");
 
 }
+if (window.matchMedia('(max-width: 440px)').matches) {
+  $('.list_of_kan').css("margin-top", "40px");
+
+}
+if (window.matchMedia('(max-width: 420px)').matches) {
+  $('.list_of_kan').css("margin-top", "10px");
+
+}
   }
   else{
   $('#for-tarif').css("display", "none");
   $('.tarif_204').css("margin-top", "30px");
   if (window.matchMedia('(max-width: 767px)').matches) {
     $('.tarif_204').css("margin-top", "10px");
+  
+  }
+  if (window.matchMedia('(max-width: 440px)').matches) {
+    $('.list_of_kan').css("margin-top", "10px");
   
   }
   }
@@ -1888,11 +2120,12 @@ function getFirst25(){
 
   for(let i = 0; i<selectItems25.length; i++){
   selectItems25[i].classList.remove('same-as-selected')
-  selectItems25[1].classList.add('same-as-selected')
+  selectItems25[2].classList.add('same-as-selected')
    
 }
 }
 
 
 }
+
 

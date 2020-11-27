@@ -94,7 +94,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>130 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#connect_internet">Підключити</button>
+                                <button class="home_btn0" data-toggle="modal" data-target="#connect_internet">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>175 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#connect_internet">Підключити</button>
+                                <button class="home_btn1" data-toggle="modal" data-target="#connect_internet">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>300 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#connect_internet">Підключити</button>
+                                <button  class="home_btn2"  data-toggle="modal" data-target="#connect_internet">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>159 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#connect_privat-home">Підключити</button>
+                                <button class="privat_btn1"  data-toggle="modal" data-target="#connect_privat-home">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>189 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#change_privat-tarif">Підключити</button>
+                                <button class="privat_btn2" data-toggle="modal" data-target="#change_privat-tarif">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>150 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#business-fop">Підключити</button>
+                                <button  class="btn_fop1" data-toggle="modal" data-target="#business-fop">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="home-internet-wrap">
+                    <div class="home-internet-wrap third_wrap_bus">
                         <div class="home-internet-item">
                             <img class="svg" src="src/img/header-business.svg" alt="">
                                 
@@ -232,7 +232,7 @@
                             </div>
                             <div class="home-int-grn">
                                 <p>300 грн. / місяць</p>
-                                <button data-toggle="modal" data-target="#business-fop">Підключити</button>
+                                <button class="btn_fop3" data-toggle="modal" data-target="#business-fop">Підключити</button>
                             </div>
                         </div>
                     </div>
@@ -312,12 +312,12 @@
                             <div class="choose-speed adapt-speed">
                                 <p>Швидкість: </p>
                                 <span>Швидкість доступу до інтернет:</span>
-                                <div id="sum_first" class="custom-selects2 custom-selects-tarif">
-                                    <select class="test3"  >
+                                <div id="sum_first"  class="custom-selects2 custom-selects-tarif">
+                                    <select class="test3">
                                         <option  value="130">60 Мбіт/с</option>
-                                        <option value="130">60 Мбіт/с</option>
-                                        <option value="175">100 Мбіт/с</option>
-                                        <option value="300">200 Мбіт/с</option>
+                                        <option  class="change_b0" value="130">60 Мбіт/с</option>
+                                        <option class="change_b" value="175">100 Мбіт/с</option>
+                                        <option class="change_b2" value="300">200 Мбіт/с</option>
 
                                     </select>
                                     <img class="svg-select-i" src="src/img/select-ar.svg" alt="">
@@ -419,7 +419,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="total-cost">Загальна вартість:<span class="price">130</span> грн. / міс. </div>
+                            <div class="total-cost"><span class="txt_cost">Загальна вартість:</span><span class="price">130</span> грн. / міс. </div>
                             <div class="form-connect">
                                 <p>Форма для зв’язку:</p>
                                 <form action="">
@@ -553,7 +553,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="total-cost">Загальна вартість:<span class="price1">130</span> грн. / міс. </div>
+                            <div class="total-cost"><span class="txt_cost">Загальна вартість:</span><span class="price1">130</span> грн. / міс. </div>
 
                             <div class="footer-modal">
                                 <button class="order close-mod1" data-toggle="modal"
@@ -758,7 +758,7 @@
                      </div>
                  </div>
              </div>
-             <div class="total-cost">Загальна вартість:<span class="price2">159</span> грн. / міс. </div>
+             <div class="total-cost"><span class="txt_cost">Загальна вартість:</span><span class="price2">159</span> грн. / міс. </div>
              <div class="form-connect">
                  <p>Форма для зв’язку:</p>
                  <form action="">
@@ -812,11 +812,11 @@
                 <div class="choose-speed adapt-speed">
                     <p>Швидкість: </p>
                     <span>Швидкість доступу до інтернет:</span>
-                    <div class="custom-selects2 custom-selects-tarif">
+                    <div id="select2_pr" class="custom-selects2 custom-selects-tarif">
                         <select  class="ssel1">
                             <option value="159">35 Мбіт/с</option>
                             <option value="159">35 Мбіт/с</option>
-                            <option value="189">100 Мбіт/с</option>
+                            <option class="select-mb" value="189">100 Мбіт/с</option>
                       
 
                         </select>
@@ -874,7 +874,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="total-cost">Загальна вартість:<span class="sprice2">159</span> грн. / міс.</div>
+                <div class="total-cost"><span class="txt_cost">Загальна вартість:</span><span class="sprice2">159</span> грн. / міс.</div>
 
                 <div class="footer-modal">
                     <button class="order close-mod1" data-toggle="modal"
@@ -963,19 +963,19 @@ aria-hidden="true">
             <div class="choose-speed adapt-speed">
                 <p>Швидкість: </p>
                 <span>Швидкість доступу до інтернет:</span>
-                <div class="custom-selects2 custom-selects-tarif">
+                <div id="fop_speed" class="custom-selects2 custom-selects-tarif">
                     <select class="sel_it1">
                         <option value="150">30 Мбіт/с</option>
-                        <option value="150">30 Мбіт/с</option>
+                        <option class="select_fop0" value="150">30 Мбіт/с</option>
                         <option value="200">50 Мбіт/с</option>
-                        <option value="300">100 Мбіт/с</option>
+                        <option class="select_fop" value="300">100 Мбіт/с</option>
 
                     </select>
                     <img  class="svg-select-i" src="src/img/select-ar.svg" alt="">
                 </div>
             </div>
 
-            <div class="total-cost">Вартість: <span class="resBus">150</span>  грн. / міс.</div>
+            <div class="total-cost"><span class="txt_cost">Вартість:</span> <span class="resBus">150</span>  грн. / міс.</div>
             <div class="form-connect">
                 <p>Форма для зв’язку:</p>
                 <form action="">
@@ -1077,7 +1077,7 @@ aria-hidden="true">
                     <select class="csel_it1">
                         <option value="150">30 Мбіт/с</option>
                         <option value="150">30 Мбіт/с</option>
-                        <option value="200">50 Мбіт/с</option>
+                        <option selected value="200">50 Мбіт/с</option>
                         <option value="300">100 Мбіт/с</option>
 
                     </select>
@@ -1085,7 +1085,7 @@ aria-hidden="true">
                 </div>
             </div>
 
-            <div class="total-cost">Вартість: <span class="cresBus">150</span> грн. / міс.</div>
+            <div class="total-cost"><span class="txt_cost">Вартість: </span> <span class="cresBus">200</span> грн. / міс.</div>
            
             <div class="footer-modal">
                 <button class="order close-mod2" data-toggle="modal"
@@ -1156,7 +1156,7 @@ aria-hidden="true">
                  </div>
             </div>
 
-            <div class="total-cost">Вартість: <span id="rezultat">180</span>  грн. / міс.</div>
+            <div class="total-cost"><span class="txt_cost">Вартість: </span> <span id="rezultat">180</span>  грн. / міс.</div>
             <div class="calcul-text">
                 <p>Швидкість доступу розраховується як 14 грн/міс за кожний 1 Міб/с.</p>
                 <p>Наприклад: 45 Мбіт/с * 14 грн/міс = 630 грн/міс</p>
@@ -1258,7 +1258,7 @@ aria-hidden="true">
                  </div>
             </div>
 
-            <div class="total-cost">Вартість: <span id="rezultat2">180</span> грн. / міс.</div>
+            <div class="total-cost"><span class="txt_cost">Вартість: </span> <span id="rezultat2">180</span> грн. / міс.</div>
             <div class="calcul-text">
                 <p>Швидкість доступу розраховується як 14 грн/міс за кожний 1 Міб/с.</p>
                 <p>Наприклад: 45 Мбіт/с * 14 грн/міс = 630 грн/міс</p>

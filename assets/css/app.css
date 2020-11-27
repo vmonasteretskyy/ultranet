@@ -2345,6 +2345,11 @@ input[type=checkbox]:checked + label:before {
   font-size: 18px;
   line-height: 150%;
   color: #000000;
+  font-weight: 300;
+}
+.total-cost .txt_cost {
+  margin-left: 0;
+  font-weight: 400;
 }
 .total-cost span {
   font-size: 18px;
@@ -2869,7 +2874,8 @@ input[type=checkbox]:checked + label:before {
   }
 
   .home-cont-internet {
-    margin-left: -9px;
+    margin-left: -15px;
+    padding-left: 6px;
     margin-right: -15px;
   }
 
@@ -2884,7 +2890,7 @@ input[type=checkbox]:checked + label:before {
   .business .home-internet {
     padding-top: 20px;
     width: 774px;
-    padding-right: 11px;
+    padding-right: 15px;
   }
   .business .business-law .home-internet {
     width: 528px;
@@ -2892,14 +2898,14 @@ input[type=checkbox]:checked + label:before {
   }
 
   .privat-home .home-internet {
-    padding-right: 16px;
+    padding-right: 14px;
   }
   .privat-home .home-internet-text {
     text-align: left;
     font-size: 16px;
   }
   .privat-home .home-cont-internet {
-    margin-left: -6px;
+    margin-left: -13px;
   }
 
   .business-law {
@@ -3933,6 +3939,13 @@ input[type=checkbox]:checked + label:before {
   width: 410px;
 }
 
+.tar_box .change_privat-tarif .total-cost {
+  font-weight: 400;
+}
+.tar_box .change_privat-tarif .count-channels {
+  justify-content: space-between;
+}
+
 @media (max-width: 1199px) {
   .tarif_tv .home-int-grn ul {
     margin-left: 85px;
@@ -4075,7 +4088,35 @@ input[type=checkbox]:checked + label:before {
     margin-top: 0px;
   }
 }
+@media (max-width: 440px) {
+  .tar_box .change_privat-tarif .count-channels {
+    padding-left: 0px;
+    margin-bottom: 12px;
+  }
+  .tar_box .change_privat-tarif .list_of_kan {
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .tar_box .change_privat-tarif .total-cost {
+    padding-left: 10px;
+  }
+  .tar_box .change_privat-tarif .count-channels {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 @media (max-width: 420px) {
+  .tar_box .change_privat-tarif .count-channels {
+    padding-left: 10px;
+  }
+  .tar_box .change_privat-tarif .list_of_kan {
+    padding-left: 0px;
+  }
+  .tar_box .change_privat-tarif .total-cost {
+    width: 100%;
+    padding-left: 10px;
+  }
+
   .tv-text div:first-of-type {
     width: 200px;
   }

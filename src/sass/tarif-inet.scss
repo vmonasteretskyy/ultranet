@@ -376,7 +376,7 @@
     background: #ffffff;
     border-radius: 3px;
     width: 320px;
-    height: 168.5px;
+    height: 172.5px;
     font-weight: 300;
     font-size: 18px;
     line-height: 150%;
@@ -507,7 +507,10 @@ input[type="checkbox"]:checked + label:before {
 .box-show-check {
     display: none;
 }
-
+.show-actions-box{
+    display: flex;
+    flex-direction: column;
+}
 .show-actions {
     display: flex;
     justify-content: flex-start;
@@ -560,6 +563,10 @@ input[type="checkbox"]:checked + label:before {
     align-items: center;
 }
 
+.show_act-f {
+    display: none;
+}
+ 
 .show-actions {
     display: none;
 }
@@ -621,7 +628,7 @@ input[type="checkbox"]:checked + label:before {
 .tv-item {
     // margin-top: 15px;
     .custom-selects-tarif .select-selected {
-        padding-right: 20px;
+        padding-right: 25px;
         overflow: hidden;
     }
     .select-items {
@@ -815,7 +822,27 @@ input[type="checkbox"]:checked + label:before {
 .business-law .tarif-txt{
     margin-left: -19px;
 }
+.show-move-friend p{
+    margin-top: 10px;
+}
+@media (max-width: 1799px) {
+    .box-show-check {
+   
+        height: 168.5px;
+        
+    }   
+}
+@media (max-width: 1599px) {
+    .box-show-check {
+        height: 171px;     
+    }   
+}
 @media (max-width: 1199px) {
+    .box-show-check {
+   
+        height: 171.4px;
+        
+    }
     .business .home-internet {
     margin-left: -35px;
 }
@@ -1289,11 +1316,12 @@ input[type="checkbox"]:checked + label:before {
             margin-bottom: 0;
         }
     }
-    .tv-item {
-        .select-items div {
-            font-size: 14px;
-        }
-    }
+    // .tv-item {
+    //     .select-items div {
+    //         font-size: 14px;
+    //     }
+    // }
+    
     .modal-header1 h5 {
         width: 240px;
     }
@@ -1334,6 +1362,25 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 459px) {
+    
+.connect-dropt span:first-of-type {
+    display: block;
+}
+
+    .connect-dropt {
+        max-width: 270px;
+        padding-right: 18px;
+  
+        font-weight: 400;
+    
+        span {
+            width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+
+            font-size: 16px;
+        }
+    }
     .tarif-internet {
         div {
             padding-left: 19px;
@@ -1358,21 +1405,15 @@ input[type="checkbox"]:checked + label:before {
         margin-top: 15px;
     }
 
-    .connect-dropt {
-        max-width: 270px;
-        padding-right: 18px;
-        // overflow: hidden;
-        font-size: 12px;
-        font-weight: 400;
-    }
+   
 
     .svg-dropt {
-        margin-top: 3px;
+        margin-top: -24px;
         position: relative;
         transition: 0.3s ease;
         border-radius: 30%;
-        margin-right: -6px;
-
+        margin-right: -8px;
+margin-bottom: 10px;
         background-color: white;
     }
 
@@ -1382,9 +1423,12 @@ input[type="checkbox"]:checked + label:before {
     }
 
     .box-show-check .checkbox label {
-        font-size: 12px;
+        font-size: 14px;
+        white-space: nowrap;
+        width: 100%;
         line-height: 25px;
         font-weight: 400;
+        overflow: hidden;
     }
 
     .box-show-check div {
@@ -1404,11 +1448,11 @@ input[type="checkbox"]:checked + label:before {
 
         input {
             width: 270px;
-            font-size: 14px;
+            font-size: 16px;
 
             &::placeholder {
-                line-height: 14px;
-                font-size: 14px;
+                line-height: 16px;
+                font-size: 16px;
             }
         }
     }

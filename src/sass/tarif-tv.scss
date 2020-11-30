@@ -119,7 +119,11 @@ color: #000000;
          font-weight: 400;
      }
  }
-
+.mobile_con{
+    .home-internet-text{
+        width: 90%;
+    }
+}
 @media (max-width: 1199px) {
     .tarif_tv {
         .home-int-grn {
@@ -193,6 +197,17 @@ color: #000000;
    
     }
 }
+.con_mob-txt{
+    display: none;
+}
+#connect_tv{
+    .modal-body1{
+        padding-top: 20px;
+    }
+.adapt_cost{
+    margin-top: 19px;
+}
+}
 @media (min-width: 500px) {
     #connect_mob{
         .modal-dialog {
@@ -247,7 +262,7 @@ color: #000000;
     }
 }
 @media (max-width: 575px) {
- 
+
     #connect_mob{
         .modal-header1 h5 {
             width: 260px;
@@ -301,14 +316,25 @@ color: #000000;
      }
     }
 }
+@media (max-width: 449px){
+    .con_mob-txt{
+        display: block;
+    }
+ 
+}
 @media (max-width: 440px){
+    #connect_tv{
+        .tarif_204{
+            padding-top: 8px;
+        }
+    }
     .mobile_con{
         .home-internet-text {
             margin-left: 0px;
         }
         .home-internet-text p{
-           width: 280px;
-           font-size: 15px;
+           width: 115%;
+           font-size: 16px;
         }
     }
 .tar_box {
@@ -366,7 +392,7 @@ color: #000000;
         position: relative;
        margin-bottom: 0px;
         margin-left: 0px;
-       padding-top: 5px;
+       padding-top: 0px;
     }
     .tarif_tv{
         .count-minutes .no-limit {

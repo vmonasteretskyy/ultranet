@@ -1486,7 +1486,25 @@ text-align: center;
 }
 
 @media (max-width: 767px) {
+    .wrapper .tab_content .appear_passoword{
+    position: fixed;
+    top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+    z-index: 9050;
+    display: none;
+    width: 94%;
+    height: auto;
+    overflow: hidden;
+    outline: 0;
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.5);
 
+    border-radius: 10px;
+  
+    .btn_order {
+        margin: 20px 0px 20px 0px;
+    }
+}
     //   .receipt-block  .big-rece{
     //     // transform: rotate(90deg);
     //         .clos_white{
@@ -1700,6 +1718,14 @@ text-align: center;
 }
 
 @media (max-width: 575px) {
+  .wrapper .tab_content .appear_taruf {
+     
+    
+        h4 {
+            padding-top: 47px;
+    
+        }
+    }
     .btn_order button{
         font-size: 16px;
     }
@@ -1872,6 +1898,41 @@ text-align: center;
 }
 
 @media (max-width: 550px) {
+   .wrapper .tab_content .tab_pay{
+    .block_pay-services .print-box div:first-of-type{
+        padding-bottom: 0px;
+    
+   }
+        button {
+            margin-bottom: 20px;
+        }
+         .pay-big-element{
+
+padding: 20px 0px 0px 0px;
+        }
+        .notebook {
+          margin-bottom: 0px;  
+        }
+        .block_pay-services .pay-big-element p {
+            font-size: 14px;
+            margin-top: 13px;
+            margin-bottom: 0;
+        }
+        .block_pay-services .pay-big-element .custom-selects2 {
+            margin-bottom:18px;
+            margin-top: 9px;
+        }
+    }
+ .main-privacy   .wrapper .tab_content .appear_passoword{
+
+        h4 {
+            padding-top: 20px;
+            margin-bottom: 14px;
+        }
+        .btn_order {
+            margin: 20px 0px 20px 0px;
+        }
+    }
     // .tab_pay .pay .block_pay-services .pay-big-element .select-items {
     //     width: 90%;
     //     // margin-left: 1px;
@@ -1941,7 +2002,8 @@ text-align: center;
             }
 
             .ibox-bl img {
-                width: 109px;
+                width: 95px;
+                
             }
         }
 
@@ -1963,6 +2025,11 @@ text-align: center;
 }
 
 @media (max-width: 500px) {
+   .wrapper .tab_content .chanhes_txt{
+        position: absolute;
+        right: 15px;
+        margin-top: 23px;
+    }
     #looking_adapt {
         display: none;
     }

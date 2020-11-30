@@ -2148,7 +2148,7 @@ footer {
   background: #ffffff;
   border-radius: 3px;
   width: 320px;
-  height: 168.5px;
+  height: 172.5px;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
@@ -2268,6 +2268,11 @@ input[type=checkbox]:checked + label:before {
   display: none;
 }
 
+.show-actions-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .show-actions {
   display: flex;
   justify-content: flex-start;
@@ -2317,6 +2322,10 @@ input[type=checkbox]:checked + label:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.show_act-f {
+  display: none;
 }
 
 .show-actions {
@@ -2376,7 +2385,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .tv-item .custom-selects-tarif .select-selected {
-  padding-right: 20px;
+  padding-right: 25px;
   overflow: hidden;
 }
 .tv-item .select-items {
@@ -2585,7 +2594,25 @@ input[type=checkbox]:checked + label:before {
   margin-left: -19px;
 }
 
+.show-move-friend p {
+  margin-top: 10px;
+}
+
+@media (max-width: 1799px) {
+  .box-show-check {
+    height: 168.5px;
+  }
+}
+@media (max-width: 1599px) {
+  .box-show-check {
+    height: 171px;
+  }
+}
 @media (max-width: 1199px) {
+  .box-show-check {
+    height: 171.4px;
+  }
+
   .business .home-internet {
     margin-left: -35px;
   }
@@ -3020,10 +3047,6 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 0;
   }
 
-  .tv-item .select-items div {
-    font-size: 14px;
-  }
-
   .modal-header1 h5 {
     width: 240px;
   }
@@ -3061,6 +3084,22 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 459px) {
+  .connect-dropt span:first-of-type {
+    display: block;
+  }
+
+  .connect-dropt {
+    max-width: 270px;
+    padding-right: 18px;
+    font-weight: 400;
+  }
+  .connect-dropt span {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
   .tarif-internet div {
     padding-left: 19px;
     padding-right: 19px;
@@ -3081,19 +3120,13 @@ input[type=checkbox]:checked + label:before {
     margin-top: 15px;
   }
 
-  .connect-dropt {
-    max-width: 270px;
-    padding-right: 18px;
-    font-size: 12px;
-    font-weight: 400;
-  }
-
   .svg-dropt {
-    margin-top: 3px;
+    margin-top: -24px;
     position: relative;
     transition: 0.3s ease;
     border-radius: 30%;
-    margin-right: -6px;
+    margin-right: -8px;
+    margin-bottom: 10px;
     background-color: white;
   }
 
@@ -3103,9 +3136,12 @@ input[type=checkbox]:checked + label:before {
   }
 
   .box-show-check .checkbox label {
-    font-size: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    width: 100%;
     line-height: 25px;
     font-weight: 400;
+    overflow: hidden;
   }
 
   .box-show-check div {
@@ -3125,19 +3161,19 @@ input[type=checkbox]:checked + label:before {
   }
   .form-connect input {
     width: 270px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .form-connect input::-moz-placeholder {
-    line-height: 14px;
-    font-size: 14px;
+    line-height: 16px;
+    font-size: 16px;
   }
   .form-connect input:-ms-input-placeholder {
-    line-height: 14px;
-    font-size: 14px;
+    line-height: 16px;
+    font-size: 16px;
   }
   .form-connect input::placeholder {
-    line-height: 14px;
-    font-size: 14px;
+    line-height: 16px;
+    font-size: 16px;
   }
 
   #mask-phone::-moz-placeholder {
@@ -3619,6 +3655,10 @@ input[type=checkbox]:checked + label:before {
     padding-right: 10px;
   }
 
+  .calcul-text p {
+    margin-right: 0px;
+  }
+
   .change_privat-tarif .modal-header1 .close {
     margin-top: 2px;
   }
@@ -3950,6 +3990,10 @@ input[type=checkbox]:checked + label:before {
   font-weight: 400;
 }
 
+.mobile_con .home-internet-text {
+  width: 90%;
+}
+
 @media (max-width: 1199px) {
   .tarif_tv .home-int-grn ul {
     margin-left: 85px;
@@ -4005,6 +4049,17 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 70px;
   }
 }
+.con_mob-txt {
+  display: none;
+}
+
+#connect_tv .modal-body1 {
+  padding-top: 20px;
+}
+#connect_tv .adapt_cost {
+  margin-top: 19px;
+}
+
 @media (min-width: 500px) {
   #connect_mob .modal-dialog {
     max-width: 473px;
@@ -4092,13 +4147,22 @@ input[type=checkbox]:checked + label:before {
     margin-top: 0px;
   }
 }
+@media (max-width: 449px) {
+  .con_mob-txt {
+    display: block;
+  }
+}
 @media (max-width: 440px) {
+  #connect_tv .tarif_204 {
+    padding-top: 8px;
+  }
+
   .mobile_con .home-internet-text {
     margin-left: 0px;
   }
   .mobile_con .home-internet-text p {
-    width: 280px;
-    font-size: 15px;
+    width: 115%;
+    font-size: 16px;
   }
 
   .tar_box .change_privat-tarif .count-channels {
@@ -4149,7 +4213,7 @@ input[type=checkbox]:checked + label:before {
     position: relative;
     margin-bottom: 0px;
     margin-left: 0px;
-    padding-top: 5px;
+    padding-top: 0px;
   }
 
   .tarif_tv .count-minutes .no-limit {
@@ -6230,6 +6294,24 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 767px) {
+  .wrapper .tab_content .appear_passoword {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9050;
+    display: none;
+    width: 94%;
+    height: auto;
+    overflow: hidden;
+    outline: 0;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .wrapper .tab_content .appear_passoword .btn_order {
+    margin: 20px 0px 20px 0px;
+  }
+
   #receipt_modal .modal-dialog-centered {
     padding-top: 200px;
     justify-content: center;
@@ -6422,6 +6504,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 575px) {
+  .wrapper .tab_content .appear_taruf h4 {
+    padding-top: 47px;
+  }
+
   .btn_order button {
     font-size: 16px;
   }
@@ -6568,6 +6654,36 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 550px) {
+  .wrapper .tab_content .tab_pay .block_pay-services .print-box div:first-of-type {
+    padding-bottom: 0px;
+  }
+  .wrapper .tab_content .tab_pay button {
+    margin-bottom: 20px;
+  }
+  .wrapper .tab_content .tab_pay .pay-big-element {
+    padding: 20px 0px 0px 0px;
+  }
+  .wrapper .tab_content .tab_pay .notebook {
+    margin-bottom: 0px;
+  }
+  .wrapper .tab_content .tab_pay .block_pay-services .pay-big-element p {
+    font-size: 14px;
+    margin-top: 13px;
+    margin-bottom: 0;
+  }
+  .wrapper .tab_content .tab_pay .block_pay-services .pay-big-element .custom-selects2 {
+    margin-bottom: 18px;
+    margin-top: 9px;
+  }
+
+  .main-privacy .wrapper .tab_content .appear_passoword h4 {
+    padding-top: 20px;
+    margin-bottom: 14px;
+  }
+  .main-privacy .wrapper .tab_content .appear_passoword .btn_order {
+    margin: 20px 0px 20px 0px;
+  }
+
   #receipt_modal .modal-content {
     margin-top: 0px;
   }
@@ -6614,7 +6730,7 @@ input[type=checkbox]:checked + label:before {
     font-size: 13px;
   }
   .block_pay-services .pay-big-element .ibox-bl img {
-    width: 109px;
+    width: 95px;
   }
   .block_pay-services button {
     width: 190px;
@@ -6628,6 +6744,12 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 500px) {
+  .wrapper .tab_content .chanhes_txt {
+    position: absolute;
+    right: 15px;
+    margin-top: 23px;
+  }
+
   #looking_adapt {
     display: none;
   }

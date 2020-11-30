@@ -20375,6 +20375,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.index_main')) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#choose_terminal').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
+      console.log("ddd");
+      document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://privatbank.ua/map'");
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
+      document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://ibox.ua/'");
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
+      document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='http://24nonstop.com.ua/'");
+    }
+  });
+}
+
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.form-connect')) {
   var element = document.querySelector('.mask-phone');
   var maskOptions = {
@@ -20510,7 +20527,10 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.suport-chat')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".container-chat").css("box-shadow", "none");
   }]);
-}
+} // $(".wrapper").click(function () {
+//   $(".suport-chat").fadeOut();
+// })
+
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".burger-menu_button").click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".burger").toggleClass("shadow");
@@ -20678,14 +20698,16 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)");
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.action-txt').toggleClick([function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').css("height", "auto");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').css("height", "auto"); // $('.show-actions-box').slideDown();
+
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideDown();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').css("display", "flex");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions-box').css("display", "flex");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(180deg)");
   }, function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions-box').slideUp(); // $('.show-actions').slideUp();
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)"); // $('.show-move-friend').slideUp();
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').toggleClick([function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text-hide').fadeOut();
@@ -20711,38 +20733,65 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
   });
+
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check1').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "block");
+    });
+  }
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check2').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
   });
+
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check2').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "block");
+    });
+  }
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check3').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "none");
   });
+
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check3').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "block");
+    });
+  }
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check4').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "inline");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-1").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-2").css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-3").css("display", "none");
   });
+
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.check4').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".dropt-4").css("display", "block");
+    });
+  }
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close').click(function () {
+    // $('.show-move-friend').slideUp();
+    // $('.tv-show').slideUp();
+    // $('.svg-show').css("transform", "rotate(0deg)");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)"); // $('.show-move-friend').slideUp();
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)"); // $('.calculator-speed').slideUp();
+    // $("#radio-3").attr('checked','checked');
+    // $("#radio-1").attr('checked','checked');
+  });
 }
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close').click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp(); // $('.tv-show').slideUp();
-  // $('.svg-show').css("transform", "rotate(0deg)");
-
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)");
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-move-friend').slideUp();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check').slideUp();
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-dropt').css("transform", "rotate(0deg)"); // $('.calculator-speed').slideUp();
-  // $("#radio-3").attr('checked','checked');
-  // $("#radio-1").attr('checked','checked');
-});
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.box-show-check')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.elem4').toggleClick([function () {
@@ -21221,7 +21270,7 @@ function highlight(element) {
 }
 
 var myCount = function myCount() {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions p').html('Вибрано ' + jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check input:checked').length + ' акції');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions p:first').html('Вибрано ' + jquery__WEBPACK_IMPORTED_MODULE_0___default()('.box-show-check input:checked').length + ' акції');
 }; // myCount();
 
 
@@ -21815,7 +21864,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tar_box')) {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.count_can').html("204*");
 
       if (window.matchMedia('(max-width: 767px)').matches) {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif_204').css("margin-top", "15px");
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif_204').css("margin-top", "10px");
       }
 
       if (window.matchMedia('(max-width: 440px)').matches) {
@@ -21906,7 +21955,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#tar_tvs').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.count_can').html("204*");
 
     if (window.matchMedia('(max-width: 767px)').matches) {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif_204').css("margin-top", "15px");
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tarif_204').css("margin-top", "10px");
     }
 
     if (window.matchMedia('(max-width: 440px)').matches) {

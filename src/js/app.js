@@ -2,6 +2,24 @@ import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
 import IMask from 'imask';
 
+
+if ($('*').is('.index_main')) {
+
+$('#choose_terminal').click(function () {
+  if ($("option:selected", this).val() == "2") {
+    console.log("ddd");
+    document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://privatbank.ua/map'");
+  }
+  if ($("option:selected", this).val() == "3") {
+ 
+    document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://ibox.ua/'");
+  }
+  if ($("option:selected", this).val() == "4") {
+ 
+    document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='http://24nonstop.com.ua/'");
+  }
+});
+}
 if ($('*').is('.form-connect')) {
   let element = document.querySelector('.mask-phone');
   let maskOptions = {
@@ -135,7 +153,13 @@ if ($('*').is('.suport-chat')) {
 
 }
 
- 
+
+// $(".wrapper").click(function () {
+  
+//   $(".suport-chat").fadeOut();
+
+// })
+
 $(".burger-menu_button").click(function () {
   $(".burger").toggleClass("shadow");
   })
@@ -316,15 +340,19 @@ if ($('*').is('.third_wrap_bus')) {
 
   $('.action-txt').toggleClick([
     function () {
+      
       $('.show-actions').css("height", "auto");
+      // $('.show-actions-box').slideDown();
       $('.show-actions').slideDown();
       $('.show-actions').css("display", "flex");
+      $('.show-actions-box').css("display", "flex");
       $('.svg-actions').css("transform", "rotate(180deg)");
     },
     function () {
-      $('.show-actions').slideUp();
+      $('.show-actions-box').slideUp();
+      // $('.show-actions').slideUp();
       $('.svg-actions').css("transform", "rotate(0deg)");
-      $('.show-move-friend').slideUp();
+      // $('.show-move-friend').slideUp();
 
     }
   ]);
@@ -358,6 +386,11 @@ if ($('*').is('.third_wrap_bus')) {
     $(".dropt-2").css("display", "none");
     $(".dropt-4").css("display", "none");
   });
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    $('.check1').click(function () {
+    $(".dropt-1").css("display", "block");
+  });
+  }
   $('.check2').click(function () {
     $(".dropt-2").css("display", "inline");
     $(".dropt-1").css("display", "none");
@@ -365,27 +398,41 @@ if ($('*').is('.third_wrap_bus')) {
     $(".dropt-4").css("display", "none");
 
   });
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    $('.check2').click(function () {
+    $(".dropt-2").css("display", "block");
+  });
+  }
   $('.check3').click(function () {
     $(".dropt-3").css("display", "inline");
     $(".dropt-1").css("display", "none");
     $(".dropt-2").css("display", "none");
     $(".dropt-4").css("display", "none");
   });
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    $('.check3').click(function () {
+    $(".dropt-3").css("display", "block");
+  });
+}
   $('.check4').click(function () {
     $(".dropt-4").css("display", "inline");
     $(".dropt-1").css("display", "none");
     $(".dropt-2").css("display", "none");
     $(".dropt-3").css("display", "none");
   });
+  if (window.matchMedia('(max-width: 459px)').matches) {
+    $('.check4').click(function () {
+    $(".dropt-4").css("display", "block");
+  });
 }
 
 $('.close').click(function () {
-  $('.show-move-friend').slideUp();
+  // $('.show-move-friend').slideUp();
   // $('.tv-show').slideUp();
   // $('.svg-show').css("transform", "rotate(0deg)");
   $('.show-actions').slideUp();
   $('.svg-actions').css("transform", "rotate(0deg)");
-  $('.show-move-friend').slideUp();
+  // $('.show-move-friend').slideUp();
   $('.box-show-check').slideUp();
   $('.svg-dropt').css("transform", "rotate(0deg)");
   // $('.calculator-speed').slideUp();
@@ -394,6 +441,7 @@ $('.close').click(function () {
 
 })
 
+}
 if ($('*').is('.box-show-check')) {
   $('.elem4').toggleClick([
     function () {
@@ -948,7 +996,7 @@ function highlight(element) {
 }
 
 const myCount = function() {
-  $('.show-actions p').html( 'Вибрано ' + $('.box-show-check input:checked').length + ' акції' );
+  $('.show-actions p:first').html( 'Вибрано ' + $('.box-show-check input:checked').length + ' акції' );
 };
 // myCount();
 
@@ -1501,7 +1549,7 @@ if ($('*').is('.tar_box')) {
         $('.tarif_204').css("margin-top", "60px");
    $('.count_can').html("204*");
 if (window.matchMedia('(max-width: 767px)').matches) {
-  $('.tarif_204').css("margin-top", "15px");
+  $('.tarif_204').css("margin-top", "10px");
 
 }
 if (window.matchMedia('(max-width: 440px)').matches) {
@@ -1625,21 +1673,19 @@ $('#tar_tvs').click(function () {
   $('.tarif_204').css("margin-top", "60px");
    $('.count_can').html("204*");
 if (window.matchMedia('(max-width: 767px)').matches) {
-  $('.tarif_204').css("margin-top", "15px");
-
+  $('.tarif_204').css("margin-top", "10px");
 }
 if (window.matchMedia('(max-width: 440px)').matches) {
   $('.list_of_kan').css("margin-top", "40px");
-
 }
 if (window.matchMedia('(max-width: 420px)').matches) {
   $('.list_of_kan').css("margin-top", "10px");
-
 }
   }
   else{
   $('#for-tarif').css("display", "none");
   $('.tarif_204').css("margin-top", "30px");
+  
   if (window.matchMedia('(max-width: 767px)').matches) {
     $('.tarif_204').css("margin-top", "10px");
   

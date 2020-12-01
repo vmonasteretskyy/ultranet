@@ -2,6 +2,12 @@ import $ from "jquery";
 import "../bootstrap/js/bootstrap.min.js";
 import IMask from 'imask';
 
+// $('.appear_passoword .close-back').click(function () {
+//   $('.tab_elem1').animate({
+//     scrollTop: 300
+// }, 500);
+ 
+// })
 
 if ($('*').is('.index_main')) {
 
@@ -680,10 +686,18 @@ if ($('*').is('.main-privacy')) {
   $('.change-pass').click(function () {
     $('.appear_passoword').fadeIn();
     $('.tab_elem1').fadeOut();
-    $('.tab_elem1').fadeOut();
     $('.pass-list').fadeIn();
 
   })
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    $('.change-pass').click(function () {
+      $('.appear_passoword').fadeIn();
+     
+      $('.tab_elem1').fadeIn();
+      $('.pass-list').fadeIn();
+  
+    })
+  }
   $('.pause').click(function () {
     $('.appear_pease').animate({
       scrollTop: 0
@@ -693,9 +707,8 @@ if ($('*').is('.main-privacy')) {
     $('.tab_elem1').fadeOut();
     $('.peause-list').fadeIn();
 
-  })
- 
-  
+  });
+
  
   $('.peause-modal').click(function () {
     $('#peause_modal').modal('hide');

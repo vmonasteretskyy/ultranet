@@ -6306,6 +6306,7 @@ input[type=checkbox]:checked + label:before {
     overflow: hidden;
     outline: 0;
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    background-color: white;
     border-radius: 10px;
   }
   .wrapper .tab_content .appear_passoword .btn_order {

@@ -20373,7 +20373,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
 
 
-
+ // $('.appear_passoword .close-back').click(function () {
+//   $('.tab_elem1').animate({
+//     scrollTop: 300
+// }, 500);
+// })
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.index_main')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#choose_terminal').click(function () {
@@ -20999,9 +21003,17 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.main-privacy')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change-pass').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeIn();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeOut();
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeIn();
   });
+
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change-pass').click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_passoword').fadeIn();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tab_elem1').fadeIn();
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pass-list').fadeIn();
+    });
+  }
+
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.pause').click(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.appear_pease').animate({
       scrollTop: 0

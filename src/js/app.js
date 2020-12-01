@@ -13,7 +13,7 @@ if ($('*').is('.index_main')) {
 
 $('#choose_terminal').click(function () {
   if ($("option:selected", this).val() == "2") {
-    console.log("ddd");
+   
     document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://privatbank.ua/map'");
   }
   if ($("option:selected", this).val() == "3") {

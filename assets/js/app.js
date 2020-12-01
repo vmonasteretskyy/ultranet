@@ -20382,7 +20382,6 @@ __webpack_require__.r(__webpack_exports__);
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.index_main')) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#choose_terminal').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
-      console.log("ddd");
       document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://privatbank.ua/map'");
     }
 

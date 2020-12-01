@@ -5353,6 +5353,19 @@ input[type=checkbox]:checked + label:before {
 .btn_order button:active {
   background: #0b3661;
 }
+.btn_order .abonent {
+  background: #ffffff;
+  border: 1px solid #34a0d9;
+  box-sizing: border-box;
+  margin-left: 30px;
+  text-align: center;
+  color: #34a0d9;
+}
+.btn_order .abonent:active {
+  border: 1px solid #0b3661;
+  color: #0b3661;
+  background: #ffffff;
+}
 
 .tele ul,
 .ip-address ul,
@@ -6773,6 +6786,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 500px) {
+  .notebook img {
+    margin-left: -3px;
+  }
+
   .wrapper .tab_content .chanhes_txt {
     position: absolute;
     right: 15px;
@@ -7119,6 +7136,14 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 459px) {
+  .appear_passoword .btn_order {
+    flex-direction: column;
+  }
+  .appear_passoword .btn_order .abonent {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
   #receipt_modal .modal-dialog-centered {
     padding-top: 110px;
   }

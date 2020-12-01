@@ -397,6 +397,19 @@
             background: #0b3661;
         }
     }
+    .abonent {
+        background: #ffffff;
+        border: 1px solid #34a0d9;
+        box-sizing: border-box;
+         margin-left: 30px;
+        text-align: center;
+        color: #34a0d9;
+        &:active {
+            border: 1px solid #0b3661;
+            color: #0b3661;
+            background:#ffffff;
+        }
+    }
 }
 
 .tele,
@@ -2044,6 +2057,11 @@ padding: 20px 0px 0px 0px;
 }
 
 @media (max-width: 500px) {
+    .notebook {
+        img{
+            margin-left: -3px;
+        }
+    }
    .wrapper .tab_content .chanhes_txt{
         position: absolute;
         right: 15px;
@@ -2480,6 +2498,13 @@ padding: 20px 0px 0px 0px;
 }
 
 @media (max-width: 459px) {
+  .appear_passoword  .btn_order {
+        flex-direction: column;
+        .abonent{
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+    }
     #receipt_modal {
         .modal-dialog-centered {
             padding-top: 110px;

@@ -333,7 +333,13 @@ font-size: 15px;
         }
 }
 @media (max-width: 575px){
+    .pay-services-block{
+        .pay-services {
+            padding-bottom: 80px;
+        }
+    }
     .news-block{
+        margin-top: -20px;
          .news-item{
 
           h3 {
@@ -437,6 +443,7 @@ padding: 20px;
 .news-block .news-big-item a{
 margin-top: -15px;
 }
+
 .index-contact{
     .rules-services p{
        white-space: pre-line;

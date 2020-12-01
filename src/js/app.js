@@ -525,6 +525,9 @@ $('.close-mod2').click(function () {
 $('.datail_btn').click(function () {
   $('#connect_mob').modal('hide');
   $('#details').modal('hide');
+  $('#details60').modal('hide');
+  $('#details90').modal('hide');
+
 })
 //radio input
 if ($('*').is('.change_privat-tarif')) {

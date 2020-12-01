@@ -20866,6 +20866,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.close-mod2').click(function () {
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.datail_btn').click(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_mob').modal('hide');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#details').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#details60').modal('hide');
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#details90').modal('hide');
 }); //radio input
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.change_privat-tarif')) {

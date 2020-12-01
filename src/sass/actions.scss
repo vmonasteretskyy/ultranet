@@ -15,7 +15,7 @@
 .arr-accord1 {
     transform: rotate(180deg);
 }
-#details {
+.details {
     overflow-y: scroll;
     .modal-header1 h5 {
         margin-left: 15px;
@@ -236,7 +236,7 @@
             margin: 1.75rem auto;
         }
     }
-    #details .modal-dialog {
+    .details .modal-dialog {
         max-width: 835px;
         margin: 1.75rem auto;
     }
@@ -343,7 +343,7 @@
 }
 
 @media (max-width: 735px) {
-    #details {
+    .details {
         table tr td:last-of-type {
             text-align: center;
             width: 200px;
@@ -487,10 +487,14 @@
             }
         }
     }
-    #details {
+    .details {
+        .modal-header1 .close {
+            margin-top: 6px;
+        }
         .modal-header1 h5 {
             margin-left: 2px;
             width: 180px;
+            margin-top: 33px;
         }
         td {
             text-align: left;
@@ -535,7 +539,7 @@
             }
         }
     }
-    #details {
+    .details {
         .footer-modal p:last-of-type {
             position: absolute;
             margin-top: 148px;

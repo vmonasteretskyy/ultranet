@@ -1226,7 +1226,9 @@ text-align: center;
 .new_telef {
     margin-top: 15px;
 }
-
+.br_snstruction{
+    display: none;
+}
 @media (min-width: 500px) {
     .change_mail {
         .modal-dialog {
@@ -2451,6 +2453,9 @@ padding: 20px 0px 0px 0px;
 }
 
 @media (max-width: 476px) {
+    .br_snstruction{
+        display: block;
+    }
     .change_tel .btn-delete {
         right: 15px;
     }
@@ -2498,6 +2503,7 @@ padding: 20px 0px 0px 0px;
 }
 
 @media (max-width: 459px) {
+  
   .appear_passoword  .btn_order {
         flex-direction: column;
         .abonent{

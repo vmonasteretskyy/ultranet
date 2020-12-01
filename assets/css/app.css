@@ -1729,6 +1729,13 @@ footer {
   }
 }
 @media (max-width: 575px) {
+  .pay-services-block .pay-services {
+    padding-bottom: 80px;
+  }
+
+  .news-block {
+    margin-top: -20px;
+  }
   .news-block .news-item h3 {
     font-size: 16px;
   }
@@ -4270,24 +4277,24 @@ input[type=checkbox]:checked + label:before {
   transform: rotate(180deg);
 }
 
-#details {
+.details {
   overflow-y: scroll;
 }
-#details .modal-header1 h5 {
+.details .modal-header1 h5 {
   margin-left: 15px;
 }
-#details table tr td:last-of-type {
+.details table tr td:last-of-type {
   text-align: center;
   width: 352px;
   font-weight: 300;
 }
-#details table {
+.details table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-#details td,
-#details th {
+.details td,
+.details th {
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
@@ -4296,13 +4303,13 @@ input[type=checkbox]:checked + label:before {
   text-align: left;
   padding: 13px 35px;
 }
-#details tr:nth-child(even) {
+.details tr:nth-child(even) {
   background: #f5f3f1;
 }
-#details .footer-modal button {
+.details .footer-modal button {
   margin-bottom: 40px;
 }
-#details .footer-modal p {
+.details .footer-modal p {
   font-weight: 300;
   font-size: 12px;
   line-height: 150%;
@@ -4310,7 +4317,7 @@ input[type=checkbox]:checked + label:before {
   margin-top: 0px;
   margin-bottom: 10px;
 }
-#details .footer-modal p a {
+.details .footer-modal p a {
   font-weight: 500;
   text-decoration: underline;
 }
@@ -4478,7 +4485,7 @@ input[type=checkbox]:checked + label:before {
     margin: 1.75rem auto;
   }
 
-  #details .modal-dialog {
+  .details .modal-dialog {
     max-width: 835px;
     margin: 1.75rem auto;
   }
@@ -4561,7 +4568,7 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 735px) {
-  #details table tr td:last-of-type {
+  .details table tr td:last-of-type {
     text-align: center;
     width: 200px;
     font-weight: 300;
@@ -4683,19 +4690,23 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 0;
   }
 
-  #details .modal-header1 h5 {
+  .details .modal-header1 .close {
+    margin-top: 6px;
+  }
+  .details .modal-header1 h5 {
     margin-left: 2px;
     width: 180px;
+    margin-top: 33px;
   }
-  #details td {
+  .details td {
     text-align: left;
     padding: 4px 0px;
   }
-  #details table tr td:last-of-type {
+  .details table tr td:last-of-type {
     text-align: left;
     width: auto;
   }
-  #details table tr {
+  .details table tr {
     padding: 8px 10px;
     display: flex;
     flex-direction: column;
@@ -4720,16 +4731,16 @@ input[type=checkbox]:checked + label:before {
     width: 100%;
   }
 
-  #details .footer-modal p:last-of-type {
+  .details .footer-modal p:last-of-type {
     position: absolute;
     margin-top: 148px;
     left: 0;
     width: 80%;
   }
-  #details .footer-modal button {
+  .details .footer-modal button {
     margin-bottom: 20px;
   }
-  #details .footer-modal p {
+  .details .footer-modal p {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0px;
@@ -6074,6 +6085,10 @@ input[type=checkbox]:checked + label:before {
   margin-top: 15px;
 }
 
+.br_snstruction {
+  display: none;
+}
+
 @media (min-width: 500px) {
   .change_mail .modal-dialog {
     max-width: 742px;
@@ -7098,6 +7113,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 476px) {
+  .br_snstruction {
+    display: block;
+  }
+
   .change_tel .btn-delete {
     right: 15px;
   }

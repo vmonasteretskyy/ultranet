@@ -1376,7 +1376,7 @@
   .pay-item p {
     padding-top: 5px;
     font-size: 13px;
-    width: 200px;
+    width: 195px;
   }
   .pay-item button {
     font-size: 16px;
@@ -4733,7 +4733,8 @@ input[type=checkbox]:checked + label:before {
 
   .details .footer-modal p:last-of-type {
     position: absolute;
-    margin-top: 148px;
+    margin-top: 109px;
+    margin-bottom: 0px;
     left: 0;
     width: 80%;
   }
@@ -6718,14 +6719,14 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 20px;
   }
   .wrapper .tab_content .tab_pay .pay-big-element {
-    padding: 20px 0px 0px 0px;
+    padding: 22px 0px 0px 0px;
   }
   .wrapper .tab_content .tab_pay .notebook {
     margin-bottom: 0px;
   }
   .wrapper .tab_content .tab_pay .block_pay-services .pay-big-element p {
     font-size: 14px;
-    margin-top: 13px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   .wrapper .tab_content .tab_pay .block_pay-services .pay-big-element .custom-selects2 {

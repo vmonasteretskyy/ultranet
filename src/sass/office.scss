@@ -1229,6 +1229,28 @@ text-align: center;
 .br_snstruction{
     display: none;
 }
+.btn_show_oncart{
+    background: #34A0D9;
+border-radius: 3px;
+padding: 10px 32px;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+cursor: pointer;
+transition: 0.4s ease;
+
+&:hover {
+    color: #ffffff;
+
+    filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+&:active {
+    background: #0b3661;
+}
+}
 @media (min-width: 500px) {
     .change_mail {
         .modal-dialog {
@@ -1258,6 +1280,10 @@ text-align: center;
 }
 
 @media (max-width: 1199px) {
+   
+    .change_tar-text{
+        padding-right: 20px;
+    }
     .tab_pay .pay .block_pay-services .pay-big-element .select-items {
         width: 100%;
         // margin-left: 1px;
@@ -1358,6 +1384,20 @@ text-align: center;
 }
 
 @media (max-width: 991px) {
+  .wrapper   .mobile_connection{
+        .custom-selects2{
+width: 250px;
+        }
+   .select-selected {
+    width: 235px;
+
+
+        }
+        .select-items {
+            width: 235px;
+
+        }
+        }
     .wrapper .tab_item .change_tar-text {
         ul {
             padding-bottom: 0px;
@@ -1932,6 +1972,15 @@ background-color: white;
 }
 
 @media (max-width: 550px) {
+    .btn_show_oncart{
+
+    padding: 10px 22px;
+ 
+    font-size: 16px;
+ 
+ 
+    }
+ 
    .wrapper .tab_content .tab_pay{
     .block_pay-services .print-box div:first-of-type{
         padding-bottom: 0px;
@@ -1941,7 +1990,7 @@ background-color: white;
             margin-bottom: 20px;
         }
          .pay-big-element{
-          padding: 22px 0px 0px 0px;
+          padding: 22px 0px 28px 0px;
         }
         .notebook {
           margin-bottom: 0px;  
@@ -1952,7 +2001,7 @@ background-color: white;
             margin-bottom: 0;
         }
         .block_pay-services .pay-big-element .custom-selects2 {
-            margin-bottom:18px;
+            margin-bottom:24px;
             margin-top: 9px;
         }
     }
@@ -2058,6 +2107,9 @@ background-color: white;
 }
 
 @media (max-width: 500px) {
+    .change_tar-text{
+        padding-right: 10px;
+    }
     .notebook {
         img{
             margin-left: -3px;
@@ -2452,6 +2504,7 @@ background-color: white;
 }
 
 @media (max-width: 476px) {
+    
     .br_snstruction{
         display: block;
     }
@@ -2502,7 +2555,20 @@ background-color: white;
 }
 
 @media (max-width: 459px) {
-  
+    .wrapper   .mobile_connection{
+        .custom-selects2{
+width: 100%;
+        }
+   .select-selected {
+    width: 100%;
+
+
+        }
+        .select-items {
+            width: 100%;
+
+        }
+        }
   .appear_passoword  .btn_order {
         flex-direction: column;
         .abonent{

@@ -21,15 +21,14 @@ $('#choose_terminal').click(function () {
   } 
   if ($("option:selected", this).val() == "3") {
     $("#btn_oncart").click(function(){
-      $("#btn_oncart").attr("href", "https://ibox.ua/");
+      $("#btn_oncart").attr("href", "https://ibox.ua/map/v_chernihovi_i_obl");
     });
    
-
   }
   if ($("option:selected", this).val() == "4") {
  
     $("#btn_oncart").click(function(){
-      $("#btn_oncart").attr("href", "http://24nonstop.com.ua/");
+      $("#btn_oncart").attr("href", "http://24nonstop.com.ua/Customers/TerminalMap");
     });
   }
 });
@@ -535,6 +534,7 @@ $('.datail_btn').click(function () {
   $('#details').modal('hide');
   $('#details60').modal('hide');
   $('#details90').modal('hide');
+
 
 })
 //radio input
@@ -1054,7 +1054,24 @@ if (window.matchMedia('(max-width: 575px)').matches) {
 //   let total1 = $('#calcul2').val() * 14;
 //   $('#rezultat2').html((total1));
 // }
- 
+// window.isright = function () { isright() };
+
+// function isright(obj)
+//  {
+//   var value= +obj.value.replace(/\D/g,'')||0;
+//    var min = +obj.getAttribute('min');
+//    var max = +obj.getAttribute('max');
+//    obj.value = Math.min(max, Math.max(min, value));
+  
+//  }
+//  isright(obj);
+//  window.maxLengthCheck = function () { maxLengthCheck() };
+
+// function maxLengthCheck(object)
+// {
+//   if (object.value.length > object.maxLength)
+//     object.value = object.value.slice(0, object.maxLength)
+// }
 $('#calcul1').keyup(function(){
   var total = $('#calcul1').val() * 14;
   $('#rezultat').html((total));

@@ -20389,13 +20389,13 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.index_main')) {
 
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "3") {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#btn_oncart").click(function () {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#btn_oncart").attr("href", "https://ibox.ua/");
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#btn_oncart").attr("href", "https://ibox.ua/map/v_chernihovi_i_obl");
       });
     }
 
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "4") {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("#btn_oncart").click(function () {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#btn_oncart").attr("href", "http://24nonstop.com.ua/");
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#btn_oncart").attr("href", "http://24nonstop.com.ua/Customers/TerminalMap");
       });
     }
   });
@@ -21315,6 +21315,21 @@ if (window.matchMedia('(max-width: 575px)').matches) {
 //   $('#rezultat').html((total));
 //   let total1 = $('#calcul2').val() * 14;
 //   $('#rezultat2').html((total1));
+// }
+// window.isright = function () { isright() };
+// function isright(obj)
+//  {
+//   var value= +obj.value.replace(/\D/g,'')||0;
+//    var min = +obj.getAttribute('min');
+//    var max = +obj.getAttribute('max');
+//    obj.value = Math.min(max, Math.max(min, value));
+//  }
+//  isright(obj);
+//  window.maxLengthCheck = function () { maxLengthCheck() };
+// function maxLengthCheck(object)
+// {
+//   if (object.value.length > object.maxLength)
+//     object.value = object.value.slice(0, object.maxLength)
 // }
 
 

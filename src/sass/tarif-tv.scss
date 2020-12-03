@@ -124,6 +124,9 @@ color: #000000;
         width: 90%;
     }
 }
+.contact_txt{
+    display: none;
+}
 @media (max-width: 1199px) {
     .tarif_tv {
         .home-int-grn {
@@ -134,6 +137,9 @@ color: #000000;
     }
 }
 @media (max-width: 991px) {
+    .contact_txt{
+        display: block;
+    }
     .mobile_con{
         .home-internet-text{
             margin-left: -20px;
@@ -196,6 +202,11 @@ color: #000000;
      } 
    
     }
+}
+@media (max-width: 767px) {
+.contact_txt{
+    display: none;
+}
 }
 .con_mob-txt{
     display: none;
@@ -262,7 +273,12 @@ color: #000000;
     }
 }
 @media (max-width: 575px) {
-
+    .contact_txt{
+        display: block;
+    }
+    .con_mob-txt{
+        display: block;
+    }
     #connect_mob{
         .modal-header1 h5 {
             width: 260px;
@@ -316,11 +332,34 @@ color: #000000;
      }
     }
 }
-@media (max-width: 449px){
+@media (max-width: 520px){
+    .contact_txt{
+        display: none;
+    }
+}
+@media (max-width: 503px) {
+    .con_mob-txt{
+        display: none;
+    }
+}
+
+@media (max-width: 448px) {
     .con_mob-txt{
         display: block;
     }
- 
+}
+@media (max-width: 440px) {
+    .con_mob-txt{
+        display: none;
+    }
+}
+@media (max-width: 393px) {
+    .con_mob-txt{
+        display: block;
+    }
+    .contact_txt{
+        display: block;
+    }
 }
 @media (max-width: 440px){
     #connect_tv{

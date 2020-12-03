@@ -435,7 +435,8 @@
                             <div class="footer-modal">
                                 <button class="order close-mod2" data-toggle="modal"
                                     data-target="#order_end">Замовити</button>
-                                <button class="authorization">Авторизація</button>
+                                    <button data-toggle="modal"
+                                    data-target="#my_office" class="authorization close-mod2">Авторизація</button>
 
                             </div>
                         </div>
@@ -778,7 +779,8 @@
              <div class="footer-modal">
                  <button class="order close-mod2" data-toggle="modal"
                      data-target="#privat_order_end">Замовити</button>
-                 <button class="authorization">Авторизація</button>
+                     <button data-toggle="modal"
+                data-target="#my_office" class="authorization close-mod2">Авторизація</button>
 
              </div>
          </div>
@@ -995,7 +997,8 @@ aria-hidden="true">
             <div class="footer-modal">
                 <button class="order close-mod2" data-toggle="modal"
                     data-target="#business_order_end">Замовити</button>
-                <button class="authorization">Авторизація</button>
+                    <button data-toggle="modal"
+                    data-target="#my_office" class="authorization close-mod2">Авторизація</button>
 
             </div>
         </div>
@@ -1158,7 +1161,7 @@ aria-hidden="true">
                    <p>Калькулятор розрахунку швидкості:</p>
                    <span>Швидкість:</span>
                    <div class="calcul-box">
-                   <input  id="calcul1" type="number" value="20" placeholder="20"><label for="">Мбіт/с</label>
+                   <input  id="calcul1" oninput="maxLengthCheck(this)"  type="number" min="20"  value="20" placeholder="20"> <label for="">Мбіт/с</label>
                 </div>
                  </div>
             </div>
@@ -1180,7 +1183,8 @@ aria-hidden="true">
             <div class="footer-modal">
                 <button class="order close-mod2" data-toggle="modal"
                     data-target="#business-law_order_end">Замовити</button>
-                <button class="authorization">Авторизація</button>
+                <button data-toggle="modal"
+                data-target="#my_office" class="authorization close-mod2">Авторизація</button>
 
             </div>
         </div>
@@ -1260,7 +1264,7 @@ aria-hidden="true">
                    <p>Калькулятор розрахунку швидкості:</p>
                    <span>Швидкість:</span>
                    <div class="calcul-box">
-                    <input  id="calcul2" type="number"  value="20" placeholder="20"><label for="">Мбіт/с</label>
+                    <input  id="calcul2" type="number" min="20"  value="20" placeholder="20"><label for="">Мбіт/с</label>
                 </div>
                  </div>
             </div>

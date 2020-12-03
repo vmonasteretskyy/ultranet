@@ -6255,6 +6255,10 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 1199px) {
+  .privacy-block li:hover a {
+    box-shadow: none;
+  }
+
   .change_tar-text {
     padding-right: 20px;
   }
@@ -6344,6 +6348,22 @@ input[type=checkbox]:checked + label:before {
   }
 }
 @media (max-width: 991px) {
+  .wrapper .tab_content .magazine-block0 .table-magazine tr th:nth-child(3) {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .wrapper .tab_content .magazine-block .table-magazine tr th:nth-child(3) {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .wrapper .tab_content .magazine-block .table-magazine tr td:nth-child(3) {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .wrapper .tab_content .magazine-block0 .table-magazine tr td:nth-child(3) {
+    padding: 0px 10px 0px 0px;
+  }
+
   .wrapper .mobile_connection .custom-selects2 {
     width: 250px;
   }

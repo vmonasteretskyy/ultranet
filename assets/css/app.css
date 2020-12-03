@@ -997,6 +997,10 @@
   transform: translateY(-10px);
 }
 
+.show_in_cart #choose_terminal {
+  margin-bottom: 10.2px;
+}
+
 .pay-item {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.3);
@@ -1035,7 +1039,23 @@
   margin: 0 auto;
 }
 .pay-item .last-pay-btn {
-  margin-top: 3.5px;
+  background: #34a0d9;
+  border-radius: 3px;
+  padding: 9.4px 30px;
+  width: 223px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.4s ease;
+}
+.pay-item .last-pay-btn:hover {
+  filter: drop-shadow(0px 0px 10px rgba(52, 160, 217, 0.4));
+}
+.pay-item .last-pay-btn:active {
+  background: #0b3661;
 }
 .pay-item button {
   margin-top: 28px;
@@ -1162,6 +1182,10 @@
 }
 
 @media (max-width: 1199px) {
+  .show_in_cart #choose_terminal {
+    margin-bottom: 1.5px;
+  }
+
   .pay-item button {
     margin-top: 20px;
   }
@@ -1293,6 +1317,11 @@
   }
 }
 @media (max-width: 550px) {
+  .pay-item .last-pay-btn {
+    font-size: 16px;
+    padding: 9.4px 24px;
+  }
+
   .type_pay {
     width: 749px;
   }
@@ -4732,10 +4761,9 @@ input[type=checkbox]:checked + label:before {
   }
 
   .details .footer-modal p:last-of-type {
-    position: absolute;
-    margin-top: 109px;
     margin-bottom: 0px;
     left: 0;
+    margin-left: -37px;
     width: 80%;
   }
   .details .footer-modal button {
@@ -4745,7 +4773,7 @@ input[type=checkbox]:checked + label:before {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 .rules {

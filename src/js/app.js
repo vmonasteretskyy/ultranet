@@ -10,19 +10,27 @@ import IMask from 'imask';
 // })
 
 if ($('*').is('.index_main')) {
-
+  
 $('#choose_terminal').click(function () {
-  if ($("option:selected", this).val() == "2") {
-   
-    document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://privatbank.ua/map'");
-  }
-  if ($("option:selected", this).val() == "3") {
  
-    document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='https://ibox.ua/'");
+  if ($("option:selected", this).val() == "2") {
+    $("#btn_oncart").click(function(){
+      $("#btn_oncart").attr("href", "https://privatbank.ua/map");
+    });
+  
+  } 
+  if ($("option:selected", this).val() == "3") {
+    $("#btn_oncart").click(function(){
+      $("#btn_oncart").attr("href", "https://ibox.ua/");
+    });
+   
+
   }
   if ($("option:selected", this).val() == "4") {
  
-    document.querySelector('#btn_oncart').setAttribute("onclick", "location.href='http://24nonstop.com.ua/'");
+    $("#btn_oncart").click(function(){
+      $("#btn_oncart").attr("href", "http://24nonstop.com.ua/");
+    });
   }
 });
 }

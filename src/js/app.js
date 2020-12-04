@@ -1074,11 +1074,15 @@ if (window.matchMedia('(max-width: 575px)').matches) {
 // }
 $('#calcul1').keyup(function(){
   var total = $('#calcul1').val() * 14;
+  if ($('#calcul1').val()>=20){
   $('#rezultat').html((total));
+  }
 });
 $('#calcul2').keyup(function(){
   var total = $('#calcul2').val() * 14;
+  if ($('#calcul1').val()>=20){
   $('#rezultat2').html((total));
+  }
 });
 $('#calcul1').change(function(){
   var total = $('#calcul1').val() * 14;

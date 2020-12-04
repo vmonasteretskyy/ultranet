@@ -1100,8 +1100,45 @@ $('#calcul2').change(function(){
   })
 // }
 if ($('*').is('.tarif-main')) {
+  $('.changes_speed').click(function () {
+    if ($("option:selected", this).val() == "130") {
+      
+    $('.chan_speed').text('45');
 
+    }
+    if ($("option:selected", this).val() == "175") {
+      
+      $('.chan_speed').text('90');
+  
+      }
+      if ($("option:selected", this).val() == "300") {
+      
+        $('.chan_speed').text('150');
+    
+        }
+        if ($("option:selected", this).val() == "189") {
+      
+          $('.chan_speed').text('90');
+      
+          }
+          if ($("option:selected", this).val() == "159") {
+      
+            $('.chan_speed').text('25');
+        
+            }
+  });
+  $('.changes_speed2').click(function () {
+    if ($("option:selected", this).val() == "159") {
+      
+      $('.chan_speed2').text('25');
+  
+      }
+    if ($("option:selected", this).val() == "189") {
+      
+    $('.chan_speed2').text('90');
 
+    }
+  });
 $('#home_mod').click(function () {
   if ($("option:selected", this).val() == "2") {
     // document.getElementById('home_modal').getElementsByTagName('option')[0].selected = 'selected';
@@ -1553,6 +1590,181 @@ for(let i = 0; i<selectItem.length; i++){
 function  cthirdRes(){
   cresBus.textContent =  parseInt(csel_it1.value)
 }
+}
+}
+let іselectItems26= document.querySelectorAll('#home_mod .select-items div')
+let privat_mod26 = document.querySelector('.home_btn0') 
+let chosen26 = document.querySelector('.choosen') 
+let selectSelected26 = document.querySelector('#home_mod .select-selected') 
+privat_mod26.addEventListener('click', getFirst26)
+function getFirst26(){
+
+  selectSelected26.textContent = chosen26.textContent
+
+  for(let i = 0; i<іselectItems26.length; i++){
+  іselectItems26[i].classList.remove('same-as-selected')
+  іselectItems26[0].classList.add('same-as-selected')
+   
+}
+}
+let іselectItems27= document.querySelectorAll('#home_mod .select-items div')
+let privat_mod27 = document.querySelector('.home_btn1') 
+let chosen27 = document.querySelector('.choosen') 
+let selectSelected27 = document.querySelector('#home_mod .select-selected') 
+privat_mod27.addEventListener('click', getFirst27)
+function getFirst27(){
+
+  selectSelected27.textContent = chosen27.textContent
+
+  for(let i = 0; i<іselectItems27.length; i++){
+  іselectItems27[i].classList.remove('same-as-selected')
+  іselectItems27[0].classList.add('same-as-selected')
+   
+}
+}
+
+let іselectItems28= document.querySelectorAll('#home_mod .select-items div')
+let privat_mod28 = document.querySelector('.home_btn2') 
+let chosen28 = document.querySelector('.choosen') 
+let selectSelected28 = document.querySelector('#home_mod .select-selected') 
+privat_mod28.addEventListener('click', getFirst28)
+function getFirst28(){
+
+  selectSelected28.textContent = chosen28.textContent
+
+  for(let i = 0; i<іselectItems28.length; i++){
+  іselectItems28[i].classList.remove('same-as-selected')
+  іselectItems28[0].classList.add('same-as-selected')
+   
+}
+}
+
+let іselectItems29= document.querySelectorAll('#privat_mod .select-items div')
+let privat_mod29 = document.querySelector('.privat_btn1') 
+let chosen29 = document.querySelector('.choosens') 
+let selectSelected29 = document.querySelector('#privat_mod .select-selected') 
+privat_mod29.addEventListener('click', getFirst29)
+function getFirst29(){
+
+  selectSelected29.textContent = chosen29.textContent
+
+  for(let i = 0; i<іselectItems29.length; i++){
+  іselectItems29[i].classList.remove('same-as-selected')
+  іselectItems29[0].classList.add('same-as-selected')
+   
+}
+}
+let іselectItems30= document.querySelectorAll('#ch_privat .select-items div')
+let privat_mod30 = document.querySelector('.privat_btn2') 
+let chosen30 = document.querySelector('.ch_choose2') 
+let selectSelected30 = document.querySelector('#ch_privat .select-selected') 
+privat_mod30.addEventListener('click', getFirst30)
+function getFirst30(){
+
+  selectSelected30.textContent = chosen30.textContent
+
+  for(let i = 0; i<іselectItems30.length; i++){
+  іselectItems30[i].classList.remove('same-as-selected')
+  іselectItems30[0].classList.add('same-as-selected')
+   
+}
+}
+
+
+let іselectItems31= document.querySelectorAll('#bussines-f .select-items div')
+let privat_mod31 = document.querySelector('.btn_fop1') 
+let chosen31 = document.querySelector('.choosen3') 
+let selectSelected31 = document.querySelector('#bussines-f .select-selected') 
+privat_mod31.addEventListener('click', getFirst31)
+function getFirst31(){
+
+  selectSelected31.textContent = chosen31.textContent
+
+  for(let i = 0; i<іselectItems31.length; i++){
+  іselectItems31[i].classList.remove('same-as-selected')
+  іselectItems31[0].classList.add('same-as-selected')
+   
+}
+}
+let іselectItems32= document.querySelectorAll('#ch_bussines .select-items div')
+let privat_mod32 = document.querySelector('.btn-fopch1') 
+let chosen32 = document.querySelector('.ch_choose3') 
+let selectSelected32 = document.querySelector('#ch_bussines .select-selected') 
+privat_mod32.addEventListener('click', getFirst32)
+function getFirst32(){
+
+  selectSelected32.textContent = chosen32.textContent
+
+  for(let i = 0; i<іselectItems32.length; i++){
+  іselectItems32[i].classList.remove('same-as-selected')
+  іselectItems32[0].classList.add('same-as-selected')
+   
+}
+}
+
+let іselectItems33= document.querySelectorAll('#bussines-f .select-items div')
+let privat_mod33 = document.querySelector('.btn_fop3') 
+let chosen33 = document.querySelector('.choosen3') 
+let selectSelected33 = document.querySelector('#bussines-f .select-selected') 
+privat_mod33.addEventListener('click', getFirst33)
+function getFirst33(){
+
+  selectSelected33.textContent = chosen33.textContent
+
+  for(let i = 0; i<іselectItems33.length; i++){
+  іselectItems33[i].classList.remove('same-as-selected')
+  іselectItems33[0].classList.add('same-as-selected')
+   
+}
+}
+
+
+let іselectItems34= document.querySelectorAll('#bussines-ur.select-items div')
+let privat_mod34 = document.querySelector('.law_bus-ur1') 
+let chosen34 = document.querySelector('.choosen4') 
+let selectSelected34 = document.querySelector('#bussines-ur .select-selected') 
+privat_mod34.addEventListener('click', getFirst34)
+function getFirst34(){
+
+  selectSelected34.textContent = chosen34.textContent
+
+  for(let i = 0; i<іselectItems34.length; i++){
+  іselectItems34[i].classList.remove('same-as-selected')
+  іselectItems34[0].classList.add('same-as-selected')
+   
+}
+}
+
+let іselectItems35= document.querySelectorAll('#ch_bus_ur.select-items div')
+let privat_mod35 = document.querySelector('.law_bus-ur2') 
+let chosen35 = document.querySelector('.ch_choose4') 
+let selectSelected35 = document.querySelector('#ch_bus_ur.select-selected') 
+privat_mod35.addEventListener('click', getFirst35)
+function getFirst35(){
+
+  selectSelected35.textContent = chosen35.textContent
+
+  for(let i = 0; i<іselectItems35.length; i++){
+  іselectItems35[i].classList.remove('same-as-selected')
+  іselectItems35[0].classList.add('same-as-selected')
+   
+}
+}
+
+
+let іselectItems36= document.querySelectorAll('#ch_home .select-items div')
+let privat_mod36 = document.querySelector('.add_change_t') 
+let chosen36 = document.querySelector('.ch_choose1') 
+let selectSelected36 = document.querySelector('#ch_home .select-selected') 
+privat_mod36.addEventListener('click', getFirst36)
+function getFirst36(){
+
+  selectSelected36.textContent = chosen36.textContent
+
+  for(let i = 0; i<іselectItems36.length; i++){
+  іselectItems36[i].classList.remove('same-as-selected')
+  іselectItems36[0].classList.add('same-as-selected')
+   
 }
 }
 }

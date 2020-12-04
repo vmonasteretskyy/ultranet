@@ -21361,6 +21361,146 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#privat-select').click(function (
 }); // }
 
 if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
+  var getFirst26 = function getFirst26() {
+    selectSelected26.textContent = chosen26.textContent;
+
+    for (var _i13 = 0; _i13 < іselectItems26.length; _i13++) {
+      іselectItems26[_i13].classList.remove('same-as-selected');
+
+      іselectItems26[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst27 = function getFirst27() {
+    selectSelected27.textContent = chosen27.textContent;
+
+    for (var _i14 = 0; _i14 < іselectItems27.length; _i14++) {
+      іselectItems27[_i14].classList.remove('same-as-selected');
+
+      іselectItems27[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst28 = function getFirst28() {
+    selectSelected28.textContent = chosen28.textContent;
+
+    for (var _i15 = 0; _i15 < іselectItems28.length; _i15++) {
+      іselectItems28[_i15].classList.remove('same-as-selected');
+
+      іselectItems28[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst29 = function getFirst29() {
+    selectSelected29.textContent = chosen29.textContent;
+
+    for (var _i16 = 0; _i16 < іselectItems29.length; _i16++) {
+      іselectItems29[_i16].classList.remove('same-as-selected');
+
+      іselectItems29[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst30 = function getFirst30() {
+    selectSelected30.textContent = chosen30.textContent;
+
+    for (var _i17 = 0; _i17 < іselectItems30.length; _i17++) {
+      іselectItems30[_i17].classList.remove('same-as-selected');
+
+      іselectItems30[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst31 = function getFirst31() {
+    selectSelected31.textContent = chosen31.textContent;
+
+    for (var _i18 = 0; _i18 < іselectItems31.length; _i18++) {
+      іselectItems31[_i18].classList.remove('same-as-selected');
+
+      іselectItems31[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst32 = function getFirst32() {
+    selectSelected32.textContent = chosen32.textContent;
+
+    for (var _i19 = 0; _i19 < іselectItems32.length; _i19++) {
+      іselectItems32[_i19].classList.remove('same-as-selected');
+
+      іselectItems32[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst33 = function getFirst33() {
+    selectSelected33.textContent = chosen33.textContent;
+
+    for (var _i20 = 0; _i20 < іselectItems33.length; _i20++) {
+      іselectItems33[_i20].classList.remove('same-as-selected');
+
+      іselectItems33[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst34 = function getFirst34() {
+    selectSelected34.textContent = chosen34.textContent;
+
+    for (var _i21 = 0; _i21 < іselectItems34.length; _i21++) {
+      іselectItems34[_i21].classList.remove('same-as-selected');
+
+      іselectItems34[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst35 = function getFirst35() {
+    selectSelected35.textContent = chosen35.textContent;
+
+    for (var _i22 = 0; _i22 < іselectItems35.length; _i22++) {
+      іselectItems35[_i22].classList.remove('same-as-selected');
+
+      іselectItems35[0].classList.add('same-as-selected');
+    }
+  };
+
+  var getFirst36 = function getFirst36() {
+    selectSelected36.textContent = chosen36.textContent;
+
+    for (var _i23 = 0; _i23 < іselectItems36.length; _i23++) {
+      іselectItems36[_i23].classList.remove('same-as-selected');
+
+      іselectItems36[0].classList.add('same-as-selected');
+    }
+  };
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.changes_speed').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "130") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed').text('45');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "175") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed').text('90');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "300") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed').text('150');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "189") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed').text('90');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "159") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed').text('25');
+    }
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.changes_speed2').click(function () {
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "159") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed2').text('25');
+    }
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "189") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.chan_speed2').text('90');
+    }
+  });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('#home_mod').click(function () {
     if (jquery__WEBPACK_IMPORTED_MODULE_0___default()("option:selected", this).val() == "2") {
       // document.getElementById('home_modal').getElementsByTagName('option')[0].selected = 'selected';
@@ -21832,6 +21972,62 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
       }
     })();
   }
+
+  var іselectItems26 = document.querySelectorAll('#home_mod .select-items div');
+  var privat_mod26 = document.querySelector('.home_btn0');
+  var chosen26 = document.querySelector('.choosen');
+  var selectSelected26 = document.querySelector('#home_mod .select-selected');
+  privat_mod26.addEventListener('click', getFirst26);
+  var іselectItems27 = document.querySelectorAll('#home_mod .select-items div');
+  var privat_mod27 = document.querySelector('.home_btn1');
+  var chosen27 = document.querySelector('.choosen');
+  var selectSelected27 = document.querySelector('#home_mod .select-selected');
+  privat_mod27.addEventListener('click', getFirst27);
+  var іselectItems28 = document.querySelectorAll('#home_mod .select-items div');
+  var privat_mod28 = document.querySelector('.home_btn2');
+  var chosen28 = document.querySelector('.choosen');
+  var selectSelected28 = document.querySelector('#home_mod .select-selected');
+  privat_mod28.addEventListener('click', getFirst28);
+  var іselectItems29 = document.querySelectorAll('#privat_mod .select-items div');
+  var privat_mod29 = document.querySelector('.privat_btn1');
+  var chosen29 = document.querySelector('.choosens');
+  var selectSelected29 = document.querySelector('#privat_mod .select-selected');
+  privat_mod29.addEventListener('click', getFirst29);
+  var іselectItems30 = document.querySelectorAll('#ch_privat .select-items div');
+  var privat_mod30 = document.querySelector('.privat_btn2');
+  var chosen30 = document.querySelector('.ch_choose2');
+  var selectSelected30 = document.querySelector('#ch_privat .select-selected');
+  privat_mod30.addEventListener('click', getFirst30);
+  var іselectItems31 = document.querySelectorAll('#bussines-f .select-items div');
+  var privat_mod31 = document.querySelector('.btn_fop1');
+  var chosen31 = document.querySelector('.choosen3');
+  var selectSelected31 = document.querySelector('#bussines-f .select-selected');
+  privat_mod31.addEventListener('click', getFirst31);
+  var іselectItems32 = document.querySelectorAll('#ch_bussines .select-items div');
+  var privat_mod32 = document.querySelector('.btn-fopch1');
+  var chosen32 = document.querySelector('.ch_choose3');
+  var selectSelected32 = document.querySelector('#ch_bussines .select-selected');
+  privat_mod32.addEventListener('click', getFirst32);
+  var іselectItems33 = document.querySelectorAll('#bussines-f .select-items div');
+  var privat_mod33 = document.querySelector('.btn_fop3');
+  var chosen33 = document.querySelector('.choosen3');
+  var selectSelected33 = document.querySelector('#bussines-f .select-selected');
+  privat_mod33.addEventListener('click', getFirst33);
+  var іselectItems34 = document.querySelectorAll('#bussines-ur.select-items div');
+  var privat_mod34 = document.querySelector('.law_bus-ur1');
+  var chosen34 = document.querySelector('.choosen4');
+  var selectSelected34 = document.querySelector('#bussines-ur .select-selected');
+  privat_mod34.addEventListener('click', getFirst34);
+  var іselectItems35 = document.querySelectorAll('#ch_bus_ur.select-items div');
+  var privat_mod35 = document.querySelector('.law_bus-ur2');
+  var chosen35 = document.querySelector('.ch_choose4');
+  var selectSelected35 = document.querySelector('#ch_bus_ur.select-selected');
+  privat_mod35.addEventListener('click', getFirst35);
+  var іselectItems36 = document.querySelectorAll('#ch_home .select-items div');
+  var privat_mod36 = document.querySelector('.add_change_t');
+  var chosen36 = document.querySelector('.ch_choose1');
+  var selectSelected36 = document.querySelector('#ch_home .select-selected');
+  privat_mod36.addEventListener('click', getFirst36);
 } //tarifs tv
 
 
@@ -21840,8 +22036,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tar_box')) {
     var getFirsth1 = function getFirsth1() {
       selectSelectedh1.textContent = chosenh1.textContent;
 
-      for (var _i14 = 0; _i14 < selectItemsh1.length; _i14++) {
-        selectItemsh1[_i14].classList.remove('same-as-selected');
+      for (var _i25 = 0; _i25 < selectItemsh1.length; _i25++) {
+        selectItemsh1[_i25].classList.remove('same-as-selected');
 
         selectItemsh1[0].classList.add('same-as-selected');
       }
@@ -21851,8 +22047,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tar_box')) {
     var getFirsth2 = function getFirsth2() {
       selectSelectedh2.textContent = chosenh2.textContent;
 
-      for (var _i15 = 0; _i15 < selectItemsh2.length; _i15++) {
-        selectItemsh2[_i15].classList.remove('same-as-selected');
+      for (var _i26 = 0; _i26 < selectItemsh2.length; _i26++) {
+        selectItemsh2[_i26].classList.remove('same-as-selected');
 
         selectItemsh2[1].classList.add('same-as-selected');
       }
@@ -21862,8 +22058,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tar_box')) {
     var getFirsth3 = function getFirsth3() {
       selectSelectedh3.textContent = chosenh3.textContent;
 
-      for (var _i16 = 0; _i16 < selectItemsh3.length; _i16++) {
-        selectItemsh3[_i16].classList.remove('same-as-selected');
+      for (var _i27 = 0; _i27 < selectItemsh3.length; _i27++) {
+        selectItemsh3[_i27].classList.remove('same-as-selected');
 
         selectItemsh3[2].classList.add('same-as-selected');
       }
@@ -21919,12 +22115,12 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tar_box')) {
     var csel_it5 = document.querySelector('.csel_it5');
     var cresBus5 = document.querySelector('.cresBus5');
 
-    for (var _i13 = 0; _i13 < cselectItem5.length; _i13++) {
+    for (var _i24 = 0; _i24 < cselectItem5.length; _i24++) {
       var cthirdRes5 = function cthirdRes5() {
         cresBus5.textContent = parseInt(csel_it5.value);
       };
 
-      cselectItem5[_i13].addEventListener('click', cthirdRes5);
+      cselectItem5[_i24].addEventListener('click', cthirdRes5);
     }
 
     var selectItemsh1 = document.querySelectorAll('#tar_tvs .select-items div');
@@ -21952,12 +22148,12 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.con-mob')) {
     var csel_it6 = document.querySelector('.csel_it6');
     var cresBus6 = document.querySelector('.cresBus6');
 
-    for (var _i17 = 0; _i17 < cselectItem6.length; _i17++) {
+    for (var _i28 = 0; _i28 < cselectItem6.length; _i28++) {
       var cthirdRes6 = function cthirdRes6() {
         cresBus6.textContent = parseInt(csel_it6.value);
       };
 
-      cselectItem6[_i17].addEventListener('click', cthirdRes6);
+      cselectItem6[_i28].addEventListener('click', cthirdRes6);
     }
 
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('#connect_mob').click(function () {
@@ -22023,8 +22219,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst0 = function getFirst0() {
     selectSelected.textContent = chosen.textContent;
 
-    for (var _i18 = 0; _i18 < selectItems.length; _i18++) {
-      selectItems[_i18].classList.remove('same-as-selected');
+    for (var _i29 = 0; _i29 < selectItems.length; _i29++) {
+      selectItems[_i29].classList.remove('same-as-selected');
 
       selectItems[0].classList.add('same-as-selected');
     }
@@ -22034,8 +22230,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst1 = function getFirst1() {
     selectSelected1.textContent = chosen1.textContent;
 
-    for (var _i19 = 0; _i19 < selectItems1.length; _i19++) {
-      selectItems1[_i19].classList.remove('same-as-selected');
+    for (var _i30 = 0; _i30 < selectItems1.length; _i30++) {
+      selectItems1[_i30].classList.remove('same-as-selected');
 
       selectItems1[0].classList.add('same-as-selected');
     }
@@ -22045,8 +22241,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst2 = function getFirst2() {
     selectSelected2.textContent = chosen2.textContent;
 
-    for (var _i20 = 0; _i20 < selectItems2.length; _i20++) {
-      selectItems2[_i20].classList.remove('same-as-selected');
+    for (var _i31 = 0; _i31 < selectItems2.length; _i31++) {
+      selectItems2[_i31].classList.remove('same-as-selected');
 
       selectItems2[0].classList.add('same-as-selected');
     }
@@ -22056,8 +22252,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst3 = function getFirst3() {
     selectSelected3.textContent = chosen3.textContent;
 
-    for (var _i21 = 0; _i21 < selectItems3.length; _i21++) {
-      selectItems3[_i21].classList.remove('same-as-selected');
+    for (var _i32 = 0; _i32 < selectItems3.length; _i32++) {
+      selectItems3[_i32].classList.remove('same-as-selected');
 
       selectItems3[0].classList.add('same-as-selected');
     }
@@ -22067,8 +22263,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst4 = function getFirst4() {
     selectSelected4.textContent = chosen4.textContent;
 
-    for (var _i22 = 0; _i22 < selectItems4.length; _i22++) {
-      selectItems4[_i22].classList.remove('same-as-selected');
+    for (var _i33 = 0; _i33 < selectItems4.length; _i33++) {
+      selectItems4[_i33].classList.remove('same-as-selected');
 
       selectItems4[0].classList.add('same-as-selected');
     }
@@ -22078,8 +22274,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst5 = function getFirst5() {
     selectSelected5.textContent = chosen5.textContent;
 
-    for (var _i23 = 0; _i23 < selectItems5.length; _i23++) {
-      selectItems5[_i23].classList.remove('same-as-selected');
+    for (var _i34 = 0; _i34 < selectItems5.length; _i34++) {
+      selectItems5[_i34].classList.remove('same-as-selected');
 
       selectItems5[0].classList.add('same-as-selected');
     }
@@ -22089,8 +22285,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst6 = function getFirst6() {
     selectSelected6.textContent = chosen6.textContent;
 
-    for (var _i24 = 0; _i24 < selectItems6.length; _i24++) {
-      selectItems6[_i24].classList.remove('same-as-selected');
+    for (var _i35 = 0; _i35 < selectItems6.length; _i35++) {
+      selectItems6[_i35].classList.remove('same-as-selected');
 
       selectItems6[0].classList.add('same-as-selected');
     }
@@ -22100,8 +22296,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst7 = function getFirst7() {
     selectSelected7.textContent = chosen7.textContent;
 
-    for (var _i25 = 0; _i25 < selectItems7.length; _i25++) {
-      selectItems7[_i25].classList.remove('same-as-selected');
+    for (var _i36 = 0; _i36 < selectItems7.length; _i36++) {
+      selectItems7[_i36].classList.remove('same-as-selected');
 
       selectItems7[0].classList.add('same-as-selected');
     }
@@ -22111,8 +22307,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst8 = function getFirst8() {
     selectSelected8.textContent = chosen8.textContent;
 
-    for (var _i26 = 0; _i26 < selectItems8.length; _i26++) {
-      selectItems8[_i26].classList.remove('same-as-selected');
+    for (var _i37 = 0; _i37 < selectItems8.length; _i37++) {
+      selectItems8[_i37].classList.remove('same-as-selected');
 
       selectItems8[0].classList.add('same-as-selected');
     }
@@ -22122,8 +22318,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst9 = function getFirst9() {
     selectSelected9.textContent = chosen9.textContent;
 
-    for (var _i27 = 0; _i27 < selectItems9.length; _i27++) {
-      selectItems9[_i27].classList.remove('same-as-selected');
+    for (var _i38 = 0; _i38 < selectItems9.length; _i38++) {
+      selectItems9[_i38].classList.remove('same-as-selected');
 
       selectItems9[0].classList.add('same-as-selected');
     }
@@ -22133,8 +22329,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst10 = function getFirst10() {
     selectSelected10.textContent = chosen10.textContent;
 
-    for (var _i28 = 0; _i28 < selectItems10.length; _i28++) {
-      selectItems10[_i28].classList.remove('same-as-selected');
+    for (var _i39 = 0; _i39 < selectItems10.length; _i39++) {
+      selectItems10[_i39].classList.remove('same-as-selected');
 
       selectItems10[0].classList.add('same-as-selected');
     }
@@ -22144,8 +22340,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst11 = function getFirst11() {
     selectSelected11.textContent = chosen11.textContent;
 
-    for (var _i29 = 0; _i29 < selectItems11.length; _i29++) {
-      selectItems11[_i29].classList.remove('same-as-selected');
+    for (var _i40 = 0; _i40 < selectItems11.length; _i40++) {
+      selectItems11[_i40].classList.remove('same-as-selected');
 
       selectItems11[0].classList.add('same-as-selected');
     }
@@ -22155,8 +22351,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst12 = function getFirst12() {
     selectSelected12.textContent = chosen12.textContent;
 
-    for (var _i30 = 0; _i30 < selectItems12.length; _i30++) {
-      selectItems12[_i30].classList.remove('same-as-selected');
+    for (var _i41 = 0; _i41 < selectItems12.length; _i41++) {
+      selectItems12[_i41].classList.remove('same-as-selected');
 
       selectItems12[0].classList.add('same-as-selected');
     }
@@ -22165,8 +22361,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst13 = function getFirst13() {
     selectSelected13.textContent = chosen13.textContent;
 
-    for (var _i31 = 0; _i31 < selectItems13.length; _i31++) {
-      selectItems13[_i31].classList.remove('same-as-selected');
+    for (var _i42 = 0; _i42 < selectItems13.length; _i42++) {
+      selectItems13[_i42].classList.remove('same-as-selected');
 
       selectItems13[0].classList.add('same-as-selected');
     }
@@ -22176,8 +22372,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst14 = function getFirst14() {
     selectSelected14.textContent = chosen14.textContent;
 
-    for (var _i32 = 0; _i32 < selectItems14.length; _i32++) {
-      selectItems14[_i32].classList.remove('same-as-selected');
+    for (var _i43 = 0; _i43 < selectItems14.length; _i43++) {
+      selectItems14[_i43].classList.remove('same-as-selected');
 
       selectItems14[0].classList.add('same-as-selected');
     }
@@ -22186,8 +22382,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst15 = function getFirst15() {
     selectSelected15.textContent = chosen15.textContent;
 
-    for (var _i33 = 0; _i33 < selectItems15.length; _i33++) {
-      selectItems15[_i33].classList.remove('same-as-selected');
+    for (var _i44 = 0; _i44 < selectItems15.length; _i44++) {
+      selectItems15[_i44].classList.remove('same-as-selected');
 
       selectItems15[0].classList.add('same-as-selected');
     }
@@ -22197,8 +22393,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst16 = function getFirst16() {
     selectSelected16.textContent = chosen16.textContent;
 
-    for (var _i34 = 0; _i34 < selectItems16.length; _i34++) {
-      selectItems16[_i34].classList.remove('same-as-selected');
+    for (var _i45 = 0; _i45 < selectItems16.length; _i45++) {
+      selectItems16[_i45].classList.remove('same-as-selected');
 
       selectItems16[0].classList.add('same-as-selected');
     }
@@ -22207,8 +22403,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst17 = function getFirst17() {
     selectSelected17.textContent = chosen17.textContent;
 
-    for (var _i35 = 0; _i35 < selectItems17.length; _i35++) {
-      selectItems17[_i35].classList.remove('same-as-selected');
+    for (var _i46 = 0; _i46 < selectItems17.length; _i46++) {
+      selectItems17[_i46].classList.remove('same-as-selected');
 
       selectItems17[0].classList.add('same-as-selected');
     }
@@ -22218,8 +22414,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst18 = function getFirst18() {
     selectSelected18.textContent = chosen18.textContent;
 
-    for (var _i36 = 0; _i36 < selectItems18.length; _i36++) {
-      selectItems18[_i36].classList.remove('same-as-selected');
+    for (var _i47 = 0; _i47 < selectItems18.length; _i47++) {
+      selectItems18[_i47].classList.remove('same-as-selected');
 
       selectItems18[0].classList.add('same-as-selected');
     }
@@ -22228,8 +22424,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst19 = function getFirst19() {
     selectSelected19.textContent = chosen19.textContent;
 
-    for (var _i37 = 0; _i37 < selectItems19.length; _i37++) {
-      selectItems19[_i37].classList.remove('same-as-selected');
+    for (var _i48 = 0; _i48 < selectItems19.length; _i48++) {
+      selectItems19[_i48].classList.remove('same-as-selected');
 
       selectItems19[0].classList.add('same-as-selected');
     }
@@ -22239,8 +22435,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst20 = function getFirst20() {
     selectSelected20.textContent = chosen20.textContent;
 
-    for (var _i38 = 0; _i38 < selectItems20.length; _i38++) {
-      selectItems20[_i38].classList.remove('same-as-selected');
+    for (var _i49 = 0; _i49 < selectItems20.length; _i49++) {
+      selectItems20[_i49].classList.remove('same-as-selected');
 
       selectItems20[0].classList.add('same-as-selected');
     }
@@ -22249,8 +22445,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst21 = function getFirst21() {
     selectSelected21.textContent = chosen21.textContent;
 
-    for (var _i39 = 0; _i39 < selectItems21.length; _i39++) {
-      selectItems21[_i39].classList.remove('same-as-selected');
+    for (var _i50 = 0; _i50 < selectItems21.length; _i50++) {
+      selectItems21[_i50].classList.remove('same-as-selected');
 
       selectItems21[0].classList.add('same-as-selected');
     }
@@ -22260,8 +22456,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst22 = function getFirst22() {
     selectSelected22.textContent = chosen22.textContent;
 
-    for (var _i40 = 0; _i40 < selectItems22.length; _i40++) {
-      selectItems22[_i40].classList.remove('same-as-selected');
+    for (var _i51 = 0; _i51 < selectItems22.length; _i51++) {
+      selectItems22[_i51].classList.remove('same-as-selected');
 
       selectItems22[0].classList.add('same-as-selected');
     }
@@ -22270,8 +22466,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
   var getFirst23 = function getFirst23() {
     selectSelected23.textContent = chosen23.textContent;
 
-    for (var _i41 = 0; _i41 < selectItems23.length; _i41++) {
-      selectItems23[_i41].classList.remove('same-as-selected');
+    for (var _i52 = 0; _i52 < selectItems23.length; _i52++) {
+      selectItems23[_i52].classList.remove('same-as-selected');
 
       selectItems23[0].classList.add('same-as-selected');
     }
@@ -22403,8 +22599,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.mobile_con')) {
   var getFirstl1 = function getFirstl1() {
     selectSelectedl1.textContent = chosenl1.textContent;
 
-    for (var _i42 = 0; _i42 < selectItemsl1.length; _i42++) {
-      selectItemsl1[_i42].classList.remove('same-as-selected');
+    for (var _i53 = 0; _i53 < selectItemsl1.length; _i53++) {
+      selectItemsl1[_i53].classList.remove('same-as-selected');
 
       selectItemsl1[0].classList.add('same-as-selected');
     }
@@ -22413,8 +22609,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.mobile_con')) {
   var getFirst24 = function getFirst24() {
     selectSelected24.textContent = chosen24.textContent;
 
-    for (var _i43 = 0; _i43 < selectItems24.length; _i43++) {
-      selectItems24[_i43].classList.remove('same-as-selected');
+    for (var _i54 = 0; _i54 < selectItems24.length; _i54++) {
+      selectItems24[_i54].classList.remove('same-as-selected');
 
       selectItems24[1].classList.add('same-as-selected');
     }
@@ -22423,8 +22619,8 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.mobile_con')) {
   var getFirst25 = function getFirst25() {
     selectSelected25.textContent = chosen25.textContent;
 
-    for (var _i44 = 0; _i44 < selectItems25.length; _i44++) {
-      selectItems25[_i44].classList.remove('same-as-selected');
+    for (var _i55 = 0; _i55 < selectItems25.length; _i55++) {
+      selectItems25[_i55].classList.remove('same-as-selected');
 
       selectItems25[2].classList.add('same-as-selected');
     }

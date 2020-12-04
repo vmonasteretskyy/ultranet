@@ -1395,7 +1395,7 @@
 @media (max-width: 550px) {
   .pay-item .last-pay-btn {
     font-size: 16px;
-    padding: 9.4px 24px;
+    padding: 10px 23px;
   }
 
   .type_pay {
@@ -1877,11 +1877,11 @@ footer {
   }
 
   .pay-services-block .pay-services {
-    padding-bottom: 80px;
+    padding-bottom: 105px;
   }
 
   .news-block {
-    margin-top: -20px;
+    margin-top: -45px;
   }
   .news-block .news-item h3 {
     font-size: 16px;
@@ -4925,7 +4925,7 @@ input[type=checkbox]:checked + label:before {
 
   .details .footer-modal p:last-of-type {
     margin-bottom: 0px;
-    margin-left: -30px;
+    margin-left: -32.3px;
     width: 80%;
   }
   .details .footer-modal button {

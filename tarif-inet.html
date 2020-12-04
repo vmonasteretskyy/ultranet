@@ -1161,7 +1161,7 @@ aria-hidden="true">
                    <p>Калькулятор розрахунку швидкості:</p>
                    <span>Швидкість:</span>
                    <div class="calcul-box">
-                   <input  id="calcul1"    type="number" min="20"  value="20" placeholder="20"> <label for="">Мбіт/с</label>
+                   <input  id="calcul1" type="number" value="20" min="20" max="999"   onchange="isright(this);"  placeholder="20"> <label for="">Мбіт/с</label>
                 </div>
                  </div>
             </div>
@@ -1264,7 +1264,7 @@ aria-hidden="true">
                    <p>Калькулятор розрахунку швидкості:</p>
                    <span>Швидкість:</span>
                    <div class="calcul-box">
-                    <input  id="calcul2" type="number" min="20"  value="20" placeholder="20"><label for="">Мбіт/с</label>
+                    <input  id="calcul2" type="number" value="20" min="20" max="999"   onchange="isright(this);"  placeholder="20"><label for="">Мбіт/с</label>
                 </div>
                  </div>
             </div>
@@ -1373,6 +1373,25 @@ aria-hidden="true">
             </div>
         </div>
     </footer>
+    <script>
+ 
+        function isright(obj)
+        
+         {
+        
+         var value= +obj.value.replace(/\D/g,'')||0;
+       
+         var min = +obj.getAttribute('min');
+        
+         var max = +obj.getAttribute('max');
+        
+         obj.value = Math.min(max, Math.max(min, value));
+       
+         }
+         
+        </script>
+     
+        
     <script src="assets/js/app.js"></script>
 </body>
 

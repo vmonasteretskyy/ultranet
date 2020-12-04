@@ -1116,7 +1116,7 @@
   cursor: pointer;
   background: #34a0d9;
   border-radius: 3px;
-  padding: 9.4px 30px;
+  padding: 9.5px 30px;
   width: 223px;
   height: 40px;
   font-weight: 500;
@@ -4855,7 +4855,7 @@ input[type=checkbox]:checked + label:before {
 
   .actions {
     height: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
 
   .show_more p {
@@ -4904,7 +4904,7 @@ input[type=checkbox]:checked + label:before {
     flex-direction: column;
   }
 }
-@media (min-height: 622px) {
+@media (min-height: 612px) {
   .actions {
     height: 100vh;
     padding-bottom: 0px;

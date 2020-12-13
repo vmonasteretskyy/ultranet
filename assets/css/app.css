@@ -2752,6 +2752,15 @@ input[type=checkbox]:checked + label:before {
   margin-top: 10px;
 }
 
+.br_ad_privat {
+  display: block;
+}
+
+@media (min-width: 530px) {
+  #connect_internet .modal-header1 h5 {
+    margin-left: 18px;
+  }
+}
 @media (max-width: 1799px) {
   .box-show-check {
     height: 168.5px;
@@ -5572,12 +5581,14 @@ input[type=checkbox]:checked + label:before {
 .tele ul,
 .ip-address ul,
 .appear_taruf .change_tar-text ul {
+  cursor: default;
   padding-top: 0px;
   list-style-type: circle;
 }
 .tele li,
 .ip-address li,
 .appear_taruf .change_tar-text li {
+  cursor: default;
   display: flex;
   align-items: flex-start;
   list-style: initial;

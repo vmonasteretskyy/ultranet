@@ -416,11 +416,13 @@
 .ip-address,
 .appear_taruf .change_tar-text {
     ul {
+        cursor: default;
         padding-top: 0px;
         list-style-type: circle;
     }
 
     li {
+        cursor: default;
         display: flex;
         align-items: flex-start;
         list-style: initial;

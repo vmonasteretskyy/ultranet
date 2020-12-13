@@ -10,7 +10,6 @@
         transition: 0.3s ease;
         // &:hover{
         // border-bottom: 0.6px solid transparent;
-
         // }
     }
 
@@ -45,7 +44,6 @@
         position: relative;
         z-index: 9;
         background-color: white;
-
         // box-shadow: 0 -5px 10px -15px rgba(171, 171, 171, 0.2),
         // 0px -2px 9px rgba(171, 171, 171, 0.2);
     }
@@ -825,6 +823,16 @@ input[type="checkbox"]:checked + label:before {
 .show-move-friend p{
     margin-top: 10px;
 }
+.br_ad_privat{
+    display: block;
+}
+@media (min-width: 530px) {
+#connect_internet{
+    .modal-header1 h5{
+        margin-left: 18px;
+    }
+}
+}
 @media (max-width: 1799px) {
     .box-show-check {
    
@@ -1122,7 +1130,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 575px) {
-  
+    
     .text-speed p:last-of-type{
         margin-bottom: 10px;
     }

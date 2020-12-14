@@ -5565,6 +5565,7 @@ input[type=checkbox]:checked + label:before {
   background: #0b3661;
 }
 .btn_order .abonent {
+  display: none;
   background: #ffffff;
   border: 1px solid #34a0d9;
   box-sizing: border-box;

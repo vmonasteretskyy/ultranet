@@ -1501,7 +1501,7 @@
   }
 
   .select-selected {
-    font-size: 16px;
+    font-size: 13px;
     width: 190px;
     padding: 6px 10px;
   }
@@ -1877,11 +1877,11 @@ footer {
   }
 
   .pay-services-block .pay-services {
-    padding-bottom: 105px;
+    padding-bottom: 50px;
   }
 
   .news-block {
-    margin-top: -45px;
+    margin-top: 10px;
   }
   .news-block .news-item h3 {
     font-size: 16px;
@@ -2183,7 +2183,7 @@ footer {
 }
 .home-internet-text span {
   font-weight: 500;
-  font-size: 18px;
+  
   line-height: 150%;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -3094,6 +3094,9 @@ input[type=checkbox]:checked + label:before {
     text-align: left;
     font-size: 16px;
   }
+  .privat-home .boldtext {
+    font-size: 16px;
+  }
   .privat-home .home-cont-internet {
     margin-left: -15px;
   }
@@ -3753,6 +3756,9 @@ input[type=checkbox]:checked + label:before {
 
   #my_office .modal-content {
     max-width: 360px;
+  }
+  .home-internet-text span{
+    font-size: 16px;
   }
   #my_office .modal-dialog {
     max-width: 360px;

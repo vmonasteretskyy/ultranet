@@ -3094,9 +3094,6 @@ input[type=checkbox]:checked + label:before {
     text-align: left;
     font-size: 16px;
   }
-  .privat-home .boldtext {
-    font-size: 20px;
-  }
   .privat-home .home-cont-internet {
     margin-left: -15px;
   }
@@ -3756,6 +3753,9 @@ input[type=checkbox]:checked + label:before {
 
   #my_office .modal-content {
     max-width: 360px;
+  }
+  .home-internet-text span{
+    font-size: 16px;
   }
   #my_office .modal-dialog {
     max-width: 360px;

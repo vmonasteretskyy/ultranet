@@ -1519,6 +1519,10 @@
     width: 175px;
   }
 }
+#exampleModalLabel {
+  margin-left: 50px;
+}
+
 .news-block {
   background: #F5F3F1;
   width: 100%;
@@ -5249,7 +5253,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .wrapper tr td:nth-child(2) {
-  padding: 10px 0px;
+  padding: 10px 103px 0px 0px;
 }
 
 .wrapper h4 {
@@ -5582,6 +5586,7 @@ input[type=checkbox]:checked + label:before {
 .ip-address ul,
 .appear_taruf .change_tar-text ul {
   cursor: default;
+  padding-left: 30px;
   padding-top: 0px;
   list-style-type: circle;
 }
@@ -6177,6 +6182,7 @@ input[type=checkbox]:checked + label:before {
 }
 .img-setting img {
   width: 97%;
+  margin-right: 5px;
 }
 
 .dir-list {

@@ -398,7 +398,7 @@
         }
     }
     .abonent {
-        
+        display: none;
         background: #ffffff;
         border: 1px solid #34a0d9;
         box-sizing: border-box;
@@ -966,10 +966,18 @@ text-align: center;
     }
 }
 }
+.abonement{
+
+}
 @media (min-width: 576px) {
     #receipt_modal .modal-dialog {
         max-width: 100%;
         margin: 1.75rem auto;
+    }
+}
+@media (max-width: 767px) {
+    .abonent{
+        display: block !important;
     }
 }
 
@@ -2713,8 +2721,8 @@ width: 100%;
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 800px){
     .abonent{
-        display: none;
+        display: block;
     }
-}
+} 

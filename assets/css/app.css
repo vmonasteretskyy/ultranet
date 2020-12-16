@@ -5569,6 +5569,7 @@ input[type=checkbox]:checked + label:before {
   background: #0b3661;
 }
 .btn_order .abonent {
+  display: none;
   background: #ffffff;
   border: 1px solid #34a0d9;
   box-sizing: border-box;
@@ -6071,6 +6072,11 @@ input[type=checkbox]:checked + label:before {
   #receipt_modal .modal-dialog {
     max-width: 100%;
     margin: 1.75rem auto;
+  }
+}
+@media (max-width: 767px) {
+  .abonent {
+    display: block !important;
   }
 }
 .print-page {
@@ -7529,9 +7535,9 @@ input[type=checkbox]:checked + label:before {
     padding: 10px 0px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .abonent {
-    display: none;
+    display: block;
   }
 }
 * {

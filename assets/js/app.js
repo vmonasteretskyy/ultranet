@@ -20430,7 +20430,8 @@ function burgerMenu(selector) {
   }
 }
 
-burgerMenu('.burger-menu'); //select
+burgerMenu('.burger-menu'); //modal pass
+//select
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-selects2");
@@ -22659,7 +22660,14 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.mobile_con')) {
   var chosen25 = document.querySelector('.choosenl3');
   var selectSelected25 = document.querySelector('#lifecell_sel .select-selected');
   privat_mod25.addEventListener('click', getFirst25);
-}
+} // close modal window
+
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.abonent').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#changePass').css({
+    'display': 'none'
+  });
+});
 
 /***/ }),
 

@@ -9,6 +9,9 @@ import IMask from 'imask';
  
 // })
 
+
+
+
 if ($('*').is('.index_main')) {
   
 $('#choose_terminal').click(function () {
@@ -63,6 +66,9 @@ function burgerMenu(selector) {
   }
 }
 burgerMenu('.burger-menu');
+
+//modal pass
+
 //select
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-selects2");
@@ -172,6 +178,7 @@ if ($('*').is('.suport-chat')) {
 //   $(".suport-chat").fadeOut();
 
 // })
+
 
 $(".burger-menu_button").click(function () {
   $(".burger").toggleClass("shadow");
@@ -2431,8 +2438,9 @@ function getFirst25(){
    
 }
 }
-
-
 }
 
-
+// close modal window
+  $('.abonent').click(function(){
+    $('#changePass').css({'display': 'none' });
+  })

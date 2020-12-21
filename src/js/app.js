@@ -2443,4 +2443,9 @@ function getFirst25(){
 // close modal window
   $('.abonent').click(function(){
     $('#changePass').css({'display': 'none' });
-  })
+  });
+ 
+  $('#vidmina-tel').click(function(){
+    $('#change_general-num').css({'display':'none'});
+    $('.modal-backdrop').css({'display':'none'});
+  });

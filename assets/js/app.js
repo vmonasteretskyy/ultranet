@@ -22668,6 +22668,14 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.abonent').click(function () {
     'display': 'none'
   });
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#vidmina-tel').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('#change_general-num').css({
+    'display': 'none'
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal-backdrop').css({
+    'display': 'none'
+  });
+});
 
 /***/ }),
 
@@ -22689,8 +22697,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.abonent').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\проекти Христі\ultranet1\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\проекти Христі\ultranet1\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultranet1\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultranet1\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

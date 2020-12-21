@@ -5443,12 +5443,14 @@ input[type=checkbox]:checked + label:before {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  cursor: pointer;
   text-align: center;
   color: #34a0d9;
 }
 .change_mail .enter-btn #vidmina-tel, .change_mail .enter-btn #changeMailVidm, .change_mail .enter-btn #closeAddPhone {
   width: 147px;
   height: 40px !important;
+  cursor: pointer;
   padding-top: 6px !important;
 }
 

@@ -5435,7 +5435,7 @@ input[type=checkbox]:checked + label:before {
   margin-right: 30px;
   color: #ffffff;
 }
-.change_mail .enter-btn .abonent, .change_mail .enter-btn #vidmina-tel {
+.change_mail .enter-btn .abonent, .change_mail .enter-btn #vidmina-tel, .change_mail .enter-btn #changeMailVidm, .change_mail .enter-btn #closeAddPhone {
   background: #ffffff;
   border: 1px solid #34a0d9;
   box-sizing: border-box;
@@ -5446,7 +5446,7 @@ input[type=checkbox]:checked + label:before {
   text-align: center;
   color: #34a0d9;
 }
-.change_mail .enter-btn #vidmina-tel {
+.change_mail .enter-btn #vidmina-tel, .change_mail .enter-btn #changeMailVidm, .change_mail .enter-btn #closeAddPhone {
   width: 147px;
   height: 40px !important;
   padding-top: 6px !important;

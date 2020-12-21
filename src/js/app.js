@@ -2449,3 +2449,13 @@ function getFirst25(){
     $('#change_general-num').css({'display':'none'});
     $('.modal-backdrop').css({'display':'none'});
   });
+
+  $('#changeMailVidm').click(function(){
+    $('.change_mail').css({'display':'none'});
+    $('.modal-backdrop').css({'display':'none'});
+  });
+
+  $('#closeAddPhone').click(function(){
+    $('.change__add-phone').css({'display':'none'});
+    $('.modal-backdrop').css({'display':'none'});
+  });

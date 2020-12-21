@@ -22676,6 +22676,22 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#vidmina-tel').click(function () 
     'display': 'none'
   });
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#changeMailVidm').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change_mail').css({
+    'display': 'none'
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal-backdrop').css({
+    'display': 'none'
+  });
+});
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('#closeAddPhone').click(function () {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.change__add-phone').css({
+    'display': 'none'
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.modal-backdrop').css({
+    'display': 'none'
+  });
+});
 
 /***/ }),
 
@@ -22697,8 +22713,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#vidmina-tel').click(function () 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultranet1\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultranet1\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\vvn09\Desktop\ultr\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\ultr\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

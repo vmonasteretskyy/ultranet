@@ -22713,8 +22713,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#closeAddPhone').click(function (
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\ultr\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\ultr\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultr\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultr\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

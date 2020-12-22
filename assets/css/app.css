@@ -5253,7 +5253,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .wrapper tr td:nth-child(2) {
-  padding: 10px 103px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 .wrapper h4 {
@@ -7545,6 +7545,11 @@ input[type=checkbox]:checked + label:before {
 @media (max-width: 800px) {
   .abonent {
     display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .magazine-check {
+    width: 192px;
   }
 }
 * {

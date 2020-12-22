@@ -88,7 +88,7 @@
 }
 
 .wrapper tr td:nth-child(2) {
-    padding: 10px 103px 0px 0px;
+    padding: 10px 0px 0px 0px;
 }
 
 .wrapper {
@@ -973,9 +973,7 @@ text-align: center;
     }
 }
 }
-.abonement{
 
-}
 @media (min-width: 576px) {
     #receipt_modal .modal-dialog {
         max-width: 100%;
@@ -1093,9 +1091,7 @@ text-align: center;
     }
 }
 
-.right-side{
 
-}
 .appear_windows10,
 .appear_tenda,
 .appear_set_dir {
@@ -2491,12 +2487,12 @@ background-color: white;
             font-size: 16px;
         }
 
-        table #result-table td:first-of-type {
+      //  table #result-table td:first-of-type {
             // white-space: nowrap;
             // max-width: 60px;
             // overflow: hidden;
             // padding-left: 20px;
-        }
+      //  }
 
         .table-menu {
             float: left;
@@ -2733,3 +2729,8 @@ width: 100%;
         display: block;
     }
 } 
+@media (min-width: 768px) and (max-width: 992px){
+   .magazine-check{
+       width: 192px;
+   } 
+}

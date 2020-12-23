@@ -20715,7 +20715,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions-box').css("display", "flex");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(180deg)");
   }, function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions-box').slideUp(); // $('.show-actions').slideUp();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.show-actions').slideUp(); // $('.show-actions').slideUp();
 
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)"); // $('.show-move-friend').slideUp();
   }]);
@@ -22713,8 +22713,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#closeAddPhone').click(function (
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultr\ultranet\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\projectsTina\ultr\ultranet\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\vvn09\Desktop\ultra1\ultranet\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\vvn09\Desktop\ultra1\ultranet\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })

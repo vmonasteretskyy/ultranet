@@ -369,7 +369,7 @@ if ($('*').is('.third_wrap_bus')) {
       $('.svg-actions').css("transform", "rotate(180deg)");
     },
     function () {
-      $('.show-actions-box').slideUp();
+      $('.show-actions').slideUp();
       // $('.show-actions').slideUp();
       $('.svg-actions').css("transform", "rotate(0deg)");
       // $('.show-move-friend').slideUp();

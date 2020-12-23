@@ -6138,7 +6138,7 @@ input[type=checkbox]:checked + label:before {
   padding-bottom: 0px;
 }
 .appear_windows7 .change_tar-text ul li {
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 0px 0px;
   cursor: default;
 }
 .appear_windows7 h4 {
@@ -6158,7 +6158,7 @@ input[type=checkbox]:checked + label:before {
 .appear_windows10 .change_tar-text ul li,
 .appear_tenda .change_tar-text ul li,
 .appear_set_dir .change_tar-text ul li {
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 0px 0px;
   cursor: default;
 }
 .appear_windows10 h4,

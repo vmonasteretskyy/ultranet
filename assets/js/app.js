@@ -20720,7 +20720,7 @@ if (jquery__WEBPACK_IMPORTED_MODULE_0___default()('*').is('.tarif-main')) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.svg-actions').css("transform", "rotate(0deg)"); // $('.show-move-friend').slideUp();
   }]);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').toggleClick([function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text-hide').fadeOut();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text-hide').css("display", "none");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("position", "absolute");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-text').css("right", "35px");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tv-show').slideDown("slow");

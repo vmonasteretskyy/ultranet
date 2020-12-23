@@ -378,7 +378,7 @@ if ($('*').is('.third_wrap_bus')) {
   ]);
   $('.tv-text').toggleClick([
     function () {
-      $('.tv-text-hide').fadeOut();
+      $('.tv-text-hide').css("display", "none");
       $('.tv-text').css("position", "absolute");
       $('.tv-text').css("right", "35px");
       $('.tv-show').slideDown("slow");
